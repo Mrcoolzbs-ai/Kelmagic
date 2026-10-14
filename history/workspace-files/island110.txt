@@ -1,0 +1,18 @@
+ public static boolean raiseIsland(ServerPlayer p,BlockPos center,double scale){
+  var l=p.serverLevel();int radius=Math.min(8,Math.max(3,(int)Math.round(5*Math.sqrt(scale))));var moved=new LinkedHashMap<BlockPos,BlockState>();var tags=new HashMap<BlockPos,CompoundTag>();int lowest=center.getY(),highest=center.getY();
+  for(int x=-radius-1;x<=radius+1;x++)for(int z=-radius-1;z<=radius+1;z++){
+   double angle=Math.atan2(z,x),edge=radius*(.87+.10*Math.sin(angle*3+.6)+.08*Math.cos(angle*5));double dist=Math.sqrt(x*x+z*z);if(dist>edge)continue;
+   int depth=Math.max(1,(int)Math.round(2+4*(1-dist/edge)+Math.sin(x*1.7+z*.8)));
+   for(int y=-depth;y<=32;y++){var at=center.offset(x,y,z);if(!l.hasChunkAt(at)||!l.isInWorldBounds(at))return false;var s=l.getBlockState(at);if(s.isAir())continue;
+    var be=l.getBlockEntity(at);if(be instanceof net.minecraft.world.Container||be!=null&&l.getCapability(net.neoforged.neoforge.capabilities.Capabilities.ItemHandler.BLOCK,at,null)!=null)continue;
+    if(s.getDestroySpeed(l,at)<0)continue;if(!moveAllowed(p,at))return false;moved.put(at,s);if(be!=null)tags.put(at,be.saveWithFullMetadata(l.registryAccess()));lowest=Math.min(lowest,at.getY());highest=Math.max(highest,at.getY());
+   }
+  }
+  if(moved.isEmpty())return false;int lift=Math.max(12,highest-lowest+4);var snapshots=new ArrayList<net.neoforged.neoforge.common.util.BlockSnapshot>();
+  for(var at:moved.keySet()){var dest=at.above(lift);if(!moveAllowed(p,dest)||!l.getBlockState(dest).canBeReplaced()||l.getBlockEntity(dest)!=null||!l.getEntities((Entity)null,new AABB(dest),e->e instanceof LivingEntity).isEmpty())return false;if(net.neoforged.neoforge.common.NeoForge.EVENT_BUS.post(new net.neoforged.neoforge.event.level.BlockEvent.BreakEvent(l,at,moved.get(at),p)).isCanceled())return false;snapshots.add(net.neoforged.neoforge.common.util.BlockSnapshot.create(l.dimension(),l,at));snapshots.add(net.neoforged.neoforge.common.util.BlockSnapshot.create(l.dimension(),l,dest));}
+  boolean ok=true;for(var at:moved.keySet()){l.removeBlockEntity(at);ok&=l.setBlock(at,Blocks.AIR.defaultBlockState(),18);}for(var entry:moved.entrySet()){var dest=entry.getKey().above(lift);ok&=l.setBlock(dest,entry.getValue(),18);if(tags.containsKey(entry.getKey())){var tag=tags.get(entry.getKey()).copy();tag.putInt("x",dest.getX());tag.putInt("y",dest.getY());tag.putInt("z",dest.getZ());var be=net.minecraft.world.level.block.entity.BlockEntity.loadStatic(dest,entry.getValue(),tag,l.registryAccess());if(be!=null)l.setBlockEntity(be);}}
+  for(int i=1;ok&&i<snapshots.size();i+=2)if(net.neoforged.neoforge.event.EventHooks.onBlockPlace(p,snapshots.get(i),Direction.UP))ok=false;
+  if(!ok){for(int i=snapshots.size()-1;i>=0;i--)snapshots.get(i).restore();return false;}
+  for(var at:moved.keySet()){l.updateNeighborsAt(at,Blocks.AIR);l.updateNeighborsAt(at.above(lift),moved.get(at).getBlock());}l.sendParticles(ParticleTypes.END_ROD,center.getX(),center.getY()+lift,center.getZ(),80,radius,2,radius,.03);return true;
+ }
+ private static boolean moveAllowed(ServerPlayer p,BlockPos at){var l=p.serverLevel();return !p.isSpectator()&&p.getAbilities().mayBuild&&l.hasChunkAt(at)&&l.isInWorldBounds(at)&&l.getWorldBorder().isWithinBounds(at)&&l.mayInteract(p,at)&&p.mayUseItemAt(at,Direction.UP,p.getMainHandItem());}

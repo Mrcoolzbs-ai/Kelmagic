@@ -1,0 +1,2572 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.red_mage.idle": {
+      "loop": true,
+      "animation_length": 4,
+      "bones": {
+        "body": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "2": [
+              0,
+              0,
+              1.2
+            ],
+            "4": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "2": [
+              0,
+              -3,
+              0
+            ],
+            "4": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.walk": {
+      "loop": true,
+      "animation_length": 1.5,
+      "bones": {
+        "left_leg": {
+          "rotation": {
+            "0.0": [
+              24,
+              0,
+              0
+            ],
+            "0.375": [
+              0,
+              0,
+              0
+            ],
+            "0.75": [
+              -24,
+              0,
+              0
+            ],
+            "1.125": [
+              0,
+              0,
+              0
+            ],
+            "1.5": [
+              24,
+              0,
+              0
+            ]
+          }
+        },
+        "left_shin": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.375": [
+              26,
+              0,
+              0
+            ],
+            "0.75": [
+              0,
+              0,
+              0
+            ],
+            "1.125": [
+              0,
+              0,
+              0
+            ],
+            "1.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [
+              -16.799999999999997,
+              0,
+              4
+            ],
+            "0.375": [
+              0.0,
+              0,
+              4
+            ],
+            "0.75": [
+              16.799999999999997,
+              0,
+              4
+            ],
+            "1.125": [
+              0.0,
+              0,
+              4
+            ],
+            "1.5": [
+              -16.799999999999997,
+              0,
+              4
+            ]
+          }
+        },
+        "left_forearm": {
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "right_leg": {
+          "rotation": {
+            "0.0": [
+              -24,
+              0,
+              0
+            ],
+            "0.375": [
+              0,
+              0,
+              0
+            ],
+            "0.75": [
+              24,
+              0,
+              0
+            ],
+            "1.125": [
+              0,
+              0,
+              0
+            ],
+            "1.5": [
+              -24,
+              0,
+              0
+            ]
+          }
+        },
+        "right_shin": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.375": [
+              0,
+              0,
+              0
+            ],
+            "0.75": [
+              0,
+              0,
+              0
+            ],
+            "1.125": [
+              26,
+              0,
+              0
+            ],
+            "1.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [
+              16.799999999999997,
+              0,
+              -4
+            ],
+            "0.375": [
+              0.0,
+              0,
+              -4
+            ],
+            "0.75": [
+              -16.799999999999997,
+              0,
+              -4
+            ],
+            "1.125": [
+              0.0,
+              0,
+              -4
+            ],
+            "1.5": [
+              16.799999999999997,
+              0,
+              -4
+            ]
+          }
+        },
+        "right_forearm": {
+          "rotation": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "root": {
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.375": [
+              0,
+              0.35,
+              0
+            ],
+            "0.75": [
+              0,
+              0,
+              0
+            ],
+            "1.125": [
+              0,
+              0.35,
+              0
+            ],
+            "1.5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.run": {
+      "loop": true,
+      "animation_length": 0.65,
+      "bones": {
+        "left_leg": {
+          "rotation": {
+            "0.0": [
+              48,
+              0,
+              0
+            ],
+            "0.1625": [
+              0,
+              0,
+              0
+            ],
+            "0.325": [
+              -48,
+              0,
+              0
+            ],
+            "0.48750000000000004": [
+              0,
+              0,
+              0
+            ],
+            "0.65": [
+              48,
+              0,
+              0
+            ]
+          }
+        },
+        "left_shin": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1625": [
+              62,
+              0,
+              0
+            ],
+            "0.325": [
+              0,
+              0,
+              0
+            ],
+            "0.48750000000000004": [
+              0,
+              0,
+              0
+            ],
+            "0.65": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "left_arm": {
+          "rotation": {
+            "0.0": [
+              -33.599999999999994,
+              0,
+              4
+            ],
+            "0.1625": [
+              0.0,
+              0,
+              4
+            ],
+            "0.325": [
+              33.599999999999994,
+              0,
+              4
+            ],
+            "0.48750000000000004": [
+              0.0,
+              0,
+              4
+            ],
+            "0.65": [
+              -33.599999999999994,
+              0,
+              4
+            ]
+          }
+        },
+        "left_forearm": {
+          "rotation": [
+            -45,
+            0,
+            0
+          ]
+        },
+        "right_leg": {
+          "rotation": {
+            "0.0": [
+              -48,
+              0,
+              0
+            ],
+            "0.1625": [
+              0,
+              0,
+              0
+            ],
+            "0.325": [
+              48,
+              0,
+              0
+            ],
+            "0.48750000000000004": [
+              0,
+              0,
+              0
+            ],
+            "0.65": [
+              -48,
+              0,
+              0
+            ]
+          }
+        },
+        "right_shin": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1625": [
+              0,
+              0,
+              0
+            ],
+            "0.325": [
+              0,
+              0,
+              0
+            ],
+            "0.48750000000000004": [
+              62,
+              0,
+              0
+            ],
+            "0.65": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0.0": [
+              33.599999999999994,
+              0,
+              -4
+            ],
+            "0.1625": [
+              0.0,
+              0,
+              -4
+            ],
+            "0.325": [
+              -33.599999999999994,
+              0,
+              -4
+            ],
+            "0.48750000000000004": [
+              0.0,
+              0,
+              -4
+            ],
+            "0.65": [
+              33.599999999999994,
+              0,
+              -4
+            ]
+          }
+        },
+        "right_forearm": {
+          "rotation": [
+            -45,
+            0,
+            0
+          ]
+        },
+        "root": {
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.1625": [
+              0,
+              0.85,
+              0
+            ],
+            "0.325": [
+              0,
+              0,
+              0
+            ],
+            "0.48750000000000004": [
+              0,
+              0.85,
+              0
+            ],
+            "0.65": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.crouch": {
+      "loop": true,
+      "animation_length": 2,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -4,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            18,
+            0,
+            0
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -32,
+            0,
+            -8
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -32,
+            0,
+            8
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            54,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            54,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -18,
+            0,
+            -10
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -18,
+            0,
+            10
+          ]
+        }
+      }
+    },
+    "animation.red_mage.jump": {
+      "loop": true,
+      "animation_length": 0.8,
+      "bones": {
+        "body": {
+          "rotation": [
+            -8,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -65,
+            0,
+            -18
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -65,
+            0,
+            18
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -22,
+            0,
+            0
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            14,
+            0,
+            0
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            38,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            22,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.fall": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "body": {
+          "rotation": [
+            8,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -18,
+            0,
+            -38
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -18,
+            0,
+            38
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            14,
+            0,
+            -5
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -14,
+            0,
+            5
+          ]
+        }
+      }
+    },
+    "animation.red_mage.fly": {
+      "loop": true,
+      "animation_length": 2.4,
+      "bones": {
+        "root": {
+          "position": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1.2": [
+              0,
+              1,
+              0
+            ],
+            "2.4": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "body": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -35,
+            0,
+            -28
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -35,
+            0,
+            28
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            8,
+            0,
+            -5
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -18,
+            0,
+            5
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            18,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            32,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.swim": {
+      "loop": true,
+      "animation_length": 1.4,
+      "bones": {
+        "root": {
+          "rotation": [
+            80,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": {
+            "0": [
+              -140,
+              0,
+              36
+            ],
+            ".7": [
+              -30,
+              0,
+              -60
+            ],
+            "1.4": [
+              -140,
+              0,
+              36
+            ]
+          },
+          "position": [
+            0.8,
+            0,
+            0
+          ]
+        },
+        "right_arm": {
+          "rotation": {
+            "0": [
+              -30,
+              0,
+              60
+            ],
+            ".7": [
+              -140,
+              0,
+              -36
+            ],
+            "1.4": [
+              -30,
+              0,
+              60
+            ]
+          },
+          "position": [
+            -0.8,
+            0,
+            0
+          ]
+        },
+        "left_leg": {
+          "rotation": {
+            "0": [
+              20,
+              0,
+              0
+            ],
+            ".7": [
+              -20,
+              0,
+              0
+            ],
+            "1.4": [
+              20,
+              0,
+              0
+            ]
+          }
+        },
+        "right_leg": {
+          "rotation": {
+            "0": [
+              -20,
+              0,
+              0
+            ],
+            ".7": [
+              20,
+              0,
+              0
+            ],
+            "1.4": [
+              -20,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.climb": {
+      "loop": true,
+      "animation_length": 1.6,
+      "bones": {
+        "left_arm": {
+          "rotation": {
+            "0": [
+              -145,
+              -20,
+              36
+            ],
+            ".8": [
+              -70,
+              -20,
+              -18
+            ],
+            "1.6": [
+              -145,
+              -20,
+              36
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0": [
+              -70,
+              20,
+              18
+            ],
+            ".8": [
+              -145,
+              20,
+              -36
+            ],
+            "1.6": [
+              -70,
+              20,
+              18
+            ]
+          }
+        },
+        "left_leg": {
+          "rotation": {
+            "0": [
+              -48,
+              0,
+              0
+            ],
+            ".8": [
+              -5,
+              0,
+              0
+            ],
+            "1.6": [
+              -48,
+              0,
+              0
+            ]
+          }
+        },
+        "right_leg": {
+          "rotation": {
+            "0": [
+              -5,
+              0,
+              0
+            ],
+            ".8": [
+              -48,
+              0,
+              0
+            ],
+            "1.6": [
+              -5,
+              0,
+              0
+            ]
+          }
+        },
+        "left_shin": {
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            45,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.talk": {
+      "loop": false,
+      "animation_length": 4,
+      "bones": {
+        "right_arm": {
+          "rotation": {
+            "0": [
+              -15,
+              0,
+              10
+            ],
+            "1": [
+              -45,
+              -12,
+              25
+            ],
+            "2": [
+              -25,
+              0,
+              12
+            ],
+            "3": [
+              -35,
+              8,
+              18
+            ],
+            "4": [
+              -15,
+              0,
+              10
+            ]
+          }
+        },
+        "right_forearm": {
+          "rotation": [
+            -55,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              3,
+              -4,
+              0
+            ],
+            "2": [
+              -2,
+              3,
+              0
+            ],
+            "4": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.cast": {
+      "loop": false,
+      "animation_length": 3,
+      "bones": {
+        "left_arm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            ".5": [
+              -65,
+              -15,
+              -20
+            ],
+            "2": [
+              -90,
+              -15,
+              -25
+            ],
+            "3": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            ".5": [
+              -75,
+              15,
+              25
+            ],
+            "2": [
+              -110,
+              15,
+              -36
+            ],
+            "3": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -12,
+              0,
+              0
+            ],
+            "3": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.stretch": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "left_arm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -165,
+              0,
+              36
+            ],
+            "4": [
+              -165,
+              0,
+              36
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -165,
+              0,
+              -36
+            ],
+            "4": [
+              -165,
+              0,
+              -36
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "body": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -10,
+              0,
+              0
+            ],
+            "4": [
+              -10,
+              0,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "left_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.read": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "left_arm": {
+          "rotation": [
+            -30,
+            0,
+            -18
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -30,
+            0,
+            18
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -65,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -65,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              18,
+              0,
+              0
+            ],
+            "4": [
+              18,
+              0,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "book": {
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "animation.red_mage.hat_play": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "right_arm": {
+          "rotation": [
+            -145,
+            0,
+            -40
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              8,
+              -10,
+              0
+            ],
+            "4": [
+              8,
+              -10,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "hat": {
+          "position": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              0,
+              2,
+              0
+            ],
+            "2": [
+              0,
+              4,
+              0
+            ],
+            "3": [
+              0,
+              2,
+              0
+            ],
+            "4": [
+              0,
+              1,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          },
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              0,
+              20,
+              -10
+            ],
+            "3": [
+              0,
+              -20,
+              10
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "left_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.hat_adjust": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "left_arm": {
+          "rotation": [
+            -145,
+            0,
+            40
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              7,
+              0,
+              0
+            ],
+            "4": [
+              7,
+              0,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "right_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.inspect_nails": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "right_arm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -50,
+              0,
+              22
+            ],
+            "4": [
+              -50,
+              0,
+              22
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "right_forearm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -75,
+              0,
+              0
+            ],
+            "4": [
+              -75,
+              0,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              10,
+              -16,
+              -5
+            ],
+            "4": [
+              10,
+              -16,
+              -5
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.look_around": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              0,
+              32,
+              0
+            ],
+            "4": [
+              0,
+              32,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "body": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              0,
+              8,
+              0
+            ],
+            "4": [
+              0,
+              8,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.conjure_orb": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "left_arm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -55,
+              0,
+              -25
+            ],
+            "4": [
+              -55,
+              0,
+              -25
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "left_forearm": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -75,
+              0,
+              0
+            ],
+            "4": [
+              -75,
+              0,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              15,
+              15,
+              0
+            ],
+            "4": [
+              15,
+              15,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.yawn": {
+      "loop": false,
+      "animation_length": 5,
+      "bones": {
+        "right_arm": {
+          "rotation": [
+            -48,
+            0,
+            58
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -45,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              0,
+              0,
+              0
+            ],
+            "1": [
+              -12,
+              0,
+              0
+            ],
+            "4": [
+              -12,
+              0,
+              0
+            ],
+            "5": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_regal": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -2,
+            0,
+            8
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              0,
+              0
+            ],
+            "8": [
+              10,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_crossed": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            -15,
+            -9
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            80,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -2,
+            0,
+            8
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              -8,
+              -3
+            ],
+            "8": [
+              10,
+              -8,
+              -3
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_chin_rest": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -48,
+            0,
+            58
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -45,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              -12,
+              -5
+            ],
+            "8": [
+              10,
+              -12,
+              -5
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_side_lounge": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -2,
+            0,
+            8
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            -3
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              -8,
+              5
+            ],
+            "8": [
+              10,
+              -8,
+              5
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_recline": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            1.3
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -104,
+            0,
+            -4
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -102,
+            0,
+            4
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            96,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            94,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -2,
+            0,
+            8
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            -4,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            18,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.red_mage.throne_read": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -30,
+            0,
+            -18
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -30,
+            0,
+            18
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -65,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -65,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              18,
+              0,
+              0
+            ],
+            "8": [
+              18,
+              0,
+              0
+            ]
+          }
+        },
+        "book": {
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      }
+    },
+    "animation.red_mage.throne_hat": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -145,
+            0,
+            -40
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              0,
+              0
+            ],
+            "8": [
+              10,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_bored": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -2,
+            0,
+            -8
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -2,
+            0,
+            8
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -88,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              -12,
+              -2
+            ],
+            "4": [
+              10,
+              12,
+              2
+            ],
+            "8": [
+              10,
+              -12,
+              -2
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_stretch": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            -0.6,
+            2
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -3
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            3
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": {
+            "0": [
+              -2,
+              0,
+              -8
+            ],
+            "2": [
+              -145,
+              0,
+              36
+            ],
+            "6": [
+              -145,
+              0,
+              36
+            ],
+            "8": [
+              -2,
+              0,
+              -8
+            ]
+          }
+        },
+        "right_arm": {
+          "rotation": {
+            "0": [
+              -2,
+              0,
+              8
+            ],
+            "2": [
+              -145,
+              0,
+              -36
+            ],
+            "6": [
+              -145,
+              0,
+              -36
+            ],
+            "8": [
+              -2,
+              0,
+              8
+            ]
+          }
+        },
+        "left_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -12,
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              0,
+              0
+            ],
+            "8": [
+              10,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.red_mage.throne_kitten": {
+      "loop": true,
+      "animation_length": 8,
+      "bones": {
+        "root": {
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            -90,
+            0,
+            -5
+          ]
+        },
+        "right_leg": {
+          "rotation": [
+            -90,
+            0,
+            5
+          ]
+        },
+        "left_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "right_shin": {
+          "rotation": [
+            90,
+            0,
+            0
+          ]
+        },
+        "left_arm": {
+          "rotation": [
+            -12,
+            0,
+            -13
+          ]
+        },
+        "right_arm": {
+          "rotation": [
+            -12,
+            0,
+            13
+          ]
+        },
+        "left_forearm": {
+          "rotation": [
+            -72,
+            0,
+            0
+          ]
+        },
+        "right_forearm": {
+          "rotation": [
+            -72,
+            0,
+            0
+          ]
+        },
+        "cat": {
+          "position": [
+            0,
+            9.06,
+            3
+          ]
+        },
+        "cat_tail": {
+          "rotation": {
+            "0": [
+              -5,
+              60,
+              0
+            ],
+            "4": [
+              -5,
+              82,
+              0
+            ],
+            "8": [
+              -5,
+              60,
+              0
+            ]
+          }
+        },
+        "cat_head": {
+          "rotation": {
+            "0": [
+              0,
+              -15,
+              0
+            ],
+            "4": [
+              5,
+              15,
+              0
+            ],
+            "8": [
+              0,
+              -15,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0": [
+              10,
+              0,
+              0
+            ],
+            "8": [
+              10,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

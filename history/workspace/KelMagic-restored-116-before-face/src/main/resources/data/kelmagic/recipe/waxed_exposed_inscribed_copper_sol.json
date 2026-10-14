@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:waxed_exposed_copper"
+  },
+  "result": {
+    "id": "kelmagic:waxed_exposed_inscribed_copper_sol",
+    "count": 1
+  }
+}

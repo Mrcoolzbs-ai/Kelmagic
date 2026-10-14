@@ -1,0 +1,82 @@
+[
+  {
+    "path": "/data/KelMagic/.gradle",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/KelMagic/tools/__pycache__",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/KelMagic/run/world/session.lock",
+    "reason": "transient process/lock file"
+  },
+  {
+    "path": "/data/KelMagic-1.5.1-backup-tools/__pycache__",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/KelMagic-before112/tools/__pycache__",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/.gradle",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/tools/__pycache__",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/usercache.json",
+    "reason": "credential/private/local account filename"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/usernamecache.json",
+    "reason": "credential/private/local account filename"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/world/session.lock",
+    "reason": "transient process/lock file"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/saves/KelMagicQA/session.lock",
+    "reason": "transient process/lock file"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/saves/KelMagicShowcase114/session.lock",
+    "reason": "transient process/lock file"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/saves/KelMagicShowcase1141/session.lock",
+    "reason": "transient process/lock file"
+  },
+  {
+    "path": "/data/KelMagic-restored-116-before-face/run/saves/KelMagicResearch116/session.lock",
+    "reason": "transient process/lock file"
+  },
+  {
+    "path": "/data/cfr.jar",
+    "reason": "reproducible third-party JDK/decompiler or transient PID"
+  },
+  {
+    "path": "/data/jdk21.tar.gz",
+    "reason": "reproducible third-party JDK/decompiler or transient PID"
+  },
+  {
+    "path": "/data/kelmagic-face-D/__pycache__",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/kelmagic-face-variants/isolated-base/KelMagic/tools/__pycache__",
+    "reason": "reproducible local cache, excluded from both"
+  },
+  {
+    "path": "/data/xvfb.pid",
+    "reason": "reproducible third-party JDK/decompiler or transient PID"
+  },
+  {
+    "path": "/data/xvfb116.pid",
+    "reason": "reproducible third-party JDK/decompiler or transient PID"
+  }
+]

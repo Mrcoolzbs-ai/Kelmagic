@@ -1,0 +1,5 @@
+from pathlib import Path
+import hashlib,json,subprocess,sys
+R=Path(__file__).resolve().parent;P=R/'test-project';roots=[P/'src/main/resources/assets/kelmagic',P/'art/red-mage',R/'experiment/reference'];H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();before={str(p.relative_to(R)):H(p) for root in roots for p in root.rglob('*') if p.is_file()};subprocess.run([sys.executable,str(P/'tools/regenerate_E.py')],check=True,stdout=open(R/'report/regeneration.log','w'));after={s:H(R/s) for s in before};diff=[s for s in before if before[s]!=after[s]];assert not diff,diff
+atlas=P/'src/main/resources/assets/kelmagic/textures/entity/red_mage_geo.png';assert H(atlas)=='35418b8b032f5dc3ea613f48a5d3a254fcd0a9bddde55ec452dcb63b358f3692'
+(R/'report/regeneration-validation.json').write_text(json.dumps({'filesCompared':len(before),'changed':diff,'originalAtlasSHA256':H(atlas),'allFourLowercasePathsExist':all((P/f'src/main/resources/assets/kelmagic/textures/entity/mouth_e/{s}.png').exists() for s in ['neutral','smile','speech','surprised'])},indent=2));print('REGENERATION_IDENTICAL',len(before))

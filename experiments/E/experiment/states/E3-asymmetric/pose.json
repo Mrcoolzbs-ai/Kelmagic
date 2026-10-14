@@ -1,0 +1,13 @@
+{
+  "normalizedValues": {
+    "cheekLeft": 1,
+    "cheekRight": 0.15,
+    "lowerLeft": 1,
+    "lowerRight": 0.15
+  },
+  "runtimeVertexMorph": true,
+  "restGeometry": true,
+  "maxCheekY": 0.16,
+  "maxCheekZ": 0.04,
+  "maxLowerY": 0.22
+}

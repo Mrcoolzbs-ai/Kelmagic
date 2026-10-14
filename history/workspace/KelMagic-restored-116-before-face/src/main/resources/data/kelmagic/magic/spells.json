@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "spells": [
+    {
+      "words": [
+        "pir"
+      ],
+      "effect": "FIRE_BLOCK"
+    },
+    {
+      "words": [
+        "tuna",
+        "pir"
+      ],
+      "effect": "FIRE_PLAYER"
+    },
+    {
+      "words": [
+        "sila",
+        "pir"
+      ],
+      "effect": "FIRE_MOB"
+    },
+    {
+      "words": [
+        "mina",
+        "pir"
+      ],
+      "effect": "FIRE_SELF"
+    },
+    {
+      "words": [
+        "mina",
+        "no",
+        "pir"
+      ],
+      "effect": "RESIST_SELF"
+    },
+    {
+      "words": [
+        "lu",
+        "pir"
+      ],
+      "effect": "FIRE_AREA"
+    },
+    {
+      "words": [
+        "lu",
+        "tuna",
+        "pir"
+      ],
+      "effect": "FIRE_PLAYERS"
+    },
+    {
+      "words": [
+        "lu",
+        "sila",
+        "pir"
+      ],
+      "effect": "FIRE_MOBS"
+    },
+    {
+      "words": [
+        "lu",
+        "tuna"
+      ],
+      "effect": "SELECTION_ONLY"
+    }
+  ]
+}

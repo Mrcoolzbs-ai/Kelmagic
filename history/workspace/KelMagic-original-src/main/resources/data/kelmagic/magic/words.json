@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "words": [
+    {
+      "word": "mina",
+      "root": "min",
+      "translation": "я",
+      "category": "self",
+      "source": "gram1.png"
+    },
+    {
+      "word": "tuna",
+      "root": "tun",
+      "translation": "ты",
+      "category": "player",
+      "source": "gram1.png"
+    },
+    {
+      "word": "sila",
+      "root": "sil",
+      "translation": "он/она/оно",
+      "category": "mob",
+      "source": "gram1.png"
+    },
+    {
+      "word": "pir",
+      "root": "pir",
+      "translation": "огонь",
+      "category": "effect",
+      "source": "ez_word1.png"
+    },
+    {
+      "word": "no",
+      "root": "no",
+      "translation": "отрицание",
+      "category": "modifier",
+      "source": "gram2.png"
+    },
+    {
+      "word": "lu",
+      "root": "lu",
+      "translation": "множество",
+      "category": "modifier",
+      "source": "gram2.png"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+SHA256 32de76380c3124ae96a60e40a05daf035a7170697c6f1b510625f98366c05cae
+2242 resources byte-identical;JAR CRC valid;Qa absent;180 lore fragments;34 visible +14 recipe unlock advancements;15 NBT

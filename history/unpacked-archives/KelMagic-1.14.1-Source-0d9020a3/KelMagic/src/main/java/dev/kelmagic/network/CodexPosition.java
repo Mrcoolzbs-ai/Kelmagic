@@ -1,0 +1,9 @@
+package dev.kelmagic.network;
+import dev.kelmagic.*;
+import net.minecraft.network.*;import net.minecraft.network.codec.*;import net.minecraft.network.protocol.common.custom.CustomPacketPayload;import net.minecraft.resources.ResourceLocation;import net.minecraft.server.level.ServerPlayer;import net.minecraft.world.InteractionHand;
+public record CodexPosition(boolean offhand,String token,int section,int page,String query) implements CustomPacketPayload {
+ public static final Type<CodexPosition> TYPE=new Type<>(ResourceLocation.fromNamespaceAndPath("kelmagic","codex_position"));
+ public static final StreamCodec<RegistryFriendlyByteBuf,CodexPosition> CODEC=StreamCodec.of((b,p)->{b.writeBoolean(p.offhand);b.writeUtf(p.token,36);b.writeVarInt(p.section);b.writeVarInt(p.page);b.writeUtf(p.query,40);},b->new CodexPosition(b.readBoolean(),b.readUtf(36),b.readVarInt(),b.readVarInt(),b.readUtf(40)));
+ public Type<CodexPosition> type(){return TYPE;}
+ public static void save(ServerPlayer p,CodexPosition v){var s=p.getItemInHand(v.offhand?InteractionHand.OFF_HAND:InteractionHand.MAIN_HAND);if(!p.isAlive()||!(s.getItem() instanceof dev.kelmagic.item.CodexItem)||!v.token.equals(s.get(MagicComponents.CODEX_TOKEN.get()))||v.section<0||v.section>1||v.page<0||v.page>179||v.query.length()>40)return;s.set(MagicComponents.CODEX_SECTION.get(),v.section);s.set(MagicComponents.CODEX_PAGE.get(),v.page);s.set(MagicComponents.CODEX_QUERY.get(),v.query);}
+}

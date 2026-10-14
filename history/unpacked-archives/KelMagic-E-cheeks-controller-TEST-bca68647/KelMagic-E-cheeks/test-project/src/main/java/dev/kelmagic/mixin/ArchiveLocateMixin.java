@@ -1,0 +1,6 @@
+package dev.kelmagic.mixin;
+import com.mojang.datafixers.util.Pair;import dev.kelmagic.worldgen.ArchiveLocator;import net.minecraft.core.*;import net.minecraft.server.level.ServerLevel;import net.minecraft.world.level.chunk.ChunkGenerator;import net.minecraft.world.level.levelgen.structure.Structure;import org.spongepowered.asm.mixin.Mixin;import org.spongepowered.asm.mixin.injection.*;import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+@Mixin(ChunkGenerator.class)public abstract class ArchiveLocateMixin {
+ @Inject(method="findNearestMapStructure",at=@At("HEAD"),cancellable=true)
+ private void kelmagic$archive(ServerLevel level,HolderSet<Structure> requested,BlockPos origin,int radius,boolean skip,CallbackInfoReturnable<Pair<BlockPos,Holder<Structure>>> ci){if(requested.stream().noneMatch(ArchiveLocator::isArchive))return;var result=ArchiveLocator.locate(level,origin,radius,skip);var others=requested.stream().filter(h->!ArchiveLocator.isArchive(h)).toList();if(!others.isEmpty()){var normal=((ChunkGenerator)(Object)this).findNearestMapStructure(level,HolderSet.direct(others),origin,radius,skip);if(result==null||normal!=null&&normal.getFirst().distSqr(origin)<result.getFirst().distSqr(origin))result=normal;}ci.setReturnValue(result);}
+}

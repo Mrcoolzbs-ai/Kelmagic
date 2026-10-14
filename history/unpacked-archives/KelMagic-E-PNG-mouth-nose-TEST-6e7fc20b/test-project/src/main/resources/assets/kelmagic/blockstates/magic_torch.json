@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kelmagic:block/magic_torch"
+    }
+  }
+}

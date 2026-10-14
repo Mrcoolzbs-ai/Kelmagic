@@ -1,0 +1,9 @@
+package dev.kelmagic;
+import net.neoforged.neoforge.registries.*;import net.minecraft.world.level.block.*;import net.minecraft.world.level.block.state.*;import net.minecraft.core.*;import net.minecraft.server.level.*;import net.minecraft.world.entity.Entity;import net.minecraft.world.level.Level;import net.minecraft.world.level.portal.DimensionTransition;import net.minecraft.world.phys.*;
+public final class MagicPortals {
+ public static final DeferredBlock<Block> END_GATE=KelMagic.BLOCKS.register("temporary_end_gate",()->new Block(BlockBehaviour.Properties.of().noCollission().strength(-1,3600000).lightLevel(s->12).noLootTable()){
+ protected void onPlace(BlockState s,Level l,BlockPos p,BlockState old,boolean moving){super.onPlace(s,l,p,old,moving);if(!l.isClientSide)l.scheduleTick(p,this,100);}
+ protected void tick(BlockState s,ServerLevel l,BlockPos p,net.minecraft.util.RandomSource r){l.removeBlock(p,false);}
+ protected void entityInside(BlockState s,Level level,BlockPos pos,Entity e){if(!(level instanceof ServerLevel l)||e.isOnPortalCooldown()||e.isPassenger()||e.isVehicle())return;var target=l.getServer().getLevel(l.dimension()==Level.END?Level.OVERWORLD:Level.END);if(target==null)return;BlockPos at;if(target.dimension()==Level.END){at=ServerLevel.END_SPAWN_POINT;net.minecraft.world.level.levelgen.feature.EndPlatformFeature.createEndPlatform(target,at.below(),true);}else at=target.getSharedSpawnPos();e.setPortalCooldown();e.changeDimension(new DimensionTransition(target,Vec3.atBottomCenterOf(at),Vec3.ZERO,e.getYRot(),e.getXRot(),DimensionTransition.PLAY_PORTAL_SOUND));}
+ });public static void init(){}private MagicPortals(){}
+}

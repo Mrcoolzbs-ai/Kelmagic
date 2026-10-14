@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:waxed_weathered_copper"
+  },
+  "result": {
+    "id": "kelmagic:waxed_weathered_inscribed_copper_pel",
+    "count": 1
+  }
+}

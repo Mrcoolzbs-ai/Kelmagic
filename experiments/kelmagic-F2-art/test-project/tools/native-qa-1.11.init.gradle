@@ -1,0 +1,1 @@
+allprojects {afterEvaluate {neoForge.runs.client {systemProperty 'kelmagic.visualQA','true';systemProperty 'kelmagic.locateQA','true';systemProperty 'kelmagic.visualQA.end','30';programArgument '--width';programArgument '1280';programArgument '--height';programArgument '900'}}}

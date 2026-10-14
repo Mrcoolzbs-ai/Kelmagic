@@ -1,0 +1,1 @@
+Продолжайте /data/KelMagic, релиз 1.12.0. Прочитайте START_HERE.md, HANDOFF.md, COMMANDS.md и docs/architecture/VERIFICATION-1.12.0.md. Не перезаписывайте новые ресурсы старыми генераторами. Не используйте исторические проверки как результаты нового релиза. Не запускать native client и GameTestServer одновременно на4GB RAM.

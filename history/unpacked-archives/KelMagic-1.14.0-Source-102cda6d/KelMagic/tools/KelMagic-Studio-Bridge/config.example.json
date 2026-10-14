@@ -1,0 +1,8 @@
+{
+  "comfyUIBaseUrl": "http://127.0.0.1:8188",
+  "blockbenchExe": "",
+  "pixeloramaExe": "",
+  "bridgeHost": "127.0.0.1",
+  "bridgePort": 18765,
+  "blockbenchToken": "kelmagic-studio-bridge-local-v1"
+}

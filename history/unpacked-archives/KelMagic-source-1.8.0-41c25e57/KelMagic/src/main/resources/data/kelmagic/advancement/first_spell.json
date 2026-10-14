@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "kelmagic:scripter"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.first_spell.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.first_spell.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ],
+  "parent": "kelmagic:first_word"
+}

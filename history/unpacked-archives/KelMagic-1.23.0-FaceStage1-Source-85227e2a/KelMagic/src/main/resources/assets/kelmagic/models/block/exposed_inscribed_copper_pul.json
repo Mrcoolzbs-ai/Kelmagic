@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kelmagic:block/exposed_inscribed_copper_pul"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/arcane_boots",
+    "layer2": "kelmagic:item/vanilla_trims/boots_quartz"
+  }
+}

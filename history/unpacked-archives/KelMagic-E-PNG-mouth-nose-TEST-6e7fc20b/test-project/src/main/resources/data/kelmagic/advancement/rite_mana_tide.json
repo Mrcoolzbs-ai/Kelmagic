@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:combination",
+  "display": {
+    "icon": {
+      "id": "kelmagic:mana_core"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.rite_mana_tide.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.rite_mana_tide.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

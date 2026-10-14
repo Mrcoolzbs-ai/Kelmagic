@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.kelmagic.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EntityFlameMixin",
+    "ScreenFlameMixin",
+    "ArchivistClothesMixin",
+    "SpectralLocalPlayerMixin",
+    "SpectralElytraLayerMixin",
+    "MagicTrimMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "ArcaneFireLootMixin",
+    "PiglinWoolMixin",
+    "SpectralFlightMixin",
+    "SpectralPlayerMixin",
+    "SinglePoolElementAccessor",
+    "ArchiveLocateMixin",
+    "ArchiveChunkAccess",
+    "ArchiveCommandMixin"
+  ]
+}

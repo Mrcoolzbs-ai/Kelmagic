@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NCA",
+    "HES",
+    "ACN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "minecraft:end_crystal"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "E": {
+      "item": "minecraft:dragon_egg"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "id": "kelmagic:dragon_heart",
+    "count": 1
+  }
+}

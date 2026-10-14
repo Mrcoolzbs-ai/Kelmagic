@@ -1,0 +1,7 @@
+{
+  "textSecretLikeMatchesPathsOnly": [],
+  "nestedArchiveMatches": [],
+  "gitEntriesInHistoryArchives": 0,
+  "gitDirectoriesFound": [],
+  "note": "Heuristic scan, not a guarantee; credentials/account filenames excluded, no environment or credential-store capture."
+}

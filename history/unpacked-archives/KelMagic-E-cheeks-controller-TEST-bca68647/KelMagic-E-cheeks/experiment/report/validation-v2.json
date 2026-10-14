@@ -1,0 +1,11 @@
+{
+  "checks": 12784,
+  "neutralGeometry": "identical positions to D, subdivided only",
+  "neutralTexture": "intentional local U reversal of source panel 63; NOT pixel-identical to erroneous D",
+  "atlasSHA256": "35418b8b032f5dc3ea613f48a5d3a254fcd0a9bddde55ec452dcb63b358f3692",
+  "allProtectedBonesUnchanged": true,
+  "uvSourceAnchoring": true,
+  "bbRestMatchesExport": true,
+  "noFoldMaxAmplitude": true,
+  "blushRigidPlateau": true
+}

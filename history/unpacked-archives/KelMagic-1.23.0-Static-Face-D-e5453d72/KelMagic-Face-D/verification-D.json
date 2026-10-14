@@ -1,0 +1,148 @@
+{
+  "working_manifest_verified": 10805,
+  "working_changes": [],
+  "protected_B_C_Original_changes": [],
+  "bones_preserved": 64,
+  "nonface_bones_identical": 52,
+  "animations_identical": 29,
+  "export_vertices_pivots_rotation_uv_roundtrip": "PASS",
+  "texture_embedded_external_match": "PASS",
+  "static_gaze_target": [
+    0,
+    28.2,
+    -128.0
+  ],
+  "eyes": {
+    "left": {
+      "parent_chain": [
+        "pupil_left",
+        "head",
+        "body",
+        "root"
+      ],
+      "parent_rotations": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bone_pivot": [
+        1.95,
+        28.2,
+        -3.61
+      ],
+      "geometry_pupil_center_geo": [
+        1.7000000000000002,
+        28.2,
+        -3.91
+      ],
+      "pupil_minus_iris_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visible_aperture": {
+        "visible_interval_geo_x": [
+          0.56,
+          2.84
+        ],
+        "visible_center_geo_x": 1.7,
+        "y": 28.2
+      },
+      "offset_from_visible_aperture_center": 2.220446049250313e-16,
+      "normal_in_renderer_world": [
+        0.013698448643290267,
+        0.0,
+        -0.9999061718505228
+      ],
+      "focus_point_error": 2.220446049250313e-16,
+      "pupil_pixel_center": [
+        10.0,
+        10.0
+      ],
+      "pupil_within_iris": true
+    },
+    "right": {
+      "parent_chain": [
+        "pupil_right",
+        "head",
+        "body",
+        "root"
+      ],
+      "parent_rotations": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bone_pivot": [
+        -1.9500000000000002,
+        28.2,
+        -3.61
+      ],
+      "geometry_pupil_center_geo": [
+        -1.7000000000000002,
+        28.2,
+        -3.91
+      ],
+      "pupil_minus_iris_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visible_aperture": {
+        "visible_interval_geo_x": [
+          -2.84,
+          -0.56
+        ],
+        "visible_center_geo_x": -1.7,
+        "y": 28.2
+      },
+      "offset_from_visible_aperture_center": -2.220446049250313e-16,
+      "normal_in_renderer_world": [
+        -0.013698448643290267,
+        0.0,
+        -0.9999061718505228
+      ],
+      "focus_point_error": 2.220446049250313e-16,
+      "pupil_pixel_center": [
+        10.0,
+        10.0
+      ],
+      "pupil_within_iris": true
+    }
+  },
+  "client_test": false
+}

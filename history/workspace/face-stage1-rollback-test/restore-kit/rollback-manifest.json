@@ -1,0 +1,109 @@
+{
+  "original_source_sha256": "1ece0e5414befed088f08dab5db528bab9a594c3eb0f25f7f67c73e3b263b70b",
+  "files": {
+    "art/red-mage/red_mage.geo.json": {
+      "after": "b6ff0bfeb0f48d4501474f35ddbb9cfeb89af67dbd5baedf9aad7634240b4ce1",
+      "before": "31c953b3654469923c093bcdec19dc1fb5d984adc7799193c5e5db97d6591122"
+    },
+    "art/red-mage/red_mage_gecko.bbmodel": {
+      "after": "ba238be325dc3b215c66e6df0afd8dd7cf711aa9164de1a63d34db1ff0f5061e",
+      "before": "d6eb83d5edaf454477ae16b96d0be2f9973015302841416a3ebe351838d5edb4"
+    },
+    "docs/design/FACE-STAGE1-1.23.0.md": {
+      "after": "b1e27346e1af108c281785bd10ced16d5a7bacde8e62eed875f4dab20b44bc82",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/after-angle45-cutaway.png": {
+      "after": "d7f3e0bf547e3880e37e3e68c7df8ad5764f060a4cf009eea496bf6b1cb49353",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/after-angle45.png": {
+      "after": "8dc45d7abeca50bab036c8cf7fcc80d3fcbc9d371821669349132c7eeeeb3687",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/after-front.png": {
+      "after": "6113d4629522d715ae8eb479b31a30f0088d804c70b1f13a923076af39bddeee",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/after-side-cutaway.png": {
+      "after": "b18d7e963e7a3de52836f4a2edb7137af767f17bcdf875364601ea96744a3703",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/after-side.png": {
+      "after": "ae4bc1ae6e9d9c5e06bbc4f4c640dcb5f0666f94e17bfde4d11f529f0682f61f",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/before-angle45-cutaway.png": {
+      "after": "bb0e7f7890980dd1bbeb0c0604bc0f2c840eb4930d112fbb9405d708971bca21",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/before-angle45.png": {
+      "after": "7f0302af94f44d4294ab047e94cc602d6a944cb91bba0aa4927167aceeb80ba6",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/before-front.png": {
+      "after": "4bab276a09790423c4c8bf1e9c256d453361efeb4b24692697ae235655f73dcd",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/before-side-cutaway.png": {
+      "after": "b3b3aeb0274e5cf0696b24c881fbb1f996ab70b476cde471e4c5131efd4b89f2",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/before-side.png": {
+      "after": "ae4bc1ae6e9d9c5e06bbc4f4c640dcb5f0666f94e17bfde4d11f529f0682f61f",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/build-and-tests.log": {
+      "after": "5f34fe9a2c91c1d7b37648af0e4a7500c51a4b89057ab038cc51d90462992c4b",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/comparison-angle45-cutaway.png": {
+      "after": "c04efac9678d57f34de6b4a3468270258dea30775e628790c4b9f9f300d2067b",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/comparison-angle45.png": {
+      "after": "861f1a639bdf8076204b093a04e9a4c85e6aab673836580c72f237d7357e1eaf",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/comparison-front.png": {
+      "after": "0df3c9c91ba984e4b25671178700ee9568921b9a1a9feaf38643d95fe7cd88f9",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/comparison-side-cutaway.png": {
+      "after": "4f8a89c1c93cbdbf0e32ccc846a27cf6ee85726799145896aba8f760980b0eb7",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/render_face.py": {
+      "after": "736d0f5516929f334791d0f58f6dbf03b9922937290b73982f4e1984a8fc65b2",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/resource-verification.txt": {
+      "after": "02a816879607c45a77676058ecbfa3b87a40d4d10e127625ce39cc5ce655cdc9",
+      "before": null
+    },
+    "docs/qa/face-stage1-1.23.0/scope-verification.txt": {
+      "after": "082002e93aba7246faaacc6fb614e01f130b4669f5904b1f252348195802d36e",
+      "before": null
+    },
+    "src/main/resources/assets/kelmagic/geo/red_mage.geo.json": {
+      "after": "b6ff0bfeb0f48d4501474f35ddbb9cfeb89af67dbd5baedf9aad7634240b4ce1",
+      "before": "31c953b3654469923c093bcdec19dc1fb5d984adc7799193c5e5db97d6591122"
+    },
+    "tools/generate_mascot_1_23.py": {
+      "after": "0962312afd3701c451071b24bc857ba3c3bc67ced0aebceb9bf0f224f85148f8",
+      "before": "a42ed9f89fabdabd20cc0a9d1cc100a180372fb625a5ac17fa0c39fb9b49dafa"
+    },
+    "tools/mascot_static_face_stage1_1_23.py": {
+      "after": "6895b9d65c803187785198267b7bcd4a2e982c01d8b15275ff5bc6593a6b3623",
+      "before": null
+    },
+    "tools/mascot_surface_fixes_1_23.py": {
+      "after": "a2ca5c0ce2263009633f5feea2e82efd575ba13c66786cfedaa1fa904bd1996d",
+      "before": "5405616a63fda14f7a1eab333ef163b2c694e65a3a45781a9f154ff69054c0ae"
+    },
+    "tools/verify_static_face_stage1_1_23.py": {
+      "after": "7f321c01f2599fcfba1301e80d2723ccbb03e31669aff60ae6dc26ad6454f6b1",
+      "before": null
+    }
+  }
+}

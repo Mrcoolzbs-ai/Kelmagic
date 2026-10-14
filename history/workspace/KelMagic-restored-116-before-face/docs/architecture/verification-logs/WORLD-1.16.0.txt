@@ -1,0 +1,1 @@
+PASS: clean survival world/player, health20, flight off, spawn42/-60/-12, empty research, 23 valid codex words, starter paper/materials/manuscript/found scripter, matching player file; prior player logs removed.

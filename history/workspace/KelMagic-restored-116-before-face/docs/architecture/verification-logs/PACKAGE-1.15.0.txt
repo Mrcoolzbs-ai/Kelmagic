@@ -1,0 +1,8 @@
+JAR CRC PASS; 9994 resources match; no Qa classes; catalog 33 nodes
+ZIP CRC PASS
+a8b9f2094223bec1261f7cc2ec16c3570d442704c9ee049d71a86775aa660c79  KelMagic-1.15.0-COMMANDS.md
+34ca94dc8f827c9dd21887aa5a0ba0c2f0a0b1017dfb920ae24dc38bd79732cb  KelMagic-1.15.0-READ-ME.md
+eeb692b3e2ed95531d6c37250218d547f5286a674f67ea8fda0828ccb64c3417  KelMagic-1.15.0-Research-Guide.md
+ee746bc66079f7e5980341596952b1a27e97260fe941cc95608bafb6863f724f  KelMagic-1.15.0-Source.zip
+86c62a6e70dd22e95f388fa7b31b2e58a0a6848cdd0b144634c111951c65d983  KelMagic-1.15.0-Test-World.zip
+87e18ad5ffb8a9bf4af6de7b1f624aaebf42384d87f448c5b8eda9e015e92642  kelmagic-1.15.0.jar

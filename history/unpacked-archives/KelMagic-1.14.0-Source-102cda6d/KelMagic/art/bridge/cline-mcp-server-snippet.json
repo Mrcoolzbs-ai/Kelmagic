@@ -1,0 +1,18 @@
+﻿{
+    "mcpServers":  {
+                       "kelmagicStudio":  {
+                                              "command":  "node",
+                                              "args":  [
+                                                           "C:\\Projects\\KelMagic\\tools\\KelMagic-Studio-Bridge\\server.js"
+                                                       ],
+                                              "env":  {
+                                                          "KELMAGIC_ROOT":  "C:\\Projects\\KelMagic",
+                                                          "KELMAGIC_CONFIG":  "C:\\Projects\\KelMagic\\tools\\KelMagic-Studio-Bridge\\config.json"
+                                                      },
+                                              "disabled":  false,
+                                              "autoApprove":  [
+
+                                                              ]
+                                          }
+                   }
+}

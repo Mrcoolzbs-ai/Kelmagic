@@ -1,0 +1,4 @@
+allprojects { afterEvaluate {
+ neoForge.runs.client {systemProperty 'kelmagic.visualQA','true'; programArgument '--width';programArgument '1280';programArgument '--height';programArgument '900'}
+ tasks.named('jar'){exclude('dev/kelmagic/client/Qa110*')}
+} }

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "kelmagic:magic_cloth"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.magic_cloth.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.magic_cloth.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ],
+  "parent": "kelmagic:golden_thread"
+}

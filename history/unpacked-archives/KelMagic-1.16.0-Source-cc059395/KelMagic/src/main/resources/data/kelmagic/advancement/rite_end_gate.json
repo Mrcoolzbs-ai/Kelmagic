@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:combination",
+  "display": {
+    "icon": {
+      "id": "kelmagic:manuscript_dor"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.rite_end_gate.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.rite_end_gate.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

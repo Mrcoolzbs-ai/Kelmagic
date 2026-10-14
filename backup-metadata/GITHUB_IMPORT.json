@@ -1,0 +1,122 @@
+{
+  "sourceArchive": "KelMagic_FULL_BACKUP.zip",
+  "sourceArchiveBytes": 1770849145,
+  "sourceArchiveSHA256": "a2f19953c2e288cb24c4198cd64fb485d7c69293d64bae7b5e8be8c25509e199",
+  "originalPayloadFilesVerified": 93070,
+  "archivedFilesEdited": false,
+  "historicalZIPsUnpackedForSource": [
+    {
+      "archive": "history/source-archives/KelMagic-1.23.0-Face-ABC-Studies.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.23.0-Face-ABC-Studies-1ff94436",
+      "sourceFilesExtracted": 52
+    },
+    {
+      "archive": "history/source-archives/KelMagic-1.23.0-Static-Face-D.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.23.0-Static-Face-D-e5453d72",
+      "sourceFilesExtracted": 56
+    },
+    {
+      "archive": "history/source-archives/KelMagic-E-PNG-mouth-nose-TEST.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-E-PNG-mouth-nose-TEST-6e7fc20b",
+      "sourceFilesExtracted": 10537
+    },
+    {
+      "archive": "history/source-archives/KelMagic-E-cheeks-controller-TEST.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-E-cheeks-controller-TEST-bca68647",
+      "sourceFilesExtracted": 10494
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.10.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.10.0-b96b9199",
+      "sourceFilesExtracted": 3982
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.12.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.12.0-d2c8e349",
+      "sourceFilesExtracted": 2671
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.13.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.13.0-29a11974",
+      "sourceFilesExtracted": 2686
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.5.1.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.5.1-5b05c085",
+      "sourceFilesExtracted": 322
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.6.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.6.0-df91f84f",
+      "sourceFilesExtracted": 687
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.7.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.7.0-2f3e5247",
+      "sourceFilesExtracted": 751
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.8.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.8.0-41c25e57",
+      "sourceFilesExtracted": 841
+    },
+    {
+      "archive": "history/source-archives/KelMagic-source-1.9.0.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-source-1.9.0-12519a2c",
+      "sourceFilesExtracted": 1005
+    },
+    {
+      "archive": "history/workspace/KelMagic-stage1-rollback/KelMagic-1.23.0-before-face.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.23.0-before-face-c15cf342",
+      "sourceFilesExtracted": 10733
+    },
+    {
+      "archive": "history/workspace/release-1.14.0/KelMagic-1.14.0-Source.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.14.0-Source-102cda6d",
+      "sourceFilesExtracted": 5904
+    },
+    {
+      "archive": "history/workspace/release-1.14.0/KelMagic-1.14.0-Test-World.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.14.0-Test-World-6b484e48",
+      "sourceFilesExtracted": 28
+    },
+    {
+      "archive": "history/workspace/release-1.14.1/KelMagic-1.14.1-Source.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.14.1-Source-0d9020a3",
+      "sourceFilesExtracted": 5918
+    },
+    {
+      "archive": "history/workspace/release-1.14.1/KelMagic-1.14.1-Test-World.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.14.1-Test-World-d44076a9",
+      "sourceFilesExtracted": 30
+    },
+    {
+      "archive": "history/workspace/release-1.16.0/KelMagic-1.16.0-Source.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.16.0-Source-cc059395",
+      "sourceFilesExtracted": 10560
+    },
+    {
+      "archive": "history/workspace/release-1.16.0/KelMagic-1.16.0-Test-World.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.16.0-Test-World-2dc24c27",
+      "sourceFilesExtracted": 27
+    },
+    {
+      "archive": "history/workspace/release-face-stage1/KelMagic-1.23.0-FaceStage1-Rollback.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.23.0-FaceStage1-Rollback-2018a439",
+      "sourceFilesExtracted": 8
+    },
+    {
+      "archive": "history/workspace/release-face-stage1/KelMagic-1.23.0-FaceStage1-Source.zip",
+      "sourceDirectory": "history/unpacked-archives/KelMagic-1.23.0-FaceStage1-Source-85227e2a",
+      "sourceFilesExtracted": 10753
+    }
+  ],
+  "policy": "Binary packages, generated builds/runtime data, caches and credentials excluded from Git; source ZIP contents extracted separately. Local /data/KelMagic checkout and its main branch kept unchanged.",
+  "F2": "Recovered snapshot from backup; unapproved and not integrated. See archived RECOVERY.md.",
+  "candidateSourceFilesBeforeCommit": 148655,
+  "excludedIndividualFiles": 478,
+  "sourceByteSecretsScan": "passed for all candidate files",
+  "sourceFileLimit100MiB": "passed",
+  "GitIgnoreOverride": "Initial import explicitly retains all policy-selected source files including hidden build/IDE configs despite historical nested gitignore rules.",
+  "GitTextAttributes": "Existing archived .gitattributes may normalize text line endings; source files on disk and binary art are not edited."
+}

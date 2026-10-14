@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:combination",
+  "display": {
+    "icon": {
+      "id": "kelmagic:dragon_heart"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.rite_transcend.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.rite_transcend.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

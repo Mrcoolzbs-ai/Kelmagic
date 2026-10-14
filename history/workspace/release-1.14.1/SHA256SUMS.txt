@@ -1,0 +1,6 @@
+a0e0e9af8a546ad47b0625f8445c2e10e814b1d70d8cbd5136e29ae25c213d51  KelMagic-1.14.1-COMMANDS.md
+80c0cc9bde04b9ae61b068dc90b03a47d47c3e6d3df8e16d83d631b5102098ce  KelMagic-1.14.1-READ-ME.md
+885ef3dbb0af3fb36faf5d56913376159ebd99b2b96bb12144afa931c3108998  KelMagic-1.14.1-Source.zip
+d444460a4374aaf34de671cbbc7b9c7f7ef57cf2fc8feee32213ff50efb6f68d  KelMagic-1.14.1-Test-World.zip
+cc6dcbdbe76e1aa2d9002bd6ab9914a388edd38b85dff2d6b46446b3ddf990ce  KelMagic-Research-Proposal.md
+6713cdb3b37404e27abff9bd2dbda17a2f4b05461de2b12f531aba59ee6ec19a  kelmagic-1.14.1.jar

@@ -1,0 +1,31 @@
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void allEntityProfilesExecuteWithSuitableTargets(GameTestHelper h){
+        var p=player(h);var mob=h.spawnWithNoFreeWill(EntityType.ZOMBIE,3.5f,1,6.5f);int checked=0;
+        for(var entry:SpellProfiles.ALL.entrySet()){
+            var a=entry.getValue().action();if(a.startsWith("W_")||java.util.Set.of("OPEN","CLOSE","TURN").contains(a))continue;
+            p.setPos(h.absoluteVec(new Vec3(3.5,1,1.5)));p.setXRot(60);p.removeAllEffects();p.setHealth(10);p.invulnerableTime=0;p.setDeltaMovement(Vec3.ZERO);p.getFoodData().setFoodLevel(5);p.getFoodData().setSaturation(0);p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.APPLE));p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.COBBLESTONE));
+            p.addEffect(new net.minecraft.world.effect.MobEffectInstance(MobEffects.POISON,100));p.addEffect(new net.minecraft.world.effect.MobEffectInstance(MobEffects.WEAKNESS,100));p.addEffect(new net.minecraft.world.effect.MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,100));p.addEffect(new net.minecraft.world.effect.MobEffectInstance(MobEffects.DARKNESS,100));
+            mob.setItemSlot(net.minecraft.world.entity.EquipmentSlot.MAINHAND,net.minecraft.world.item.ItemStack.EMPTY);
+            if(a.equals("MEND")){var armor=new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.IRON_HELMET);armor.setDamageValue(12);p.setItemSlot(net.minecraft.world.entity.EquipmentSlot.HEAD,armor);}
+            if(a.equals("BAKE"))p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.WHEAT,3));
+            if(a.equals("COOK"))p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.BEEF));
+            if(a.equals("READ")){var writer=dev.kelmagic.MagicContent.SCRIPTER.toStack();writer.set(dev.kelmagic.MagicComponents.SPELL.get(),java.util.List.of("rap"));p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,writer);}
+            if(a.equals("SPELL_INFO")){var codex=dev.kelmagic.MagicArchive.CODEX.toStack();codex.set(dev.kelmagic.MagicComponents.CODEX_WORDS.get(),java.util.List.of("rap"));p.setItemInHand(net.minecraft.world.InteractionHand.OFF_HAND,codex);}
+            if(a.equals("COLLECT")||a.equals("SCAN_ITEMS")){var at=p.position().add(.5,0,.5);var item=new net.minecraft.world.entity.item.ItemEntity(h.getLevel(),at.x,at.y,at.z,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.COBBLESTONE));item.setNoPickUpDelay();h.getLevel().addFreshEntity(item);}
+            if(a.equals("EXIT"))p.setPos(h.absoluteVec(new Vec3(3.5,1,5.5)));
+            boolean result;
+            if(java.util.Set.of("PACIFY","HOSTILE","COMMAND","FEAR","LEAD","GIVE").contains(a))result=EntitySpells.apply(p,mob,a,240,entry.getValue().power(),1);
+            else if(a.equals("SCAN_PLAYERS"))result=EntitySpells.apply(p,p,a,240,1,1);
+            else result=SpellEffects.execute(p,SpellParser.plan(java.util.List.of("mina",entry.getKey())));
+            h.assertTrue(result,"entity or utility effect "+entry.getKey()+" / "+a);checked++;
+        }h.assertTrue(checked>=90,"broad differentiated entity and utility coverage");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void shatterHasNoLootAndCannotBreakBedrock(GameTestHelper h){
+        var p=player(h);var pos=new BlockPos(5,1,5);h.setBlock(pos,Blocks.STONE);h.assertTrue(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lom")),SpellProfiles.ALL.get("lom")),"shatter works on soft stone");h.assertTrue(h.getLevel().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,new net.minecraft.world.phys.AABB(h.absolutePos(pos)).inflate(1)).isEmpty(),"shattering differs from mining: no loot");h.setBlock(pos,Blocks.BEDROCK);h.assertFalse(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lom")),SpellProfiles.ALL.get("lom")),"negative hardness never treated as soft");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void luConstructionAndGardenHaveRealShapes(GameTestHelper h){
+        var p=player(h);var aim=blockAim(h,new BlockPos(5,0,5));h.assertTrue(WorldSpells.execute(p,aim,SpellParser.plan(java.util.List.of("lu","nok")),SpellProfiles.ALL.get("nok")),"lu expands creation");h.assertTrue(h.getBlockState(new BlockPos(4,1,4)).is(Blocks.STONE)&&h.getBlockState(new BlockPos(6,1,6)).is(Blocks.STONE),"3 by 3 shape");
+        for(int x=4;x<=6;x++)for(int z=4;z<=6;z++){h.setBlock(x,1,z,Blocks.AIR);h.setBlock(x,0,z,Blocks.DIRT);}var plan=SpellParser.plan(java.util.List.of("ter","pel","vak"));h.assertTrue(WorldSpells.synergy(p,plan,aim),"garden creates irrigation");h.assertTrue(h.getBlockState(new BlockPos(5,0,5)).is(Blocks.WATER)&&h.getBlockState(new BlockPos(4,1,4)).is(Blocks.WHEAT),"center water and planted farmland");h.succeed();
+    }

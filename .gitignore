@@ -1,0 +1,41 @@
+# Git publication of the complete backup source tree; originals remain in the ZIP.
+.gradle/
+.cache/
+__pycache__/
+node_modules/
+build/
+out/
+run/
+dist/
+*.class
+*.pyc
+*.log
+*.pid
+*.lock
+*.jar
+*.zip
+*.zip.*
+*.7z
+*.tar
+*.gz
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+.env
+.env.*
+credentials.json
+launcher_accounts.json
+launcher_profiles.json
+usercache.json
+usernamecache.json
+servers.dat
+# Keep small Gradle bootstrap JARs, not mod/dependency packages.
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# Saved-world binary state, not application source.
+*.mca
+*.mcc
+*.dat
+*.dat_old

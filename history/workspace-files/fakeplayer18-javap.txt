@@ -1,0 +1,75 @@
+Compiled from "FakePlayer.java"
+public class net.neoforged.neoforge.common.util.FakePlayer extends net.minecraft.server.level.ServerPlayer {
+  public net.neoforged.neoforge.common.util.FakePlayer(net.minecraft.server.level.ServerLevel, com.mojang.authlib.GameProfile);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #1                  // Method net/minecraft/server/level/ServerLevel.getServer:()Lnet/minecraft/server/MinecraftServer;
+       5: aload_1
+       6: aload_2
+       7: invokestatic  #7                  // Method net/minecraft/server/level/ClientInformation.createDefault:()Lnet/minecraft/server/level/ClientInformation;
+      10: invokespecial #13                 // Method net/minecraft/server/level/ServerPlayer."<init>":(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerLevel;Lcom/mojang/authlib/GameProfile;Lnet/minecraft/server/level/ClientInformation;)V
+      13: aload_0
+      14: new           #19                 // class net/neoforged/neoforge/common/util/FakePlayer$FakePlayerNetHandler
+      17: dup
+      18: aload_1
+      19: invokevirtual #1                  // Method net/minecraft/server/level/ServerLevel.getServer:()Lnet/minecraft/server/MinecraftServer;
+      22: aload_0
+      23: invokespecial #21                 // Method net/neoforged/neoforge/common/util/FakePlayer$FakePlayerNetHandler."<init>":(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/server/level/ServerPlayer;)V
+      26: putfield      #24                 // Field connection:Lnet/minecraft/server/network/ServerGamePacketListenerImpl;
+      29: return
+
+  public void displayClientMessage(net.minecraft.network.chat.Component, boolean);
+    Code:
+       0: return
+
+  public void awardStat(net.minecraft.stats.Stat<?>, int);
+    Code:
+       0: return
+
+  public boolean isInvulnerableTo(net.minecraft.world.damagesource.DamageSource);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public boolean canHarmPlayer(net.minecraft.world.entity.player.Player);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public void die(net.minecraft.world.damagesource.DamageSource);
+    Code:
+       0: return
+
+  public void tick();
+    Code:
+       0: return
+
+  public void updateOptions(net.minecraft.server.level.ClientInformation);
+    Code:
+       0: return
+
+  public java.util.OptionalInt openMenu(net.minecraft.world.MenuProvider, java.util.function.Consumer<net.minecraft.network.RegistryFriendlyByteBuf>);
+    Code:
+       0: invokestatic  #30                 // Method java/util/OptionalInt.empty:()Ljava/util/OptionalInt;
+       3: areturn
+
+  public void openHorseInventory(net.minecraft.world.entity.animal.horse.AbstractHorse, net.minecraft.world.Container);
+    Code:
+       0: return
+
+  public boolean startRiding(net.minecraft.world.entity.Entity, boolean);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public net.minecraft.server.MinecraftServer getServer();
+    Code:
+       0: invokestatic  #36                 // Method net/neoforged/neoforge/server/ServerLifecycleHooks.getCurrentServer:()Lnet/minecraft/server/MinecraftServer;
+       3: areturn
+
+  public boolean isFakePlayer();
+    Code:
+       0: iconst_1
+       1: ireturn
+}

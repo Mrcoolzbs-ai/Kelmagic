@@ -1,0 +1,8 @@
+{
+    "comfyUIBaseUrl":  "http://127.0.0.1:8188",
+    "blockbenchExe":  "C:\\Program Files\\Blockbench\\Blockbench.exe",
+    "pixeloramaExe":  "C:\\Users\\user\\AppData\\Roaming\\Orama Interactive\\Pixelorama\\Pixelorama.exe",
+    "bridgeHost":  "127.0.0.1",
+    "bridgePort":  18765,
+    "blockbenchToken":  "kelmagic-studio-bridge-local-v1"
+}

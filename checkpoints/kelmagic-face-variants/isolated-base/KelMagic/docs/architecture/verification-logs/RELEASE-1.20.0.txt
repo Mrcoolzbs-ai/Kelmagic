@@ -1,0 +1,5 @@
+PASS: JAR CRC; 10041 source resources match byte-for-byte; no developer Qa classes; mod version1.20.0; GeckoLib dependency; fixed floor/wall cutout models.
+PASS: 67127 core regression checks; all179 required GameTests (including throne, scene persistence and synchronized speech).
+PASS: native Minecraft/GeckoLib client completed32 scene stages and34 screenshots; repeated short check after final pose edits.
+PASS: floor/wall lights transformed by production MagicTransformation; four legacy/transformed baked models report cutout. Visual comparisons show no black opaque planes.
+Environment limitation: local machine has no audio output/narrator service; audio playback was not verified.

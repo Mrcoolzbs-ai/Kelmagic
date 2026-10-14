@@ -1,0 +1,18 @@
+{
+  "front": {
+    "changedPixels": 0,
+    "maxDifference": 0
+  },
+  "angle45": {
+    "changedPixels": 0,
+    "maxDifference": 0
+  },
+  "diagnostic-front": {
+    "changedPixels": 0,
+    "maxDifference": 0
+  },
+  "diagnostic45": {
+    "changedPixels": 0,
+    "maxDifference": 0
+  }
+}

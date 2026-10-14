@@ -1,0 +1,12 @@
+# Передача KelMagic 1.18.0
+Minecraft 1.21.1 / NeoForge 21.1.256 / Java21, протокол9. Прочитать START_HERE.md и VERIFICATION-1.18.0.md.
+- Продолжение 1.17, не новый проект. 31 узел, 180 слов, существующие рецепты и медные data maps сохранены.
+- MagicResonance/resonance/: mana_block (9 cores, animated texture), resonance_station (persistent 9 single-object slots). ResonanceEntity: authoritative match of central+outer multiset, own last-step paper and known word; 100ticks per ring object, staged consumption, saved order/cursor/UUID/evidence. Menu locked while active; owner offline/missing paper/dead pauses. No automation capability added.
+- MagicServer.chat invokes spoken before normal session append; nearest matching station within4 blocks. Unknown/wrong-word ordinary spells retain old path. Research.canThink server gate and CodexScreen known gate must stay aligned.
+- Catalog.Step fields word/center/result added. All18 accessible paths end in kind resonance. sample/old table won't advance that kind. Prior completed evidence preserved. Cloth starts loom not wool. Armor wear signals run via player tick, leggings use positional displacement, not server velocity.
+- Client ResonanceRenderer: four hoppers in .39radius, .13scale, wide ends inward. Ring samples displayed at .29radius, one center. Sound waves constrained to column; spin smoothly accelerates/decelerates. Block synchronization sends inventory plus progress. UI uses single-item slots.
+- First NPC MagicCreatures/RedMage/RedMageModel/Renderer, standalone MageDynamics and client toggles. Full2.5block height includes hat; body2blocks. No natural spawn/trade/combat. Art model26parts, source skin head preserved. Generate_red_mage_1_18 builds Java+atlas+Blockbench; original skin is copied in art.
+- tools/generate_resonance_1_18.py generates block models/textures/recipes/entry paper. tools/research_resonance_1_18.py rewrites current catalog; don't run historical generators over new catalog.
+- QaResonance and all Qa* excluded from JAR. Native runs use tools/native-resonance-1.18.init.gradle, KelMagicResearch118. Test world final reset keeps empty research/survival/15 words and station/NPC/materials.
+- No actual multiblock merge implemented. Station is a single-block construction, not a claim of a completed multiblock.
+- 4GB RAM: native client and GameTest server sequential. Package only after clean shutdown; JAR+ZIP CRC, resource byte matches, no Qa. Historical docs aren't current behavior.

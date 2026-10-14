@@ -1,0 +1,183 @@
+{
+    "steps":  [
+                  {
+                      "args":  {
+                                   "output":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel",
+                                   "name":  "KelMagic Crystal Test",
+                                   "width":  16,
+                                   "height":  16
+                               },
+                      "command":  "project.create"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  1,
+                                   "color":  "#37205f",
+                                   "x2":  9,
+                                   "x1":  7,
+                                   "y1":  1,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  3,
+                                   "color":  "#37205f",
+                                   "x2":  5,
+                                   "x1":  7,
+                                   "y1":  1,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  3,
+                                   "color":  "#37205f",
+                                   "x2":  11,
+                                   "x1":  9,
+                                   "y1":  1,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  5,
+                                   "color":  "#37205f",
+                                   "x2":  4,
+                                   "x1":  5,
+                                   "y1":  3,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  5,
+                                   "color":  "#37205f",
+                                   "x2":  12,
+                                   "x1":  11,
+                                   "y1":  3,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  8,
+                                   "color":  "#37205f",
+                                   "x2":  4,
+                                   "x1":  4,
+                                   "y1":  5,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  8,
+                                   "color":  "#37205f",
+                                   "x2":  12,
+                                   "x1":  12,
+                                   "y1":  5,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  12,
+                                   "color":  "#37205f",
+                                   "x2":  7,
+                                   "x1":  4,
+                                   "y1":  8,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  12,
+                                   "color":  "#37205f",
+                                   "x2":  9,
+                                   "x1":  12,
+                                   "y1":  8,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  12,
+                                   "color":  "#37205f",
+                                   "x2":  9,
+                                   "x1":  7,
+                                   "y1":  12,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y":  6,
+                                   "color":  "#28bfe8",
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel",
+                                   "x":  8
+                               },
+                      "command":  "fill.area"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  8,
+                                   "color":  "#c1fbff",
+                                   "x2":  6,
+                                   "x1":  6,
+                                   "y1":  4,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  6,
+                                   "color":  "#e0ffff",
+                                   "x2":  7,
+                                   "x1":  7,
+                                   "y1":  3,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  9,
+                                   "color":  "#6b46c1",
+                                   "x2":  10,
+                                   "x1":  8,
+                                   "y1":  7,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "y2":  11,
+                                   "color":  "#9a73ff",
+                                   "x2":  8,
+                                   "x1":  8,
+                                   "y1":  10,
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel"
+                               },
+                      "command":  "draw.line"
+                  },
+                  {
+                      "args":  {
+                                   "project":  "C:\\Projects\\KelMagic\\art\\pixelorama\\piskel_cli_crystal_test.piskel",
+                                   "output":  "C:\\Projects\\KelMagic\\art\\generated\\bridge-test\\piskel_cli_crystal_test.png"
+                               },
+                      "command":  "export.png"
+                  }
+              ]
+}

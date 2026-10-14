@@ -1,0 +1,9 @@
+{
+  "allFourOutputsIdentical": true,
+  "sha256": {
+    "red_mage.geo.json": "49cd56d6634017b66cfe233e5ea1e573cac22ba27afacc0b37c1236639d522b7",
+    "red_mage_geo.png": "35418b8b032f5dc3ea613f48a5d3a254fcd0a9bddde55ec452dcb63b358f3692",
+    "red_mage.animation.json": "8698e05aec494a3cc2d3d8ea9cf846f49cd76253df4ebde7b9095a89d3a50b14",
+    "red_mage_gecko.bbmodel": "d2011fdabbcbfadd71f026cb3f341310d41e9731fa7ed164966d18fb61177465"
+  }
+}

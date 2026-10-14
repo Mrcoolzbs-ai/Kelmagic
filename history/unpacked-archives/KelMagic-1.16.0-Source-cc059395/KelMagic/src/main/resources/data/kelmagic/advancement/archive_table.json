@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:root",
+  "display": {
+    "icon": {
+      "id": "kelmagic:archivist_table"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.archive_table.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.archive_table.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

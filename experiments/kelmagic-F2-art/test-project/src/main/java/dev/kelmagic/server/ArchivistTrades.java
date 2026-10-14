@@ -1,0 +1,7 @@
+package dev.kelmagic.server;
+import dev.kelmagic.*;import net.minecraft.world.item.Items;import net.minecraft.world.entity.npc.VillagerTrades;import net.neoforged.fml.common.EventBusSubscriber;import net.neoforged.bus.api.SubscribeEvent;
+@EventBusSubscriber(modid=KelMagic.MODID)
+public final class ArchivistTrades {
+ private static net.minecraft.world.item.ItemStack manuscript(net.minecraft.world.item.Rarity rarity){var s=MagicArchive.ANCIENT.toStack();s.set(net.minecraft.core.component.DataComponents.RARITY,rarity);return s;}
+ @SubscribeEvent public static void trades(net.neoforged.neoforge.event.village.VillagerTradesEvent e){if(e.getType()!=MagicStudy.ARCHIVIST.get())return;var t=e.getTrades();t.get(1).add(new VillagerTrades.ItemsForEmeralds(Items.BOOK,1,3,16,1));t.get(1).add(new VillagerTrades.ItemsForEmeralds(MagicArchive.CODEX.get(),6,1,8,2));t.get(2).add(new VillagerTrades.ItemsForEmeralds(MagicAudio.CASSETTE.get(),4,1,12,5));t.get(2).add(new VillagerTrades.ItemsForEmeralds(MagicContent.MANA_CORE.get(),8,1,8,5));t.get(3).add(new VillagerTrades.ItemsForEmeralds(MagicContent.SCRIPTER.get(),18,1,4,10));t.get(4).add(new VillagerTrades.ItemsForEmeralds(MagicContent.MANA_CORE.get(),6,2,8,15));t.get(3).add(new VillagerTrades.ItemsForEmeralds(manuscript(net.minecraft.world.item.Rarity.UNCOMMON),16,1,4,10));t.get(4).add(new VillagerTrades.ItemsForEmeralds(manuscript(net.minecraft.world.item.Rarity.RARE),32,1,3,15));t.get(5).add(new VillagerTrades.ItemsForEmeralds(manuscript(net.minecraft.world.item.Rarity.EPIC),48,1,2,30));}
+}

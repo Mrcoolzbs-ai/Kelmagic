@@ -1,0 +1,199 @@
+{
+  "packageId": "com.example.magic_crystal",
+  "packageVersion": "1.0.0",
+  "formatId": "minecraft",
+  "formatName": "Minecraft Java Block/Item",
+  "author": "KelMagic Bridge Test",
+  "description": "Simple magic crystal test model with 7 cubes",
+  "cubes": [
+    {
+      "uuid": "8d26a9e0-5b3c-4f1a-9c2d-e8f7a6b5c4d3",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            3
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -0.5,
+              "y": -1.0,
+              "z": -1.5
+            },
+            "max": {
+              "x": 0.5,
+              "y": 2.0,
+              "z": 1.5
+            }
+          },
+          "texture": null
+        }
+      }
+    },
+    {
+      "uuid": "9e37b0f1-6c4d-5g2b-ad3e-f9g8b7c6d5e4",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -0.5,
+              "y": 2.5,
+              "z": 0.0
+            },
+            "max": {
+              "x": 0.5,
+              "y": 3.5,
+              "z": 1.0
+            }
+          },
+          "texture": null
+        }
+      }
+    },
+    {
+      "uuid": "af48c1g2-7d5e-6h3c-be4f-agh9c8d7e6f5",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -1.0,
+              "y": 2.5,
+              "z": -1.0
+            },
+            "max": {
+              "x": -0.0,
+              "y": 3.5,
+              "z": 0.0
+            }
+          },
+          "texture": null
+        }
+      }
+    },
+    {
+      "uuid": "b059d2h3-8e6f-7i4d-cf5agb0dh9e8f7",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -0.5,
+              "y": 2.5,
+              "z": -2.0
+            },
+            "max": {
+              "x": 0.5,
+              "y": 3.5,
+              "z": -1.0
+            }
+          },
+          "texture": null
+        }
+      }
+    },
+    {
+      "uuid": "c16ae3i4-9f7g-8j5e-dg6bh1ei0f9g8",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -0.5,
+              "y": 3.5,
+              "z": -1.5
+            },
+            "max": {
+              "x": 0.5,
+              "y": 4.5,
+              "z": 1.5
+            }
+          },
+          "texture": null
+        }
+      }
+    },
+    {
+      "uuid": "d27bf4j5-ag8h-9k6f-ei7cj2fj1g0h9",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -2.0,
+              "y": 3.5,
+              "z": -0.5
+            },
+            "max": {
+              "x": -1.0,
+              "y": 4.5,
+              "z": 0.5
+            }
+          },
+          "texture": null
+        }
+      }
+    },
+    {
+      "uuid": "e38cg5k6-bh9i-0l7g-fj8dk3gk2h1i0",
+      "group": "root",
+      "children": [],
+      "geometry": {
+        "mesh": {
+          "shape": [
+            1,
+            1,
+            1
+          ],
+          "boundingBox": {
+            "min": {
+              "x": -2.5,
+              "y": 4.0,
+              "z": 1.0
+            },
+            "max": {
+              "x": -1.5,
+              "y": 5.0,
+              "z": 2.0
+            }
+          },
+          "texture": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "MMM",
+    "M M"
+  ],
+  "key": {
+    "M": {
+      "item": "kelmagic:magic_cloth"
+    }
+  },
+  "result": {
+    "id": "kelmagic:mage_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,5 @@
+allprojects {afterEvaluate {neoForge.runs.client {
+ systemProperty 'kelmagic.cheekQA','true'
+ systemProperty 'kelmagic.cheekQA.output',new File(project.projectDir,'../evidence/native').canonicalPath
+ programArgument '--width';programArgument '960';programArgument '--height';programArgument '720'
+}}}

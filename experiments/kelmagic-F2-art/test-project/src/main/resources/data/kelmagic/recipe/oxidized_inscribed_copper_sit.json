@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:oxidized_copper"
+  },
+  "result": {
+    "id": "kelmagic:oxidized_inscribed_copper_sit",
+    "count": 1
+  }
+}

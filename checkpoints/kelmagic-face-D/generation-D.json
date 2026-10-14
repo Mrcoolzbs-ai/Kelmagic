@@ -1,0 +1,125 @@
+{
+  "version": "1.23.0",
+  "bones": 64,
+  "primitives": 147,
+  "face_primitives": 81,
+  "clips_unchanged": 29,
+  "eyes": {
+    "left": {
+      "bone_parent": "head",
+      "geometry_center_relative_to_bone_pivot": [
+        -0.24999999999999978,
+        0,
+        -0.3
+      ],
+      "iris_front_center": [
+        1.7000000000000002,
+        28.2,
+        -3.91
+      ],
+      "cube_rotation": [
+        0,
+        0.784887841482036,
+        0
+      ],
+      "target": [
+        0,
+        28.2,
+        -128.0
+      ],
+      "north_uv": {
+        "uv": [
+          980,
+          968
+        ],
+        "uv_size": [
+          -20,
+          20
+        ]
+      },
+      "pupil_pixel_bounds": [
+        8,
+        4,
+        12,
+        16
+      ],
+      "iris_pixels": [
+        20,
+        20
+      ]
+    },
+    "right": {
+      "bone_parent": "head",
+      "geometry_center_relative_to_bone_pivot": [
+        0.24999999999999978,
+        0,
+        -0.3
+      ],
+      "iris_front_center": [
+        -1.7000000000000002,
+        28.2,
+        -3.91
+      ],
+      "cube_rotation": [
+        0,
+        -0.784887841482036,
+        0
+      ],
+      "target": [
+        0,
+        28.2,
+        -128.0
+      ],
+      "north_uv": {
+        "uv": [
+          984,
+          968
+        ],
+        "uv_size": [
+          20,
+          20
+        ]
+      },
+      "pupil_pixel_bounds": [
+        8,
+        4,
+        12,
+        16
+      ],
+      "iris_pixels": [
+        20,
+        20
+      ]
+    }
+  },
+  "bevel_angle": 9.2068962213459,
+  "head_bands": [
+    [
+      24,
+      25.5,
+      3.85,
+      -3.88
+    ],
+    [
+      25.5,
+      27.2,
+      3.85,
+      -4.14
+    ],
+    [
+      27.2,
+      29.2,
+      3.92,
+      -3.98
+    ],
+    [
+      29.2,
+      32,
+      4,
+      -3.85
+    ]
+  ],
+  "changed_texels_in_previously_unused_region": 4896,
+  "new_dependencies": false,
+  "main_project_edits": false
+}

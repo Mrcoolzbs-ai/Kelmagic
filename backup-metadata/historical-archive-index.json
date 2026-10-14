@@ -1,0 +1,128 @@
+{
+  "history/source-archives/KelMagic-1.23.0-Face-ABC-Studies.zip": {
+    "size": 1379618,
+    "sha256": "bc78c17d5b53b3bde87b5b09063224511ecbcd1121db759d220317222f8986b8",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-1.23.0-Static-Face-D.zip": {
+    "size": 1425820,
+    "sha256": "5efc3077e7fcd48c5ba3fe083384ff95695527ba708d6ce59c28aac06462a4df",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.10.0.zip": {
+    "size": 68022977,
+    "sha256": "1418f773e5245bbb3b16e3d25bb3f491ec1f0f39497b3e4b47ce5fe27aa11c2b",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.12.0.zip": {
+    "size": 70088189,
+    "sha256": "f1df7cc6a7d2135d128b08d6740fa1292eea9aec71d5d6ffae833080b61bbefd",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.13.0.zip": {
+    "size": 70476604,
+    "sha256": "77fed6a573903d24d146161e592ecbf6bbcba4703abcd783b438a2608510bee6",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.5.1.zip": {
+    "size": 60401571,
+    "sha256": "0bbd9da3643a921c94a1656d1a5692a756212231f41323b9f69ca802f2fb4432",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.6.0.zip": {
+    "size": 60834193,
+    "sha256": "b00ff4b95d57c2fa42e20e99ac180155e3765d42e8e951c9164a857570ad1e26",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.7.0.zip": {
+    "size": 61502913,
+    "sha256": "7adffd6cd4f1643c6ca34881d832d0bb15ff519ad20e9efcbcbd9bfab06bdfb4",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.8.0.zip": {
+    "size": 61826852,
+    "sha256": "3f4cbe01290322df88d8e00ad36fe02df91560787feb9afffaf540a939614881",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-source-1.9.0.zip": {
+    "size": 63979915,
+    "sha256": "f81e94e11a45f423e03a58c061481c33f0c11d3136bce5d0274cae616050ed96",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/KelMagic-stage1-rollback/KelMagic-1.23.0-before-face.zip": {
+    "size": 100303972,
+    "sha256": "1ece0e5414befed088f08dab5db528bab9a594c3eb0f25f7f67c73e3b263b70b",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-1.14.0/KelMagic-1.14.0-Test-World.zip": {
+    "size": 1459386,
+    "sha256": "884bcddbd8c3b0c5d235318c833bdbcd981de03026d995b52fe2787954ef2311",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-1.14.0/KelMagic-1.14.0-Source.zip": {
+    "size": 77787139,
+    "sha256": "b88fa8f22baa1655e1d7b7b9630a98f658934c7c88578186c53babec5d7b4f2c",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-1.14.1/KelMagic-1.14.1-Test-World.zip": {
+    "size": 1313203,
+    "sha256": "d444460a4374aaf34de671cbbc7b9c7f7ef57cf2fc8feee32213ff50efb6f68d",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-1.14.1/KelMagic-1.14.1-Source.zip": {
+    "size": 80973726,
+    "sha256": "885ef3dbb0af3fb36faf5d56913376159ebd99b2b96bb12144afa931c3108998",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-1.16.0/KelMagic-1.16.0-Test-World.zip": {
+    "size": 1421813,
+    "sha256": "1599f6d27af3b218be79fc922db630549874676c7645ab8a3fe2e9bfb5715b61",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-1.16.0/KelMagic-1.16.0-Source.zip": {
+    "size": 99009961,
+    "sha256": "8288231bb00035a57e616d6ebf8b3ca8d36f0060b55ed9f57870faf73bad7706",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-face-stage1/KelMagic-1.23.0-FaceStage1-Source.zip": {
+    "size": 100532530,
+    "sha256": "ff919efd5e3fe2d3f5889d445da6b6ff6e5954eeafd947bc3a5cff1f091a380a",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/workspace/release-face-stage1/KelMagic-1.23.0-FaceStage1-Rollback.zip": {
+    "size": 3291028,
+    "sha256": "c16c6c6fdbe62d8411f40733838bd3bc28f5523ab70a4bf3432e4aeee6c4612d",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-E-PNG-mouth-nose-TEST.zip": {
+    "size": 23761439,
+    "sha256": "f8e834f810181a3642a0809cd8da959f2cc4dbe344f42eb4dd7c04bc9139f69e",
+    "inFULL": true,
+    "inTRANSFER": false
+  },
+  "history/source-archives/KelMagic-E-cheeks-controller-TEST.zip": {
+    "size": 19243286,
+    "sha256": "97018ee7c6cb9304ba5f446361317d59d1c545be3a950a8046aa4d44827ac193",
+    "inFULL": true,
+    "inTRANSFER": false
+  }
+}

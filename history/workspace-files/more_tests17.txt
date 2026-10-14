@@ -1,0 +1,45 @@
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void worldProfilesDispatchWithRealFixtures(GameTestHelper h){
+        var p=player(h);p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.DIAMOND_PICKAXE));int checked=0;
+        for(var entry:SpellProfiles.ALL.entrySet()){
+            var profile=entry.getValue();if(!profile.action().startsWith("W_")&&!profile.action().equals("TURN"))continue;
+            for(int x=3;x<=7;x++)for(int z=3;z<=7;z++){h.setBlock(x,0,z,Blocks.STONE);for(int y=1;y<=5;y++)h.setBlock(x,y,z,Blocks.AIR);}
+            var pos=new BlockPos(5,0,5);var action=profile.action();
+            if(action.equals("W_PLANT")){h.setBlock(pos,profile.status().equals("wheat")?Blocks.FARMLAND:profile.status().equals("brown_mushroom")?Blocks.MYCELIUM:Blocks.GRASS_BLOCK);}
+            if(java.util.Set.of("W_GROW","W_GROW_AREA","W_TICK","W_HARVEST").contains(action)){h.setBlock(pos,Blocks.FARMLAND);pos=pos.above();h.setBlock(pos,Blocks.WHEAT.defaultBlockState().setValue(net.minecraft.world.level.block.CropBlock.AGE,action.equals("W_HARVEST")?7:0));}
+            if(java.util.Set.of("W_FREEZE","W_STEAM","W_WAVE").contains(action)){pos=pos.above();h.setBlock(pos,Blocks.WATER);}
+            if(action.equals("W_DRY")){pos=pos.above();h.setBlock(pos,Blocks.WET_SPONGE);}
+            if(action.equals("W_PUDDLE")){pos=pos.above();h.setBlock(pos,Blocks.OAK_SLAB);}
+            if(action.equals("W_WARM")){pos=pos.above();h.setBlock(pos,Blocks.ICE);}
+            if(action.equals("W_CONVERT")){pos=pos.above();h.setBlock(pos,net.minecraft.core.registries.BuiltInRegistries.BLOCK.get(net.minecraft.resources.ResourceLocation.withDefaultNamespace(profile.status().split(">")[0])));}
+            if(action.equals("W_MOISTEN"))h.setBlock(pos,Blocks.FARMLAND);
+            if(action.equals("W_PATH")||action.equals("W_TILL"))h.setBlock(pos,Blocks.DIRT);
+            if(action.equals("W_STRIP")){pos=pos.above();h.setBlock(pos,Blocks.OAK_LOG);}
+            if(action.equals("W_WASH")){pos=pos.above();h.setBlock(pos,Blocks.RED_WOOL);}
+            if(action.equals("W_VALVE")){pos=pos.above();h.setBlock(pos,Blocks.OAK_TRAPDOOR.defaultBlockState().setValue(net.minecraft.world.level.block.TrapDoorBlock.OPEN,true));}
+            if(action.equals("TURN")){pos=pos.above();h.setBlock(pos,Blocks.OAK_STAIRS);}
+            if(action.equals("W_CLEAR")){h.setBlock(pos,Blocks.GRASS_BLOCK);pos=pos.above();h.setBlock(pos,Blocks.SHORT_GRASS);}
+            if(action.equals("W_MINE")){pos=pos.above();h.setBlock(pos,profile.status().equals("wood")?Blocks.OAK_LOG:profile.status().equals("soil")?Blocks.DIRT:profile.status().equals("soft")?Blocks.SAND:Blocks.STONE);}
+            if(action.equals("W_VACUUM")){var at=h.absoluteVec(Vec3.atCenterOf(pos.above()));var item=new net.minecraft.world.entity.item.ItemEntity(h.getLevel(),at.x,at.y,at.z,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.COBBLESTONE));item.setNoPickUpDelay();h.getLevel().addFreshEntity(item);}
+            h.assertTrue(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of(entry.getKey())),profile),"real world effect "+entry.getKey()+" / "+action);checked++;
+        }h.assertTrue(checked>=60,"broad distinct world coverage");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void newEquipmentRecipesRegistered(GameTestHelper h){
+        for(String name:java.util.List.of("cassette_deck","cassette_player")){
+            String[] pat=name.equals("cassette_deck")?new String[]{"IPI","RCR","IQI"}:new String[]{"IQI","BCB","MRS"};
+            var map=new java.util.HashMap<Character,net.minecraft.world.item.Item>();map.put('I',net.minecraft.world.item.Items.IRON_INGOT);map.put('P',net.minecraft.world.item.Items.PAPER);map.put('R',net.minecraft.world.item.Items.REDSTONE_BLOCK);map.put('Q',net.minecraft.world.item.Items.QUARTZ);map.put('B',net.minecraft.world.item.Items.STONE_BUTTON);map.put('M',net.minecraft.world.item.Items.COPPER_INGOT);map.put('S',net.minecraft.world.item.Items.SLIME_BALL);map.put('C',name.equals("cassette_deck")?dev.kelmagic.MagicAudio.CASSETTE.get():dev.kelmagic.MagicContent.MANA_CORE.get());
+            var stacks=new java.util.ArrayList<net.minecraft.world.item.ItemStack>();for(var row:pat)for(char c:row.toCharArray())stacks.add(new net.minecraft.world.item.ItemStack(map.get(c)));var input=net.minecraft.world.item.crafting.CraftingInput.of(3,3,stacks);var recipe=h.getLevel().getRecipeManager().getRecipeFor(net.minecraft.world.item.crafting.RecipeType.CRAFTING,input,h.getLevel()).orElseThrow().value();h.assertTrue(recipe.assemble(input,h.getLevel().registryAccess()).is(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("kelmagic",name))),"registered recipe "+name);
+        }h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void miningHonorsProtectionAndAdventure(GameTestHelper h){
+        var p=player(h);var pos=new BlockPos(5,1,5);h.setBlock(pos,Blocks.STONE);p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.IRON_PICKAXE));
+        java.util.function.Consumer<net.neoforged.neoforge.event.level.BlockEvent.BreakEvent> deny=e->{if(e.getPlayer()==p)e.setCanceled(true);};net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.level.BlockEvent.BreakEvent.class,deny);
+        try{h.assertFalse(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lab")),SpellProfiles.ALL.get("lab")),"claim denies breaking");h.assertTrue(h.getBlockState(pos).is(Blocks.STONE),"denied mine retains block");}finally{net.neoforged.neoforge.common.NeoForge.EVENT_BUS.unregister(deny);}
+        p.gameMode.changeGameModeForPlayer(GameType.ADVENTURE);h.assertFalse(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lab")),SpellProfiles.ALL.get("lab")),"adventure cannot bypass building permissions");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void noUnsupportedActionIsSilentlyApplied(GameTestHelper h){
+        var p=player(h);p.setHealth(20);h.assertFalse(SpellEffects.execute(p,SpellParser.plan(java.util.List.of("mina","but","no"))),"unsupported needle inverse does not run original damage");h.assertTrue(p.getHealth()==20,"no silently ignored negative operator");h.succeed();
+    }

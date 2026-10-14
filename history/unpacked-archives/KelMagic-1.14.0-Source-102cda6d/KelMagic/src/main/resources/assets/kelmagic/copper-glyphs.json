@@ -1,0 +1,1337 @@
+{
+  "version": 1,
+  "glyphAtlasSHA256": "b0ce46de157a17992b793a952eb8c38d8730776914c8b84d176c10a0477aba64",
+  "words": {
+    "bal": {
+      "units": [
+        "0xe013",
+        "0xe036"
+      ],
+      "strokePixels": [
+        303,
+        165,
+        62,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_bal",
+        "exposed_inscribed_copper_bal",
+        "weathered_inscribed_copper_bal",
+        "oxidized_inscribed_copper_bal"
+      ]
+    },
+    "bon": {
+      "units": [
+        "0xe016",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        452,
+        246,
+        85,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_bon",
+        "exposed_inscribed_copper_bon",
+        "weathered_inscribed_copper_bon",
+        "oxidized_inscribed_copper_bon"
+      ]
+    },
+    "dek": {
+      "units": [
+        "0xe01a",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        288,
+        199,
+        40,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_dek",
+        "exposed_inscribed_copper_dek",
+        "weathered_inscribed_copper_dek",
+        "oxidized_inscribed_copper_dek"
+      ]
+    },
+    "del": {
+      "units": [
+        "0xe01a",
+        "0xe036"
+      ],
+      "strokePixels": [
+        289,
+        177,
+        61,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_del",
+        "exposed_inscribed_copper_del",
+        "weathered_inscribed_copper_del",
+        "oxidized_inscribed_copper_del"
+      ]
+    },
+    "dor": {
+      "units": [
+        "0xe01c",
+        "0xe042"
+      ],
+      "strokePixels": [
+        359,
+        199,
+        81,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_dor",
+        "exposed_inscribed_copper_dor",
+        "weathered_inscribed_copper_dor",
+        "oxidized_inscribed_copper_dor"
+      ]
+    },
+    "dun": {
+      "units": [
+        "0xe01d",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        394,
+        222,
+        77,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_dun",
+        "exposed_inscribed_copper_dun",
+        "weathered_inscribed_copper_dun",
+        "oxidized_inscribed_copper_dun"
+      ]
+    },
+    "ged": {
+      "units": [
+        "0xe020",
+        "0xe018"
+      ],
+      "strokePixels": [
+        331,
+        155,
+        84,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_ged",
+        "exposed_inscribed_copper_ged",
+        "weathered_inscribed_copper_ged",
+        "oxidized_inscribed_copper_ged"
+      ]
+    },
+    "gek": {
+      "units": [
+        "0xe020",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        297,
+        181,
+        70,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_gek",
+        "exposed_inscribed_copper_gek",
+        "weathered_inscribed_copper_gek",
+        "oxidized_inscribed_copper_gek"
+      ]
+    },
+    "gel": {
+      "units": [
+        "0xe020",
+        "0xe036"
+      ],
+      "strokePixels": [
+        277,
+        152,
+        80,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_gel",
+        "exposed_inscribed_copper_gel",
+        "weathered_inscribed_copper_gel",
+        "oxidized_inscribed_copper_gel"
+      ]
+    },
+    "gok": {
+      "units": [
+        "0xe022",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        339,
+        171,
+        65,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_gok",
+        "exposed_inscribed_copper_gok",
+        "weathered_inscribed_copper_gok",
+        "oxidized_inscribed_copper_gok"
+      ]
+    },
+    "gor": {
+      "units": [
+        "0xe022",
+        "0xe042"
+      ],
+      "strokePixels": [
+        343,
+        185,
+        56,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_gor",
+        "exposed_inscribed_copper_gor",
+        "weathered_inscribed_copper_gor",
+        "oxidized_inscribed_copper_gor"
+      ]
+    },
+    "kan": {
+      "units": [
+        "0xe00d",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        268,
+        133,
+        78,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_kan",
+        "exposed_inscribed_copper_kan",
+        "weathered_inscribed_copper_kan",
+        "oxidized_inscribed_copper_kan"
+      ]
+    },
+    "kel": {
+      "units": [
+        "0xe00e",
+        "0xe036"
+      ],
+      "strokePixels": [
+        277,
+        169,
+        86,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_kel",
+        "exposed_inscribed_copper_kel",
+        "weathered_inscribed_copper_kel",
+        "oxidized_inscribed_copper_kel"
+      ]
+    },
+    "kin": {
+      "units": [
+        "0xe00f",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        209,
+        119,
+        67,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_kin",
+        "exposed_inscribed_copper_kin",
+        "weathered_inscribed_copper_kin",
+        "oxidized_inscribed_copper_kin"
+      ]
+    },
+    "kor": {
+      "units": [
+        "0xe010",
+        "0xe042"
+      ],
+      "strokePixels": [
+        353,
+        195,
+        60,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_kor",
+        "exposed_inscribed_copper_kor",
+        "weathered_inscribed_copper_kor",
+        "oxidized_inscribed_copper_kor"
+      ]
+    },
+    "kut": {
+      "units": [
+        "0xe011",
+        "0xe006"
+      ],
+      "strokePixels": [
+        432,
+        259,
+        110,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_kut",
+        "exposed_inscribed_copper_kut",
+        "weathered_inscribed_copper_kut",
+        "oxidized_inscribed_copper_kut"
+      ]
+    },
+    "lek": {
+      "units": [
+        "0xe038",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        261,
+        171,
+        41,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_lek",
+        "exposed_inscribed_copper_lek",
+        "weathered_inscribed_copper_lek",
+        "oxidized_inscribed_copper_lek"
+      ]
+    },
+    "lel": {
+      "units": [
+        "0xe038",
+        "0xe036"
+      ],
+      "strokePixels": [
+        260,
+        155,
+        46,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_lel",
+        "exposed_inscribed_copper_lel",
+        "weathered_inscribed_copper_lel",
+        "oxidized_inscribed_copper_lel"
+      ]
+    },
+    "liv": {
+      "units": [
+        "0xe039",
+        "0xe03c"
+      ],
+      "strokePixels": [
+        197,
+        124,
+        25,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_liv",
+        "exposed_inscribed_copper_liv",
+        "weathered_inscribed_copper_liv",
+        "oxidized_inscribed_copper_liv"
+      ]
+    },
+    "log": {
+      "units": [
+        "0xe03a",
+        "0xe01e"
+      ],
+      "strokePixels": [
+        308,
+        195,
+        39,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_log",
+        "exposed_inscribed_copper_log",
+        "weathered_inscribed_copper_log",
+        "oxidized_inscribed_copper_log"
+      ]
+    },
+    "lok": {
+      "units": [
+        "0xe03a",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        308,
+        151,
+        54,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_lok",
+        "exposed_inscribed_copper_lok",
+        "weathered_inscribed_copper_lok",
+        "oxidized_inscribed_copper_lok"
+      ]
+    },
+    "lu": {
+      "units": [
+        "0xe03b"
+      ],
+      "strokePixels": [
+        141,
+        87,
+        20,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_lu",
+        "exposed_inscribed_copper_lu",
+        "weathered_inscribed_copper_lu",
+        "oxidized_inscribed_copper_lu"
+      ]
+    },
+    "lun": {
+      "units": [
+        "0xe03b",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        367,
+        199,
+        72,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_lun",
+        "exposed_inscribed_copper_lun",
+        "weathered_inscribed_copper_lun",
+        "oxidized_inscribed_copper_lun"
+      ]
+    },
+    "mam": {
+      "units": [
+        "0xe025",
+        "0xe024"
+      ],
+      "strokePixels": [
+        302,
+        158,
+        73,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_mam",
+        "exposed_inscribed_copper_mam",
+        "weathered_inscribed_copper_mam",
+        "oxidized_inscribed_copper_mam"
+      ]
+    },
+    "mek": {
+      "units": [
+        "0xe026",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        298,
+        207,
+        47,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_mek",
+        "exposed_inscribed_copper_mek",
+        "weathered_inscribed_copper_mek",
+        "oxidized_inscribed_copper_mek"
+      ]
+    },
+    "mel": {
+      "units": [
+        "0xe026",
+        "0xe036"
+      ],
+      "strokePixels": [
+        307,
+        178,
+        73,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_mel",
+        "exposed_inscribed_copper_mel",
+        "weathered_inscribed_copper_mel",
+        "oxidized_inscribed_copper_mel"
+      ]
+    },
+    "mina": {
+      "units": [
+        "0xe027",
+        "0xe02b"
+      ],
+      "strokePixels": [
+        209,
+        122,
+        51,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_mina",
+        "exposed_inscribed_copper_mina",
+        "weathered_inscribed_copper_mina",
+        "oxidized_inscribed_copper_mina"
+      ]
+    },
+    "mor": {
+      "units": [
+        "0xe028",
+        "0xe042"
+      ],
+      "strokePixels": [
+        400,
+        237,
+        68,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_mor",
+        "exposed_inscribed_copper_mor",
+        "weathered_inscribed_copper_mor",
+        "oxidized_inscribed_copper_mor"
+      ]
+    },
+    "muk": {
+      "units": [
+        "0xe029",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        413,
+        261,
+        64,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_muk",
+        "exposed_inscribed_copper_muk",
+        "weathered_inscribed_copper_muk",
+        "oxidized_inscribed_copper_muk"
+      ]
+    },
+    "mur": {
+      "units": [
+        "0xe029",
+        "0xe042"
+      ],
+      "strokePixels": [
+        417,
+        277,
+        59,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_mur",
+        "exposed_inscribed_copper_mur",
+        "weathered_inscribed_copper_mur",
+        "oxidized_inscribed_copper_mur"
+      ]
+    },
+    "nak": {
+      "units": [
+        "0xe02b",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        289,
+        183,
+        58,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_nak",
+        "exposed_inscribed_copper_nak",
+        "weathered_inscribed_copper_nak",
+        "oxidized_inscribed_copper_nak"
+      ]
+    },
+    "neb": {
+      "units": [
+        "0xe02c",
+        "0xe012"
+      ],
+      "strokePixels": [
+        348,
+        210,
+        55,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_neb",
+        "exposed_inscribed_copper_neb",
+        "weathered_inscribed_copper_neb",
+        "oxidized_inscribed_copper_neb"
+      ]
+    },
+    "nek": {
+      "units": [
+        "0xe02c",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        251,
+        173,
+        34,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_nek",
+        "exposed_inscribed_copper_nek",
+        "weathered_inscribed_copper_nek",
+        "oxidized_inscribed_copper_nek"
+      ]
+    },
+    "nok": {
+      "units": [
+        "0xe02e",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        366,
+        230,
+        70,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_nok",
+        "exposed_inscribed_copper_nok",
+        "weathered_inscribed_copper_nok",
+        "oxidized_inscribed_copper_nok"
+      ]
+    },
+    "nos": {
+      "units": [
+        "0xe02e",
+        "0xe030"
+      ],
+      "strokePixels": [
+        362,
+        218,
+        102,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_nos",
+        "exposed_inscribed_copper_nos",
+        "weathered_inscribed_copper_nos",
+        "oxidized_inscribed_copper_nos"
+      ]
+    },
+    "nov": {
+      "units": [
+        "0xe02e",
+        "0xe03c"
+      ],
+      "strokePixels": [
+        357,
+        226,
+        73,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_nov",
+        "exposed_inscribed_copper_nov",
+        "weathered_inscribed_copper_nov",
+        "oxidized_inscribed_copper_nov"
+      ]
+    },
+    "nuk": {
+      "units": [
+        "0xe02f",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        374,
+        221,
+        50,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_nuk",
+        "exposed_inscribed_copper_nuk",
+        "weathered_inscribed_copper_nuk",
+        "oxidized_inscribed_copper_nuk"
+      ]
+    },
+    "pad": {
+      "units": [
+        "0xe001",
+        "0xe018"
+      ],
+      "strokePixels": [
+        315,
+        195,
+        78,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_pad",
+        "exposed_inscribed_copper_pad",
+        "weathered_inscribed_copper_pad",
+        "oxidized_inscribed_copper_pad"
+      ]
+    },
+    "pap": {
+      "units": [
+        "0xe001",
+        "0xe000"
+      ],
+      "strokePixels": [
+        282,
+        187,
+        72,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_pap",
+        "exposed_inscribed_copper_pap",
+        "weathered_inscribed_copper_pap",
+        "oxidized_inscribed_copper_pap"
+      ]
+    },
+    "ped": {
+      "units": [
+        "0xe002",
+        "0xe018"
+      ],
+      "strokePixels": [
+        314,
+        160,
+        49,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_ped",
+        "exposed_inscribed_copper_ped",
+        "weathered_inscribed_copper_ped",
+        "oxidized_inscribed_copper_ped"
+      ]
+    },
+    "pek": {
+      "units": [
+        "0xe002",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        278,
+        187,
+        32,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_pek",
+        "exposed_inscribed_copper_pek",
+        "weathered_inscribed_copper_pek",
+        "oxidized_inscribed_copper_pek"
+      ]
+    },
+    "pen": {
+      "units": [
+        "0xe002",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        242,
+        136,
+        58,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_pen",
+        "exposed_inscribed_copper_pen",
+        "weathered_inscribed_copper_pen",
+        "oxidized_inscribed_copper_pen"
+      ]
+    },
+    "per": {
+      "units": [
+        "0xe002",
+        "0xe042"
+      ],
+      "strokePixels": [
+        272,
+        203,
+        32,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_per",
+        "exposed_inscribed_copper_per",
+        "weathered_inscribed_copper_per",
+        "oxidized_inscribed_copper_per"
+      ]
+    },
+    "pir": {
+      "units": [
+        "0xe003",
+        "0xe042"
+      ],
+      "strokePixels": [
+        239,
+        185,
+        31,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_pir",
+        "exposed_inscribed_copper_pir",
+        "weathered_inscribed_copper_pir",
+        "oxidized_inscribed_copper_pir"
+      ]
+    },
+    "pis": {
+      "units": [
+        "0xe003",
+        "0xe030"
+      ],
+      "strokePixels": [
+        325,
+        188,
+        56,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_pis",
+        "exposed_inscribed_copper_pis",
+        "weathered_inscribed_copper_pis",
+        "oxidized_inscribed_copper_pis"
+      ]
+    },
+    "por": {
+      "units": [
+        "0xe004",
+        "0xe042"
+      ],
+      "strokePixels": [
+        356,
+        208,
+        70,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_por",
+        "exposed_inscribed_copper_por",
+        "weathered_inscribed_copper_por",
+        "oxidized_inscribed_copper_por"
+      ]
+    },
+    "puk": {
+      "units": [
+        "0xe005",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        362,
+        209,
+        48,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_puk",
+        "exposed_inscribed_copper_puk",
+        "weathered_inscribed_copper_puk",
+        "oxidized_inscribed_copper_puk"
+      ]
+    },
+    "rap": {
+      "units": [
+        "0xe043",
+        "0xe000"
+      ],
+      "strokePixels": [
+        299,
+        152,
+        75,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_rap",
+        "exposed_inscribed_copper_rap",
+        "weathered_inscribed_copper_rap",
+        "oxidized_inscribed_copper_rap"
+      ]
+    },
+    "rek": {
+      "units": [
+        "0xe044",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        262,
+        176,
+        60,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_rek",
+        "exposed_inscribed_copper_rek",
+        "weathered_inscribed_copper_rek",
+        "oxidized_inscribed_copper_rek"
+      ]
+    },
+    "rin": {
+      "units": [
+        "0xe045",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        217,
+        132,
+        68,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_rin",
+        "exposed_inscribed_copper_rin",
+        "weathered_inscribed_copper_rin",
+        "oxidized_inscribed_copper_rin"
+      ]
+    },
+    "rok": {
+      "units": [
+        "0xe046",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        336,
+        179,
+        58,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_rok",
+        "exposed_inscribed_copper_rok",
+        "weathered_inscribed_copper_rok",
+        "oxidized_inscribed_copper_rok"
+      ]
+    },
+    "rut": {
+      "units": [
+        "0xe047",
+        "0xe006"
+      ],
+      "strokePixels": [
+        432,
+        258,
+        97,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_rut",
+        "exposed_inscribed_copper_rut",
+        "weathered_inscribed_copper_rut",
+        "oxidized_inscribed_copper_rut"
+      ]
+    },
+    "sap": {
+      "units": [
+        "0xe031",
+        "0xe000"
+      ],
+      "strokePixels": [
+        342,
+        176,
+        75,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sap",
+        "exposed_inscribed_copper_sap",
+        "weathered_inscribed_copper_sap",
+        "oxidized_inscribed_copper_sap"
+      ]
+    },
+    "sav": {
+      "units": [
+        "0xe031",
+        "0xe03c"
+      ],
+      "strokePixels": [
+        306,
+        186,
+        63,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sav",
+        "exposed_inscribed_copper_sav",
+        "weathered_inscribed_copper_sav",
+        "oxidized_inscribed_copper_sav"
+      ]
+    },
+    "sel": {
+      "units": [
+        "0xe032",
+        "0xe036"
+      ],
+      "strokePixels": [
+        273,
+        155,
+        65,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sel",
+        "exposed_inscribed_copper_sel",
+        "weathered_inscribed_copper_sel",
+        "oxidized_inscribed_copper_sel"
+      ]
+    },
+    "sila": {
+      "units": [
+        "0xe033",
+        "0xe037"
+      ],
+      "strokePixels": [
+        175,
+        113,
+        40,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sila",
+        "exposed_inscribed_copper_sila",
+        "weathered_inscribed_copper_sila",
+        "oxidized_inscribed_copper_sila"
+      ]
+    },
+    "sin": {
+      "units": [
+        "0xe033",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        208,
+        128,
+        57,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sin",
+        "exposed_inscribed_copper_sin",
+        "weathered_inscribed_copper_sin",
+        "oxidized_inscribed_copper_sin"
+      ]
+    },
+    "sol": {
+      "units": [
+        "0xe034",
+        "0xe036"
+      ],
+      "strokePixels": [
+        291,
+        195,
+        48,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sol",
+        "exposed_inscribed_copper_sol",
+        "weathered_inscribed_copper_sol",
+        "oxidized_inscribed_copper_sol"
+      ]
+    },
+    "son": {
+      "units": [
+        "0xe034",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        458,
+        254,
+        98,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_son",
+        "exposed_inscribed_copper_son",
+        "weathered_inscribed_copper_son",
+        "oxidized_inscribed_copper_son"
+      ]
+    },
+    "sut": {
+      "units": [
+        "0xe035",
+        "0xe006"
+      ],
+      "strokePixels": [
+        423,
+        242,
+        89,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_sut",
+        "exposed_inscribed_copper_sut",
+        "weathered_inscribed_copper_sut",
+        "oxidized_inscribed_copper_sut"
+      ]
+    },
+    "tek": {
+      "units": [
+        "0xe008",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        293,
+        187,
+        53,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tek",
+        "exposed_inscribed_copper_tek",
+        "weathered_inscribed_copper_tek",
+        "oxidized_inscribed_copper_tek"
+      ]
+    },
+    "tel": {
+      "units": [
+        "0xe008",
+        "0xe036"
+      ],
+      "strokePixels": [
+        330,
+        179,
+        80,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tel",
+        "exposed_inscribed_copper_tel",
+        "weathered_inscribed_copper_tel",
+        "oxidized_inscribed_copper_tel"
+      ]
+    },
+    "tem": {
+      "units": [
+        "0xe008",
+        "0xe024"
+      ],
+      "strokePixels": [
+        296,
+        164,
+        61,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tem",
+        "exposed_inscribed_copper_tem",
+        "weathered_inscribed_copper_tem",
+        "oxidized_inscribed_copper_tem"
+      ]
+    },
+    "ten": {
+      "units": [
+        "0xe008",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        258,
+        129,
+        68,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_ten",
+        "exposed_inscribed_copper_ten",
+        "weathered_inscribed_copper_ten",
+        "oxidized_inscribed_copper_ten"
+      ]
+    },
+    "ter": {
+      "units": [
+        "0xe008",
+        "0xe042"
+      ],
+      "strokePixels": [
+        277,
+        184,
+        48,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_ter",
+        "exposed_inscribed_copper_ter",
+        "weathered_inscribed_copper_ter",
+        "oxidized_inscribed_copper_ter"
+      ]
+    },
+    "tin": {
+      "units": [
+        "0xe009",
+        "0xe02a"
+      ],
+      "strokePixels": [
+        241,
+        140,
+        71,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tin",
+        "exposed_inscribed_copper_tin",
+        "weathered_inscribed_copper_tin",
+        "oxidized_inscribed_copper_tin"
+      ]
+    },
+    "tom": {
+      "units": [
+        "0xe00a",
+        "0xe024"
+      ],
+      "strokePixels": [
+        434,
+        259,
+        93,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tom",
+        "exposed_inscribed_copper_tom",
+        "weathered_inscribed_copper_tom",
+        "oxidized_inscribed_copper_tom"
+      ]
+    },
+    "tuk": {
+      "units": [
+        "0xe00b",
+        "0xe00c"
+      ],
+      "strokePixels": [
+        402,
+        245,
+        77,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tuk",
+        "exposed_inscribed_copper_tuk",
+        "weathered_inscribed_copper_tuk",
+        "oxidized_inscribed_copper_tuk"
+      ]
+    },
+    "tuna": {
+      "units": [
+        "0xe00b",
+        "0xe02b"
+      ],
+      "strokePixels": [
+        316,
+        169,
+        49,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tuna",
+        "exposed_inscribed_copper_tuna",
+        "weathered_inscribed_copper_tuna",
+        "oxidized_inscribed_copper_tuna"
+      ]
+    },
+    "tup": {
+      "units": [
+        "0xe00b",
+        "0xe000"
+      ],
+      "strokePixels": [
+        435,
+        238,
+        91,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tup",
+        "exposed_inscribed_copper_tup",
+        "weathered_inscribed_copper_tup",
+        "oxidized_inscribed_copper_tup"
+      ]
+    },
+    "tur": {
+      "units": [
+        "0xe00b",
+        "0xe042"
+      ],
+      "strokePixels": [
+        406,
+        246,
+        70,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tur",
+        "exposed_inscribed_copper_tur",
+        "weathered_inscribed_copper_tur",
+        "oxidized_inscribed_copper_tur"
+      ]
+    },
+    "tut": {
+      "units": [
+        "0xe00b",
+        "0xe006"
+      ],
+      "strokePixels": [
+        407,
+        223,
+        87,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_tut",
+        "exposed_inscribed_copper_tut",
+        "weathered_inscribed_copper_tut",
+        "oxidized_inscribed_copper_tut"
+      ]
+    },
+    "vit": {
+      "units": [
+        "0xe03f",
+        "0xe006"
+      ],
+      "strokePixels": [
+        272,
+        166,
+        53,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_vit",
+        "exposed_inscribed_copper_vit",
+        "weathered_inscribed_copper_vit",
+        "oxidized_inscribed_copper_vit"
+      ]
+    },
+    "vut": {
+      "units": [
+        "0xe041",
+        "0xe006"
+      ],
+      "strokePixels": [
+        386,
+        217,
+        74,
+        0
+      ],
+      "blocks": [
+        "inscribed_copper_vut",
+        "exposed_inscribed_copper_vut",
+        "weathered_inscribed_copper_vut",
+        "oxidized_inscribed_copper_vut"
+      ]
+    }
+  }
+}

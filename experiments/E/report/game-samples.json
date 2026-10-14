@@ -1,0 +1,446 @@
+{
+  "neutral-breath": {
+    "samples": 61,
+    "selected": [
+      "NEUTRAL"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.0119994255,
+        0.011991419
+      ],
+      "chestY": [
+        0.9887505,
+        1.0112419
+      ],
+      "chestZ": [
+        0.9750012,
+        1.0249821
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "neutral-45": {
+    "samples": 41,
+    "selected": [
+      "NEUTRAL"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011718502,
+        0.011999709
+      ],
+      "chestY": [
+        0.9890139,
+        1.0112498
+      ],
+      "chestZ": [
+        0.9755865,
+        1.0249994
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "smile-front": {
+    "samples": 41,
+    "selected": [
+      "SMILE"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011998833,
+        0.011993798
+      ],
+      "chestY": [
+        0.9887511,
+        1.0112442
+      ],
+      "chestZ": [
+        0.9750024,
+        1.0249871
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "smile-45": {
+    "samples": 41,
+    "selected": [
+      "SMILE"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.01199484,
+        0.011999239
+      ],
+      "chestY": [
+        0.9887548,
+        1.0112493
+      ],
+      "chestZ": [
+        0.97501075,
+        1.0249984
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "speech-front": {
+    "samples": 41,
+    "selected": [
+      "SPEECH"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011999413,
+        0.011996213
+      ],
+      "chestY": [
+        0.9887506,
+        1.0112464
+      ],
+      "chestZ": [
+        0.9750012,
+        1.0249921
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "speech-45": {
+    "samples": 41,
+    "selected": [
+      "SPEECH"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.0119932685,
+        0.011372212
+      ],
+      "chestY": [
+        0.9887563,
+        1.0106615
+      ],
+      "chestZ": [
+        0.97501403,
+        1.0236921
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "surprised-front": {
+    "samples": 41,
+    "selected": [
+      "SURPRISED"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011999819,
+        0.011999804
+      ],
+      "chestY": [
+        0.98875016,
+        1.0112498
+      ],
+      "chestZ": [
+        0.9750004,
+        1.0249996
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "surprised-45": {
+    "samples": 41,
+    "selected": [
+      "SURPRISED"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011996151,
+        0.011993726
+      ],
+      "chestY": [
+        0.9887536,
+        1.011244
+      ],
+      "chestZ": [
+        0.975008,
+        1.024987
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "eyes-cheeks-independent": {
+    "samples": 41,
+    "selected": [
+      "SMILE"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011979161,
+        0.011988619
+      ],
+      "chestY": [
+        0.98876953,
+        1.0112393
+      ],
+      "chestZ": [
+        0.9750434,
+        1.0249763
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        0.0,
+        0.6
+      ],
+      "cheeks": [
+        0.8,
+        0.8
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "head-turn": {
+    "samples": 61,
+    "selected": [
+      "NEUTRAL"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.011976062,
+        0.011999958
+      ],
+      "chestY": [
+        0.98877245,
+        1.01125
+      ],
+      "chestZ": [
+        0.97504985,
+        1.0249999
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        135.0236,
+        224.96255
+      ]
+    }
+  },
+  "breathing-off": {
+    "samples": 41,
+    "selected": [
+      "NEUTRAL"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        0.0,
+        0.0
+      ],
+      "chestY": [
+        1.0,
+        1.0
+      ],
+      "chestZ": [
+        1.0,
+        1.0
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  },
+  "breathing-restored": {
+    "samples": 61,
+    "selected": [
+      "NEUTRAL"
+    ],
+    "oldMouthHidden": true,
+    "range": {
+      "noseY": [
+        -0.01199886,
+        0.011990008
+      ],
+      "chestY": [
+        0.98875105,
+        1.0112406
+      ],
+      "chestZ": [
+        0.97500235,
+        1.0249792
+      ],
+      "legacyOpening": [
+        0.0,
+        0.0
+      ],
+      "eyes": [
+        1.0,
+        1.0
+      ],
+      "cheeks": [
+        0.0,
+        0.0
+      ],
+      "head": [
+        180.0,
+        180.0
+      ]
+    }
+  }
+}

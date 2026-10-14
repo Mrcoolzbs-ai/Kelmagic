@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:magic_cloth",
+  "display": {
+    "icon": {
+      "id": "kelmagic:mage_chestplate"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.dye_robes.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.dye_robes.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

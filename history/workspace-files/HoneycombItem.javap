@@ -1,0 +1,81 @@
+Compiled from "HoneycombItem.java"
+public class net.minecraft.world.item.HoneycombItem extends net.minecraft.world.item.Item implements net.minecraft.world.item.SignApplicator {
+  public static final java.util.function.Supplier<com.google.common.collect.BiMap<net.minecraft.world.level.block.Block, net.minecraft.world.level.block.Block>> WAXABLES;
+
+  public static final java.util.function.Supplier<com.google.common.collect.BiMap<net.minecraft.world.level.block.Block, net.minecraft.world.level.block.Block>> WAX_OFF_BY_BLOCK;
+
+  public net.minecraft.world.item.HoneycombItem(net.minecraft.world.item.Item$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1                  // Method net/minecraft/world/item/Item."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+       5: return
+
+  public net.minecraft.world.InteractionResult useOn(net.minecraft.world.item.context.UseOnContext);
+    Code:
+       0: aload_1
+       1: invokevirtual #7                  // Method net/minecraft/world/item/context/UseOnContext.getLevel:()Lnet/minecraft/world/level/Level;
+       4: astore_2
+       5: aload_1
+       6: invokevirtual #13                 // Method net/minecraft/world/item/context/UseOnContext.getClickedPos:()Lnet/minecraft/core/BlockPos;
+       9: astore_3
+      10: aload_2
+      11: aload_3
+      12: invokevirtual #17                 // Method net/minecraft/world/level/Level.getBlockState:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      15: astore        4
+      17: aload         4
+      19: invokestatic  #23                 // Method getWaxed:(Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/Optional;
+      22: aload_1
+      23: aload_3
+      24: aload_2
+      25: invokedynamic #29,  0             // InvokeDynamic #0:apply:(Lnet/minecraft/world/item/context/UseOnContext;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/Level;)Ljava/util/function/Function;
+      30: invokevirtual #33                 // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      33: getstatic     #39                 // Field net/minecraft/world/InteractionResult.PASS:Lnet/minecraft/world/InteractionResult;
+      36: invokevirtual #45                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      39: checkcast     #40                 // class net/minecraft/world/InteractionResult
+      42: areturn
+
+  public static java.util.Optional<net.minecraft.world.level.block.state.BlockState> getWaxed(net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_0
+       1: invokevirtual #49                 // Method net/minecraft/world/level/block/state/BlockState.getBlock:()Lnet/minecraft/world/level/block/Block;
+       4: invokestatic  #55                 // Method net/neoforged/neoforge/common/DataMapHooks.getBlockWaxed:(Lnet/minecraft/world/level/block/Block;)Lnet/minecraft/world/level/block/Block;
+       7: invokestatic  #61                 // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      10: aload_0
+      11: invokedynamic #65,  0             // InvokeDynamic #1:apply:(Lnet/minecraft/world/level/block/state/BlockState;)Ljava/util/function/Function;
+      16: invokevirtual #33                 // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      19: areturn
+
+  public boolean tryApplyToSign(net.minecraft.world.level.Level, net.minecraft.world.level.block.entity.SignBlockEntity, boolean, net.minecraft.world.entity.player.Player);
+    Code:
+       0: aload_2
+       1: iconst_1
+       2: invokevirtual #68                 // Method net/minecraft/world/level/block/entity/SignBlockEntity.setWaxed:(Z)Z
+       5: ifeq          23
+       8: aload_1
+       9: aconst_null
+      10: sipush        3003
+      13: aload_2
+      14: invokevirtual #74                 // Method net/minecraft/world/level/block/entity/SignBlockEntity.getBlockPos:()Lnet/minecraft/core/BlockPos;
+      17: iconst_0
+      18: invokevirtual #77                 // Method net/minecraft/world/level/Level.levelEvent:(Lnet/minecraft/world/entity/player/Player;ILnet/minecraft/core/BlockPos;I)V
+      21: iconst_1
+      22: ireturn
+      23: iconst_0
+      24: ireturn
+
+  public boolean canApplyToSign(net.minecraft.world.level.block.entity.SignText, net.minecraft.world.entity.player.Player);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  static {};
+    Code:
+       0: invokedynamic #394,  0            // InvokeDynamic #2:get:()Lcom/google/common/base/Supplier;
+       5: invokestatic  #397                // Method com/google/common/base/Suppliers.memoize:(Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;
+       8: putstatic     #143                // Field WAXABLES:Ljava/util/function/Supplier;
+      11: invokedynamic #403,  0            // InvokeDynamic #3:get:()Lcom/google/common/base/Supplier;
+      16: invokestatic  #397                // Method com/google/common/base/Suppliers.memoize:(Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;
+      19: putstatic     #404                // Field WAX_OFF_BY_BLOCK:Ljava/util/function/Supplier;
+      22: return
+}

@@ -1,0 +1,1 @@
+Продолжай KelMagic1.14.1, не новый проект. Прочитай HANDOFF.md,START_HERE.md,COMMANDS.md,docs/architecture/VERIFICATION-1.14.1.md. Сохрани исследование без Shift-спойлеров, canonicalglyphatlas, nativecopperdata maps и тестовыймир.

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/arcane_boots"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:trimmed": 1
+      },
+      "model": "kelmagic:item/arcane_boots_trimmed"
+    }
+  ]
+}

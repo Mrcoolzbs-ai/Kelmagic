@@ -1,0 +1,768 @@
+{
+  "version": 1,
+  "source": "docs/kel-language/source/writ.png",
+  "source_sha256": "f201cb7da9ae31acb8d0421746f0a0dae7fedd9e015bdde89ef809bfb3760549",
+  "consonants": {
+    "p": {
+      "source_crop": [
+        410,
+        150,
+        458,
+        216
+      ],
+      "texture": "kelmagic:textures/glyph/p.png"
+    },
+    "t": {
+      "source_crop": [
+        507,
+        150,
+        555,
+        216
+      ],
+      "texture": "kelmagic:textures/glyph/t.png"
+    },
+    "k": {
+      "source_crop": [
+        597,
+        150,
+        642,
+        216
+      ],
+      "texture": "kelmagic:textures/glyph/k.png"
+    },
+    "b": {
+      "source_crop": [
+        692,
+        150,
+        737,
+        216
+      ],
+      "texture": "kelmagic:textures/glyph/b.png"
+    },
+    "d": {
+      "source_crop": [
+        783,
+        150,
+        828,
+        216
+      ],
+      "texture": "kelmagic:textures/glyph/d.png"
+    },
+    "g": {
+      "source_crop": [
+        410,
+        282,
+        456,
+        351
+      ],
+      "texture": "kelmagic:textures/glyph/g.png"
+    },
+    "m": {
+      "source_crop": [
+        500,
+        282,
+        553,
+        351
+      ],
+      "texture": "kelmagic:textures/glyph/m.png"
+    },
+    "n": {
+      "source_crop": [
+        594,
+        282,
+        645,
+        351
+      ],
+      "texture": "kelmagic:textures/glyph/n.png"
+    },
+    "s": {
+      "source_crop": [
+        689,
+        282,
+        738,
+        351
+      ],
+      "texture": "kelmagic:textures/glyph/s.png"
+    },
+    "l": {
+      "source_crop": [
+        782,
+        282,
+        831,
+        351
+      ],
+      "texture": "kelmagic:textures/glyph/l.png"
+    },
+    "v": {
+      "source_crop": [
+        410,
+        423,
+        456,
+        488
+      ],
+      "texture": "kelmagic:textures/glyph/v.png"
+    },
+    "r": {
+      "source_crop": [
+        500,
+        423,
+        552,
+        488
+      ],
+      "texture": "kelmagic:textures/glyph/r.png"
+    },
+    "j": {
+      "source_crop": [
+        594,
+        423,
+        644,
+        488
+      ],
+      "texture": "kelmagic:textures/glyph/j.png"
+    }
+  },
+  "vowels": {
+    "a": {
+      "source_crop": [
+        1215,
+        180,
+        1250,
+        216
+      ],
+      "texture": "kelmagic:textures/glyph/a.png",
+      "placement": [
+        37,
+        14,
+        8,
+        12
+      ]
+    },
+    "e": {
+      "source_crop": [
+        1210,
+        238,
+        1252,
+        258
+      ],
+      "texture": "kelmagic:textures/glyph/e.png",
+      "placement": [
+        36,
+        34,
+        11,
+        5
+      ]
+    },
+    "i": {
+      "source_crop": [
+        1211,
+        282,
+        1251,
+        321
+      ],
+      "texture": "kelmagic:textures/glyph/i.png",
+      "placement": [
+        36,
+        51,
+        9,
+        12
+      ]
+    },
+    "o": {
+      "source_crop": [
+        1210,
+        331,
+        1252,
+        378
+      ],
+      "texture": "kelmagic:textures/glyph/o.png",
+      "placement": [
+        12,
+        0,
+        13,
+        13
+      ]
+    },
+    "u": {
+      "source_crop": [
+        1210,
+        391,
+        1260,
+        423
+      ],
+      "texture": "kelmagic:textures/glyph/u.png",
+      "placement": [
+        10,
+        61,
+        22,
+        10
+      ]
+    }
+  },
+  "units": {
+    "cell": [
+      48,
+      72
+    ],
+    "consonant_box": [
+      4,
+      15,
+      30,
+      44
+    ]
+  },
+  "composition": "attach next vowel to preceding consonant; bare final consonant; no substitution from erroneous min example",
+  "forms": {
+    "p": {
+      "codepoint": "0xe000",
+      "cell": [
+        0,
+        0
+      ]
+    },
+    "pa": {
+      "codepoint": "0xe001",
+      "cell": [
+        1,
+        0
+      ]
+    },
+    "pe": {
+      "codepoint": "0xe002",
+      "cell": [
+        2,
+        0
+      ]
+    },
+    "pi": {
+      "codepoint": "0xe003",
+      "cell": [
+        3,
+        0
+      ]
+    },
+    "po": {
+      "codepoint": "0xe004",
+      "cell": [
+        4,
+        0
+      ]
+    },
+    "pu": {
+      "codepoint": "0xe005",
+      "cell": [
+        5,
+        0
+      ]
+    },
+    "t": {
+      "codepoint": "0xe006",
+      "cell": [
+        6,
+        0
+      ]
+    },
+    "ta": {
+      "codepoint": "0xe007",
+      "cell": [
+        7,
+        0
+      ]
+    },
+    "te": {
+      "codepoint": "0xe008",
+      "cell": [
+        0,
+        1
+      ]
+    },
+    "ti": {
+      "codepoint": "0xe009",
+      "cell": [
+        1,
+        1
+      ]
+    },
+    "to": {
+      "codepoint": "0xe00a",
+      "cell": [
+        2,
+        1
+      ]
+    },
+    "tu": {
+      "codepoint": "0xe00b",
+      "cell": [
+        3,
+        1
+      ]
+    },
+    "k": {
+      "codepoint": "0xe00c",
+      "cell": [
+        4,
+        1
+      ]
+    },
+    "ka": {
+      "codepoint": "0xe00d",
+      "cell": [
+        5,
+        1
+      ]
+    },
+    "ke": {
+      "codepoint": "0xe00e",
+      "cell": [
+        6,
+        1
+      ]
+    },
+    "ki": {
+      "codepoint": "0xe00f",
+      "cell": [
+        7,
+        1
+      ]
+    },
+    "ko": {
+      "codepoint": "0xe010",
+      "cell": [
+        0,
+        2
+      ]
+    },
+    "ku": {
+      "codepoint": "0xe011",
+      "cell": [
+        1,
+        2
+      ]
+    },
+    "b": {
+      "codepoint": "0xe012",
+      "cell": [
+        2,
+        2
+      ]
+    },
+    "ba": {
+      "codepoint": "0xe013",
+      "cell": [
+        3,
+        2
+      ]
+    },
+    "be": {
+      "codepoint": "0xe014",
+      "cell": [
+        4,
+        2
+      ]
+    },
+    "bi": {
+      "codepoint": "0xe015",
+      "cell": [
+        5,
+        2
+      ]
+    },
+    "bo": {
+      "codepoint": "0xe016",
+      "cell": [
+        6,
+        2
+      ]
+    },
+    "bu": {
+      "codepoint": "0xe017",
+      "cell": [
+        7,
+        2
+      ]
+    },
+    "d": {
+      "codepoint": "0xe018",
+      "cell": [
+        0,
+        3
+      ]
+    },
+    "da": {
+      "codepoint": "0xe019",
+      "cell": [
+        1,
+        3
+      ]
+    },
+    "de": {
+      "codepoint": "0xe01a",
+      "cell": [
+        2,
+        3
+      ]
+    },
+    "di": {
+      "codepoint": "0xe01b",
+      "cell": [
+        3,
+        3
+      ]
+    },
+    "do": {
+      "codepoint": "0xe01c",
+      "cell": [
+        4,
+        3
+      ]
+    },
+    "du": {
+      "codepoint": "0xe01d",
+      "cell": [
+        5,
+        3
+      ]
+    },
+    "g": {
+      "codepoint": "0xe01e",
+      "cell": [
+        6,
+        3
+      ]
+    },
+    "ga": {
+      "codepoint": "0xe01f",
+      "cell": [
+        7,
+        3
+      ]
+    },
+    "ge": {
+      "codepoint": "0xe020",
+      "cell": [
+        0,
+        4
+      ]
+    },
+    "gi": {
+      "codepoint": "0xe021",
+      "cell": [
+        1,
+        4
+      ]
+    },
+    "go": {
+      "codepoint": "0xe022",
+      "cell": [
+        2,
+        4
+      ]
+    },
+    "gu": {
+      "codepoint": "0xe023",
+      "cell": [
+        3,
+        4
+      ]
+    },
+    "m": {
+      "codepoint": "0xe024",
+      "cell": [
+        4,
+        4
+      ]
+    },
+    "ma": {
+      "codepoint": "0xe025",
+      "cell": [
+        5,
+        4
+      ]
+    },
+    "me": {
+      "codepoint": "0xe026",
+      "cell": [
+        6,
+        4
+      ]
+    },
+    "mi": {
+      "codepoint": "0xe027",
+      "cell": [
+        7,
+        4
+      ]
+    },
+    "mo": {
+      "codepoint": "0xe028",
+      "cell": [
+        0,
+        5
+      ]
+    },
+    "mu": {
+      "codepoint": "0xe029",
+      "cell": [
+        1,
+        5
+      ]
+    },
+    "n": {
+      "codepoint": "0xe02a",
+      "cell": [
+        2,
+        5
+      ]
+    },
+    "na": {
+      "codepoint": "0xe02b",
+      "cell": [
+        3,
+        5
+      ]
+    },
+    "ne": {
+      "codepoint": "0xe02c",
+      "cell": [
+        4,
+        5
+      ]
+    },
+    "ni": {
+      "codepoint": "0xe02d",
+      "cell": [
+        5,
+        5
+      ]
+    },
+    "no": {
+      "codepoint": "0xe02e",
+      "cell": [
+        6,
+        5
+      ]
+    },
+    "nu": {
+      "codepoint": "0xe02f",
+      "cell": [
+        7,
+        5
+      ]
+    },
+    "s": {
+      "codepoint": "0xe030",
+      "cell": [
+        0,
+        6
+      ]
+    },
+    "sa": {
+      "codepoint": "0xe031",
+      "cell": [
+        1,
+        6
+      ]
+    },
+    "se": {
+      "codepoint": "0xe032",
+      "cell": [
+        2,
+        6
+      ]
+    },
+    "si": {
+      "codepoint": "0xe033",
+      "cell": [
+        3,
+        6
+      ]
+    },
+    "so": {
+      "codepoint": "0xe034",
+      "cell": [
+        4,
+        6
+      ]
+    },
+    "su": {
+      "codepoint": "0xe035",
+      "cell": [
+        5,
+        6
+      ]
+    },
+    "l": {
+      "codepoint": "0xe036",
+      "cell": [
+        6,
+        6
+      ]
+    },
+    "la": {
+      "codepoint": "0xe037",
+      "cell": [
+        7,
+        6
+      ]
+    },
+    "le": {
+      "codepoint": "0xe038",
+      "cell": [
+        0,
+        7
+      ]
+    },
+    "li": {
+      "codepoint": "0xe039",
+      "cell": [
+        1,
+        7
+      ]
+    },
+    "lo": {
+      "codepoint": "0xe03a",
+      "cell": [
+        2,
+        7
+      ]
+    },
+    "lu": {
+      "codepoint": "0xe03b",
+      "cell": [
+        3,
+        7
+      ]
+    },
+    "v": {
+      "codepoint": "0xe03c",
+      "cell": [
+        4,
+        7
+      ]
+    },
+    "va": {
+      "codepoint": "0xe03d",
+      "cell": [
+        5,
+        7
+      ]
+    },
+    "ve": {
+      "codepoint": "0xe03e",
+      "cell": [
+        6,
+        7
+      ]
+    },
+    "vi": {
+      "codepoint": "0xe03f",
+      "cell": [
+        7,
+        7
+      ]
+    },
+    "vo": {
+      "codepoint": "0xe040",
+      "cell": [
+        0,
+        8
+      ]
+    },
+    "vu": {
+      "codepoint": "0xe041",
+      "cell": [
+        1,
+        8
+      ]
+    },
+    "r": {
+      "codepoint": "0xe042",
+      "cell": [
+        2,
+        8
+      ]
+    },
+    "ra": {
+      "codepoint": "0xe043",
+      "cell": [
+        3,
+        8
+      ]
+    },
+    "re": {
+      "codepoint": "0xe044",
+      "cell": [
+        4,
+        8
+      ]
+    },
+    "ri": {
+      "codepoint": "0xe045",
+      "cell": [
+        5,
+        8
+      ]
+    },
+    "ro": {
+      "codepoint": "0xe046",
+      "cell": [
+        6,
+        8
+      ]
+    },
+    "ru": {
+      "codepoint": "0xe047",
+      "cell": [
+        7,
+        8
+      ]
+    },
+    "j": {
+      "codepoint": "0xe048",
+      "cell": [
+        0,
+        9
+      ]
+    },
+    "ja": {
+      "codepoint": "0xe049",
+      "cell": [
+        1,
+        9
+      ]
+    },
+    "je": {
+      "codepoint": "0xe04a",
+      "cell": [
+        2,
+        9
+      ]
+    },
+    "ji": {
+      "codepoint": "0xe04b",
+      "cell": [
+        3,
+        9
+      ]
+    },
+    "jo": {
+      "codepoint": "0xe04c",
+      "cell": [
+        4,
+        9
+      ]
+    },
+    "ju": {
+      "codepoint": "0xe04d",
+      "cell": [
+        5,
+        9
+      ]
+    }
+  },
+  "presentation": {
+    "style": "gilded cyan gradient with subpixel aura",
+    "canonical_mask": "art/glyphs/kel-canonical-mask.png",
+    "generator": "tools/stylize_glyphs_and_sounds.py",
+    "note": "Canonical consonants, vowel marks and their placement are unchanged."
+  }
+}

@@ -1,0 +1,6 @@
+package dev.kelmagic.mixin;
+import dev.kelmagic.research.Research;import net.minecraft.world.inventory.*;import net.minecraft.world.level.Level;import net.minecraft.world.entity.player.Player;import net.minecraft.world.item.*;import net.minecraft.world.item.crafting.*;import org.spongepowered.asm.mixin.Mixin;import org.spongepowered.asm.mixin.injection.*;import org.spongepowered.asm.mixin.injection.callback.*;
+@Mixin(CraftingMenu.class)public abstract class ResearchCraftingMixin {
+ @Inject(method="slotChangedCraftingGrid",at=@At("TAIL"))private static void gate(AbstractContainerMenu menu,Level level,Player p,CraftingContainer in,ResultContainer result,RecipeHolder<CraftingRecipe> recipe,CallbackInfo ci){if(!Research.allowed(p,result.getItem(0))){result.setItem(0,ItemStack.EMPTY);if(p instanceof net.minecraft.server.level.ServerPlayer sp)sp.connection.send(new net.minecraft.network.protocol.game.ClientboundContainerSetSlotPacket(menu.containerId,menu.incrementStateId(),0,ItemStack.EMPTY));}}
+ @Inject(method="quickMoveStack",at=@At("HEAD"),cancellable=true)private void shift(Player p,int slot,CallbackInfoReturnable<ItemStack> ci){if(slot==0&&!Research.allowed(p,((AbstractContainerMenu)(Object)this).getSlot(0).getItem()))ci.setReturnValue(ItemStack.EMPTY);}
+}

@@ -1,0 +1,1381 @@
+{
+  "version": 1,
+  "effects": {
+    "per": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mil": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Восстанавливает здоровье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "nak": {
+      "action": "BUFF",
+      "status": "weakness",
+      "description": "Ослабляет ближний бой.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mam": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pap": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kin": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Увеличивает высоту прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gav": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ged": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gok": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nos": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mur": {
+      "action": "BUFF",
+      "status": "hunger",
+      "description": "Усиливает голод.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ped": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kor": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Восстанавливает здоровье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "sol": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lun": {
+      "action": "BUFF",
+      "status": "invisibility",
+      "description": "Скрывает цель от глаз.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ter": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vak": {
+      "action": "BUFF",
+      "status": "water_breathing",
+      "description": "Позволяет дышать под водой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tur": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gor": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Увеличивает высоту прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mar": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Ускоряет плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "riv": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Ускоряет плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "neb": {
+      "action": "BUFF",
+      "status": "slow_falling",
+      "description": "Смягчает падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dum": {
+      "action": "BUFF",
+      "status": "blindness",
+      "description": "Затуманивает зрение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vit": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kuk": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pis": {
+      "action": "BUFF",
+      "status": "slow_falling",
+      "description": "Смягчает падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sal": {
+      "action": "BUFF",
+      "status": "water_breathing",
+      "description": "Позволяет дышать под водой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vid": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tik": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kel": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "man": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "pin": {
+      "action": "EXTINGUISH",
+      "status": "",
+      "description": "Гасит только обычное горение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pak": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dak": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Восстанавливает здоровье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "tak": {
+      "action": "PULL",
+      "status": "",
+      "description": "Притягивает цель к заклинателю.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sit": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "liv": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Восстанавливает здоровье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "mor": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Наносит магический удар.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "sav": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pen": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vol": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Повышает удачу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kan": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lab": {
+      "action": "BUFF",
+      "status": "haste",
+      "description": "Ускоряет добычу блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ler": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lud": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Увеличивает высоту прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lov": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pul": {
+      "action": "SPIN",
+      "status": "",
+      "description": "Закручивает цель вокруг заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lom": {
+      "action": "BUFF",
+      "status": "haste",
+      "description": "Ускоряет добычу блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "set": {
+      "action": "CLEANSE",
+      "status": "",
+      "description": "Снимает яд, голод и слабость.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pad": {
+      "action": "BUFF",
+      "status": "slow_falling",
+      "description": "Смягчает падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ved": {
+      "action": "PULL",
+      "status": "",
+      "description": "Притягивает цель к заклинателю.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tom": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "puk": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "log": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tem": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lok": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rak": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mon": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Повышает удачу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tab": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "kul": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bed": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dor": {
+      "action": "OPEN",
+      "status": "",
+      "description": "Открывает дверь или люк в прицеле.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sen": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "val": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rum": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kas": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает ближайших существ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vil": {
+      "action": "BUFF",
+      "status": "hero_of_the_village",
+      "description": "Даёт скидку у жителей.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lum": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pal": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "sin": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tul": {
+      "action": "CLOSE",
+      "status": "",
+      "description": "Закрывает дверь или люк в прицеле.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kur": {
+      "action": "SPIN",
+      "status": "",
+      "description": "Закручивает цель вокруг заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "var": {
+      "action": "EXTINGUISH",
+      "status": "",
+      "description": "Гасит только обычное горение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kol": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nov": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vel": {
+      "action": "BUFF",
+      "status": "weakness",
+      "description": "Ослабляет ближний бой.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bon": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Восстанавливает здоровье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "mal": {
+      "action": "BUFF",
+      "status": "poison",
+      "description": "Отравляет цель, не добивая её.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rap": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "len": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "por": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nem": {
+      "action": "BUFF",
+      "status": "weakness",
+      "description": "Ослабляет ближний бой.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sek": {
+      "action": "EXTINGUISH",
+      "status": "",
+      "description": "Гасит только обычное горение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kap": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Повышает удачу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gus": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pob": {
+      "action": "BUFF",
+      "status": "blindness",
+      "description": "Затуманивает зрение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rag": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kal": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tuk": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bal": {
+      "action": "BUFF",
+      "status": "invisibility",
+      "description": "Скрывает цель от глаз.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rin": {
+      "action": "OPEN",
+      "status": "",
+      "description": "Открывает дверь или люк в прицеле.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tin": {
+      "action": "CLOSE",
+      "status": "",
+      "description": "Закрывает дверь или люк в прицеле.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vin": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "jin": {
+      "action": "PULL",
+      "status": "",
+      "description": "Притягивает цель к заклинателю.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "don": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gon": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kon": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lon": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "non": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Увеличивает высоту прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pon": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ron": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Ускоряет плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "son": {
+      "action": "BUFF",
+      "status": "slow_falling",
+      "description": "Смягчает падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ton": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "din": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gin": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lin": {
+      "action": "CLEANSE",
+      "status": "",
+      "description": "Снимает яд, голод и слабость.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nin": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "nok": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pok": {
+      "action": "BUFF",
+      "status": "blindness",
+      "description": "Затуманивает зрение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rok": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sok": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tok": {
+      "action": "BUFF",
+      "status": "invisibility",
+      "description": "Скрывает цель от глаз.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vok": {
+      "action": "BUFF",
+      "status": "invisibility",
+      "description": "Скрывает цель от глаз.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "buk": {
+      "action": "BUFF",
+      "status": "blindness",
+      "description": "Затуманивает зрение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "duk": {
+      "action": "EXTINGUISH",
+      "status": "",
+      "description": "Гасит только обычное горение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "guk": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "luk": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nuk": {
+      "action": "BUFF",
+      "status": "water_breathing",
+      "description": "Позволяет дышать под водой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "suk": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dun": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Наносит магический удар.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "gun": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lup": {
+      "action": "EXTINGUISH",
+      "status": "",
+      "description": "Гасит только обычное горение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nup": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bak": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gak": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lak": {
+      "action": "BUFF",
+      "status": "slow_falling",
+      "description": "Смягчает падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mak": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Ускоряет плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sak": {
+      "action": "BUFF",
+      "status": "poison",
+      "description": "Отравляет цель, не добивая её.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sap": {
+      "action": "BUFF",
+      "status": "glowing",
+      "description": "Подсвечивает цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tup": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "del": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gel": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lel": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Увеличивает высоту прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mel": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Повышает удачу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tel": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bel": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "nel": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "pel": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Постепенно лечит цель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rel": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sel": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедляет движение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "jel": {
+      "action": "BUFF",
+      "status": "poison",
+      "description": "Отравляет цель, не добивая её.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bin": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Наносит магический удар.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "den": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gen": {
+      "action": "SPIN",
+      "status": "",
+      "description": "Закручивает цель вокруг заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "men": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Ускоряет плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nen": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ren": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Наносит магический удар.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "ten": {
+      "action": "BUFF",
+      "status": "absorption",
+      "description": "Даёт временные сердца.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ven": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "jen": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bun": {
+      "action": "PULL",
+      "status": "",
+      "description": "Притягивает цель к заклинателю.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kut": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "mut": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nut": {
+      "action": "BUFF",
+      "status": "haste",
+      "description": "Ускоряет добычу блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "but": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Наносит магический удар.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "gut": {
+      "action": "PULL",
+      "status": "",
+      "description": "Притягивает цель к заклинателю.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lut": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rut": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sut": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускоряет движение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tut": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vut": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Повышает удачу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bup": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Отталкивает цель от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kup": {
+      "action": "BUFF",
+      "status": "absorption",
+      "description": "Даёт временные сердца.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bek": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dek": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gek": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lek": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Позволяет видеть в темноте.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mek": {
+      "action": "FEED",
+      "status": "",
+      "description": "Восстанавливает сытость игрока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "nek": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Укрепляет защиту цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pek": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиливает ближний бой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rek": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Увеличивает высоту прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tek": {
+      "action": "BUFF",
+      "status": "haste",
+      "description": "Ускоряет добычу блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    }
+  }
+}

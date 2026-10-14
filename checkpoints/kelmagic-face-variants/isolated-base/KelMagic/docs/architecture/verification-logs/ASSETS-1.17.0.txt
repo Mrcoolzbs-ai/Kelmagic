@@ -1,0 +1,1 @@
+PASS: 31 unique acyclic single-chapter nodes, 51 individually authored clues and thoughts, specific craft/record triggers, distinct completion thoughts, static chapter art, continuous wave sampling, no inventory wording in runtime, own-note advancement and word sort/filter controls.

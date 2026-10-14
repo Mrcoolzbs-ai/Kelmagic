@@ -1,0 +1,8 @@
+package dev.kelmagic.mixin;
+import dev.kelmagic.MagicStudy;import net.minecraft.world.entity.LivingEntity;import net.minecraft.world.entity.npc.VillagerDataHolder;import net.minecraft.core.registries.BuiltInRegistries;import net.minecraft.resources.ResourceLocation;import net.minecraft.client.renderer.entity.layers.VillagerProfessionLayer;import org.spongepowered.asm.mixin.*;import org.spongepowered.asm.mixin.injection.*;import org.spongepowered.asm.mixin.injection.callback.*;
+@Mixin(VillagerProfessionLayer.class)
+public abstract class ArchivistClothesMixin {
+ @Unique private String kelmagic$biome="plains";
+ @Inject(method="render(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFF)V",at=@At("HEAD"))private void kelmagic$biome(com.mojang.blaze3d.vertex.PoseStack pose,net.minecraft.client.renderer.MultiBufferSource buffers,int light,LivingEntity e,float a,float b,float c,float d,float f,float g,CallbackInfo ci){if(e instanceof VillagerDataHolder v)kelmagic$biome=BuiltInRegistries.VILLAGER_TYPE.getKey(v.getVillagerData().getType()).getPath();}
+ @Inject(method="getResourceLocation",at=@At("RETURN"),cancellable=true)private void kelmagic$outfit(String kind,ResourceLocation id,CallbackInfoReturnable<ResourceLocation> ci){if(!java.util.Set.of("plains","desert","taiga","snow","snowy","savanna","jungle","swamp").contains(kelmagic$biome))kelmagic$biome="plains";if(kind.equals("profession")&&id.equals(ResourceLocation.fromNamespaceAndPath("kelmagic","archivist")))ci.setReturnValue(ResourceLocation.fromNamespaceAndPath("kelmagic","textures/entity/villager/profession/archivist_"+kelmagic$biome+".png"));}
+}

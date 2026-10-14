@@ -1,0 +1,11 @@
+allprojects {
+ afterEvaluate {
+  tasks.matching { it.name == 'createMinecraftArtifacts' }.configureEach {
+   def binaryTarget = gameJarWithSourcesArtifact.orNull
+   if(binaryTarget != null) gameJarArtifact.set(binaryTarget)
+   gameJarWithSourcesArtifact.set(providers.provider { null })
+   gameSourcesArtifact.set(providers.provider { null })
+   disableRecompilation.set(true)
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "kelmagic:dragon_heart"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.dragon_heart.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.dragon_heart.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ],
+  "parent": "kelmagic:root"
+}

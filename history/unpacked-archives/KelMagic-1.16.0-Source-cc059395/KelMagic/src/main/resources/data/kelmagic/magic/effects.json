@@ -1,0 +1,1552 @@
+{
+  "effects": {
+    "per": {
+      "action": "SCAN_PLAYERS",
+      "status": "",
+      "description": "Ищи тех, кто похож на тебя. Старый список имён занимает больше места, чем живые огни.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Обнаруживает только игроков свечением."
+    },
+    "mil": {
+      "action": "PACIFY",
+      "status": "",
+      "description": "Клык опускается, но не исчезает. Даже древний договор не прощает первого удара.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Делает агрессивного моба нейтральным: не нападает первым, но отвечает на удар."
+    },
+    "nak": {
+      "action": "HOSTILE",
+      "status": "",
+      "description": "Кроткое существо учится отвечать. На обороте листа след чьей-то дрожащей руки.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Делает мирного моба нейтральным: теперь он отвечает атакой на удар."
+    },
+    "mam": {
+      "action": "BUFF",
+      "status": "regeneration,absorption",
+      "description": "Тёплая ладонь удерживает жизнь. На детской постели давно лежит пыль.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Материнская забота: регенерация и поглощение."
+    },
+    "pap": {
+      "action": "BUFF",
+      "status": "resistance,strength",
+      "description": "За спиной будто встаёт тот, кто обещал защитить дом. Дом не сохранился.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Отцовская защита: сопротивление и сила."
+    },
+    "kin": {
+      "action": "BUFF",
+      "status": "jump_boost,slow_falling",
+      "description": "Земля отпускает ноги, воздух принимает падение. Прежние дети играли на крышах.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Детская лёгкость: прыжок и мягкое падение."
+    },
+    "gav": {
+      "action": "COMMAND",
+      "status": "",
+      "description": "Узел ослабевает. В печати исчезнувшего совета власть изображали раскрытой ладонью.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Отпускает поводок выбранного моба и успокаивает его."
+    },
+    "ged": {
+      "action": "BUFF",
+      "status": "night_vision,water_breathing",
+      "description": "Мысль яснеет даже под тёмной водой. В затопленной библиотеке это слово осталось на потолке.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ясная голова: зрение и дыхание под водой."
+    },
+    "gok": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Темнота уступает взгляду. Старые смотрители обходились без свечей.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ночное зрение."
+    },
+    "nos": {
+      "action": "SCAN_ITEMS",
+      "status": "",
+      "description": "Потерянные вещи выдают себя лёгким дрожанием воздуха. Владельцев оно не возвращает.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Отмечает частицы около брошенных предметов в пределах 12 блоков."
+    },
+    "mur": {
+      "action": "FEED",
+      "status": "",
+      "description": "Голод отступает на миг. В ведомости последнего обоза это слово записано на каждой строке.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4,
+      "gameplayDescription": "Утоляет голод цели на 4 единицы."
+    },
+    "ped": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Нога вспоминает высоту. От лестниц, по которым бежали тогда, остались только пролёты.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Усиление прыжка."
+    },
+    "kor": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Сердце подхватывает пропущенный удар. У края строки кто-то снова поставил точку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4,
+      "gameplayDescription": "Мгновенное лечение 4 HP."
+    },
+    "sol": {
+      "action": "W_LIGHT",
+      "status": "torch",
+      "description": "Куда укажешь, там займётся маленькое солнце. Такие огни отмечали дорогу к убежищам.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт магический факел на выбранной взглядом поверхности; работает без mina."
+    },
+    "lun": {
+      "action": "W_PLACE",
+      "status": "sea_lantern",
+      "description": "В камне загорается тихая луна. На дне старых залов её свет всё ещё ровный.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт магический фонарь рядом с выбранным блоком."
+    },
+    "ter": {
+      "action": "W_PLACE",
+      "status": "dirt",
+      "description": "Под ладонью появляется земля. Беженцы берегли её даже на пустых островах.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт блок земли."
+    },
+    "vak": {
+      "action": "W_WATER",
+      "status": "",
+      "description": "Вода находит начало среди камня. За жаркими вратами остаётся лишь пар.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт источник воды; в сверхжарком измерении испаряется."
+    },
+    "tur": {
+      "action": "W_PLACE",
+      "status": "oak_log",
+      "description": "Дуб вспоминает ствол. На островах без леса это слово писали особенно мелко.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт дубовое бревно."
+    },
+    "gor": {
+      "action": "W_PILLAR",
+      "status": "stone",
+      "description": "Камень выпрямляется, словно обломок горы. Строители оставляли на вершине место для сигнального огня.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Строит каменный столб высотой до 4 блоков."
+    },
+    "mar": {
+      "action": "W_POOL",
+      "status": "",
+      "description": "В пустой чаше собирается вода. На карте под ней подписан город, которого теперь не видно.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Заполняет водой небольшой бассейн из свободных ячеек."
+    },
+    "riv": {
+      "action": "W_CHANNEL",
+      "status": "",
+      "description": "Вода прокладывает короткую дорогу. Большие реки больше не слушаются человеческого голоса.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт канал из трёх источников воды по направлению взгляда."
+    },
+    "neb": {
+      "action": "BUFF",
+      "status": "levitation",
+      "description": "Небо на миг вспоминает твою лёгкость. Оно уже держало города, которые никто не нашёл.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Краткое парение вверх."
+    },
+    "dum": {
+      "action": "W_PARTICLES",
+      "status": "smoke",
+      "description": "Дым скрывает последнюю дверь. В старых приказах это слово стоит перед словом «уходить».",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Дымовая завеса на точке прицела."
+    },
+    "vit": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Воздух становится плечом и отталкивает прочь. У корабельных окон его писали остриём ножа.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 3,
+      "gameplayDescription": "Порыв ветра отталкивает цель."
+    },
+    "kuk": {
+      "action": "BUFF",
+      "status": "night_vision,speed",
+      "description": "Глаза привыкают к ночи, шаг становится тише. Кошки первыми обходили опустевшие дома.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Кошачьи зрение и проворство."
+    },
+    "pis": {
+      "action": "BUFF",
+      "status": "slow_falling,jump_boost",
+      "description": "Падение замедляется. В полях страницы нарисована птица с крыльями, похожими на паруса.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Птичье планирование и прыжок."
+    },
+    "sal": {
+      "action": "BUFF",
+      "status": "water_breathing,dolphins_grace",
+      "description": "Вода перестаёт быть чужой. Исследователи затонувших улиц возвращались с мокрыми книгами.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Рыбье дыхание и плавание."
+    },
+    "vid": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Живые огни проступают сквозь стены. Смотритель давно не ставит возле них имён.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Подсвечивает живых существ вокруг игрока, независимо от взгляда и препятствий."
+    },
+    "tik": {
+      "action": "ECHO",
+      "status": "",
+      "description": "Самое близкое дыхание выдаёт направление. В тишине руин его ждут дольше, чем ответ.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Показывает направление и расстояние до ближайшей живой цели."
+    },
+    "kel": {
+      "action": "VOICE",
+      "status": "",
+      "description": "Звон указывает место всем, кто ещё слышит. В крепостных библиотеках так созывали переписчиков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Звон колокола и частицы отмечают точку прицела для всех рядом."
+    },
+    "man": {
+      "action": "EAT",
+      "status": "",
+      "description": "Пища исчезает из ладони, оставляя сытость. Последнюю трапезу делили без посуды.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Забирает один съедобный предмет из основной руки цели и насыщает её."
+    },
+    "pin": {
+      "action": "DRINK",
+      "status": "",
+      "description": "Обычный жар стихает, вода принимает дыхание. У драконьего пламени другой договор.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает жажду огня: тушит обычное горение и даёт подводное дыхание."
+    },
+    "pak": {
+      "action": "STEP",
+      "status": "",
+      "description": "Шаг следует за взглядом. Дорога не спрашивает, остался ли кто-нибудь впереди.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Подталкивает цель вперёд по её направлению взгляда."
+    },
+    "dak": {
+      "action": "GIVE",
+      "status": "",
+      "description": "Вещь переходит из руки в руку. Переписчики считали это знаком доверия, а не богатства.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Передаёт один предмет из второй руки заклинателя цели, не создавая копий."
+    },
+    "tak": {
+      "action": "COLLECT",
+      "status": "",
+      "description": "Оставленное тянется обратно. Хозяева караванов писали слово на застёжках дорожных мешков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Притягивает ближайшие брошенные предметы к цели."
+    },
+    "sit": {
+      "action": "ANCHOR",
+      "status": "",
+      "description": "Движение замирает. В разрушенном зале приказ звучал бы почти ласково.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Останавливает движение цели и накладывает краткую медлительность."
+    },
+    "liv": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Жизнь продолжает тихую работу. Даже в пепле когда-то находили тех, кто ещё дышал.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Регенерация; mina liv pir — особая жизнь в пламени."
+    },
+    "mor": {
+      "action": "DECAY",
+      "status": "",
+      "description": "Холод добирается до самой жизни. Эту страницу держали отдельно от детских тетрадей.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 8,
+      "gameplayDescription": "Смертельный холод: 8 HP магического урона."
+    },
+    "sav": {
+      "action": "INSPECT",
+      "status": "",
+      "description": "Названное открывает свою меру. В камне проще прочесть правду, чем в последних отчётах людей.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Сообщает здоровье существа либо твёрдость и название блока."
+    },
+    "pen": {
+      "action": "BUFF",
+      "status": "haste,night_vision",
+      "description": "Мысль собирается в точку, руки успевают за ней. Время у переписчиков всегда кончалось раньше чернил.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Сосредоточенность: спешка и зрение."
+    },
+    "vol": {
+      "action": "PULL",
+      "status": "",
+      "description": "Желанное приближается. Так звали с причалов тех, кого уже уносило течением.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2,
+      "gameplayDescription": "Сильное притяжение живой цели к заклинателю."
+    },
+    "kan": {
+      "action": "BUFF",
+      "status": "absorption",
+      "description": "Тело получает короткую передышку. На полях написано: «Ещё один переход».",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Запас временного здоровья."
+    },
+    "lab": {
+      "action": "W_MINE",
+      "status": "single",
+      "description": "Камень уступает орудию, а не голому приказу. Старые мастера знали цену честной работе.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Добывает выбранный блок текущим инструментом, с обычным лутом и защитой."
+    },
+    "ler": {
+      "action": "BUFF",
+      "status": "luck,haste",
+      "description": "Рука ученика вдруг находит верное движение. Имя учителя выскоблено из заголовка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Вдохновение ученика: удача и спешка."
+    },
+    "lud": {
+      "action": "W_SOUND",
+      "status": "note",
+      "description": "В воздухе остаётся несколько нот. Праздничный зал давно погребён под землёй.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Играет мелодию из нот в точке прицела."
+    },
+    "lov": {
+      "action": "LOVE",
+      "status": "",
+      "description": "Рана затягивается медленно, будто кто-то всё ещё рядом. На этой странице нет печати совета.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 2,
+      "gameplayDescription": "Лечит цель на 2 HP и даёт краткую регенерацию."
+    },
+    "pul": {
+      "action": "SPIN",
+      "status": "",
+      "description": "Мир делает боковой оборот. Корабельные писцы отмечали так опасный порыв ветра.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2,
+      "gameplayDescription": "Закручивает цель поперёк линии прицела."
+    },
+    "lom": {
+      "action": "W_SHATTER",
+      "status": "",
+      "description": "Непрочный камень забывает форму. Рядом предупреждение: обломки не станут добычей.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Разбивает мягкий блок твёрдостью до 1,5 без выпадения добычи."
+    },
+    "set": {
+      "action": "W_CLEAR",
+      "status": "plants",
+      "description": "Малые побеги освобождают место. На плане исчезнувшего сада дорожки ещё подписаны.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Убирает выбранную траву/цветок с обычным лутом."
+    },
+    "pad": {
+      "action": "FALL",
+      "status": "",
+      "description": "Земля зовёт вниз. Даже сильное слово не откроет дорогу сквозь сплошной камень.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Прижимает цель вниз; не телепортирует сквозь блоки."
+    },
+    "ved": {
+      "action": "LEAD",
+      "status": "",
+      "description": "Шаги тянутся к голосу ведущего. Последняя колонна вышла без знамени.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ведёт моба к заклинателю; игроку задаёт движение к нему."
+    },
+    "tom": {
+      "action": "W_SHELTER",
+      "status": "oak_planks",
+      "description": "Над головой сходятся доски. В старом счёте за дом принимали даже укрытие на одну ночь.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт маленький навес из досок над целью."
+    },
+    "puk": {
+      "action": "READ",
+      "status": "",
+      "description": "Запись раскрывает сохранённое эхо. На лентах чужие голоса пережили своих владельцев.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Показывает содержимое записанного скриптера/кассеты во второй руке."
+    },
+    "log": {
+      "action": "SPELL_INFO",
+      "status": "",
+      "description": "Следующая строка отдаёт смысл читателю. В пустых местах книги никто не обещал ответов.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Показывает описание следующего слова из открытого кодекса во второй руке."
+    },
+    "tem": {
+      "action": "W_TICK",
+      "status": "crop",
+      "description": "Рост делает ещё один шаг. Хранители грядок считали время по листьям, а не по календарю.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Продвигает рост выбранного растения на одну стадию."
+    },
+    "lok": {
+      "action": "BLINK",
+      "status": "",
+      "description": "Близкая твёрдая земля принимает путника. Дальние врата требуют слов, которых здесь нет.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Переносит заклинателя на безопасную поверхность у прицела, до 12 блоков."
+    },
+    "rak": {
+      "action": "W_PATH",
+      "status": "dirt_path",
+      "description": "Почва ложится под шаги. Последняя тропа всё ещё ведёт к дверям, которых больше нет.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Превращает небольшой участок земли в тропу."
+    },
+    "mon": {
+      "action": "COUNT",
+      "status": "",
+      "description": "В карманах отзываются металл и зелёный камень. Когда торговцы вернулись, покупателей уже не было.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Считает изумруды, золотые слитки и самородки в инвентаре."
+    },
+    "tab": {
+      "action": "W_PLACE",
+      "status": "crafting_table",
+      "description": "Доски сходятся в место для работы. Начать заново можно с малого.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт верстак."
+    },
+    "kul": {
+      "action": "W_PLACE",
+      "status": "oak_stairs",
+      "description": "Появляется сиденье для того, кто устал. За длинным столом осталось слишком много свободных мест.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт дубовую ступень-сиденье."
+    },
+    "bed": {
+      "action": "REST",
+      "status": "",
+      "description": "Тело отпускает слабость и тяжесть. Ночь от этого не становится короче.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает слабость и даёт медленное падение; время суток не меняет."
+    },
+    "dor": {
+      "action": "W_DOOR",
+      "status": "",
+      "description": "Две половины берегут проход. На косяках старых убежищ зарубки считали не дни, а возвращения.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт двухблочную дубовую дверь с проверкой обеих ячеек."
+    },
+    "sen": {
+      "action": "W_PLACE",
+      "status": "glass_pane",
+      "description": "Свет получает тонкую границу. Из окон крепости когда-то смотрели не на звёзды, а на разлом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт стеклянную панель."
+    },
+    "val": {
+      "action": "W_WALL",
+      "status": "cobblestone",
+      "description": "Три камня встают между тобой и опасностью. В летописях это называли временной мерой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт стенку из трёх блоков булыжника."
+    },
+    "rum": {
+      "action": "W_RING",
+      "status": "oak_fence",
+      "description": "Уголки сходятся вокруг пустого места. Для входа оставляют щель — даже после всего случившегося.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Огораживает маленькую площадку, оставляя проход."
+    },
+    "kas": {
+      "action": "W_ROAD",
+      "status": "stone_bricks",
+      "description": "Под ногами проступает короткая мостовая. Остальную улицу давно забрала вода.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Мостовая длиной до 5 блоков над выбранной поверхностью."
+    },
+    "vil": {
+      "action": "W_PLANT",
+      "status": "oak_sapling",
+      "description": "На доброй земле появляется маленький дуб. Жители говорят: деревня начинается не с забора.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высаживает дубовый саженец на подходящей почве."
+    },
+    "lum": {
+      "action": "W_LIGHT_LINE",
+      "status": "torch",
+      "description": "Несколько огней ложатся вдоль пути. Когда-то по ним возвращались домой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Расставляет до трёх факелов вдоль поверхности."
+    },
+    "pal": {
+      "action": "BAKE",
+      "status": "",
+      "description": "Зерно становится хлебом. Там, где исчезли печи, берегли каждую горсть пшеницы.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Превращает три пшеницы во второй руке в хлеб, без дублирования."
+    },
+    "sin": {
+      "action": "EXIT",
+      "status": "",
+      "description": "Назад остаётся небольшой безопасный шаг. На полях слово подчёркнуто дважды.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Безопасно отступает назад до 4 блоков."
+    },
+    "tul": {
+      "action": "W_VALVE",
+      "status": "",
+      "description": "Скрытый рычаг отвечает щелчком. Мёртвые механизмы порой помнят хозяев лучше людей.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Переключает рычаг или нажимает каменную/деревянную кнопку."
+    },
+    "kur": {
+      "action": "W_CIRCLE",
+      "status": "cobblestone_wall",
+      "description": "Камни очерчивают круг, но оставляют выход. Первые чертежи убежищ ещё не знали осады.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт круговое ограждение радиусом 2 с проходом."
+    },
+    "var": {
+      "action": "W_WARM",
+      "status": "",
+      "description": "Снег уступает прежнему теплу. В затопленных руинах это слово читают как предупреждение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Тает выбранные снег или лёд, не создавая огонь."
+    },
+    "kol": {
+      "action": "W_FREEZE",
+      "status": "",
+      "description": "Вода вспоминает неподвижность льда. О старых холодах остались только обломки берега.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Замораживает выбранный источник воды в лёд."
+    },
+    "nov": {
+      "action": "W_CONVERT",
+      "status": "weathered_copper>exposed_copper",
+      "description": "Медь сбрасывает один слой прожитых лет. Сам город вернуть так и не удалось.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Очищает одну ступень окисления меди."
+    },
+    "vel": {
+      "action": "W_CONVERT",
+      "status": "copper_block>exposed_copper",
+      "description": "Медь принимает ещё один год тишины. Зелёный налёт появился раньше, чем исчезли имена.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Состаривает медный блок на одну ступень."
+    },
+    "bon": {
+      "action": "CLEANSE",
+      "status": "",
+      "description": "Тело отпускает яд и слабость. Лекари оставляли эту строку у самой двери.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает яд, голод и слабость."
+    },
+    "mal": {
+      "action": "BUFF",
+      "status": "poison,hunger",
+      "description": "Голод и яд входят без стука. На странице остался отпечаток закрытой ладони.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Отравляет и вызывает голод."
+    },
+    "rap": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Путь проходит быстрее под ногами. В списках спасённых не хватало тех, кто замыкал строй.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ускорение движения."
+    },
+    "len": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Каждый шаг наливается тяжестью. Пыль на пороге остаётся нетронутой.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Замедление движения."
+    },
+    "por": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Рука вспоминает силу. На корабельных носах победы считали по снятым головам.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Усиление ближнего боя."
+    },
+    "nem": {
+      "action": "BUFF",
+      "status": "weakness",
+      "description": "Сила уходит из удара. Иногда только это отделяло приказ от убийства.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ослабление ближнего боя."
+    },
+    "sek": {
+      "action": "W_DRY",
+      "status": "",
+      "description": "Влага покидает вещь. Книги после потопа сушили на камнях, но чернила уже расплылись.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высушивает водонасыщенный блок, мокрую губку или грязь."
+    },
+    "kap": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Случай на миг становится добрее. Никто не помнит, кому достался последний счастливый жребий.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Удача."
+    },
+    "gus": {
+      "action": "BUFF",
+      "status": "unluck",
+      "description": "Случай отворачивается. Архивариус оставил эту страницу без закладки.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Неудача."
+    },
+    "pob": {
+      "action": "FEAR",
+      "status": "",
+      "description": "Зверь отступает от произнесённого. В старых клетках нет костей — только открытые дверцы.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Выбранный моб убегает от заклинателя."
+    },
+    "rag": {
+      "action": "BUFF",
+      "status": "strength,speed,hunger",
+      "description": "Гнев ускоряет руку и опустошает тело. На обороте перечень припасов, которых не хватило.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ярость: сила и скорость ценой голода."
+    },
+    "kal": {
+      "action": "BUFF",
+      "status": "resistance,slowness",
+      "description": "Покой делает тело крепче, а шаг медленнее. Так стояли у дверей до последнего.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Покой: защита ценой скорости."
+    },
+    "tuk": {
+      "action": "REVEAL",
+      "status": "",
+      "description": "Скрытое проступает светом. В отчётах о потерях больше не удаётся прятать строки.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает невидимость с цели и подсвечивает её."
+    },
+    "bal": {
+      "action": "BUFF",
+      "status": "invisibility",
+      "description": "Воздух прячет очертания. Не каждый исчезнувший тогда был мёртв.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Невидимость."
+    },
+    "rin": {
+      "action": "OPEN",
+      "status": "",
+      "description": "Затвор отпускает проход. Ключи в руинах оказались долговечнее владельцев.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Открывает дверь, люк или калитку."
+    },
+    "tin": {
+      "action": "CLOSE",
+      "status": "",
+      "description": "Проход снова запирается. У последней двери нет записи о том, кто остался снаружи.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Закрывает дверь, люк или калитку."
+    },
+    "vin": {
+      "action": "KNOCK",
+      "status": "",
+      "description": "Тело отступает от резкого напора. Так освобождали палубу, когда места уже не хватало.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Резко отбрасывает цель горизонтально, без вертикального подброса."
+    },
+    "jin": {
+      "action": "REEL",
+      "status": "",
+      "description": "Цель подаётся к зовущему сильнее прежнего. У обрыва это могло быть спасением или приговором.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Подтягивает цель к точке в двух блоках перед заклинателем, сильнее vol."
+    },
+    "don": {
+      "action": "THROW",
+      "status": "",
+      "description": "Воздух несёт вверх и вперёд. Окна боевых кораблей слишком узки для безопасного прыжка.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Подбрасывает цель вверх и вперёд."
+    },
+    "gon": {
+      "action": "CATCH",
+      "status": "",
+      "description": "Падение теряет скорость. На нижнем поле записаны имена тех, кого успели поймать.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Гасит движение падающей цели и даёт краткое мягкое падение."
+    },
+    "kon": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Тело становится упорнее ветра. Стражи ставили эту строку внутри доспеха.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Стойкость."
+    },
+    "lon": {
+      "action": "LOW",
+      "status": "",
+      "description": "Движение и сила утихают. Даже древний приказ не заставит тебя принять чужую позу.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Останавливает цель и накладывает слабость, не меняя позу игрока."
+    },
+    "non": {
+      "action": "JUMP",
+      "status": "",
+      "description": "Земля отдаёт один быстрый толчок. На полях — детский рисунок ступеней без лестницы.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Мгновенный вертикальный прыжок без длительного эффекта."
+    },
+    "pon": {
+      "action": "DASH",
+      "status": "",
+      "description": "Короткий рывок оставляет опасность позади. Длинные дороги всё ещё приходится проходить.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Рывок вперёд с кратким ускорением."
+    },
+    "ron": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Вода пропускает тело быстрее. Когда крыши стали пристанями, этому учили всех.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ускоренное плавание."
+    },
+    "son": {
+      "action": "GLIDE",
+      "status": "",
+      "description": "Воздух поднимает и бережёт падение. Он не обещает держать тебя вечно.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Подъём и длительное мягкое падение вместо творческого полёта."
+    },
+    "ton": {
+      "action": "BUFF",
+      "status": "slowness,resistance,night_vision",
+      "description": "Медленный путь дарит защиту и ясный взгляд. Под завалами спешка стоила дороже золота.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Ползучая защита: медлительность, сопротивление и зрение."
+    },
+    "din": {
+      "action": "DROWSY",
+      "status": "",
+      "description": "Агрессия засыпает, шаги затихают. В караульном журнале впервые появилась пустая строка.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Усыпляет агрессию моба и кратко замедляет цель."
+    },
+    "gin": {
+      "action": "WAKE",
+      "status": "",
+      "description": "Тяжёлый сон отступает вместе с темнотой. Не все проснувшиеся узнавали собственный дом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает замедление, слабость и темноту."
+    },
+    "lin": {
+      "action": "W_WASH",
+      "status": "",
+      "description": "Краска уходит с шерсти. Но сажа чужого дыхания не слушается этой воды.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Смывает краситель с шерсти в белый; не тушит магическое горение."
+    },
+    "nin": {
+      "action": "COOK",
+      "status": "",
+      "description": "Пища принимает тепло без очага. Беженцы уносили рецепты, а не печи.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Готовит один сырой пищевой предмет из второй руки заклинателя."
+    },
+    "nok": {
+      "action": "W_PLACE",
+      "status": "stone",
+      "description": "Камень обретает простую форму. Из таких начинали стены до того, как научились бояться.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт каменный блок."
+    },
+    "pok": {
+      "action": "W_PLACE",
+      "status": "sand",
+      "description": "Песок ложится на ладонь. На старых берегах под ним всё ещё находятся пороги.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт песок."
+    },
+    "rok": {
+      "action": "W_PLACE",
+      "status": "coarse_dirt",
+      "description": "Земля смешивается с камнем. Заброшенные дороги медленно забывают человеческий шаг.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт каменистую землю."
+    },
+    "sok": {
+      "action": "W_PLACE",
+      "status": "mud",
+      "description": "Почва тяжелеет от воды. На плане поселения это место ещё отмечено как площадь.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт грязь."
+    },
+    "tok": {
+      "action": "W_PLACE",
+      "status": "glass",
+      "description": "Прозрачная грань принимает свет. За ней удобнее смотреть на то, к чему страшно подойти.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт стеклянный блок."
+    },
+    "vok": {
+      "action": "W_STEAM",
+      "status": "",
+      "description": "Вода уходит белым дыханием. Перед уходом из нижних крепостей так стирали следы.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Испаряет выбранную воду с облаком пара."
+    },
+    "buk": {
+      "action": "W_PARTICLES",
+      "status": "cloud",
+      "description": "Туман закрывает даль. Корабли возвращались из него не всегда с прежними экипажами.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт густую облачную завесу в точке прицела."
+    },
+    "duk": {
+      "action": "W_MOISTEN",
+      "status": "",
+      "description": "Грядка снова напивается. В пустых городах труднее всего сохранить утреннюю привычку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Увлажняет грядку до максимума."
+    },
+    "guk": {
+      "action": "W_FROST",
+      "status": "",
+      "description": "Твёрдая поверхность белеет. В воспоминаниях о старом мире холод приходит первым.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Покрывает выбранную твёрдую поверхность снежным слоем."
+    },
+    "luk": {
+      "action": "W_WAVE",
+      "status": "",
+      "description": "Вода переливается в соседнее место. Последняя капля не рождает второго моря.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Выдавливает воду на свободную соседнюю ячейку без дублирования."
+    },
+    "nuk": {
+      "action": "W_PLATFORM",
+      "status": "dirt",
+      "description": "Небольшая земля собирается над пустотой. На больших чертежах тот же знак стоит под городами.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт небольшую земляную платформу."
+    },
+    "suk": {
+      "action": "W_TILL",
+      "status": "",
+      "description": "Земля готовится принять семена. Плуг пережил тех, кто обещал скорый урожай.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Вспахивает выбранную землю в грядку."
+    },
+    "dun": {
+      "action": "W_LIGHTNING",
+      "status": "",
+      "description": "Небо отвечает настоящим огненным ударом. Хранители деревянных архивов не произносят это у стен.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Призывает настоящую молнию в точке прицела; опасно для построек."
+    },
+    "gun": {
+      "action": "W_PARTICLES",
+      "status": "rainbow",
+      "description": "Над головой остаётся цветная дуга. Даже после потопа дети пытались запомнить её цвета.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Радужная дуга частиц над целью."
+    },
+    "lup": {
+      "action": "W_PUDDLE",
+      "status": "",
+      "description": "Дерево и камень удерживают немного воды. В дороге берегли даже то, что не удавалось выпить.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Насыщает водой выбранную плиту, ступень или другой водонасыщаемый блок."
+    },
+    "nup": {
+      "action": "W_PLACE",
+      "status": "snow_block",
+      "description": "Снег собирается в плотную белую грань. В старых книгах зима длится дольше, чем в памяти жителей.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт снежный блок."
+    },
+    "bak": {
+      "action": "W_MINE",
+      "status": "tunnel",
+      "description": "Орудие открывает короткую дорогу в камне. В найденных шахтах кирки лежат по одну сторону завала.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Добывает до трёх однотипных блоков вперёд текущим инструментом."
+    },
+    "gak": {
+      "action": "W_MINE",
+      "status": "soil",
+      "description": "Сыпучая земля уступает узкой полосой. Следующая строка плана ведёт под нынешний берег.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Вынимает землю, песок или гравий в небольшой полосе."
+    },
+    "lak": {
+      "action": "W_LEDGE",
+      "status": "stone_slab",
+      "description": "У края появляется каменная опора. Для бегущего человека даже полшага было обещанием.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт площадку из каменных плит у края."
+    },
+    "mak": {
+      "action": "W_PLATFORM",
+      "status": "sandstone",
+      "description": "Песчаник собирается в небольшой берег. На старой карте он был началом людного причала.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт небольшую песчаниковую площадку."
+    },
+    "sak": {
+      "action": "W_CONVERT",
+      "status": "dirt>mud",
+      "description": "Земля становится вязкой. В низинах дома исчезали не сразу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Превращает землю в грязь."
+    },
+    "sap": {
+      "action": "W_PARTICLES",
+      "status": "star",
+      "description": "Над целью вспыхивает золотая звезда. Моряки пустых островов рисовали её рядом со словом «дом».",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Поднимает золотую звезду частиц над целью."
+    },
+    "tup": {
+      "action": "W_SOUND",
+      "status": "thunder",
+      "description": "Гром звучит без удара. После той ночи жители всё равно закрывают ставни.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Раскат грома без молнии и урона."
+    },
+    "del": {
+      "action": "W_CONVERT",
+      "status": "dirt>rooted_dirt",
+      "description": "Почва вспоминает корни. Лес хранит то, до чего не дошли переписчики.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Превращает землю в корнистую."
+    },
+    "gel": {
+      "action": "W_PLANT",
+      "status": "bamboo",
+      "description": "Из земли поднимается тонкий стебель. В спешке даже бамбук становился строительным лесом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высаживает бамбук."
+    },
+    "lel": {
+      "action": "W_PLACE",
+      "status": "oak_leaves",
+      "description": "В воздухе сходится дубовая листва. Под ней можно укрыть имя, но не вернуть дерево целиком.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт дубовую листву."
+    },
+    "mel": {
+      "action": "W_GROW",
+      "status": "",
+      "description": "Растение принимает ещё немного жизни. На полях засушен цветок из сада, которого нет.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Применяет эффект костной муки к подходящему растению."
+    },
+    "tel": {
+      "action": "W_PLANT",
+      "status": "short_grass",
+      "description": "Поверхность зеленеет. Первой на брошенные площади возвращается трава.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высаживает траву на подходящую поверхность."
+    },
+    "bel": {
+      "action": "W_PLANT",
+      "status": "sweet_berry_bush",
+      "description": "Малый куст обещает пищу. Последние путники перестали ждать богатого урожая.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высаживает ягодный куст."
+    },
+    "nel": {
+      "action": "W_HARVEST",
+      "status": "",
+      "description": "Зрелое отдаёт плод без лишнего дара. Так вели счёт тем, кому ещё хватало еды.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Собирает зрелую культуру обычным лутом."
+    },
+    "pel": {
+      "action": "W_PLANT",
+      "status": "wheat",
+      "description": "Грядка принимает зерно. Иногда целая семья оставляла после себя только этот жест.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высаживает пшеницу на грядке."
+    },
+    "rel": {
+      "action": "W_STRIP",
+      "status": "",
+      "description": "Бревно освобождается от коры. На очищенной стороне когда-то вырезали дорожные имена.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Обтёсывает выбранное бревно."
+    },
+    "sel": {
+      "action": "W_CONVERT",
+      "status": "cobblestone>mossy_cobblestone",
+      "description": "Камень принимает мягкую зелень. Архивариус не трогает её там, где она скрывает дату.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Покрывает булыжник мхом."
+    },
+    "jel": {
+      "action": "W_PLANT",
+      "status": "brown_mushroom",
+      "description": "Во влажном месте появляется маленький гриб. В чужих измерениях еда не всегда выглядела привычно.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Высаживает коричневый гриб на подходящей поверхности."
+    },
+    "bin": {
+      "action": "PIERCE",
+      "status": "",
+      "description": "Острие находит цель и отталкивает её. На старых рисунках охотники стоят под огромными крыльями.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 5,
+      "gameplayDescription": "Удар копьём: 5 HP урона и отбрасывание."
+    },
+    "den": {
+      "action": "W_WALL",
+      "status": "stone_bricks",
+      "description": "Кирпичи складываются в короткую крепостную стену. Настоящим крепостям этого не хватило.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт трёхблочную стенку из каменного кирпича."
+    },
+    "gen": {
+      "action": "TURN",
+      "status": "",
+      "description": "Механизм делает четверть оборота. Его прежний мастер не оставил второго приказа.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Поворачивает горизонтально ориентированный блок на четверть оборота."
+    },
+    "men": {
+      "action": "W_RAFT",
+      "status": "oak_planks",
+      "description": "Доски собираются в малый плот. Большие корабли увозили тех, кого нельзя было взять на него.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт маленький деревянный плот из блоков."
+    },
+    "nen": {
+      "action": "W_RAIL",
+      "status": "",
+      "description": "На твёрдой земле ложатся рельсы. Обозы остановились раньше, чем закончился металл.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Кладёт три рельса на подходящих опорах."
+    },
+    "ren": {
+      "action": "SLASH",
+      "status": "",
+      "description": "Невидимый клинок оставляет рану и слабость. Победные надписи на кораблях читаются хуже траурных.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 4,
+      "gameplayDescription": "Удар клинка: 4 HP урона и краткая слабость."
+    },
+    "ten": {
+      "action": "BUFF",
+      "status": "resistance,absorption",
+      "description": "Удар встречает защиту прежде тела. На полях написано: «Держать, пока они проходят».",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Щит: сопротивление и временное здоровье."
+    },
+    "ven": {
+      "action": "ARCHER",
+      "status": "",
+      "description": "Взгляд обостряется, движение стихает. Из узких корабельных окон ждали большого силуэта.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Даёт зрение и уменьшает движение цели для прицеливания."
+    },
+    "jen": {
+      "action": "BOLT",
+      "status": "",
+      "description": "Тонкий свет ранит и выдаёт цель. На списке охоты напротив каждого имени — крыло.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 3,
+      "gameplayDescription": "Магическая стрела наносит 3 HP цели и подсвечивает её."
+    },
+    "bun": {
+      "action": "TETHER",
+      "status": "",
+      "description": "Ноги зверя забывают дорогу. Последние поводки в убежищах были разрезаны.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Удерживает моба остановкой навигации и сильным кратким замедлением."
+    },
+    "kut": {
+      "action": "W_VACUUM",
+      "status": "",
+      "description": "Оставленные вещи находят твой мешок. У старых владельцев уже некому спросить разрешения.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Собирает в инвентарь брошенные предметы около выбранного блока."
+    },
+    "mut": {
+      "action": "W_MINE",
+      "status": "cross",
+      "description": "Орудие раскрывает камень крестом. Звук молота ещё долго отзывался в пустых шахтах.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Добывает крест до пяти однотипных блоков текущим инструментом."
+    },
+    "nut": {
+      "action": "W_MINE",
+      "status": "wood",
+      "description": "Соседние стволы уступают топору. Листья остаются помнить лес.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Срубает до восьми соседних однотипных брёвен; листья не трогает."
+    },
+    "but": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Малое остриё умеет причинять боль. На этом листе прокол проходит сквозь имя владельца.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2,
+      "gameplayDescription": "Укол иглы: 2 HP магического урона, в том числе себе через mina."
+    },
+    "gut": {
+      "action": "W_THREAD",
+      "status": "",
+      "description": "Тонкая линия натягивается над землёй. В заброшенных коридорах её замечают последней.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт растяжку tripwire на опоре."
+    },
+    "lut": {
+      "action": "W_PLACE",
+      "status": "white_wool",
+      "description": "Белые нити сходятся в мягкое полотно. Из него шили не знамёна, а одеяла для дороги.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт белую шерсть."
+    },
+    "rut": {
+      "action": "MEND",
+      "status": "",
+      "description": "Потрёпанный доспех снова держит шов. Клеймо кузнеца пережило владельца.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Чинит надетую повреждённую броню цели на 8 прочности."
+    },
+    "sut": {
+      "action": "BOOTS",
+      "status": "",
+      "description": "Шаг освобождается от тяжести. На старых сапогах подошва стёрта в сторону врат.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает замедление и даёт прыжок."
+    },
+    "tut": {
+      "action": "HELMET",
+      "status": "",
+      "description": "Тьма покидает глаза, вода принимает дыхание. На шапках смотрителей не было корон.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает слепоту и даёт подводное дыхание."
+    },
+    "vut": {
+      "action": "AURA",
+      "status": "",
+      "description": "Вокруг тела сходится защитный свет. Кольца исчезнувшего совета находили без рук.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Светящаяся аура: поглощение и обнаружение самой цели."
+    },
+    "bup": {
+      "action": "W_SOUND",
+      "status": "drum",
+      "description": "В точке зова звучит ритм. Последний строй уже не шёл в ногу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Играет ритм барабана в точке прицела."
+    },
+    "kup": {
+      "action": "W_DOME",
+      "status": "glass",
+      "description": "Стекло сходится над укрытием. Даже тогда в чертеже оставляли выход.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Создаёт небольшой стеклянный купол с выходом."
+    },
+    "bek": {
+      "action": "W_GROW_AREA",
+      "status": "",
+      "description": "Жизнь отзывается в нескольких ростках. Под каждым новым садом остаются чьи-то кости.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Применяет костную муку к нескольким растениям вокруг цели."
+    },
+    "dek": {
+      "action": "SKIN",
+      "status": "",
+      "description": "Тело отпускает яд и принимает защиту. Лекари не записали, почему чужая болезнь не слушалась.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает яд и даёт поглощение."
+    },
+    "gek": {
+      "action": "BUFF",
+      "status": "strength,haste",
+      "description": "Руки вновь успевают за усилием. Строители пустых островов работали, пока знали свои имена.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Мышечное усилие: сила и спешка."
+    },
+    "lek": {
+      "action": "FOCUS",
+      "status": "",
+      "description": "Темнота уходит, мысль находит работу. Некоторые записи после перехода стали всё длиннее и нечётче.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Снимает темноту и слабость; даёт спешку."
+    },
+    "mek": {
+      "action": "SATIATE",
+      "status": "",
+      "description": "Сытость задерживается, но пустой желудок не становится полным. В осадных журналах это различие подчёркнуто.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Максимально насыщает без изменения основного уровня голода."
+    },
+    "nek": {
+      "action": "BACKSTEP",
+      "status": "",
+      "description": "Тело отступает за собственную спину. Дорога назад не всегда оказывается дорогой домой.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Отбрасывает цель назад по её собственному взгляду."
+    },
+    "pek": {
+      "action": "SHOULDER",
+      "status": "",
+      "description": "Плечо принимает невидимую опору. Так помогали подняться тем, кто ещё мог идти.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Поднимает цель вертикально и даёт краткое сопротивление."
+    },
+    "rek": {
+      "action": "KNEE",
+      "status": "",
+      "description": "Ноги подкашиваются, движение стихает. На палубе эту строку ставили рядом с приказом держаться.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Подсекает цель вниз и кратко замедляет."
+    },
+    "tek": {
+      "action": "ELBOW",
+      "status": "",
+      "description": "Тело смещается вправо от своего взгляда. Малое движение порой решало, кому достанется следующий рассвет.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1,
+      "gameplayDescription": "Отводит цель вправо по направлению её взгляда."
+    }
+  }
+}

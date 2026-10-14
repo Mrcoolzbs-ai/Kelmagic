@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/mage_helmet",
+    "layer1": "kelmagic:item/mage_helmet_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:trimmed": 1
+      },
+      "model": "kelmagic:item/mage_helmet_trimmed"
+    }
+  ]
+}

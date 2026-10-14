@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:dye_robes",
+  "display": {
+    "icon": {
+      "id": "kelmagic:arcane_chestplate"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.trim_magic.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.trim_magic.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

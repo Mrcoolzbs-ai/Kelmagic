@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "TT",
+    "TT"
+  ],
+  "key": {
+    "T": {
+      "item": "kelmagic:golden_thread"
+    }
+  },
+  "result": {
+    "id": "kelmagic:golden_wool",
+    "count": 1
+  }
+}

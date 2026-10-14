@@ -1,0 +1,74 @@
+{
+  "Original": {
+    "left": {
+      "visible_interval_geo_x": [
+        0.63,
+        2.849
+      ],
+      "visible_center_geo_x": 1.7395,
+      "y": 28.2
+    },
+    "right": {
+      "visible_interval_geo_x": [
+        -2.849,
+        -0.63
+      ],
+      "visible_center_geo_x": -1.7395,
+      "y": 28.2
+    }
+  },
+  "B": {
+    "left": {
+      "visible_interval_geo_x": [
+        0.59,
+        2.849
+      ],
+      "visible_center_geo_x": 1.7195,
+      "y": 28.2
+    },
+    "right": {
+      "visible_interval_geo_x": [
+        -2.849,
+        -0.59
+      ],
+      "visible_center_geo_x": -1.7195,
+      "y": 28.2
+    }
+  },
+  "C": {
+    "left": {
+      "visible_interval_geo_x": [
+        0.43,
+        2.849
+      ],
+      "visible_center_geo_x": 1.6395,
+      "y": 28.2
+    },
+    "right": {
+      "visible_interval_geo_x": [
+        -2.849,
+        -0.43
+      ],
+      "visible_center_geo_x": -1.6395,
+      "y": 28.2
+    }
+  },
+  "D": {
+    "left": {
+      "visible_interval_geo_x": [
+        0.56,
+        2.84
+      ],
+      "visible_center_geo_x": 1.7,
+      "y": 28.2
+    },
+    "right": {
+      "visible_interval_geo_x": [
+        -2.84,
+        -0.56
+      ],
+      "visible_center_geo_x": -1.7,
+      "y": 28.2
+    }
+  }
+}

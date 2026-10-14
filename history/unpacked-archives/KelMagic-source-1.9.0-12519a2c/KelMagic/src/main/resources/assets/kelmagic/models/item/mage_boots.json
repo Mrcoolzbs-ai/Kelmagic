@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/mage_boots",
+    "layer1": "kelmagic:item/mage_boots_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:trimmed": 1
+      },
+      "model": "kelmagic:item/mage_boots_trimmed"
+    }
+  ]
+}

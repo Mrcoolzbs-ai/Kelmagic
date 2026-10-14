@@ -1,0 +1,28 @@
+package dev.kelmagic;
+import java.util.List;
+import com.mojang.serialization.Codec;
+import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.codec.ByteBufCodecs;
+import net.neoforged.neoforge.registries.*;
+public final class MagicComponents {
+    public static final DeferredRegister<DataComponentType<?>> TYPES=DeferredRegister.create(Registries.DATA_COMPONENT_TYPE,KelMagic.MODID);
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<List<String>>> SPELL=TYPES.register("recorded_spell",()->DataComponentType.<List<String>>builder()
+        .persistent(Codec.STRING.listOf(0,100))
+        .networkSynchronized(ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list(100))).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Boolean>> RECORDING=TYPES.register("scripter_recording",()->DataComponentType.<Boolean>builder()
+        .persistent(Codec.BOOL).networkSynchronized(ByteBufCodecs.BOOL).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<List<String>>> CANDIDATE=TYPES.register("scripter_candidate",()->DataComponentType.<List<String>>builder()
+        .persistent(Codec.STRING.listOf(0,100)).networkSynchronized(ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list(100))).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<List<String>>> CODEX_WORDS=TYPES.register("codex_words",()->DataComponentType.<List<String>>builder()
+        .persistent(Codec.STRING.listOf(0,dev.kelmagic.core.KelLexicon.CODEX_LIMIT)).networkSynchronized(ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list(dev.kelmagic.core.KelLexicon.CODEX_LIMIT))).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<List<String>>> CODEX_NOTES=TYPES.register("codex_notes",()->DataComponentType.<List<String>>builder()
+        .persistent(Codec.STRING.listOf(0,dev.kelmagic.core.KelLexicon.CODEX_LIMIT)).networkSynchronized(ByteBufCodecs.STRING_UTF8.apply(ByteBufCodecs.list(dev.kelmagic.core.KelLexicon.CODEX_LIMIT))).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> ACTIVE_TAPE=TYPES.register("active_tape",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,7)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> TAPE_PATTERN=TYPES.register("tape_pattern",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> CODEX_PAGE=TYPES.register("codex_page",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,179)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> CODEX_SECTION=TYPES.register("codex_section",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,1)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> CODEX_QUERY=TYPES.register("codex_query",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> CODEX_TOKEN=TYPES.register("codex_token",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
+    private MagicComponents() {}
+}

@@ -1,0 +1,19 @@
+{
+  "changed": [
+    "src/main/java/dev/kelmagic/client/RedMageRenderer.java",
+    "src/main/java/dev/kelmagic/client/face/EyeStateController.java",
+    "src/main/java/dev/kelmagic/client/face/MageEyeStates.java",
+    "src/main/resources/assets/kelmagic/geo/red_mage.geo.json",
+    "art/red-mage/red_mage.geo.json",
+    "art/red-mage/red_mage_gecko.bbmodel",
+    "tools/generate_approved_mascot.py",
+    "build.gradle"
+  ],
+  "added": [
+    "src/test/java/dev/kelmagic/client/face/CheekTests.java",
+    "src/main/java/dev/kelmagic/client/QaCheeksE.java",
+    "src/main/java/dev/kelmagic/client/face/CheekDeformation.java",
+    "src/main/java/dev/kelmagic/client/face/CheekRig.java",
+    "tools/regenerate_E.py"
+  ]
+}

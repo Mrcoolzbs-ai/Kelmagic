@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "kelmagic:golden_thread"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.golden_thread.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.golden_thread.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ],
+  "parent": "kelmagic:root"
+}

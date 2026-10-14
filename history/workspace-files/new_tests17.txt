@@ -1,0 +1,81 @@
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void needleHurtsCasterAndScripterMessage(GameTestHelper h){
+        var p=player(h);p.setHealth(20);h.assertTrue(SpellEffects.execute(p,SpellParser.plan(java.util.List.of("mina","but"))),"needle may harm its own caster");h.assertTrue(p.getHealth()==18,"self hurt actually subtracts HP");
+        String normal=MagicDamage.source(p,"mana_debt").getLocalizedDeathMessage(p).getString();
+        Playback.run(p,"scripter",()->{String item=MagicDamage.source(p,"mana_debt").getLocalizedDeathMessage(p).getString();h.assertTrue(!item.equals(normal)&&!item.startsWith("death.attack."),"scripter has localized independent debt death text");});
+        h.assertTrue(Playback.source(p).isEmpty(),"context never leaks to later chat casts");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void magicFireSpreadsBothCombatDirections(GameTestHelper h){
+        var p=player(h);var cow=h.spawnWithNoFreeWill(EntityType.COW,3.5f,1,3.5f);ArcaneFire.ignite(cow,400,2f);
+        cow.hurt(cow.damageSources().playerAttack(p),1);h.assertTrue(p.getData(MagicAttachments.ARCANE_BURN)==400,"attacking a burning victim ignites attacker");
+        p.setData(MagicAttachments.ARCANE_BURN,500);var second=h.spawnWithNoFreeWill(EntityType.COW,4.5f,1,3.5f);second.hurt(second.damageSources().playerAttack(p),1);h.assertTrue(second.getData(MagicAttachments.ARCANE_BURN)==500,"burning attacker ignites victim");
+        var dry=h.spawnWithNoFreeWill(EntityType.COW,5.5f,1,3.5f);dry.hurt(dry.damageSources().inFire(),1);h.assertTrue(dry.getData(MagicAttachments.ARCANE_BURN)==0,"ambient fire damage never starts combat contagion");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void pullIsStrongerAndSelfNeedleFromScripter(GameTestHelper h){
+        var p=player(h);var cow=h.spawnWithNoFreeWill(EntityType.COW,3.5f,1,3.5f);h.assertTrue(SpellEffects.execute(p,SpellParser.plan(java.util.List.of("sila","vol"))),"pull finds aimed mob");h.assertTrue(cow.getDeltaMovement().length()>2,"pull impulse exceeds old weak impulse");
+        var s=dev.kelmagic.MagicContent.SCRIPTER.toStack();s.set(dev.kelmagic.MagicComponents.SPELL.get(),java.util.List.of("mina","but"));p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,s);p.setShiftKeyDown(true);p.setData(MagicAttachments.MANA,new MagicAttachments.Mana(15,true));p.invulnerableTime=0;
+        dev.kelmagic.MagicContent.SCRIPTER.get().use(h.getLevel(),p,net.minecraft.world.InteractionHand.MAIN_HAND);h.assertTrue(p.getHealth()==18,"scripter invokes real self-harm");h.assertTrue(p.getData(MagicAttachments.MANA).current()==11,"half-cost rounded up");h.succeed();
+    }
+    private static dev.kelmagic.server.SpellEffects.Aim blockAim(GameTestHelper h,BlockPos pos){var at=h.absolutePos(pos);return new SpellEffects.Aim(Vec3.atCenterOf(at),net.minecraft.world.phys.HitResult.Type.BLOCK,new net.minecraft.world.phys.BlockHitResult(Vec3.atCenterOf(at),net.minecraft.core.Direction.UP,at,false),null);}
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void worldPlacementAndProtection(GameTestHelper h){
+        var p=player(h);var hit=new BlockPos(5,0,5);var aim=blockAim(h,hit);var plan=SpellParser.plan(java.util.List.of("nok"));
+        h.assertTrue(WorldSpells.execute(p,aim,plan,SpellProfiles.ALL.get("nok")),"stone placed");h.assertTrue(h.getBlockState(hit.above()).is(Blocks.STONE),"actual block material");
+        h.assertFalse(WorldSpells.execute(p,aim,plan,SpellProfiles.ALL.get("nok")),"does not overwrite solid block");
+        var other=blockAim(h,new BlockPos(5,0,4));java.util.function.Consumer<net.neoforged.neoforge.event.level.BlockEvent.EntityPlaceEvent> deny=e->{if(e.getEntity()==p)e.setCanceled(true);};net.neoforged.neoforge.common.NeoForge.EVENT_BUS.addListener(net.neoforged.neoforge.event.level.BlockEvent.EntityPlaceEvent.class,deny);
+        try{h.assertFalse(WorldSpells.execute(p,other,plan,SpellProfiles.ALL.get("nok")),"claims can deny conjuring");h.assertTrue(h.getBlockState(new BlockPos(5,1,4)).isAir(),"denied place rolled back");}finally{net.neoforged.neoforge.common.NeoForge.EVENT_BUS.unregister(deny);}h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void worldMiningDropsAndUnbreakable(GameTestHelper h){
+        var p=player(h);p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,new net.minecraft.world.item.ItemStack(net.minecraft.world.item.Items.IRON_PICKAXE));var pos=new BlockPos(5,1,5);h.setBlock(pos,Blocks.STONE);
+        h.assertTrue(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lab")),SpellProfiles.ALL.get("lab")),"mine with actual tool");h.assertTrue(h.getBlockState(pos).isAir(),"mined block removed");h.assertTrue(!h.getLevel().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,new net.minecraft.world.phys.AABB(h.absolutePos(pos)).inflate(2)).isEmpty(),"ordinary drop exists");
+        h.setBlock(pos,Blocks.BEDROCK);h.assertFalse(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lab")),SpellProfiles.ALL.get("lab")),"bedrock remains");h.setBlock(pos,Blocks.CHEST);h.assertFalse(WorldSpells.execute(p,blockAim(h,pos),SpellParser.plan(java.util.List.of("lab")),SpellProfiles.ALL.get("lab")),"block-entity inventory protected");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void growFreezeAndConvertAreDifferent(GameTestHelper h){
+        var p=player(h);var pos=new BlockPos(5,1,5);h.setBlock(pos.below(),Blocks.FARMLAND);h.setBlock(pos,Blocks.WHEAT);var aim=blockAim(h,pos);
+        h.assertTrue(WorldSpells.execute(p,aim,SpellParser.plan(java.util.List.of("mel")),SpellProfiles.ALL.get("mel")),"bone meal applied");h.assertTrue(h.getBlockState(pos).getValue(net.minecraft.world.level.block.CropBlock.AGE)>0,"wheat grew");
+        h.setBlock(pos,Blocks.WATER);h.assertTrue(WorldSpells.execute(p,aim,SpellParser.plan(java.util.List.of("kol")),SpellProfiles.ALL.get("kol")),"freeze water");h.assertTrue(h.getBlockState(pos).is(Blocks.ICE),"actual ice");
+        h.setBlock(pos,Blocks.COBBLESTONE);h.assertTrue(WorldSpells.execute(p,aim,SpellParser.plan(java.util.List.of("sel")),SpellProfiles.ALL.get("sel")),"moss transformation");h.assertTrue(h.getBlockState(pos).is(Blocks.MOSSY_COBBLESTONE),"moss material");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void synergyOrderAndActualBridge(GameTestHelper h){
+        var p=player(h);var a=SpellParser.plan(java.util.List.of("rak","tok","muk"));var b=SpellParser.plan(java.util.List.of("muk","tok","rak"));h.assertTrue(a.equals(b)&&a.effect()==SpellParser.Effect.SYNERGY,"synergy is order independent and scales");
+        h.assertTrue(WorldSpells.synergy(p,a,blockAim(h,new BlockPos(5,0,1))),"special bridge builds");h.assertTrue(h.getBlockState(new BlockPos(5,1,1)).is(Blocks.GLASS)&&h.getBlockState(new BlockPos(5,1,3)).is(Blocks.GLASS),"multiple bridge blocks");
+        var guard=SpellParser.plan(java.util.List.of("kor","ten"));p.setHealth(10);h.assertTrue(SpellEffects.execute(p,guard)&&p.getHealth()==16&&p.hasEffect(MobEffects.DAMAGE_RESISTANCE),"guardian combination has dedicated behavior");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void cassetteRecipeIsExact(GameTestHelper h){
+        var I=net.minecraft.world.item.Items.IRON_NUGGET;var P=net.minecraft.world.item.Items.PAPER;var S=net.minecraft.world.item.Items.SLIME_BALL;var R=net.minecraft.world.item.Items.REDSTONE;var T=net.minecraft.world.item.Items.STRING;
+        var in=net.minecraft.world.item.crafting.CraftingInput.of(3,3,java.util.List.of(new net.minecraft.world.item.ItemStack(I),new net.minecraft.world.item.ItemStack(P),new net.minecraft.world.item.ItemStack(I),new net.minecraft.world.item.ItemStack(S),new net.minecraft.world.item.ItemStack(R),new net.minecraft.world.item.ItemStack(S),new net.minecraft.world.item.ItemStack(S),new net.minecraft.world.item.ItemStack(T),new net.minecraft.world.item.ItemStack(S)));
+        var recipe=h.getLevel().getRecipeManager().getRecipeFor(net.minecraft.world.item.crafting.RecipeType.CRAFTING,in,h.getLevel()).orElseThrow().value();h.assertTrue(recipe.assemble(in,h.getLevel().registryAccess()).is(dev.kelmagic.MagicAudio.CASSETTE),"requested shaped recipe yields cassette");h.succeed();
+    }
+    private static dev.kelmagic.audio.DeckEntity deck(GameTestHelper h){var pos=new BlockPos(5,1,5);h.setBlock(pos,dev.kelmagic.MagicAudio.DECK.get());return (dev.kelmagic.audio.DeckEntity)h.getLevel().getBlockEntity(h.absolutePos(pos));}
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void deckWritesAtFiveSecondsPerWord(GameTestHelper h){
+        player(h);var d=deck(h);var w=java.util.List.of("mina","rap","muk","muk");var writer=dev.kelmagic.MagicContent.SCRIPTER.toStack();writer.set(dev.kelmagic.MagicComponents.SPELL.get(),w);d.inventory.setItem(0,dev.kelmagic.MagicAudio.CASSETTE.toStack());d.inventory.setItem(1,writer);
+        for(int i=0;i<399;i++)d.advance();h.assertTrue(d.inventory.getItem(2).isEmpty()&&d.progress==399,"no early output; duplicates count toward 20 seconds");d.advance();h.assertTrue(dev.kelmagic.audio.CassetteItem.words(d.inventory.getItem(2)).equals(w),"all words copied to tape");h.assertTrue(d.inventory.getItem(0).isEmpty()&&d.inventory.getItem(1)==writer,"cassette consumed, scripter unchanged");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void deckResetAndBlockedOutput(GameTestHelper h){
+        player(h);var d=deck(h);var writer=dev.kelmagic.MagicContent.SCRIPTER.toStack();writer.set(dev.kelmagic.MagicComponents.SPELL.get(),java.util.List.of("rap"));d.inventory.setItem(0,dev.kelmagic.MagicAudio.CASSETTE.toStack());d.inventory.setItem(1,writer);for(int i=0;i<50;i++)d.advance();d.inventory.setItem(1,net.minecraft.world.item.ItemStack.EMPTY);d.advance();h.assertTrue(d.progress==0,"removing input cancels progress");d.inventory.setItem(1,writer);d.inventory.setItem(2,dev.kelmagic.MagicAudio.CASSETTE.toStack());for(int i=0;i<200;i++)d.advance();h.assertTrue(d.progress==0&&!d.inventory.getItem(0).isEmpty(),"occupied output never eats input");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void deckPersistsProgressAndOriginal(GameTestHelper h){
+        player(h);var d=deck(h);var writer=dev.kelmagic.MagicContent.SCRIPTER.toStack();writer.set(dev.kelmagic.MagicComponents.SPELL.get(),java.util.List.of("mina","rap"));d.inventory.setItem(0,dev.kelmagic.MagicAudio.CASSETTE.toStack());d.inventory.setItem(1,writer);for(int i=0;i<77;i++)d.advance();var tag=d.saveWithoutMetadata(h.getLevel().registryAccess());var reload=new dev.kelmagic.audio.DeckEntity(d.getBlockPos(),d.getBlockState());reload.loadWithComponents(tag,h.getLevel().registryAccess());h.assertTrue(reload.progress==77&&reload.total==200,"remaining recording persists");for(int i=0;i<123;i++)reload.advance();h.assertTrue(dev.kelmagic.audio.CassetteItem.recorded(reload.inventory.getItem(2)),"resumes rather than restarting");h.assertTrue(!reload.inventory.getItem(1).isEmpty(),"writer remains after reload");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void playerRejectsBlankAndLocksHolder(GameTestHelper h){
+        var p=player(h);var device=dev.kelmagic.MagicAudio.PLAYER.toStack();p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,device);var menu=new dev.kelmagic.audio.TapeMenu(1,p.getInventory(),net.minecraft.world.InteractionHand.MAIN_HAND);var blank=dev.kelmagic.MagicAudio.CASSETTE.toStack();h.assertFalse(menu.getSlot(0).mayPlace(blank),"blank cannot enter player");var tape=blank.copy();tape.set(dev.kelmagic.MagicComponents.SPELL.get(),java.util.List.of("rap"));h.assertTrue(menu.getSlot(0).mayPlace(tape),"valid tape can enter");menu.getSlot(0).set(tape);h.assertTrue(dev.kelmagic.audio.CassetteItem.words(dev.kelmagic.audio.TapePlayerItem.tapes(device).get(0)).equals(java.util.List.of("rap")),"menu immediately persists tape");h.assertFalse(menu.getSlot(35+p.getInventory().selected).mayPickup(p),"held player locked against nesting/moving");h.assertTrue(menu.stillValid(p),"holder tracked");p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,net.minecraft.world.item.ItemStack.EMPTY);h.assertFalse(menu.stillValid(p),"changing holder closes menu");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void playerPlaybackThirtyPercentNoCooldown(GameTestHelper h){
+        var p=player(h);var device=dev.kelmagic.MagicAudio.PLAYER.toStack();var tape=dev.kelmagic.MagicAudio.CASSETTE.toStack();var w=java.util.List.of("mina","rap");tape.set(dev.kelmagic.MagicComponents.SPELL.get(),w);device.set(net.minecraft.core.component.DataComponents.CONTAINER,net.minecraft.world.item.component.ItemContainerContents.fromItems(java.util.List.of(tape)));p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,device);p.setData(MagicAttachments.MANA,new MagicAttachments.Mana(15,true));
+        dev.kelmagic.MagicAudio.PLAYER.get().use(h.getLevel(),p,net.minecraft.world.InteractionHand.MAIN_HAND);h.assertTrue(p.hasEffect(MobEffects.MOVEMENT_SPEED)&&p.getData(MagicAttachments.MANA).current()==12,"ceil 30 percent of seven costs three");h.assertFalse(p.getCooldowns().isOnCooldown(dev.kelmagic.MagicAudio.PLAYER.get()),"no player cooldown");dev.kelmagic.MagicAudio.PLAYER.get().use(h.getLevel(),p,net.minecraft.world.InteractionHand.MAIN_HAND);h.assertTrue(p.getData(MagicAttachments.MANA).current()==9,"immediate second playback succeeds");h.assertTrue(!device.isDamageableItem()&&dev.kelmagic.audio.CassetteItem.recorded(tape),"no durability or consumption");h.succeed();
+    }
+    @GameTest(template="empty",timeoutTicks=60)
+    public static void tapeSelectionAndComponentsPersist(GameTestHelper h){
+        var p=player(h);var device=dev.kelmagic.MagicAudio.PLAYER.toStack();p.setItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND,device);dev.kelmagic.audio.TapePlayerItem.select(p,-1);h.assertTrue(dev.kelmagic.audio.TapePlayerItem.active(device)==7,"selection wraps");dev.kelmagic.audio.TapePlayerItem.select(p,99);h.assertTrue(dev.kelmagic.audio.TapePlayerItem.active(device)==7,"malformed delta ignored");dev.kelmagic.audio.TapePlayerItem.select(p,1);h.assertTrue(dev.kelmagic.audio.TapePlayerItem.active(device)==0,"back to first");var tape=dev.kelmagic.MagicAudio.CASSETTE.toStack();tape.set(dev.kelmagic.MagicComponents.SPELL.get(),java.util.List.of("mina","but"));device.set(net.minecraft.core.component.DataComponents.CONTAINER,net.minecraft.world.item.component.ItemContainerContents.fromItems(java.util.List.of(tape)));var reload=net.minecraft.world.item.ItemStack.parseOptional(h.getLevel().registryAccess(),(net.minecraft.nbt.CompoundTag)device.save(h.getLevel().registryAccess()));h.assertTrue(dev.kelmagic.audio.CassetteItem.words(dev.kelmagic.audio.TapePlayerItem.tapes(reload).get(0)).equals(java.util.List.of("mina","but")),"persistent nested tape spell");h.succeed();
+    }

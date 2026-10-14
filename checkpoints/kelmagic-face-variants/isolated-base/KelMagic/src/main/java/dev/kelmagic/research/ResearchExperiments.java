@@ -1,0 +1,10 @@
+package dev.kelmagic.research;
+import net.minecraft.server.level.ServerPlayer;import net.minecraft.world.entity.LivingEntity;import net.minecraft.core.BlockPos;import java.util.*;
+public final class ResearchExperiments {
+ public record Sample(float health,int fire,int effects,int arcane,net.minecraft.world.phys.Vec3 pos){}
+ public record Before(Sample self,LivingEntity target,Sample other,Map<BlockPos,net.minecraft.world.level.block.state.BlockState> blocks){}
+ static Sample sample(LivingEntity e){return new Sample(e.getHealth(),e.getRemainingFireTicks(),e.getActiveEffects().hashCode(),e.hasData(dev.kelmagic.server.MagicAttachments.ARCANE_BURN)?e.getData(dev.kelmagic.server.MagicAttachments.ARCANE_BURN):0,e.position());}
+ public static Before before(ServerPlayer p){var l=p.serverLevel();var eye=p.getEyePosition();var hit=l.clip(new net.minecraft.world.level.ClipContext(eye,eye.add(p.getLookAngle().scale(32)),net.minecraft.world.level.ClipContext.Block.COLLIDER,net.minecraft.world.level.ClipContext.Fluid.NONE,p));LivingEntity target=null;double nearest=eye.distanceToSqr(hit.getLocation());for(var e:l.getEntitiesOfClass(LivingEntity.class,new net.minecraft.world.phys.AABB(eye,hit.getLocation()).inflate(1),e->e!=p&&e.isAlive())){var at=e.getBoundingBox().inflate(.15).clip(eye,hit.getLocation());if(at.isPresent()&&eye.distanceToSqr(at.get())<nearest){nearest=eye.distanceToSqr(at.get());target=e;}}var blocks=new HashMap<BlockPos,net.minecraft.world.level.block.state.BlockState>();for(var pos:BlockPos.betweenClosed(hit.getBlockPos().offset(-1,-1,-1),hit.getBlockPos().offset(1,1,1)))if(l.hasChunkAt(pos))blocks.put(pos.immutable(),l.getBlockState(pos));return new Before(sample(p),target,target==null?null:sample(target),blocks);}
+ public static void after(ServerPlayer p,Before b){if(!sample(p).equals(b.self))Research.observe(p,"self_change");if(b.target!=null&&!sample(b.target).equals(b.other))Research.observe(p,"living_change");if(b.blocks.entrySet().stream().anyMatch(e->p.serverLevel().getBlockState(e.getKey())!=e.getValue()))Research.observe(p,"world_change");}
+ private ResearchExperiments(){}
+}

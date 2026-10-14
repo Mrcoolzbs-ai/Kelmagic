@@ -1,0 +1,14 @@
+PASS: original source baseline: 1ece0e5414befed088f08dab5db528bab9a594c3eb0f25f7f67c73e3b263b70b
+PASS: exact version 1.23.0; only 5 existing files modified
+PASS: every Java file, build configuration, animation JSON and texture unchanged
+PASS: all 64 bone identities, pivots, parents and base rotations unchanged
+PASS: all non-face cubes unchanged; authoring clips and editor UUIDs unchanged
+PASS: source geometry, game geometry, BB elements and embedded texture synchronized
+PASS: ordered facial depths and no overlapping coplanar head surfaces
+Elements: 133 -> 134 ; head surfaces 47 -> 47
+Modified existing files:
+art/red-mage/red_mage.geo.json
+art/red-mage/red_mage_gecko.bbmodel
+src/main/resources/assets/kelmagic/geo/red_mage.geo.json
+tools/generate_mascot_1_23.py
+tools/mascot_surface_fixes_1_23.py

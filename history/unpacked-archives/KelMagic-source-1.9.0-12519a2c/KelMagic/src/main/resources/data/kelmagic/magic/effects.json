@@ -1,0 +1,1380 @@
+{
+  "effects": {
+    "per": {
+      "action": "SCAN_PLAYERS",
+      "status": "",
+      "description": "Обнаруживает только игроков свечением.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mil": {
+      "action": "PACIFY",
+      "status": "",
+      "description": "Делает агрессивного моба нейтральным: не нападает первым, но отвечает на удар.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nak": {
+      "action": "HOSTILE",
+      "status": "",
+      "description": "Делает мирного моба нейтральным: теперь он отвечает атакой на удар.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mam": {
+      "action": "BUFF",
+      "status": "regeneration,absorption",
+      "description": "Материнская забота: регенерация и поглощение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pap": {
+      "action": "BUFF",
+      "status": "resistance,strength",
+      "description": "Отцовская защита: сопротивление и сила.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kin": {
+      "action": "BUFF",
+      "status": "jump_boost,slow_falling",
+      "description": "Детская лёгкость: прыжок и мягкое падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gav": {
+      "action": "COMMAND",
+      "status": "",
+      "description": "Отпускает поводок выбранного моба и успокаивает его.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ged": {
+      "action": "BUFF",
+      "status": "night_vision,water_breathing",
+      "description": "Ясная голова: зрение и дыхание под водой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gok": {
+      "action": "BUFF",
+      "status": "night_vision",
+      "description": "Ночное зрение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nos": {
+      "action": "SCAN_ITEMS",
+      "status": "",
+      "description": "Отмечает частицы около брошенных предметов в пределах 12 блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mur": {
+      "action": "FEED",
+      "status": "",
+      "description": "Утоляет голод цели на 4 единицы.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "ped": {
+      "action": "BUFF",
+      "status": "jump_boost",
+      "description": "Усиление прыжка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kor": {
+      "action": "HEAL",
+      "status": "",
+      "description": "Мгновенное лечение 4 HP.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "sol": {
+      "action": "W_LIGHT",
+      "status": "torch",
+      "description": "Создаёт магический факел на свободной опоре рядом; mina не нужна.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lun": {
+      "action": "W_PLACE",
+      "status": "sea_lantern",
+      "description": "Создаёт магический фонарь рядом с выбранным блоком.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ter": {
+      "action": "W_PLACE",
+      "status": "dirt",
+      "description": "Создаёт блок земли.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vak": {
+      "action": "W_WATER",
+      "status": "",
+      "description": "Создаёт источник воды; в сверхжарком измерении испаряется.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tur": {
+      "action": "W_PLACE",
+      "status": "oak_log",
+      "description": "Создаёт дубовое бревно.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gor": {
+      "action": "W_PILLAR",
+      "status": "stone",
+      "description": "Строит каменный столб высотой до 4 блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mar": {
+      "action": "W_POOL",
+      "status": "",
+      "description": "Заполняет водой небольшой бассейн из свободных ячеек.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "riv": {
+      "action": "W_CHANNEL",
+      "status": "",
+      "description": "Создаёт канал из трёх источников воды по направлению взгляда.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "neb": {
+      "action": "BUFF",
+      "status": "levitation",
+      "description": "Краткое парение вверх.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dum": {
+      "action": "W_PARTICLES",
+      "status": "smoke",
+      "description": "Дымовая завеса на точке прицела.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vit": {
+      "action": "PUSH",
+      "status": "",
+      "description": "Порыв ветра отталкивает цель.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 3
+    },
+    "kuk": {
+      "action": "BUFF",
+      "status": "night_vision,speed",
+      "description": "Кошачьи зрение и проворство.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pis": {
+      "action": "BUFF",
+      "status": "slow_falling,jump_boost",
+      "description": "Птичье планирование и прыжок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sal": {
+      "action": "BUFF",
+      "status": "water_breathing,dolphins_grace",
+      "description": "Рыбье дыхание и плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vid": {
+      "action": "SCAN",
+      "status": "",
+      "description": "Подсвечивает живых существ вокруг игрока, независимо от взгляда и препятствий.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tik": {
+      "action": "ECHO",
+      "status": "",
+      "description": "Показывает направление и расстояние до ближайшей живой цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kel": {
+      "action": "VOICE",
+      "status": "",
+      "description": "Звон колокола и частицы отмечают точку прицела для всех рядом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "man": {
+      "action": "EAT",
+      "status": "",
+      "description": "Забирает один съедобный предмет из основной руки цели и насыщает её.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pin": {
+      "action": "DRINK",
+      "status": "",
+      "description": "Снимает жажду огня: тушит обычное горение и даёт подводное дыхание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pak": {
+      "action": "STEP",
+      "status": "",
+      "description": "Подталкивает цель вперёд по её направлению взгляда.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dak": {
+      "action": "GIVE",
+      "status": "",
+      "description": "Передаёт один предмет из второй руки заклинателя цели, не создавая копий.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tak": {
+      "action": "COLLECT",
+      "status": "",
+      "description": "Притягивает ближайшие брошенные предметы к цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sit": {
+      "action": "ANCHOR",
+      "status": "",
+      "description": "Останавливает движение цели и накладывает краткую медлительность.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "liv": {
+      "action": "BUFF",
+      "status": "regeneration",
+      "description": "Регенерация; mina liv pir — особая жизнь в пламени.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mor": {
+      "action": "DECAY",
+      "status": "",
+      "description": "Смертельный холод: 8 HP магического урона.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 8
+    },
+    "sav": {
+      "action": "INSPECT",
+      "status": "",
+      "description": "Сообщает здоровье существа либо твёрдость и название блока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pen": {
+      "action": "BUFF",
+      "status": "haste,night_vision",
+      "description": "Сосредоточенность: спешка и зрение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vol": {
+      "action": "PULL",
+      "status": "",
+      "description": "Сильное притяжение живой цели к заклинателю.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "kan": {
+      "action": "BUFF",
+      "status": "absorption",
+      "description": "Запас временного здоровья.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lab": {
+      "action": "W_MINE",
+      "status": "single",
+      "description": "Добывает выбранный блок текущим инструментом, с обычным лутом и защитой.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ler": {
+      "action": "BUFF",
+      "status": "luck,haste",
+      "description": "Вдохновение ученика: удача и спешка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lud": {
+      "action": "W_SOUND",
+      "status": "note",
+      "description": "Играет мелодию из нот в точке прицела.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lov": {
+      "action": "LOVE",
+      "status": "",
+      "description": "Лечит цель на 2 HP и даёт краткую регенерацию.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "pul": {
+      "action": "SPIN",
+      "status": "",
+      "description": "Закручивает цель поперёк линии прицела.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "lom": {
+      "action": "W_SHATTER",
+      "status": "",
+      "description": "Разбивает мягкий блок твёрдостью до 1,5 без выпадения добычи.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "set": {
+      "action": "W_CLEAR",
+      "status": "plants",
+      "description": "Убирает выбранную траву/цветок с обычным лутом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pad": {
+      "action": "FALL",
+      "status": "",
+      "description": "Прижимает цель вниз; не телепортирует сквозь блоки.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ved": {
+      "action": "LEAD",
+      "status": "",
+      "description": "Ведёт моба к заклинателю; игроку задаёт движение к нему.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tom": {
+      "action": "W_SHELTER",
+      "status": "oak_planks",
+      "description": "Создаёт маленький навес из досок над целью.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "puk": {
+      "action": "READ",
+      "status": "",
+      "description": "Показывает содержимое записанного скриптера/кассеты во второй руке.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "log": {
+      "action": "SPELL_INFO",
+      "status": "",
+      "description": "Показывает описание следующего слова из открытого кодекса во второй руке.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tem": {
+      "action": "W_TICK",
+      "status": "crop",
+      "description": "Продвигает рост выбранного растения на одну стадию.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lok": {
+      "action": "BLINK",
+      "status": "",
+      "description": "Переносит заклинателя на безопасную поверхность у прицела, до 12 блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rak": {
+      "action": "W_PATH",
+      "status": "dirt_path",
+      "description": "Превращает небольшой участок земли в тропу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mon": {
+      "action": "COUNT",
+      "status": "",
+      "description": "Считает изумруды, золотые слитки и самородки в инвентаре.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tab": {
+      "action": "W_PLACE",
+      "status": "crafting_table",
+      "description": "Создаёт верстак.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kul": {
+      "action": "W_PLACE",
+      "status": "oak_stairs",
+      "description": "Создаёт дубовую ступень-сиденье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bed": {
+      "action": "REST",
+      "status": "",
+      "description": "Снимает слабость и даёт медленное падение; время суток не меняет.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dor": {
+      "action": "W_DOOR",
+      "status": "",
+      "description": "Создаёт двухблочную дубовую дверь с проверкой обеих ячеек.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sen": {
+      "action": "W_PLACE",
+      "status": "glass_pane",
+      "description": "Создаёт стеклянную панель.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "val": {
+      "action": "W_WALL",
+      "status": "cobblestone",
+      "description": "Создаёт стенку из трёх блоков булыжника.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rum": {
+      "action": "W_RING",
+      "status": "oak_fence",
+      "description": "Огораживает маленькую площадку, оставляя проход.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kas": {
+      "action": "W_ROAD",
+      "status": "stone_bricks",
+      "description": "Мостовая длиной до 5 блоков над выбранной поверхностью.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vil": {
+      "action": "W_PLANT",
+      "status": "oak_sapling",
+      "description": "Высаживает дубовый саженец на подходящей почве.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lum": {
+      "action": "W_LIGHT_LINE",
+      "status": "torch",
+      "description": "Расставляет до трёх факелов вдоль поверхности.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pal": {
+      "action": "BAKE",
+      "status": "",
+      "description": "Превращает три пшеницы во второй руке в хлеб, без дублирования.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sin": {
+      "action": "EXIT",
+      "status": "",
+      "description": "Безопасно отступает назад до 4 блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tul": {
+      "action": "W_VALVE",
+      "status": "",
+      "description": "Переключает рычаг или нажимает каменную/деревянную кнопку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kur": {
+      "action": "W_CIRCLE",
+      "status": "cobblestone_wall",
+      "description": "Создаёт круговое ограждение радиусом 2 с проходом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "var": {
+      "action": "W_WARM",
+      "status": "",
+      "description": "Тает выбранные снег или лёд, не создавая огонь.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kol": {
+      "action": "W_FREEZE",
+      "status": "",
+      "description": "Замораживает выбранный источник воды в лёд.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nov": {
+      "action": "W_CONVERT",
+      "status": "weathered_copper>exposed_copper",
+      "description": "Очищает одну ступень окисления меди.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vel": {
+      "action": "W_CONVERT",
+      "status": "copper_block>exposed_copper",
+      "description": "Состаривает медный блок на одну ступень.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bon": {
+      "action": "CLEANSE",
+      "status": "",
+      "description": "Снимает яд, голод и слабость.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mal": {
+      "action": "BUFF",
+      "status": "poison,hunger",
+      "description": "Отравляет и вызывает голод.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rap": {
+      "action": "BUFF",
+      "status": "speed",
+      "description": "Ускорение движения.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "len": {
+      "action": "BUFF",
+      "status": "slowness",
+      "description": "Замедление движения.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "por": {
+      "action": "BUFF",
+      "status": "strength",
+      "description": "Усиление ближнего боя.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nem": {
+      "action": "BUFF",
+      "status": "weakness",
+      "description": "Ослабление ближнего боя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sek": {
+      "action": "W_DRY",
+      "status": "",
+      "description": "Высушивает водонасыщенный блок, мокрую губку или грязь.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kap": {
+      "action": "BUFF",
+      "status": "luck",
+      "description": "Удача.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gus": {
+      "action": "BUFF",
+      "status": "unluck",
+      "description": "Неудача.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pob": {
+      "action": "FEAR",
+      "status": "",
+      "description": "Выбранный моб убегает от заклинателя.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rag": {
+      "action": "BUFF",
+      "status": "strength,speed,hunger",
+      "description": "Ярость: сила и скорость ценой голода.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kal": {
+      "action": "BUFF",
+      "status": "resistance,slowness",
+      "description": "Покой: защита ценой скорости.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tuk": {
+      "action": "REVEAL",
+      "status": "",
+      "description": "Снимает невидимость с цели и подсвечивает её.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bal": {
+      "action": "BUFF",
+      "status": "invisibility",
+      "description": "Невидимость.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rin": {
+      "action": "OPEN",
+      "status": "",
+      "description": "Открывает дверь, люк или калитку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tin": {
+      "action": "CLOSE",
+      "status": "",
+      "description": "Закрывает дверь, люк или калитку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vin": {
+      "action": "KNOCK",
+      "status": "",
+      "description": "Резко отбрасывает цель горизонтально, без вертикального подброса.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "jin": {
+      "action": "REEL",
+      "status": "",
+      "description": "Подтягивает цель к точке в двух блоках перед заклинателем, сильнее vol.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "don": {
+      "action": "THROW",
+      "status": "",
+      "description": "Подбрасывает цель вверх и вперёд.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gon": {
+      "action": "CATCH",
+      "status": "",
+      "description": "Гасит движение падающей цели и даёт краткое мягкое падение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kon": {
+      "action": "BUFF",
+      "status": "resistance",
+      "description": "Стойкость.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lon": {
+      "action": "LOW",
+      "status": "",
+      "description": "Останавливает цель и накладывает слабость, не меняя позу игрока.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "non": {
+      "action": "JUMP",
+      "status": "",
+      "description": "Мгновенный вертикальный прыжок без длительного эффекта.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pon": {
+      "action": "DASH",
+      "status": "",
+      "description": "Рывок вперёд с кратким ускорением.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ron": {
+      "action": "BUFF",
+      "status": "dolphins_grace",
+      "description": "Ускоренное плавание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "son": {
+      "action": "GLIDE",
+      "status": "",
+      "description": "Подъём и длительное мягкое падение вместо творческого полёта.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ton": {
+      "action": "BUFF",
+      "status": "slowness,resistance,night_vision",
+      "description": "Ползучая защита: медлительность, сопротивление и зрение.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "din": {
+      "action": "DROWSY",
+      "status": "",
+      "description": "Усыпляет агрессию моба и кратко замедляет цель.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gin": {
+      "action": "WAKE",
+      "status": "",
+      "description": "Снимает замедление, слабость и темноту.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lin": {
+      "action": "W_WASH",
+      "status": "",
+      "description": "Смывает краситель с шерсти в белый; не тушит магическое горение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nin": {
+      "action": "COOK",
+      "status": "",
+      "description": "Готовит один сырой пищевой предмет из второй руки заклинателя.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nok": {
+      "action": "W_PLACE",
+      "status": "stone",
+      "description": "Создаёт каменный блок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pok": {
+      "action": "W_PLACE",
+      "status": "sand",
+      "description": "Создаёт песок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rok": {
+      "action": "W_PLACE",
+      "status": "coarse_dirt",
+      "description": "Создаёт каменистую землю.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sok": {
+      "action": "W_PLACE",
+      "status": "mud",
+      "description": "Создаёт грязь.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tok": {
+      "action": "W_PLACE",
+      "status": "glass",
+      "description": "Создаёт стеклянный блок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vok": {
+      "action": "W_STEAM",
+      "status": "",
+      "description": "Испаряет выбранную воду с облаком пара.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "buk": {
+      "action": "W_PARTICLES",
+      "status": "cloud",
+      "description": "Создаёт густую облачную завесу в точке прицела.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "duk": {
+      "action": "W_MOISTEN",
+      "status": "",
+      "description": "Увлажняет грядку до максимума.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "guk": {
+      "action": "W_FROST",
+      "status": "",
+      "description": "Покрывает выбранную твёрдую поверхность снежным слоем.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "luk": {
+      "action": "W_WAVE",
+      "status": "",
+      "description": "Выдавливает воду на свободную соседнюю ячейку без дублирования.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nuk": {
+      "action": "W_PLATFORM",
+      "status": "dirt",
+      "description": "Создаёт небольшую земляную платформу.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "suk": {
+      "action": "W_TILL",
+      "status": "",
+      "description": "Вспахивает выбранную землю в грядку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dun": {
+      "action": "W_LIGHTNING",
+      "status": "",
+      "description": "Призывает настоящую молнию в точке прицела; опасно для построек.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gun": {
+      "action": "W_PARTICLES",
+      "status": "rainbow",
+      "description": "Радужная дуга частиц над целью.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lup": {
+      "action": "W_PUDDLE",
+      "status": "",
+      "description": "Насыщает водой выбранную плиту, ступень или другой водонасыщаемый блок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nup": {
+      "action": "W_PLACE",
+      "status": "snow_block",
+      "description": "Создаёт снежный блок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bak": {
+      "action": "W_MINE",
+      "status": "tunnel",
+      "description": "Добывает до трёх однотипных блоков вперёд текущим инструментом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gak": {
+      "action": "W_MINE",
+      "status": "soil",
+      "description": "Вынимает землю, песок или гравий в небольшой полосе.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lak": {
+      "action": "W_LEDGE",
+      "status": "stone_slab",
+      "description": "Создаёт площадку из каменных плит у края.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mak": {
+      "action": "W_PLATFORM",
+      "status": "sandstone",
+      "description": "Создаёт небольшую песчаниковую площадку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sak": {
+      "action": "W_CONVERT",
+      "status": "dirt>mud",
+      "description": "Превращает землю в грязь.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sap": {
+      "action": "W_PARTICLES",
+      "status": "star",
+      "description": "Поднимает золотую звезду частиц над целью.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tup": {
+      "action": "W_SOUND",
+      "status": "thunder",
+      "description": "Раскат грома без молнии и урона.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "del": {
+      "action": "W_CONVERT",
+      "status": "dirt>rooted_dirt",
+      "description": "Превращает землю в корнистую.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gel": {
+      "action": "W_PLANT",
+      "status": "bamboo",
+      "description": "Высаживает бамбук.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lel": {
+      "action": "W_PLACE",
+      "status": "oak_leaves",
+      "description": "Создаёт дубовую листву.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mel": {
+      "action": "W_GROW",
+      "status": "",
+      "description": "Применяет эффект костной муки к подходящему растению.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tel": {
+      "action": "W_PLANT",
+      "status": "short_grass",
+      "description": "Высаживает траву на подходящую поверхность.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bel": {
+      "action": "W_PLANT",
+      "status": "sweet_berry_bush",
+      "description": "Высаживает ягодный куст.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nel": {
+      "action": "W_HARVEST",
+      "status": "",
+      "description": "Собирает зрелую культуру обычным лутом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pel": {
+      "action": "W_PLANT",
+      "status": "wheat",
+      "description": "Высаживает пшеницу на грядке.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rel": {
+      "action": "W_STRIP",
+      "status": "",
+      "description": "Обтёсывает выбранное бревно.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sel": {
+      "action": "W_CONVERT",
+      "status": "cobblestone>mossy_cobblestone",
+      "description": "Покрывает булыжник мхом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "jel": {
+      "action": "W_PLANT",
+      "status": "brown_mushroom",
+      "description": "Высаживает коричневый гриб на подходящей поверхности.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bin": {
+      "action": "PIERCE",
+      "status": "",
+      "description": "Удар копьём: 5 HP урона и отбрасывание.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 5
+    },
+    "den": {
+      "action": "W_WALL",
+      "status": "stone_bricks",
+      "description": "Создаёт трёхблочную стенку из каменного кирпича.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gen": {
+      "action": "TURN",
+      "status": "",
+      "description": "Поворачивает горизонтально ориентированный блок на четверть оборота.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "men": {
+      "action": "W_RAFT",
+      "status": "oak_planks",
+      "description": "Создаёт маленький деревянный плот из блоков.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nen": {
+      "action": "W_RAIL",
+      "status": "",
+      "description": "Кладёт три рельса на подходящих опорах.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ren": {
+      "action": "SLASH",
+      "status": "",
+      "description": "Удар клинка: 4 HP урона и краткая слабость.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 4
+    },
+    "ten": {
+      "action": "BUFF",
+      "status": "resistance,absorption",
+      "description": "Щит: сопротивление и временное здоровье.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "ven": {
+      "action": "ARCHER",
+      "status": "",
+      "description": "Даёт зрение и уменьшает движение цели для прицеливания.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "jen": {
+      "action": "BOLT",
+      "status": "",
+      "description": "Магическая стрела наносит 3 HP цели и подсвечивает её.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 3
+    },
+    "bun": {
+      "action": "TETHER",
+      "status": "",
+      "description": "Удерживает моба остановкой навигации и сильным кратким замедлением.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kut": {
+      "action": "W_VACUUM",
+      "status": "",
+      "description": "Собирает в инвентарь брошенные предметы около выбранного блока.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mut": {
+      "action": "W_MINE",
+      "status": "cross",
+      "description": "Добывает крест до пяти однотипных блоков текущим инструментом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nut": {
+      "action": "W_MINE",
+      "status": "wood",
+      "description": "Срубает до восьми соседних однотипных брёвен; листья не трогает.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "but": {
+      "action": "DAMAGE",
+      "status": "",
+      "description": "Укол иглы: 2 HP магического урона, в том числе себе через mina.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 2
+    },
+    "gut": {
+      "action": "W_THREAD",
+      "status": "",
+      "description": "Создаёт растяжку tripwire на опоре.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lut": {
+      "action": "W_PLACE",
+      "status": "white_wool",
+      "description": "Создаёт белую шерсть.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rut": {
+      "action": "MEND",
+      "status": "",
+      "description": "Чинит надетую повреждённую броню цели на 8 прочности.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "sut": {
+      "action": "BOOTS",
+      "status": "",
+      "description": "Снимает замедление и даёт прыжок.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tut": {
+      "action": "HELMET",
+      "status": "",
+      "description": "Снимает слепоту и даёт подводное дыхание.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "vut": {
+      "action": "AURA",
+      "status": "",
+      "description": "Светящаяся аура: поглощение и обнаружение самой цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bup": {
+      "action": "W_SOUND",
+      "status": "drum",
+      "description": "Играет ритм барабана в точке прицела.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "kup": {
+      "action": "W_DOME",
+      "status": "glass",
+      "description": "Создаёт небольшой стеклянный купол с выходом.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "bek": {
+      "action": "W_GROW_AREA",
+      "status": "",
+      "description": "Применяет костную муку к нескольким растениям вокруг цели.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "dek": {
+      "action": "SKIN",
+      "status": "",
+      "description": "Снимает яд и даёт поглощение.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "gek": {
+      "action": "BUFF",
+      "status": "strength,haste",
+      "description": "Мышечное усилие: сила и спешка.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "lek": {
+      "action": "FOCUS",
+      "status": "",
+      "description": "Снимает темноту и слабость; даёт спешку.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "mek": {
+      "action": "SATIATE",
+      "status": "",
+      "description": "Максимально насыщает без изменения основного уровня голода.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "nek": {
+      "action": "BACKSTEP",
+      "status": "",
+      "description": "Отбрасывает цель назад по её собственному взгляду.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "pek": {
+      "action": "SHOULDER",
+      "status": "",
+      "description": "Поднимает цель вертикально и даёт краткое сопротивление.",
+      "harmful": false,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "rek": {
+      "action": "KNEE",
+      "status": "",
+      "description": "Подсекает цель вниз и кратко замедляет.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    },
+    "tek": {
+      "action": "ELBOW",
+      "status": "",
+      "description": "Отводит цель вправо по направлению её взгляда.",
+      "harmful": true,
+      "baseDuration": 240,
+      "basePower": 1
+    }
+  }
+}

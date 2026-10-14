@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "kelmagic:mage_helmet",
+    "kelmagic:mage_chestplate",
+    "kelmagic:mage_leggings",
+    "kelmagic:mage_boots"
+  ]
+}

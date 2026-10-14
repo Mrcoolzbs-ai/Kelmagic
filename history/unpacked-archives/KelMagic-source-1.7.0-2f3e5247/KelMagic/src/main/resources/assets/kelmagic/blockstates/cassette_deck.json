@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "kelmagic:block/cassette_deck",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "kelmagic:block/cassette_deck",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "kelmagic:block/cassette_deck",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kelmagic:block/cassette_deck",
+      "y": 270
+    }
+  }
+}

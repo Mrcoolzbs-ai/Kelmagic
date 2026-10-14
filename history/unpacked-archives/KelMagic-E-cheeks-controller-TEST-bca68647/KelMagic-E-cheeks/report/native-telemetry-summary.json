@@ -1,0 +1,170 @@
+{
+  "neutral-front": {
+    "samples": 41,
+    "minimumOpening": 1.0,
+    "maximumActualUpperMask": 0.06999999,
+    "cheekLeftRange": [
+      0.0,
+      0.0
+    ],
+    "cheekRightRange": [
+      0.0,
+      0.0
+    ],
+    "burstSamples": 0
+  },
+  "neutral-45": {
+    "samples": 41,
+    "minimumOpening": 1.0,
+    "maximumActualUpperMask": 0.06999999,
+    "cheekLeftRange": [
+      0.0,
+      0.0
+    ],
+    "cheekRightRange": [
+      0.0,
+      0.0
+    ],
+    "burstSamples": 0
+  },
+  "normal-blink": {
+    "samples": 111,
+    "minimumOpening": 0.013136208,
+    "maximumActualUpperMask": 1.0,
+    "cheekLeftRange": [
+      0.0,
+      0.0
+    ],
+    "cheekRightRange": [
+      0.0,
+      0.0
+    ],
+    "burstSamples": 0
+  },
+  "squint-front": {
+    "samples": 41,
+    "minimumOpening": 0.0,
+    "maximumActualUpperMask": 1.0,
+    "cheekLeftRange": [
+      0.14,
+      0.14
+    ],
+    "cheekRightRange": [
+      0.14,
+      0.14
+    ],
+    "burstSamples": 0
+  },
+  "smile-squint-front": {
+    "samples": 41,
+    "minimumOpening": 0.0,
+    "maximumActualUpperMask": 1.0,
+    "cheekLeftRange": [
+      0.8,
+      0.8
+    ],
+    "cheekRightRange": [
+      0.8,
+      0.8
+    ],
+    "burstSamples": 0
+  },
+  "smile-squint-45": {
+    "samples": 41,
+    "minimumOpening": 0.0067382813,
+    "maximumActualUpperMask": 1.0,
+    "cheekLeftRange": [
+      0.8,
+      0.8
+    ],
+    "cheekRightRange": [
+      0.8,
+      0.8
+    ],
+    "burstSamples": 0
+  },
+  "asymmetric-front": {
+    "samples": 41,
+    "minimumOpening": 0.0168,
+    "maximumActualUpperMask": 0.9862045,
+    "cheekLeftRange": [
+      1.0,
+      1.0
+    ],
+    "cheekRightRange": [
+      0.15000004,
+      0.15000004
+    ],
+    "burstSamples": 0
+  },
+  "asymmetric-45": {
+    "samples": 41,
+    "minimumOpening": 0.0,
+    "maximumActualUpperMask": 0.9702583,
+    "cheekLeftRange": [
+      1.0,
+      1.0
+    ],
+    "cheekRightRange": [
+      0.15000004,
+      0.15000004
+    ],
+    "burstSamples": 0
+  },
+  "burst-squint-smile": {
+    "samples": 41,
+    "minimumOpening": 0.0,
+    "maximumActualUpperMask": 1.0,
+    "cheekLeftRange": [
+      0.8,
+      0.8
+    ],
+    "cheekRightRange": [
+      0.8,
+      0.8
+    ],
+    "burstSamples": 9
+  },
+  "return-squint-smile": {
+    "samples": 41,
+    "minimumOpening": 0.0168,
+    "maximumActualUpperMask": 0.9999349,
+    "cheekLeftRange": [
+      0.8,
+      0.8
+    ],
+    "cheekRightRange": [
+      0.8,
+      0.8
+    ],
+    "burstSamples": 0
+  },
+  "head-turn": {
+    "samples": 71,
+    "minimumOpening": 0.0,
+    "maximumActualUpperMask": 0.999741,
+    "cheekLeftRange": [
+      0.8,
+      0.8
+    ],
+    "cheekRightRange": [
+      0.8,
+      0.8
+    ],
+    "burstSamples": 0
+  },
+  "angry-speech": {
+    "samples": 41,
+    "minimumOpening": 0.011741934,
+    "maximumActualUpperMask": 0.9926967,
+    "cheekLeftRange": [
+      0.8,
+      0.8
+    ],
+    "cheekRightRange": [
+      0.8,
+      0.8
+    ],
+    "burstSamples": 0
+  }
+}

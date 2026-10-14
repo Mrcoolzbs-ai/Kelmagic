@@ -1,0 +1,37 @@
+{
+  "word": {
+    "subtitle": "subtitles.kelmagic.word",
+    "sounds": [
+      {
+        "name": "kelmagic:word/1",
+        "weight": 1,
+        "volume": 0.8
+      },
+      {
+        "name": "kelmagic:word/2",
+        "weight": 1,
+        "volume": 0.8
+      },
+      {
+        "name": "kelmagic:word/3",
+        "weight": 1,
+        "volume": 0.8
+      },
+      {
+        "name": "kelmagic:word/4",
+        "weight": 1,
+        "volume": 0.8
+      },
+      {
+        "name": "kelmagic:word/5",
+        "weight": 1,
+        "volume": 0.8
+      },
+      {
+        "name": "kelmagic:word/6",
+        "weight": 1,
+        "volume": 0.8
+      }
+    ]
+  }
+}

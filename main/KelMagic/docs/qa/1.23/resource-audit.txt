@@ -1,0 +1,3 @@
+PASS: native floor/wall geometry, explicit alpha cutout, RGBA texture, all four wall orientations
+PASS: transformed lights reuse the same fixed torch models
+PASS:64 bones;29 clips;fully opaque integer UVs;recessed expressive face;head-owned contiguous hair;hanging chest;covered thigh caps;per-scene book;throne CSG union

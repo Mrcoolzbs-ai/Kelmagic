@@ -1,0 +1,1445 @@
+{
+  "version": 2,
+  "words": [
+    {
+      "word": "mina",
+      "root": "min",
+      "translation": "я",
+      "category": "self",
+      "source": "gram1.png",
+      "description": "Цель: заклинатель."
+    },
+    {
+      "word": "tuna",
+      "root": "tun",
+      "translation": "ты",
+      "category": "player",
+      "source": "gram1.png",
+      "description": "Цель: другой игрок."
+    },
+    {
+      "word": "sila",
+      "root": "sil",
+      "translation": "он/она/оно",
+      "category": "mob",
+      "source": "gram1.png",
+      "description": "Цель: моб."
+    },
+    {
+      "word": "pir",
+      "root": "pir",
+      "translation": "огонь",
+      "category": "effect",
+      "source": "ez_word1.png",
+      "description": "Магический огонь."
+    },
+    {
+      "word": "no",
+      "root": "no",
+      "translation": "отрицание",
+      "category": "modifier",
+      "source": "gram2.png",
+      "description": "Обращение эффекта."
+    },
+    {
+      "word": "lu",
+      "root": "lu",
+      "translation": "множество",
+      "category": "modifier",
+      "source": "gram2.png",
+      "description": "Несколько целей."
+    },
+    {
+      "word": "per",
+      "root": "per",
+      "translation": "человек",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "mil",
+      "root": "mil",
+      "translation": "друг",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает здоровье."
+    },
+    {
+      "word": "nak",
+      "root": "nak",
+      "translation": "враг",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Ослабляет ближний бой."
+    },
+    {
+      "word": "mam",
+      "root": "mam",
+      "translation": "мать",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "pap",
+      "root": "pap",
+      "translation": "отец",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "kin",
+      "root": "kin",
+      "translation": "ребёнок",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Увеличивает высоту прыжка."
+    },
+    {
+      "word": "gav",
+      "root": "gav",
+      "translation": "правительство, власть",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "ged",
+      "root": "ged",
+      "translation": "голова",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "gok",
+      "root": "gok",
+      "translation": "глаз",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "nos",
+      "root": "nos",
+      "translation": "нос",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "mur",
+      "root": "mur",
+      "translation": "рот",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Усиливает голод."
+    },
+    {
+      "word": "ped",
+      "root": "ped",
+      "translation": "нога",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "kor",
+      "root": "kor",
+      "translation": "сердце",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает здоровье."
+    },
+    {
+      "word": "sol",
+      "root": "sol",
+      "translation": "солнце",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "lun",
+      "root": "lun",
+      "translation": "луна",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Скрывает цель от глаз."
+    },
+    {
+      "word": "ter",
+      "root": "ter",
+      "translation": "земля",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "vak",
+      "root": "vak",
+      "translation": "вода",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Позволяет дышать под водой."
+    },
+    {
+      "word": "tur",
+      "root": "tur",
+      "translation": "дерево",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "gor",
+      "root": "gor",
+      "translation": "гора",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Увеличивает высоту прыжка."
+    },
+    {
+      "word": "mar",
+      "root": "mar",
+      "translation": "море",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Ускоряет плавание."
+    },
+    {
+      "word": "riv",
+      "root": "riv",
+      "translation": "река",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Ускоряет плавание."
+    },
+    {
+      "word": "neb",
+      "root": "neb",
+      "translation": "небо",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Смягчает падение."
+    },
+    {
+      "word": "dum",
+      "root": "dum",
+      "translation": "дым",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Затуманивает зрение."
+    },
+    {
+      "word": "vit",
+      "root": "vit",
+      "translation": "ветер",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "kuk",
+      "root": "kuk",
+      "translation": "кошка",
+      "category": "animals",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "pis",
+      "root": "pis",
+      "translation": "птица",
+      "category": "animals",
+      "source": "ez_word1.png",
+      "description": "Смягчает падение."
+    },
+    {
+      "word": "sal",
+      "root": "sal",
+      "translation": "рыба",
+      "category": "animals",
+      "source": "ez_word1.png",
+      "description": "Позволяет дышать под водой."
+    },
+    {
+      "word": "vid",
+      "root": "vid",
+      "translation": "видеть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "tik",
+      "root": "tik",
+      "translation": "слышать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "kel",
+      "root": "kel",
+      "translation": "говорить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "man",
+      "root": "man",
+      "translation": "есть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "pin",
+      "root": "pin",
+      "translation": "пить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Гасит только обычное горение."
+    },
+    {
+      "word": "pak",
+      "root": "pak",
+      "translation": "идти",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "dak",
+      "root": "dak",
+      "translation": "давать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает здоровье."
+    },
+    {
+      "word": "tak",
+      "root": "tak",
+      "translation": "брать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Притягивает цель к заклинателю."
+    },
+    {
+      "word": "sit",
+      "root": "sit",
+      "translation": "находиться",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "liv",
+      "root": "liv",
+      "translation": "жить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает здоровье."
+    },
+    {
+      "word": "mor",
+      "root": "mor",
+      "translation": "умирать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Наносит магический удар."
+    },
+    {
+      "word": "sav",
+      "root": "sav",
+      "translation": "знать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "pen",
+      "root": "pen",
+      "translation": "думать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "vol",
+      "root": "vol",
+      "translation": "хотеть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Повышает удачу."
+    },
+    {
+      "word": "kan",
+      "root": "kan",
+      "translation": "мочь",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "lab",
+      "root": "lab",
+      "translation": "работать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Ускоряет добычу блоков."
+    },
+    {
+      "word": "ler",
+      "root": "ler",
+      "translation": "учить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "lud",
+      "root": "lud",
+      "translation": "играть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Увеличивает высоту прыжка."
+    },
+    {
+      "word": "lov",
+      "root": "lov",
+      "translation": "любить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "pul",
+      "root": "pul",
+      "translation": "крутить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Закручивает цель вокруг заклинателя."
+    },
+    {
+      "word": "lom",
+      "root": "lom",
+      "translation": "ломать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Ускоряет добычу блоков."
+    },
+    {
+      "word": "set",
+      "root": "set",
+      "translation": "стирать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Снимает яд, голод и слабость."
+    },
+    {
+      "word": "pad",
+      "root": "pad",
+      "translation": "падать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Смягчает падение."
+    },
+    {
+      "word": "ved",
+      "root": "ved",
+      "translation": "вести",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Притягивает цель к заклинателю."
+    },
+    {
+      "word": "tom",
+      "root": "tom",
+      "translation": "дом",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "puk",
+      "root": "puk",
+      "translation": "книга",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "log",
+      "root": "log",
+      "translation": "слово",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "tem",
+      "root": "tem",
+      "translation": "время",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "lok",
+      "root": "lok",
+      "translation": "место",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "rak",
+      "root": "rak",
+      "translation": "путь",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "mon",
+      "root": "mon",
+      "translation": "деньги",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Повышает удачу."
+    },
+    {
+      "word": "tab",
+      "root": "tab",
+      "translation": "стол",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "kul",
+      "root": "kul",
+      "translation": "стул",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "bed",
+      "root": "bed",
+      "translation": "кровать",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "dor",
+      "root": "dor",
+      "translation": "дверь",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Открывает дверь или люк в прицеле."
+    },
+    {
+      "word": "sen",
+      "root": "sen",
+      "translation": "окно",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "val",
+      "root": "val",
+      "translation": "стена",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "rum",
+      "root": "rum",
+      "translation": "комната",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "kas",
+      "root": "kas",
+      "translation": "город",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает ближайших существ."
+    },
+    {
+      "word": "vil",
+      "root": "vil",
+      "translation": "деревня",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Даёт скидку у жителей."
+    },
+    {
+      "word": "lum",
+      "root": "lum",
+      "translation": "улица",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "pal",
+      "root": "pal",
+      "translation": "хлеб",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "sin",
+      "root": "sin",
+      "translation": "выход",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "tul",
+      "root": "tul",
+      "translation": "вентиль",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Закрывает дверь или люк в прицеле."
+    },
+    {
+      "word": "kur",
+      "root": "kur",
+      "translation": "круг",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Закручивает цель вокруг заклинателя."
+    },
+    {
+      "word": "var",
+      "root": "var",
+      "translation": "тёплый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Гасит только обычное горение."
+    },
+    {
+      "word": "kol",
+      "root": "kol",
+      "translation": "холодный",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "nov",
+      "root": "nov",
+      "translation": "новый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "vel",
+      "root": "vel",
+      "translation": "старый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Ослабляет ближний бой."
+    },
+    {
+      "word": "bon",
+      "root": "bon",
+      "translation": "хороший",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Восстанавливает здоровье."
+    },
+    {
+      "word": "mal",
+      "root": "mal",
+      "translation": "плохой",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Отравляет цель, не добивая её."
+    },
+    {
+      "word": "muk",
+      "root": "muk",
+      "translation": "большой, много",
+      "category": "modifier",
+      "source": "ez_word1.png",
+      "description": "Масштаб ×1,5 за повтор; nis обращает muk."
+    },
+    {
+      "word": "nis",
+      "root": "nis",
+      "translation": "маленький",
+      "category": "modifier",
+      "source": "User-confirmed replacement for zin (2026-10-10)",
+      "description": "Масштаб ÷1,5 за повтор; muk обращает nis."
+    },
+    {
+      "word": "rap",
+      "root": "rap",
+      "translation": "быстрый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "len",
+      "root": "len",
+      "translation": "медленный",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "por",
+      "root": "por",
+      "translation": "сильный",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "nem",
+      "root": "nem",
+      "translation": "слабый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Ослабляет ближний бой."
+    },
+    {
+      "word": "sek",
+      "root": "sek",
+      "translation": "сухой",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Гасит только обычное горение."
+    },
+    {
+      "word": "kap",
+      "root": "kap",
+      "translation": "счастье",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Повышает удачу."
+    },
+    {
+      "word": "gus",
+      "root": "gus",
+      "translation": "печаль",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "pob",
+      "root": "pob",
+      "translation": "страх",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Затуманивает зрение."
+    },
+    {
+      "word": "rag",
+      "root": "rag",
+      "translation": "гнев",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "kal",
+      "root": "kal",
+      "translation": "покой",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "tuk",
+      "root": "tuk",
+      "translation": "истина",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "bal",
+      "root": "bal",
+      "translation": "ложь",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Скрывает цель от глаз."
+    },
+    {
+      "word": "rin",
+      "root": "rin",
+      "translation": "открывать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Открывает дверь или люк в прицеле."
+    },
+    {
+      "word": "tin",
+      "root": "tin",
+      "translation": "закрывать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Закрывает дверь или люк в прицеле."
+    },
+    {
+      "word": "vin",
+      "root": "vin",
+      "translation": "толкать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "jin",
+      "root": "jin",
+      "translation": "тянуть",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Притягивает цель к заклинателю."
+    },
+    {
+      "word": "don",
+      "root": "don",
+      "translation": "бросать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "gon",
+      "root": "gon",
+      "translation": "ловить",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "kon",
+      "root": "kon",
+      "translation": "стоять",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "lon",
+      "root": "lon",
+      "translation": "лежать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "non",
+      "root": "non",
+      "translation": "прыгать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Увеличивает высоту прыжка."
+    },
+    {
+      "word": "pon",
+      "root": "pon",
+      "translation": "бежать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "ron",
+      "root": "ron",
+      "translation": "плыть",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Ускоряет плавание."
+    },
+    {
+      "word": "son",
+      "root": "son",
+      "translation": "летать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Смягчает падение."
+    },
+    {
+      "word": "ton",
+      "root": "ton",
+      "translation": "ползти",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "din",
+      "root": "din",
+      "translation": "спать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "gin",
+      "root": "gin",
+      "translation": "просыпаться",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "lin",
+      "root": "lin",
+      "translation": "мыть",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Снимает яд, голод и слабость."
+    },
+    {
+      "word": "nin",
+      "root": "nin",
+      "translation": "готовить",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "nok",
+      "root": "nok",
+      "translation": "камень",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "pok",
+      "root": "pok",
+      "translation": "песок",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Затуманивает зрение."
+    },
+    {
+      "word": "rok",
+      "root": "rok",
+      "translation": "почва",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "sok",
+      "root": "sok",
+      "translation": "грязь",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "tok",
+      "root": "tok",
+      "translation": "стекло",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Скрывает цель от глаз."
+    },
+    {
+      "word": "vok",
+      "root": "vok",
+      "translation": "пар",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Скрывает цель от глаз."
+    },
+    {
+      "word": "buk",
+      "root": "buk",
+      "translation": "туман",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Затуманивает зрение."
+    },
+    {
+      "word": "duk",
+      "root": "duk",
+      "translation": "роса",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Гасит только обычное горение."
+    },
+    {
+      "word": "guk",
+      "root": "guk",
+      "translation": "иней",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "luk",
+      "root": "luk",
+      "translation": "волна",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "nuk",
+      "root": "nuk",
+      "translation": "остров",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Позволяет дышать под водой."
+    },
+    {
+      "word": "suk",
+      "root": "suk",
+      "translation": "поле",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "dun",
+      "root": "dun",
+      "translation": "молния",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Наносит магический удар."
+    },
+    {
+      "word": "gun",
+      "root": "gun",
+      "translation": "радуга",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "lup",
+      "root": "lup",
+      "translation": "лужа",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Гасит только обычное горение."
+    },
+    {
+      "word": "nup",
+      "root": "nup",
+      "translation": "снежинка",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "bak",
+      "root": "bak",
+      "translation": "пещера",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "gak",
+      "root": "gak",
+      "translation": "долина",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "lak",
+      "root": "lak",
+      "translation": "обрыв",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Смягчает падение."
+    },
+    {
+      "word": "mak",
+      "root": "mak",
+      "translation": "пляж",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Ускоряет плавание."
+    },
+    {
+      "word": "sak",
+      "root": "sak",
+      "translation": "болото",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Отравляет цель, не добивая её."
+    },
+    {
+      "word": "sap",
+      "root": "sap",
+      "translation": "звезда",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Подсвечивает цель."
+    },
+    {
+      "word": "tup",
+      "root": "tup",
+      "translation": "гром",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "del",
+      "root": "del",
+      "translation": "корень",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "gel",
+      "root": "gel",
+      "translation": "стебель",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "lel",
+      "root": "lel",
+      "translation": "ветвь",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Увеличивает высоту прыжка."
+    },
+    {
+      "word": "mel",
+      "root": "mel",
+      "translation": "цветок",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Повышает удачу."
+    },
+    {
+      "word": "tel",
+      "root": "tel",
+      "translation": "трава",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "bel",
+      "root": "bel",
+      "translation": "ягода",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "nel",
+      "root": "nel",
+      "translation": "плод",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "pel",
+      "root": "pel",
+      "translation": "семя",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Постепенно лечит цель."
+    },
+    {
+      "word": "rel",
+      "root": "rel",
+      "translation": "кора",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "sel",
+      "root": "sel",
+      "translation": "мох",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Замедляет движение."
+    },
+    {
+      "word": "jel",
+      "root": "jel",
+      "translation": "гриб",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Отравляет цель, не добивая её."
+    },
+    {
+      "word": "bin",
+      "root": "bin",
+      "translation": "копьё",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Наносит магический удар."
+    },
+    {
+      "word": "den",
+      "root": "den",
+      "translation": "крепость",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "gen",
+      "root": "gen",
+      "translation": "колесо",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Закручивает цель вокруг заклинателя."
+    },
+    {
+      "word": "men",
+      "root": "men",
+      "translation": "лодка",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Ускоряет плавание."
+    },
+    {
+      "word": "nen",
+      "root": "nen",
+      "translation": "телега",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "ren",
+      "root": "ren",
+      "translation": "меч",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Наносит магический удар."
+    },
+    {
+      "word": "ten",
+      "root": "ten",
+      "translation": "щит",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Даёт временные сердца."
+    },
+    {
+      "word": "ven",
+      "root": "ven",
+      "translation": "лук",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "jen",
+      "root": "jen",
+      "translation": "стрела",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "bun",
+      "root": "bun",
+      "translation": "верёвка",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Притягивает цель к заклинателю."
+    },
+    {
+      "word": "kut",
+      "root": "kut",
+      "translation": "мешок",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "mut",
+      "root": "mut",
+      "translation": "молот",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "nut",
+      "root": "nut",
+      "translation": "топор",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Ускоряет добычу блоков."
+    },
+    {
+      "word": "but",
+      "root": "but",
+      "translation": "игла",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Наносит магический удар."
+    },
+    {
+      "word": "gut",
+      "root": "gut",
+      "translation": "нить",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Притягивает цель к заклинателю."
+    },
+    {
+      "word": "lut",
+      "root": "lut",
+      "translation": "ткань",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "rut",
+      "root": "rut",
+      "translation": "одежда",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "sut",
+      "root": "sut",
+      "translation": "обувь",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Ускоряет движение."
+    },
+    {
+      "word": "tut",
+      "root": "tut",
+      "translation": "шляпа",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "vut",
+      "root": "vut",
+      "translation": "кольцо",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Повышает удачу."
+    },
+    {
+      "word": "bup",
+      "root": "bup",
+      "translation": "барабан",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Отталкивает цель от заклинателя."
+    },
+    {
+      "word": "kup",
+      "root": "kup",
+      "translation": "купол",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Даёт временные сердца."
+    },
+    {
+      "word": "bek",
+      "root": "bek",
+      "translation": "кость",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "dek",
+      "root": "dek",
+      "translation": "кожа",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "gek",
+      "root": "gek",
+      "translation": "мышца",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "lek",
+      "root": "lek",
+      "translation": "мозг",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Позволяет видеть в темноте."
+    },
+    {
+      "word": "mek",
+      "root": "mek",
+      "translation": "живот",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Восстанавливает сытость игрока."
+    },
+    {
+      "word": "nek",
+      "root": "nek",
+      "translation": "спина",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Укрепляет защиту цели."
+    },
+    {
+      "word": "pek",
+      "root": "pek",
+      "translation": "плечо",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Усиливает ближний бой."
+    },
+    {
+      "word": "rek",
+      "root": "rek",
+      "translation": "колено",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Увеличивает высоту прыжка."
+    },
+    {
+      "word": "tek",
+      "root": "tek",
+      "translation": "локоть",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Ускоряет добычу блоков."
+    }
+  ]
+}

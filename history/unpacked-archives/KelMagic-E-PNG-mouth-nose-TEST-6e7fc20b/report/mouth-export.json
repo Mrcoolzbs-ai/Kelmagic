@@ -1,0 +1,121 @@
+{
+  "mouthPlane": {
+    "origin": [
+      -1,
+      25.51,
+      -4.16
+    ],
+    "size": [
+      2,
+      1,
+      0
+    ],
+    "frontOffsetFromSkin": 0.02,
+    "textureSize": [
+      32,
+      16
+    ],
+    "geoUVUnits": [
+      1024,
+      1024
+    ],
+    "bbPNGUVUnits": [
+      32,
+      16
+    ]
+  },
+  "skinClosure": {
+    "origin": [
+      -0.85,
+      25.94,
+      -4.14
+    ],
+    "size": [
+      1.7,
+      0.18,
+      0
+    ]
+  },
+  "noseLower": {
+    "origin": [
+      -0.29,
+      26.69,
+      -4.48
+    ],
+    "size": [
+      0.58,
+      0.25,
+      0.38
+    ],
+    "uv": {
+      "north": {
+        "uv": [
+          674,
+          738
+        ],
+        "uv_size": [
+          28,
+          28
+        ]
+      },
+      "south": {
+        "uv": [
+          674,
+          738
+        ],
+        "uv_size": [
+          28,
+          28
+        ]
+      },
+      "west": {
+        "uv": [
+          674,
+          738
+        ],
+        "uv_size": [
+          28,
+          28
+        ]
+      },
+      "east": {
+        "uv": [
+          674,
+          738
+        ],
+        "uv_size": [
+          28,
+          28
+        ]
+      },
+      "up": {
+        "uv": [
+          674,
+          738
+        ],
+        "uv_size": [
+          28,
+          28
+        ]
+      },
+      "down": {
+        "uv": [
+          674,
+          738
+        ],
+        "uv_size": [
+          28,
+          28
+        ]
+      }
+    }
+  },
+  "maxNoseY": 0.012,
+  "atlasSHA256": "35418b8b032f5dc3ea613f48a5d3a254fcd0a9bddde55ec452dcb63b358f3692",
+  "PNGsha256": {
+    "neutral": "e81eaf359179e7d654049674b1780a63581dbb087094996b87bf5abc345a6ec6",
+    "smile": "f58f677d98b834372025d2b3855f1a3727da5c95497a34f6164332a5b6a0d688",
+    "speech": "c3e36753d3ec73eb6d815f28d0ef5fbb6d4e4dc2cec40027ff1996b32a468ef1",
+    "surprised": "043b163f59d187b84dd6aff26f9231c25b2d2bc10ea3611fc8c3da7f2e7fbe17"
+  }
+}

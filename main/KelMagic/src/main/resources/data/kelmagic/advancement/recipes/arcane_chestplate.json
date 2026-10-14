@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "researched": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "researched"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kelmagic:arcane_chestplate"
+    ]
+  }
+}

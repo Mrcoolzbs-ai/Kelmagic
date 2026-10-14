@@ -1,0 +1,173 @@
+{
+  "neutral-front": {
+    "file": "00-neutral-front-060.png",
+    "sample": {
+      "stage": "neutral-front",
+      "frame": "60",
+      "tick": "60",
+      "open": "1.0",
+      "blink": "0.0",
+      "burst": "false",
+      "cheekL": "0.0",
+      "cheekR": "0.0",
+      "lowerL": "0.0",
+      "lowerR": "0.0",
+      "actualLowerY": "0.0",
+      "upperMask": "0.06999999",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "normal-blink": {
+    "file": "02-normal-blink-098.png",
+    "sample": {
+      "stage": "normal-blink",
+      "frame": "98",
+      "tick": "300",
+      "open": "0.013136208",
+      "blink": "0.9868638",
+      "burst": "false",
+      "cheekL": "0.0",
+      "cheekR": "0.0",
+      "lowerL": "0.0",
+      "lowerR": "0.0",
+      "actualLowerY": "0.0",
+      "upperMask": "1.0",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "squint-front": {
+    "file": "03-squint-front-060.png",
+    "sample": {
+      "stage": "squint-front",
+      "frame": "60",
+      "tick": "503",
+      "open": "0.6",
+      "blink": "0.0",
+      "burst": "false",
+      "cheekL": "0.14",
+      "cheekR": "0.14",
+      "lowerL": "0.22000001",
+      "lowerR": "0.22000001",
+      "actualLowerY": "0.048400003",
+      "upperMask": "0.44199997",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "smile-squint-front": {
+    "file": "04-smile-squint-front-060.png",
+    "sample": {
+      "stage": "smile-squint-front",
+      "frame": "60",
+      "tick": "604",
+      "open": "0.6",
+      "blink": "0.0",
+      "burst": "false",
+      "cheekL": "0.8",
+      "cheekR": "0.8",
+      "lowerL": "0.8",
+      "lowerR": "0.8",
+      "actualLowerY": "0.176",
+      "upperMask": "0.44199997",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "asymmetric-front": {
+    "file": "06-asymmetric-front-058.png",
+    "sample": {
+      "stage": "asymmetric-front",
+      "frame": "58",
+      "tick": "804",
+      "open": "0.6",
+      "blink": "0.0",
+      "burst": "false",
+      "cheekL": "1.0",
+      "cheekR": "0.15000004",
+      "lowerL": "1.0",
+      "lowerR": "0.22000003",
+      "actualLowerY": "0.22",
+      "upperMask": "0.44199997",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "burst-squint-smile": {
+    "file": "08-burst-squint-smile-028.png",
+    "sample": {
+      "stage": "burst-squint-smile",
+      "frame": "28",
+      "tick": "976",
+      "open": "0.0",
+      "blink": "1.0",
+      "burst": "false",
+      "cheekL": "0.8",
+      "cheekR": "0.8",
+      "lowerL": "0.8",
+      "lowerR": "0.8",
+      "actualLowerY": "0.176",
+      "upperMask": "1.0",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "return-squint-smile": {
+    "file": "09-return-squint-smile-060.png",
+    "sample": {
+      "stage": "return-squint-smile",
+      "frame": "60",
+      "tick": "1109",
+      "open": "0.6",
+      "blink": "0.0",
+      "burst": "false",
+      "cheekL": "0.8",
+      "cheekR": "0.8",
+      "lowerL": "0.8",
+      "lowerR": "0.8",
+      "actualLowerY": "0.176",
+      "upperMask": "0.44199997",
+      "head": "180.0",
+      "mood": "0"
+    }
+  },
+  "head-turn": {
+    "file": "10-head-turn-152.png",
+    "sample": {
+      "stage": "head-turn",
+      "frame": "152",
+      "tick": "1302",
+      "open": "0.0067382813",
+      "blink": "0.98876953",
+      "burst": "false",
+      "cheekL": "0.8",
+      "cheekR": "0.8",
+      "lowerL": "0.8",
+      "lowerR": "0.8",
+      "actualLowerY": "0.176",
+      "upperMask": "0.999741",
+      "head": "203.78181",
+      "mood": "0"
+    }
+  },
+  "angry-speech": {
+    "file": "11-angry-speech-060.png",
+    "sample": {
+      "stage": "angry-speech",
+      "frame": "60",
+      "tick": "1371",
+      "open": "0.41935486",
+      "blink": "0.0",
+      "burst": "false",
+      "cheekL": "0.8",
+      "cheekR": "0.8",
+      "lowerL": "0.8",
+      "lowerR": "0.8",
+      "actualLowerY": "0.176",
+      "upperMask": "0.61",
+      "head": "180.0",
+      "mood": "3"
+    }
+  }
+}

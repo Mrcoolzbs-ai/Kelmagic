@@ -1,0 +1,78 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/tape_casing",
+    "layer1": "kelmagic:item/tape_trim"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:recorded": 1
+      },
+      "model": "kelmagic:item/recorded_cassette"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 1
+      },
+      "model": "kelmagic:item/cassette_pattern_1"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 2
+      },
+      "model": "kelmagic:item/cassette_pattern_2"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 3
+      },
+      "model": "kelmagic:item/cassette_pattern_3"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 4
+      },
+      "model": "kelmagic:item/cassette_pattern_4"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 5
+      },
+      "model": "kelmagic:item/cassette_pattern_5"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 6
+      },
+      "model": "kelmagic:item/cassette_pattern_6"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 7
+      },
+      "model": "kelmagic:item/cassette_pattern_7"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 8
+      },
+      "model": "kelmagic:item/cassette_pattern_8"
+    },
+    {
+      "predicate": {
+        "kelmagic:recorded": 1,
+        "kelmagic:pattern": 9
+      },
+      "model": "kelmagic:item/cassette_pattern_9"
+    }
+  ]
+}

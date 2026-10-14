@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.kelmagic.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EntityFlameMixin",
+    "ScreenFlameMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

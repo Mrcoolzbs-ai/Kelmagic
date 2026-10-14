@@ -1,0 +1,36 @@
+{
+  "checks": 142,
+  "PNGalphaBounds": {
+    "neutral": [
+      6,
+      8,
+      26,
+      11
+    ],
+    "smile": [
+      6,
+      6,
+      26,
+      12
+    ],
+    "speech": [
+      8,
+      6,
+      25,
+      12
+    ],
+    "surprised": [
+      12,
+      3,
+      21,
+      13
+    ]
+  },
+  "originalAtlasByteIdentical": true,
+  "allEyeAndCheekBonesExact": true,
+  "lowerNoseCubeExactReparent": true,
+  "skinClosureNoCoplanarOverlap": true,
+  "clipsUnchangedAndNoMouthNoseWriters": true,
+  "restBreathMouthFallbackRemoved": true,
+  "atlasSHA256": "35418b8b032f5dc3ea613f48a5d3a254fcd0a9bddde55ec452dcb63b358f3692"
+}

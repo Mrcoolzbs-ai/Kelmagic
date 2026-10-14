@@ -1,0 +1,1 @@
+allprojects {afterEvaluate {neoForge.runs.client {systemProperty 'kelmagic.mascotQA121','true';systemProperty 'kelmagic.mascotQAQuick121','true';programArgument '--width';programArgument '1280';programArgument '--height';programArgument '900'}}}

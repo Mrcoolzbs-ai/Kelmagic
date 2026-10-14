@@ -1,0 +1,1 @@
+KelMagic1.13.0. Прочитайте START_HERE.md,HANDOFF.md,COMMANDS.md,docs/architecture/VERIFICATION-1.13.0.md,docs/lore/KEL-CHRONICLE-1.13.0.md. Достижение archive_route удалено. Лор и gameplayDescription раздельны. Не менять механику по художественным намёкам. Не запускать старые генераторы поверх новых ресурсов. Исторические результаты не выдавать за текущие.

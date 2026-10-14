@@ -1,0 +1,10 @@
+package dev.kelmagic.resonance;
+import dev.kelmagic.*;import net.minecraft.core.BlockPos;import net.minecraft.world.*;import net.minecraft.world.entity.player.*;import net.minecraft.world.inventory.*;import net.minecraft.world.item.*;
+public final class ResonanceMenu extends AbstractContainerMenu {
+ public final Container machine;public final ContainerData data;private final ResonanceEntity station;private final ContainerLevelAccess access;
+ public static int slotX(int i){return i==0?80:80+(int)Math.round(Math.sin((i-1)*Math.PI/4)*36);}public static int slotY(int i){return i==0?60:60-(int)Math.round(Math.cos((i-1)*Math.PI/4)*36);}
+ public ResonanceMenu(int id,Inventory inv,BlockPos pos){this(id,inv,inv.player.level().getBlockEntity(pos) instanceof ResonanceEntity d?d:null,pos);}public ResonanceMenu(int id,Inventory inv,ResonanceEntity d){this(id,inv,d,d.getBlockPos());}
+ private ResonanceMenu(int id,Inventory inv,ResonanceEntity d,BlockPos pos){super(MagicResonance.MENU.get(),id);station=d;machine=d==null?new SimpleContainer(9):d.inventory;data=d==null?new SimpleContainerData(3):d.data;access=ContainerLevelAccess.create(inv.player.level(),pos);for(int i=0;i<9;i++)addSlot(new Slot(machine,i,slotX(i),slotY(i)){public int getMaxStackSize(){return 1;}public boolean mayPlace(ItemStack s){return !active();}public boolean mayPickup(Player p){return !active();}});for(int y=0;y<3;y++)for(int x=0;x<9;x++)addSlot(new Slot(inv,x+y*9+9,8+x*18,140+y*18));for(int x=0;x<9;x++)addSlot(new Slot(inv,x,8+x*18,198));addDataSlots(data);}
+ public boolean active(){return data.get(1)>0;}public boolean stillValid(Player p){return stillValid(access,p,MagicResonance.STATION.get());}
+ public ItemStack quickMoveStack(Player p,int idx){if(idx<0||idx>=slots.size()||active())return ItemStack.EMPTY;var slot=slots.get(idx);if(!slot.hasItem())return ItemStack.EMPTY;var s=slot.getItem();var copy=s.copy();if(idx<9){if(!moveItemStackTo(s,9,45,true))return ItemStack.EMPTY;}else if(!moveItemStackTo(s,0,9,false))return ItemStack.EMPTY;if(s.isEmpty())slot.setByPlayer(ItemStack.EMPTY);else slot.setChanged();slot.onTake(p,s);return copy;}
+}

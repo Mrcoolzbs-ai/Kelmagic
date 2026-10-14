@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:combination",
+  "display": {
+    "icon": {
+      "id": "kelmagic:manuscript_pis"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.rite_wings.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.rite_wings.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

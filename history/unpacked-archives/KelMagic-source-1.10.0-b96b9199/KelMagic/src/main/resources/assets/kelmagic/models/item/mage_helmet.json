@@ -1,0 +1,1089 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/mage_helmet",
+    "layer1": "kelmagic:item/mage_helmet_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:trimmed": 1
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 2
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 3
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 4
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 5
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 6
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 7
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 8
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 9
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 10
+      },
+      "model": "kelmagic:item/mage_helmet_sentry_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 11
+      },
+      "model": "kelmagic:item/mage_helmet_dune_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 12
+      },
+      "model": "kelmagic:item/mage_helmet_dune_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 13
+      },
+      "model": "kelmagic:item/mage_helmet_dune_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 14
+      },
+      "model": "kelmagic:item/mage_helmet_dune_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 15
+      },
+      "model": "kelmagic:item/mage_helmet_dune_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 16
+      },
+      "model": "kelmagic:item/mage_helmet_dune_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 17
+      },
+      "model": "kelmagic:item/mage_helmet_dune_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 18
+      },
+      "model": "kelmagic:item/mage_helmet_dune_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 19
+      },
+      "model": "kelmagic:item/mage_helmet_dune_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 20
+      },
+      "model": "kelmagic:item/mage_helmet_dune_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 21
+      },
+      "model": "kelmagic:item/mage_helmet_coast_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 22
+      },
+      "model": "kelmagic:item/mage_helmet_coast_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 23
+      },
+      "model": "kelmagic:item/mage_helmet_coast_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 24
+      },
+      "model": "kelmagic:item/mage_helmet_coast_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 25
+      },
+      "model": "kelmagic:item/mage_helmet_coast_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 26
+      },
+      "model": "kelmagic:item/mage_helmet_coast_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 27
+      },
+      "model": "kelmagic:item/mage_helmet_coast_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 28
+      },
+      "model": "kelmagic:item/mage_helmet_coast_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 29
+      },
+      "model": "kelmagic:item/mage_helmet_coast_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 30
+      },
+      "model": "kelmagic:item/mage_helmet_coast_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 31
+      },
+      "model": "kelmagic:item/mage_helmet_wild_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 32
+      },
+      "model": "kelmagic:item/mage_helmet_wild_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 33
+      },
+      "model": "kelmagic:item/mage_helmet_wild_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 34
+      },
+      "model": "kelmagic:item/mage_helmet_wild_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 35
+      },
+      "model": "kelmagic:item/mage_helmet_wild_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 36
+      },
+      "model": "kelmagic:item/mage_helmet_wild_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 37
+      },
+      "model": "kelmagic:item/mage_helmet_wild_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 38
+      },
+      "model": "kelmagic:item/mage_helmet_wild_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 39
+      },
+      "model": "kelmagic:item/mage_helmet_wild_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 40
+      },
+      "model": "kelmagic:item/mage_helmet_wild_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 41
+      },
+      "model": "kelmagic:item/mage_helmet_ward_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 42
+      },
+      "model": "kelmagic:item/mage_helmet_ward_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 43
+      },
+      "model": "kelmagic:item/mage_helmet_ward_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 44
+      },
+      "model": "kelmagic:item/mage_helmet_ward_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 45
+      },
+      "model": "kelmagic:item/mage_helmet_ward_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 46
+      },
+      "model": "kelmagic:item/mage_helmet_ward_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 47
+      },
+      "model": "kelmagic:item/mage_helmet_ward_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 48
+      },
+      "model": "kelmagic:item/mage_helmet_ward_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 49
+      },
+      "model": "kelmagic:item/mage_helmet_ward_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 50
+      },
+      "model": "kelmagic:item/mage_helmet_ward_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 51
+      },
+      "model": "kelmagic:item/mage_helmet_eye_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 52
+      },
+      "model": "kelmagic:item/mage_helmet_eye_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 53
+      },
+      "model": "kelmagic:item/mage_helmet_eye_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 54
+      },
+      "model": "kelmagic:item/mage_helmet_eye_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 55
+      },
+      "model": "kelmagic:item/mage_helmet_eye_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 56
+      },
+      "model": "kelmagic:item/mage_helmet_eye_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 57
+      },
+      "model": "kelmagic:item/mage_helmet_eye_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 58
+      },
+      "model": "kelmagic:item/mage_helmet_eye_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 59
+      },
+      "model": "kelmagic:item/mage_helmet_eye_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 60
+      },
+      "model": "kelmagic:item/mage_helmet_eye_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 61
+      },
+      "model": "kelmagic:item/mage_helmet_vex_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 62
+      },
+      "model": "kelmagic:item/mage_helmet_vex_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 63
+      },
+      "model": "kelmagic:item/mage_helmet_vex_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 64
+      },
+      "model": "kelmagic:item/mage_helmet_vex_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 65
+      },
+      "model": "kelmagic:item/mage_helmet_vex_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 66
+      },
+      "model": "kelmagic:item/mage_helmet_vex_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 67
+      },
+      "model": "kelmagic:item/mage_helmet_vex_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 68
+      },
+      "model": "kelmagic:item/mage_helmet_vex_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 69
+      },
+      "model": "kelmagic:item/mage_helmet_vex_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 70
+      },
+      "model": "kelmagic:item/mage_helmet_vex_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 71
+      },
+      "model": "kelmagic:item/mage_helmet_tide_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 72
+      },
+      "model": "kelmagic:item/mage_helmet_tide_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 73
+      },
+      "model": "kelmagic:item/mage_helmet_tide_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 74
+      },
+      "model": "kelmagic:item/mage_helmet_tide_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 75
+      },
+      "model": "kelmagic:item/mage_helmet_tide_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 76
+      },
+      "model": "kelmagic:item/mage_helmet_tide_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 77
+      },
+      "model": "kelmagic:item/mage_helmet_tide_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 78
+      },
+      "model": "kelmagic:item/mage_helmet_tide_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 79
+      },
+      "model": "kelmagic:item/mage_helmet_tide_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 80
+      },
+      "model": "kelmagic:item/mage_helmet_tide_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 81
+      },
+      "model": "kelmagic:item/mage_helmet_snout_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 82
+      },
+      "model": "kelmagic:item/mage_helmet_snout_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 83
+      },
+      "model": "kelmagic:item/mage_helmet_snout_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 84
+      },
+      "model": "kelmagic:item/mage_helmet_snout_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 85
+      },
+      "model": "kelmagic:item/mage_helmet_snout_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 86
+      },
+      "model": "kelmagic:item/mage_helmet_snout_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 87
+      },
+      "model": "kelmagic:item/mage_helmet_snout_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 88
+      },
+      "model": "kelmagic:item/mage_helmet_snout_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 89
+      },
+      "model": "kelmagic:item/mage_helmet_snout_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 90
+      },
+      "model": "kelmagic:item/mage_helmet_snout_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 91
+      },
+      "model": "kelmagic:item/mage_helmet_rib_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 92
+      },
+      "model": "kelmagic:item/mage_helmet_rib_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 93
+      },
+      "model": "kelmagic:item/mage_helmet_rib_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 94
+      },
+      "model": "kelmagic:item/mage_helmet_rib_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 95
+      },
+      "model": "kelmagic:item/mage_helmet_rib_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 96
+      },
+      "model": "kelmagic:item/mage_helmet_rib_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 97
+      },
+      "model": "kelmagic:item/mage_helmet_rib_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 98
+      },
+      "model": "kelmagic:item/mage_helmet_rib_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 99
+      },
+      "model": "kelmagic:item/mage_helmet_rib_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 100
+      },
+      "model": "kelmagic:item/mage_helmet_rib_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 101
+      },
+      "model": "kelmagic:item/mage_helmet_spire_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 102
+      },
+      "model": "kelmagic:item/mage_helmet_spire_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 103
+      },
+      "model": "kelmagic:item/mage_helmet_spire_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 104
+      },
+      "model": "kelmagic:item/mage_helmet_spire_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 105
+      },
+      "model": "kelmagic:item/mage_helmet_spire_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 106
+      },
+      "model": "kelmagic:item/mage_helmet_spire_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 107
+      },
+      "model": "kelmagic:item/mage_helmet_spire_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 108
+      },
+      "model": "kelmagic:item/mage_helmet_spire_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 109
+      },
+      "model": "kelmagic:item/mage_helmet_spire_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 110
+      },
+      "model": "kelmagic:item/mage_helmet_spire_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 111
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 112
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 113
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 114
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 115
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 116
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 117
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 118
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 119
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 120
+      },
+      "model": "kelmagic:item/mage_helmet_wayfinder_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 121
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 122
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 123
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 124
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 125
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 126
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 127
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 128
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 129
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 130
+      },
+      "model": "kelmagic:item/mage_helmet_shaper_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 131
+      },
+      "model": "kelmagic:item/mage_helmet_silence_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 132
+      },
+      "model": "kelmagic:item/mage_helmet_silence_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 133
+      },
+      "model": "kelmagic:item/mage_helmet_silence_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 134
+      },
+      "model": "kelmagic:item/mage_helmet_silence_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 135
+      },
+      "model": "kelmagic:item/mage_helmet_silence_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 136
+      },
+      "model": "kelmagic:item/mage_helmet_silence_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 137
+      },
+      "model": "kelmagic:item/mage_helmet_silence_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 138
+      },
+      "model": "kelmagic:item/mage_helmet_silence_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 139
+      },
+      "model": "kelmagic:item/mage_helmet_silence_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 140
+      },
+      "model": "kelmagic:item/mage_helmet_silence_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 141
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 142
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 143
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 144
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 145
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 146
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 147
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 148
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 149
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 150
+      },
+      "model": "kelmagic:item/mage_helmet_raiser_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 151
+      },
+      "model": "kelmagic:item/mage_helmet_host_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 152
+      },
+      "model": "kelmagic:item/mage_helmet_host_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 153
+      },
+      "model": "kelmagic:item/mage_helmet_host_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 154
+      },
+      "model": "kelmagic:item/mage_helmet_host_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 155
+      },
+      "model": "kelmagic:item/mage_helmet_host_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 156
+      },
+      "model": "kelmagic:item/mage_helmet_host_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 157
+      },
+      "model": "kelmagic:item/mage_helmet_host_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 158
+      },
+      "model": "kelmagic:item/mage_helmet_host_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 159
+      },
+      "model": "kelmagic:item/mage_helmet_host_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 160
+      },
+      "model": "kelmagic:item/mage_helmet_host_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 161
+      },
+      "model": "kelmagic:item/mage_helmet_flow_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 162
+      },
+      "model": "kelmagic:item/mage_helmet_flow_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 163
+      },
+      "model": "kelmagic:item/mage_helmet_flow_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 164
+      },
+      "model": "kelmagic:item/mage_helmet_flow_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 165
+      },
+      "model": "kelmagic:item/mage_helmet_flow_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 166
+      },
+      "model": "kelmagic:item/mage_helmet_flow_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 167
+      },
+      "model": "kelmagic:item/mage_helmet_flow_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 168
+      },
+      "model": "kelmagic:item/mage_helmet_flow_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 169
+      },
+      "model": "kelmagic:item/mage_helmet_flow_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 170
+      },
+      "model": "kelmagic:item/mage_helmet_flow_amethyst"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 171
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 172
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 173
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 174
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 175
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 176
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 177
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 178
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 179
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 180
+      },
+      "model": "kelmagic:item/mage_helmet_bolt_amethyst"
+    }
+  ]
+}

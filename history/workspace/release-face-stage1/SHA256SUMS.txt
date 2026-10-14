@@ -1,0 +1,4 @@
+b1e27346e1af108c281785bd10ced16d5a7bacde8e62eed875f4dab20b44bc82  Face-Stage1-Notes.md
+c16c6c6fdbe62d8411f40733838bd3bc28f5523ab70a4bf3432e4aeee6c4612d  KelMagic-1.23.0-FaceStage1-Rollback.zip
+ff919efd5e3fe2d3f5889d445da6b6ff6e5954eeafd947bc3a5cff1f091a380a  KelMagic-1.23.0-FaceStage1-Source.zip
+e6ec7456034969b44200fec7b2c9e02adb8c6e10aaddf0153de10232da61cd93  kelmagic-1.23.0-face-stage1.jar

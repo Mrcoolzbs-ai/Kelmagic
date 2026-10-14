@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "kelmagic:mana_core"
+    }
+  },
+  "result": {
+    "id": "kelmagic:magic_ingot",
+    "count": 8
+  }
+}

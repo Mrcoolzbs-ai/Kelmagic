@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/cassette"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:recorded": 1
+      },
+      "model": "kelmagic:item/recorded_cassette"
+    }
+  ]
+}

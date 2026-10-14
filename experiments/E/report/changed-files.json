@@ -1,0 +1,91 @@
+[
+  {
+    "path": "src/main/java/dev/kelmagic/MageClientConfig.java",
+    "change": "modified"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/RedMageGeoModel.java",
+    "change": "modified"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/RedMageRenderer.java",
+    "change": "modified"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/entity/RedMage.java",
+    "change": "modified"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/geo/red_mage.geo.json",
+    "change": "modified"
+  },
+  {
+    "path": "art/red-mage/red_mage.geo.json",
+    "change": "modified"
+  },
+  {
+    "path": "art/red-mage/red_mage_gecko.bbmodel",
+    "change": "modified"
+  },
+  {
+    "path": "tools/regenerate_E.py",
+    "change": "modified"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/QaMouthE.java",
+    "change": "added"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/face/MouthStates.java",
+    "change": "added"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/face/BreathingPresentation.java",
+    "change": "added"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/entity/mouth_e/neutral.png",
+    "change": "added"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/entity/mouth_e/smile.png",
+    "change": "added"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/entity/mouth_e/speech.png",
+    "change": "added"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/entity/mouth_e/surprised.png",
+    "change": "added"
+  },
+  {
+    "path": "src/test/java/dev/kelmagic/client/face/MouthPresentationTests.java",
+    "change": "added"
+  },
+  {
+    "path": "art/red-mage/mouth_e/neutral.png",
+    "change": "added"
+  },
+  {
+    "path": "art/red-mage/mouth_e/smile.png",
+    "change": "added"
+  },
+  {
+    "path": "art/red-mage/mouth_e/speech.png",
+    "change": "added"
+  },
+  {
+    "path": "art/red-mage/mouth_e/surprised.png",
+    "change": "added"
+  },
+  {
+    "path": "tools/generate_mouth_E.py",
+    "change": "added"
+  },
+  {
+    "path": "build.gradle",
+    "change": "modified",
+    "note": "mouthPresentationTest added; no dependency changes"
+  }
+]

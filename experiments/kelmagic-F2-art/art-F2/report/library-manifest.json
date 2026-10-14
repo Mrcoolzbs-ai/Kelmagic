@@ -1,0 +1,326 @@
+[
+  {
+    "group": "emotions",
+    "id": "neutral",
+    "label": "Нейтральный · закрыт",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      6,
+      8,
+      26,
+      11
+    ],
+    "axisX": 15.5,
+    "symmetric": false,
+    "sha256": "e81eaf359179e7d654049674b1780a63581dbb087094996b87bf5abc345a6ec6"
+  },
+  {
+    "group": "emotions",
+    "id": "smile",
+    "label": "Лёгкая улыбка",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      6,
+      7,
+      26,
+      12
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "01794c4da531dffb14b8813d2ceb38a7c0a264c034497a409d8e516fb9b3d208"
+  },
+  {
+    "group": "emotions",
+    "id": "wide_smile",
+    "label": "Широкая улыбка · зубы",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      6,
+      6,
+      26,
+      13
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "e6eb3ec9bb48bb8081340c9a89f16c3e56f9fffe4331f5852c964cd140f6ff08"
+  },
+  {
+    "group": "emotions",
+    "id": "smirk",
+    "label": "Хитрая усмешка",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      6,
+      6,
+      26,
+      12
+    ],
+    "axisX": 15.5,
+    "symmetric": false,
+    "sha256": "f6373a5d63ad5e5f2e5139ae7c20fced80393c98bdba49883340e9e687d8cb0d"
+  },
+  {
+    "group": "emotions",
+    "id": "displeased",
+    "label": "Недовольство",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      8,
+      9,
+      24,
+      11
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "106a1df8ce82c01a063f448eab9d17a85471aeaeb8c3adb7e50f6a1c6936730f"
+  },
+  {
+    "group": "emotions",
+    "id": "surprise",
+    "label": "Удивление",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      12,
+      3,
+      20,
+      13
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "1f1cfea7d47d081ae90d53aa44f3131b13357c24196c0e101c8db5d6a4712ea8"
+  },
+  {
+    "group": "emotions",
+    "id": "fear",
+    "label": "Испуг",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      7,
+      6,
+      25,
+      13
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "dfb4958f7fd7c88c5687bc96608d0352ab362c9860ddc72da216dad2412687d3"
+  },
+  {
+    "group": "emotions",
+    "id": "laugh",
+    "label": "Смех",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      7,
+      4,
+      25,
+      14
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "eba5abdbf59e8dc8556f5a5c4e419aa1af0aa626b10e4d5fd1de1dc44301d75b"
+  },
+  {
+    "group": "emotions",
+    "id": "sad",
+    "label": "Грусть",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      7,
+      7,
+      25,
+      11
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "6363947f2f4343adfe26684cca169d16c02f30941dd706317f0d8c4194ac1a59"
+  },
+  {
+    "group": "visemes",
+    "id": "closed_mpb",
+    "label": "М / П / Б · смыкание",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      9,
+      9,
+      23,
+      11
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "19dd0e9df2f3f71c01b61293cb18d98e61cde8767baa0ed26b0af7e568038d27"
+  },
+  {
+    "group": "visemes",
+    "id": "open_a",
+    "label": "А · открытая гласная",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      9,
+      4,
+      23,
+      14
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "266c2099a5adf8b959cb9735be0204cb73cb1990c4f1e90e1c15988db2b6eb21"
+  },
+  {
+    "group": "visemes",
+    "id": "round_o",
+    "label": "О · округлённая",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      12,
+      4,
+      20,
+      14
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "113ce95b17eefb85a5240f8eb7ab0917506be6d6777a318797f7db93213820fa"
+  },
+  {
+    "group": "visemes",
+    "id": "round_u",
+    "label": "У · узкая округлённая",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      13,
+      6,
+      19,
+      12
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "6a62269f3dcb6185c885518e3863be759f158344d9d87a32334ac7315779cba6"
+  },
+  {
+    "group": "visemes",
+    "id": "spread_ie",
+    "label": "И / Э · растянутая",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      7,
+      7,
+      25,
+      12
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "6e68680b500cb82e65f5acfee821753b93f2831f8670772ff71bfafc6f276a60"
+  },
+  {
+    "group": "visemes",
+    "id": "teeth_fv",
+    "label": "Ф / В · губа и зубы",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      9,
+      7,
+      23,
+      11
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "9442bd0980ac2f925a810081e285432822b45def2ca8b582366d3d99864fe4d6"
+  },
+  {
+    "group": "visemes",
+    "id": "tongue_tdnl",
+    "label": "Т / Д / Н / Л",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      8,
+      7,
+      24,
+      12
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "636f0ae1a5f47820a6b4944c7f03aafe4488c2c266dceeefff91c27185023d5e"
+  },
+  {
+    "group": "visemes",
+    "id": "hush_sh",
+    "label": "Ш / Ж / Ч / Щ",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      10,
+      6,
+      22,
+      13
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "63502b4de65d6bafe6570f639925b3398980c64c39334076b175c3c440319b82"
+  },
+  {
+    "group": "visemes",
+    "id": "rest",
+    "label": "Переход · покой",
+    "canvas": [
+      32,
+      16
+    ],
+    "bbox": [
+      9,
+      9,
+      23,
+      11
+    ],
+    "axisX": 15.5,
+    "symmetric": true,
+    "sha256": "9bec19f2d0d7683d1c314fda9c74247286453bdd743d5c52416662f83acd58cb"
+  }
+]

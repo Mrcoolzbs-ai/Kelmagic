@@ -1,0 +1,68 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/arcane_boots"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kelmagic:trimmed": 1
+      },
+      "model": "kelmagic:item/arcane_boots_material_quartz"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 2
+      },
+      "model": "kelmagic:item/arcane_boots_material_iron"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 3
+      },
+      "model": "kelmagic:item/arcane_boots_material_netherite"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 4
+      },
+      "model": "kelmagic:item/arcane_boots_material_redstone"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 5
+      },
+      "model": "kelmagic:item/arcane_boots_material_copper"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 6
+      },
+      "model": "kelmagic:item/arcane_boots_material_gold"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 7
+      },
+      "model": "kelmagic:item/arcane_boots_material_emerald"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 8
+      },
+      "model": "kelmagic:item/arcane_boots_material_diamond"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 9
+      },
+      "model": "kelmagic:item/arcane_boots_material_lapis"
+    },
+    {
+      "predicate": {
+        "kelmagic:trimmed": 10
+      },
+      "model": "kelmagic:item/arcane_boots_material_amethyst"
+    }
+  ]
+}

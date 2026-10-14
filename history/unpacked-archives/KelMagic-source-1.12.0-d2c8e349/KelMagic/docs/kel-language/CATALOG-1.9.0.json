@@ -1,0 +1,1381 @@
+{
+  "version": "1.9.0",
+  "words": [
+    {
+      "word": "mina",
+      "translation": "я",
+      "rarity": "common",
+      "description": "Цель: заклинатель."
+    },
+    {
+      "word": "tuna",
+      "translation": "ты",
+      "rarity": "common",
+      "description": "Цель: другой игрок."
+    },
+    {
+      "word": "sila",
+      "translation": "он/она/оно",
+      "rarity": "common",
+      "description": "Цель: моб."
+    },
+    {
+      "word": "pir",
+      "translation": "огонь",
+      "rarity": "common",
+      "description": "Магический огонь."
+    },
+    {
+      "word": "no",
+      "translation": "отрицание",
+      "rarity": "common",
+      "description": "Обращение эффекта."
+    },
+    {
+      "word": "lu",
+      "translation": "множество",
+      "rarity": "common",
+      "description": "Несколько целей."
+    },
+    {
+      "word": "per",
+      "translation": "человек",
+      "rarity": "common",
+      "description": "Обнаруживает только игроков свечением."
+    },
+    {
+      "word": "mil",
+      "translation": "друг",
+      "rarity": "rare",
+      "description": "Делает агрессивного моба нейтральным: не нападает первым, но отвечает на удар."
+    },
+    {
+      "word": "nak",
+      "translation": "враг",
+      "rarity": "rare",
+      "description": "Делает мирного моба нейтральным: теперь он отвечает атакой на удар."
+    },
+    {
+      "word": "mam",
+      "translation": "мать",
+      "rarity": "uncommon",
+      "description": "Материнская забота: регенерация и поглощение."
+    },
+    {
+      "word": "pap",
+      "translation": "отец",
+      "rarity": "uncommon",
+      "description": "Отцовская защита: сопротивление и сила."
+    },
+    {
+      "word": "kin",
+      "translation": "ребёнок",
+      "rarity": "uncommon",
+      "description": "Детская лёгкость: прыжок и мягкое падение."
+    },
+    {
+      "word": "gav",
+      "translation": "правительство, власть",
+      "rarity": "common",
+      "description": "Отпускает поводок выбранного моба и успокаивает его."
+    },
+    {
+      "word": "ged",
+      "translation": "голова",
+      "rarity": "uncommon",
+      "description": "Ясная голова: зрение и дыхание под водой."
+    },
+    {
+      "word": "gok",
+      "translation": "глаз",
+      "rarity": "uncommon",
+      "description": "Ночное зрение."
+    },
+    {
+      "word": "nos",
+      "translation": "нос",
+      "rarity": "common",
+      "description": "Отмечает частицы около брошенных предметов в пределах 12 блоков."
+    },
+    {
+      "word": "mur",
+      "translation": "рот",
+      "rarity": "common",
+      "description": "Утоляет голод цели на 4 единицы."
+    },
+    {
+      "word": "ped",
+      "translation": "нога",
+      "rarity": "uncommon",
+      "description": "Усиление прыжка."
+    },
+    {
+      "word": "kor",
+      "translation": "сердце",
+      "rarity": "uncommon",
+      "description": "Мгновенное лечение 4 HP."
+    },
+    {
+      "word": "sol",
+      "translation": "солнце",
+      "rarity": "common",
+      "description": "Создаёт магический факел на свободной опоре рядом; mina не нужна."
+    },
+    {
+      "word": "lun",
+      "translation": "луна",
+      "rarity": "rare",
+      "description": "Создаёт магический фонарь рядом с выбранным блоком."
+    },
+    {
+      "word": "ter",
+      "translation": "земля",
+      "rarity": "common",
+      "description": "Создаёт блок земли."
+    },
+    {
+      "word": "vak",
+      "translation": "вода",
+      "rarity": "common",
+      "description": "Создаёт источник воды; в сверхжарком измерении испаряется."
+    },
+    {
+      "word": "tur",
+      "translation": "дерево",
+      "rarity": "uncommon",
+      "description": "Создаёт дубовое бревно."
+    },
+    {
+      "word": "gor",
+      "translation": "гора",
+      "rarity": "rare",
+      "description": "Строит каменный столб высотой до 4 блоков."
+    },
+    {
+      "word": "mar",
+      "translation": "море",
+      "rarity": "epic",
+      "description": "Заполняет водой небольшой бассейн из свободных ячеек."
+    },
+    {
+      "word": "riv",
+      "translation": "река",
+      "rarity": "rare",
+      "description": "Создаёт канал из трёх источников воды по направлению взгляда."
+    },
+    {
+      "word": "neb",
+      "translation": "небо",
+      "rarity": "uncommon",
+      "description": "Краткое парение вверх."
+    },
+    {
+      "word": "dum",
+      "translation": "дым",
+      "rarity": "uncommon",
+      "description": "Дымовая завеса на точке прицела."
+    },
+    {
+      "word": "vit",
+      "translation": "ветер",
+      "rarity": "uncommon",
+      "description": "Порыв ветра отталкивает цель."
+    },
+    {
+      "word": "kuk",
+      "translation": "кошка",
+      "rarity": "uncommon",
+      "description": "Кошачьи зрение и проворство."
+    },
+    {
+      "word": "pis",
+      "translation": "птица",
+      "rarity": "uncommon",
+      "description": "Птичье планирование и прыжок."
+    },
+    {
+      "word": "sal",
+      "translation": "рыба",
+      "rarity": "uncommon",
+      "description": "Рыбье дыхание и плавание."
+    },
+    {
+      "word": "vid",
+      "translation": "видеть",
+      "rarity": "rare",
+      "description": "Подсвечивает живых существ вокруг игрока, независимо от взгляда и препятствий."
+    },
+    {
+      "word": "tik",
+      "translation": "слышать",
+      "rarity": "common",
+      "description": "Показывает направление и расстояние до ближайшей живой цели."
+    },
+    {
+      "word": "kel",
+      "translation": "говорить",
+      "rarity": "common",
+      "description": "Звон колокола и частицы отмечают точку прицела для всех рядом."
+    },
+    {
+      "word": "man",
+      "translation": "есть",
+      "rarity": "common",
+      "description": "Забирает один съедобный предмет из основной руки цели и насыщает её."
+    },
+    {
+      "word": "pin",
+      "translation": "пить",
+      "rarity": "common",
+      "description": "Снимает жажду огня: тушит обычное горение и даёт подводное дыхание."
+    },
+    {
+      "word": "pak",
+      "translation": "идти",
+      "rarity": "common",
+      "description": "Подталкивает цель вперёд по её направлению взгляда."
+    },
+    {
+      "word": "dak",
+      "translation": "давать",
+      "rarity": "common",
+      "description": "Передаёт один предмет из второй руки заклинателя цели, не создавая копий."
+    },
+    {
+      "word": "tak",
+      "translation": "брать",
+      "rarity": "common",
+      "description": "Притягивает ближайшие брошенные предметы к цели."
+    },
+    {
+      "word": "sit",
+      "translation": "находиться",
+      "rarity": "common",
+      "description": "Останавливает движение цели и накладывает краткую медлительность."
+    },
+    {
+      "word": "liv",
+      "translation": "жить",
+      "rarity": "uncommon",
+      "description": "Регенерация; mina liv pir — особая жизнь в пламени."
+    },
+    {
+      "word": "mor",
+      "translation": "умирать",
+      "rarity": "epic",
+      "description": "Смертельный холод: 8 HP магического урона."
+    },
+    {
+      "word": "sav",
+      "translation": "знать",
+      "rarity": "rare",
+      "description": "Сообщает здоровье существа либо твёрдость и название блока."
+    },
+    {
+      "word": "pen",
+      "translation": "думать",
+      "rarity": "uncommon",
+      "description": "Сосредоточенность: спешка и зрение."
+    },
+    {
+      "word": "vol",
+      "translation": "хотеть",
+      "rarity": "rare",
+      "description": "Сильное притяжение живой цели к заклинателю."
+    },
+    {
+      "word": "kan",
+      "translation": "мочь",
+      "rarity": "uncommon",
+      "description": "Запас временного здоровья."
+    },
+    {
+      "word": "lab",
+      "translation": "работать",
+      "rarity": "uncommon",
+      "description": "Добывает выбранный блок текущим инструментом, с обычным лутом и защитой."
+    },
+    {
+      "word": "ler",
+      "translation": "учить",
+      "rarity": "rare",
+      "description": "Вдохновение ученика: удача и спешка."
+    },
+    {
+      "word": "lud",
+      "translation": "играть",
+      "rarity": "uncommon",
+      "description": "Играет мелодию из нот в точке прицела."
+    },
+    {
+      "word": "lov",
+      "translation": "любить",
+      "rarity": "common",
+      "description": "Лечит цель на 2 HP и даёт краткую регенерацию."
+    },
+    {
+      "word": "pul",
+      "translation": "крутить",
+      "rarity": "common",
+      "description": "Закручивает цель поперёк линии прицела."
+    },
+    {
+      "word": "lom",
+      "translation": "ломать",
+      "rarity": "common",
+      "description": "Разбивает мягкий блок твёрдостью до 1,5 без выпадения добычи."
+    },
+    {
+      "word": "set",
+      "translation": "стирать",
+      "rarity": "uncommon",
+      "description": "Убирает выбранную траву/цветок с обычным лутом."
+    },
+    {
+      "word": "pad",
+      "translation": "падать",
+      "rarity": "common",
+      "description": "Прижимает цель вниз; не телепортирует сквозь блоки."
+    },
+    {
+      "word": "ved",
+      "translation": "вести",
+      "rarity": "common",
+      "description": "Ведёт моба к заклинателю; игроку задаёт движение к нему."
+    },
+    {
+      "word": "tom",
+      "translation": "дом",
+      "rarity": "uncommon",
+      "description": "Создаёт маленький навес из досок над целью."
+    },
+    {
+      "word": "puk",
+      "translation": "книга",
+      "rarity": "common",
+      "description": "Показывает содержимое записанного скриптера/кассеты во второй руке."
+    },
+    {
+      "word": "log",
+      "translation": "слово",
+      "rarity": "common",
+      "description": "Показывает описание следующего слова из открытого кодекса во второй руке."
+    },
+    {
+      "word": "tem",
+      "translation": "время",
+      "rarity": "uncommon",
+      "description": "Продвигает рост выбранного растения на одну стадию."
+    },
+    {
+      "word": "lok",
+      "translation": "место",
+      "rarity": "common",
+      "description": "Переносит заклинателя на безопасную поверхность у прицела, до 12 блоков."
+    },
+    {
+      "word": "rak",
+      "translation": "путь",
+      "rarity": "uncommon",
+      "description": "Превращает небольшой участок земли в тропу."
+    },
+    {
+      "word": "mon",
+      "translation": "деньги",
+      "rarity": "common",
+      "description": "Считает изумруды, золотые слитки и самородки в инвентаре."
+    },
+    {
+      "word": "tab",
+      "translation": "стол",
+      "rarity": "common",
+      "description": "Создаёт верстак."
+    },
+    {
+      "word": "kul",
+      "translation": "стул",
+      "rarity": "common",
+      "description": "Создаёт дубовую ступень-сиденье."
+    },
+    {
+      "word": "bed",
+      "translation": "кровать",
+      "rarity": "common",
+      "description": "Снимает слабость и даёт медленное падение; время суток не меняет."
+    },
+    {
+      "word": "dor",
+      "translation": "дверь",
+      "rarity": "uncommon",
+      "description": "Создаёт двухблочную дубовую дверь с проверкой обеих ячеек."
+    },
+    {
+      "word": "sen",
+      "translation": "окно",
+      "rarity": "uncommon",
+      "description": "Создаёт стеклянную панель."
+    },
+    {
+      "word": "val",
+      "translation": "стена",
+      "rarity": "uncommon",
+      "description": "Создаёт стенку из трёх блоков булыжника."
+    },
+    {
+      "word": "rum",
+      "translation": "комната",
+      "rarity": "uncommon",
+      "description": "Огораживает маленькую площадку, оставляя проход."
+    },
+    {
+      "word": "kas",
+      "translation": "город",
+      "rarity": "epic",
+      "description": "Мостовая длиной до 5 блоков над выбранной поверхностью."
+    },
+    {
+      "word": "vil",
+      "translation": "деревня",
+      "rarity": "epic",
+      "description": "Высаживает дубовый саженец на подходящей почве."
+    },
+    {
+      "word": "lum",
+      "translation": "улица",
+      "rarity": "uncommon",
+      "description": "Расставляет до трёх факелов вдоль поверхности."
+    },
+    {
+      "word": "pal",
+      "translation": "хлеб",
+      "rarity": "common",
+      "description": "Превращает три пшеницы во второй руке в хлеб, без дублирования."
+    },
+    {
+      "word": "sin",
+      "translation": "выход",
+      "rarity": "rare",
+      "description": "Безопасно отступает назад до 4 блоков."
+    },
+    {
+      "word": "tul",
+      "translation": "вентиль",
+      "rarity": "common",
+      "description": "Переключает рычаг или нажимает каменную/деревянную кнопку."
+    },
+    {
+      "word": "kur",
+      "translation": "круг",
+      "rarity": "uncommon",
+      "description": "Создаёт круговое ограждение радиусом 2 с проходом."
+    },
+    {
+      "word": "var",
+      "translation": "тёплый",
+      "rarity": "common",
+      "description": "Тает выбранные снег или лёд, не создавая огонь."
+    },
+    {
+      "word": "kol",
+      "translation": "холодный",
+      "rarity": "common",
+      "description": "Замораживает выбранный источник воды в лёд."
+    },
+    {
+      "word": "nov",
+      "translation": "новый",
+      "rarity": "uncommon",
+      "description": "Очищает одну ступень окисления меди."
+    },
+    {
+      "word": "vel",
+      "translation": "старый",
+      "rarity": "uncommon",
+      "description": "Состаривает медный блок на одну ступень."
+    },
+    {
+      "word": "bon",
+      "translation": "хороший",
+      "rarity": "uncommon",
+      "description": "Снимает яд, голод и слабость."
+    },
+    {
+      "word": "mal",
+      "translation": "плохой",
+      "rarity": "uncommon",
+      "description": "Отравляет и вызывает голод."
+    },
+    {
+      "word": "muk",
+      "translation": "большой, много",
+      "rarity": "common",
+      "description": "Масштаб ×1,5 за повтор; nis обращает muk."
+    },
+    {
+      "word": "nis",
+      "translation": "маленький",
+      "rarity": "common",
+      "description": "Масштаб ÷1,5 за повтор; muk обращает nis."
+    },
+    {
+      "word": "rap",
+      "translation": "быстрый",
+      "rarity": "uncommon",
+      "description": "Ускорение движения."
+    },
+    {
+      "word": "len",
+      "translation": "медленный",
+      "rarity": "uncommon",
+      "description": "Замедление движения."
+    },
+    {
+      "word": "por",
+      "translation": "сильный",
+      "rarity": "rare",
+      "description": "Усиление ближнего боя."
+    },
+    {
+      "word": "nem",
+      "translation": "слабый",
+      "rarity": "uncommon",
+      "description": "Ослабление ближнего боя."
+    },
+    {
+      "word": "sek",
+      "translation": "сухой",
+      "rarity": "common",
+      "description": "Высушивает водонасыщенный блок, мокрую губку или грязь."
+    },
+    {
+      "word": "kap",
+      "translation": "счастье",
+      "rarity": "uncommon",
+      "description": "Удача."
+    },
+    {
+      "word": "gus",
+      "translation": "печаль",
+      "rarity": "uncommon",
+      "description": "Неудача."
+    },
+    {
+      "word": "pob",
+      "translation": "страх",
+      "rarity": "common",
+      "description": "Выбранный моб убегает от заклинателя."
+    },
+    {
+      "word": "rag",
+      "translation": "гнев",
+      "rarity": "uncommon",
+      "description": "Ярость: сила и скорость ценой голода."
+    },
+    {
+      "word": "kal",
+      "translation": "покой",
+      "rarity": "uncommon",
+      "description": "Покой: защита ценой скорости."
+    },
+    {
+      "word": "tuk",
+      "translation": "истина",
+      "rarity": "common",
+      "description": "Снимает невидимость с цели и подсвечивает её."
+    },
+    {
+      "word": "bal",
+      "translation": "ложь",
+      "rarity": "uncommon",
+      "description": "Невидимость."
+    },
+    {
+      "word": "rin",
+      "translation": "открывать",
+      "rarity": "rare",
+      "description": "Открывает дверь, люк или калитку."
+    },
+    {
+      "word": "tin",
+      "translation": "закрывать",
+      "rarity": "rare",
+      "description": "Закрывает дверь, люк или калитку."
+    },
+    {
+      "word": "vin",
+      "translation": "толкать",
+      "rarity": "common",
+      "description": "Резко отбрасывает цель горизонтально, без вертикального подброса."
+    },
+    {
+      "word": "jin",
+      "translation": "тянуть",
+      "rarity": "common",
+      "description": "Подтягивает цель к точке в двух блоках перед заклинателем, сильнее vol."
+    },
+    {
+      "word": "don",
+      "translation": "бросать",
+      "rarity": "common",
+      "description": "Подбрасывает цель вверх и вперёд."
+    },
+    {
+      "word": "gon",
+      "translation": "ловить",
+      "rarity": "common",
+      "description": "Гасит движение падающей цели и даёт краткое мягкое падение."
+    },
+    {
+      "word": "kon",
+      "translation": "стоять",
+      "rarity": "uncommon",
+      "description": "Стойкость."
+    },
+    {
+      "word": "lon",
+      "translation": "лежать",
+      "rarity": "common",
+      "description": "Останавливает цель и накладывает слабость, не меняя позу игрока."
+    },
+    {
+      "word": "non",
+      "translation": "прыгать",
+      "rarity": "rare",
+      "description": "Мгновенный вертикальный прыжок без длительного эффекта."
+    },
+    {
+      "word": "pon",
+      "translation": "бежать",
+      "rarity": "common",
+      "description": "Рывок вперёд с кратким ускорением."
+    },
+    {
+      "word": "ron",
+      "translation": "плыть",
+      "rarity": "uncommon",
+      "description": "Ускоренное плавание."
+    },
+    {
+      "word": "son",
+      "translation": "летать",
+      "rarity": "rare",
+      "description": "Подъём и длительное мягкое падение вместо творческого полёта."
+    },
+    {
+      "word": "ton",
+      "translation": "ползти",
+      "rarity": "uncommon",
+      "description": "Ползучая защита: медлительность, сопротивление и зрение."
+    },
+    {
+      "word": "din",
+      "translation": "спать",
+      "rarity": "common",
+      "description": "Усыпляет агрессию моба и кратко замедляет цель."
+    },
+    {
+      "word": "gin",
+      "translation": "просыпаться",
+      "rarity": "common",
+      "description": "Снимает замедление, слабость и темноту."
+    },
+    {
+      "word": "lin",
+      "translation": "мыть",
+      "rarity": "uncommon",
+      "description": "Смывает краситель с шерсти в белый; не тушит магическое горение."
+    },
+    {
+      "word": "nin",
+      "translation": "готовить",
+      "rarity": "common",
+      "description": "Готовит один сырой пищевой предмет из второй руки заклинателя."
+    },
+    {
+      "word": "nok",
+      "translation": "камень",
+      "rarity": "common",
+      "description": "Создаёт каменный блок."
+    },
+    {
+      "word": "pok",
+      "translation": "песок",
+      "rarity": "common",
+      "description": "Создаёт песок."
+    },
+    {
+      "word": "rok",
+      "translation": "почва",
+      "rarity": "common",
+      "description": "Создаёт каменистую землю."
+    },
+    {
+      "word": "sok",
+      "translation": "грязь",
+      "rarity": "common",
+      "description": "Создаёт грязь."
+    },
+    {
+      "word": "tok",
+      "translation": "стекло",
+      "rarity": "common",
+      "description": "Создаёт стеклянный блок."
+    },
+    {
+      "word": "vok",
+      "translation": "пар",
+      "rarity": "uncommon",
+      "description": "Испаряет выбранную воду с облаком пара."
+    },
+    {
+      "word": "buk",
+      "translation": "туман",
+      "rarity": "uncommon",
+      "description": "Создаёт густую облачную завесу в точке прицела."
+    },
+    {
+      "word": "duk",
+      "translation": "роса",
+      "rarity": "uncommon",
+      "description": "Увлажняет грядку до максимума."
+    },
+    {
+      "word": "guk",
+      "translation": "иней",
+      "rarity": "uncommon",
+      "description": "Покрывает выбранную твёрдую поверхность снежным слоем."
+    },
+    {
+      "word": "luk",
+      "translation": "волна",
+      "rarity": "uncommon",
+      "description": "Выдавливает воду на свободную соседнюю ячейку без дублирования."
+    },
+    {
+      "word": "nuk",
+      "translation": "остров",
+      "rarity": "epic",
+      "description": "Создаёт небольшую земляную платформу."
+    },
+    {
+      "word": "suk",
+      "translation": "поле",
+      "rarity": "uncommon",
+      "description": "Вспахивает выбранную землю в грядку."
+    },
+    {
+      "word": "dun",
+      "translation": "молния",
+      "rarity": "epic",
+      "description": "Призывает настоящую молнию в точке прицела; опасно для построек."
+    },
+    {
+      "word": "gun",
+      "translation": "радуга",
+      "rarity": "epic",
+      "description": "Радужная дуга частиц над целью."
+    },
+    {
+      "word": "lup",
+      "translation": "лужа",
+      "rarity": "uncommon",
+      "description": "Насыщает водой выбранную плиту, ступень или другой водонасыщаемый блок."
+    },
+    {
+      "word": "nup",
+      "translation": "снежинка",
+      "rarity": "uncommon",
+      "description": "Создаёт снежный блок."
+    },
+    {
+      "word": "bak",
+      "translation": "пещера",
+      "rarity": "epic",
+      "description": "Добывает до трёх однотипных блоков вперёд текущим инструментом."
+    },
+    {
+      "word": "gak",
+      "translation": "долина",
+      "rarity": "epic",
+      "description": "Вынимает землю, песок или гравий в небольшой полосе."
+    },
+    {
+      "word": "lak",
+      "translation": "обрыв",
+      "rarity": "epic",
+      "description": "Создаёт площадку из каменных плит у края."
+    },
+    {
+      "word": "mak",
+      "translation": "пляж",
+      "rarity": "uncommon",
+      "description": "Создаёт небольшую песчаниковую площадку."
+    },
+    {
+      "word": "sak",
+      "translation": "болото",
+      "rarity": "uncommon",
+      "description": "Превращает землю в грязь."
+    },
+    {
+      "word": "sap",
+      "translation": "звезда",
+      "rarity": "uncommon",
+      "description": "Поднимает золотую звезду частиц над целью."
+    },
+    {
+      "word": "tup",
+      "translation": "гром",
+      "rarity": "uncommon",
+      "description": "Раскат грома без молнии и урона."
+    },
+    {
+      "word": "del",
+      "translation": "корень",
+      "rarity": "uncommon",
+      "description": "Превращает землю в корнистую."
+    },
+    {
+      "word": "gel",
+      "translation": "стебель",
+      "rarity": "uncommon",
+      "description": "Высаживает бамбук."
+    },
+    {
+      "word": "lel",
+      "translation": "ветвь",
+      "rarity": "uncommon",
+      "description": "Создаёт дубовую листву."
+    },
+    {
+      "word": "mel",
+      "translation": "цветок",
+      "rarity": "uncommon",
+      "description": "Применяет эффект костной муки к подходящему растению."
+    },
+    {
+      "word": "tel",
+      "translation": "трава",
+      "rarity": "uncommon",
+      "description": "Высаживает траву на подходящую поверхность."
+    },
+    {
+      "word": "bel",
+      "translation": "ягода",
+      "rarity": "uncommon",
+      "description": "Высаживает ягодный куст."
+    },
+    {
+      "word": "nel",
+      "translation": "плод",
+      "rarity": "uncommon",
+      "description": "Собирает зрелую культуру обычным лутом."
+    },
+    {
+      "word": "pel",
+      "translation": "семя",
+      "rarity": "uncommon",
+      "description": "Высаживает пшеницу на грядке."
+    },
+    {
+      "word": "rel",
+      "translation": "кора",
+      "rarity": "uncommon",
+      "description": "Обтёсывает выбранное бревно."
+    },
+    {
+      "word": "sel",
+      "translation": "мох",
+      "rarity": "uncommon",
+      "description": "Покрывает булыжник мхом."
+    },
+    {
+      "word": "jel",
+      "translation": "гриб",
+      "rarity": "uncommon",
+      "description": "Высаживает коричневый гриб на подходящей поверхности."
+    },
+    {
+      "word": "bin",
+      "translation": "копьё",
+      "rarity": "common",
+      "description": "Удар копьём: 5 HP урона и отбрасывание."
+    },
+    {
+      "word": "den",
+      "translation": "крепость",
+      "rarity": "epic",
+      "description": "Создаёт трёхблочную стенку из каменного кирпича."
+    },
+    {
+      "word": "gen",
+      "translation": "колесо",
+      "rarity": "common",
+      "description": "Поворачивает горизонтально ориентированный блок на четверть оборота."
+    },
+    {
+      "word": "men",
+      "translation": "лодка",
+      "rarity": "uncommon",
+      "description": "Создаёт маленький деревянный плот из блоков."
+    },
+    {
+      "word": "nen",
+      "translation": "телега",
+      "rarity": "uncommon",
+      "description": "Кладёт три рельса на подходящих опорах."
+    },
+    {
+      "word": "ren",
+      "translation": "меч",
+      "rarity": "common",
+      "description": "Удар клинка: 4 HP урона и краткая слабость."
+    },
+    {
+      "word": "ten",
+      "translation": "щит",
+      "rarity": "rare",
+      "description": "Щит: сопротивление и временное здоровье."
+    },
+    {
+      "word": "ven",
+      "translation": "лук",
+      "rarity": "common",
+      "description": "Даёт зрение и уменьшает движение цели для прицеливания."
+    },
+    {
+      "word": "jen",
+      "translation": "стрела",
+      "rarity": "common",
+      "description": "Магическая стрела наносит 3 HP цели и подсвечивает её."
+    },
+    {
+      "word": "bun",
+      "translation": "верёвка",
+      "rarity": "common",
+      "description": "Удерживает моба остановкой навигации и сильным кратким замедлением."
+    },
+    {
+      "word": "kut",
+      "translation": "мешок",
+      "rarity": "uncommon",
+      "description": "Собирает в инвентарь брошенные предметы около выбранного блока."
+    },
+    {
+      "word": "mut",
+      "translation": "молот",
+      "rarity": "rare",
+      "description": "Добывает крест до пяти однотипных блоков текущим инструментом."
+    },
+    {
+      "word": "nut",
+      "translation": "топор",
+      "rarity": "rare",
+      "description": "Срубает до восьми соседних однотипных брёвен; листья не трогает."
+    },
+    {
+      "word": "but",
+      "translation": "игла",
+      "rarity": "common",
+      "description": "Укол иглы: 2 HP магического урона, в том числе себе через mina."
+    },
+    {
+      "word": "gut",
+      "translation": "нить",
+      "rarity": "common",
+      "description": "Создаёт растяжку tripwire на опоре."
+    },
+    {
+      "word": "lut",
+      "translation": "ткань",
+      "rarity": "common",
+      "description": "Создаёт белую шерсть."
+    },
+    {
+      "word": "rut",
+      "translation": "одежда",
+      "rarity": "common",
+      "description": "Чинит надетую повреждённую броню цели на 8 прочности."
+    },
+    {
+      "word": "sut",
+      "translation": "обувь",
+      "rarity": "common",
+      "description": "Снимает замедление и даёт прыжок."
+    },
+    {
+      "word": "tut",
+      "translation": "шляпа",
+      "rarity": "common",
+      "description": "Снимает слепоту и даёт подводное дыхание."
+    },
+    {
+      "word": "vut",
+      "translation": "кольцо",
+      "rarity": "common",
+      "description": "Светящаяся аура: поглощение и обнаружение самой цели."
+    },
+    {
+      "word": "bup",
+      "translation": "барабан",
+      "rarity": "uncommon",
+      "description": "Играет ритм барабана в точке прицела."
+    },
+    {
+      "word": "kup",
+      "translation": "купол",
+      "rarity": "epic",
+      "description": "Создаёт небольшой стеклянный купол с выходом."
+    },
+    {
+      "word": "bek",
+      "translation": "кость",
+      "rarity": "common",
+      "description": "Применяет костную муку к нескольким растениям вокруг цели."
+    },
+    {
+      "word": "dek",
+      "translation": "кожа",
+      "rarity": "common",
+      "description": "Снимает яд и даёт поглощение."
+    },
+    {
+      "word": "gek",
+      "translation": "мышца",
+      "rarity": "uncommon",
+      "description": "Мышечное усилие: сила и спешка."
+    },
+    {
+      "word": "lek",
+      "translation": "мозг",
+      "rarity": "common",
+      "description": "Снимает темноту и слабость; даёт спешку."
+    },
+    {
+      "word": "mek",
+      "translation": "живот",
+      "rarity": "common",
+      "description": "Максимально насыщает без изменения основного уровня голода."
+    },
+    {
+      "word": "nek",
+      "translation": "спина",
+      "rarity": "common",
+      "description": "Отбрасывает цель назад по её собственному взгляду."
+    },
+    {
+      "word": "pek",
+      "translation": "плечо",
+      "rarity": "common",
+      "description": "Поднимает цель вертикально и даёт краткое сопротивление."
+    },
+    {
+      "word": "rek",
+      "translation": "колено",
+      "rarity": "common",
+      "description": "Подсекает цель вниз и кратко замедляет."
+    },
+    {
+      "word": "tek",
+      "translation": "локоть",
+      "rarity": "common",
+      "description": "Отводит цель вправо по направлению её взгляда."
+    }
+  ],
+  "grandRites": [
+    {
+      "id": "wings",
+      "minimum": 10,
+      "formula": [
+        "mina",
+        "son",
+        "pis",
+        "neb",
+        "vit",
+        "rap",
+        "kin",
+        "ten",
+        "liv",
+        "tem"
+      ]
+    },
+    {
+      "id": "island",
+      "minimum": 15,
+      "formula": [
+        "ter",
+        "gor",
+        "nuk",
+        "neb",
+        "nok",
+        "rok",
+        "sel",
+        "tur",
+        "del",
+        "gel",
+        "lel",
+        "mel",
+        "tel",
+        "lok",
+        "kan"
+      ]
+    },
+    {
+      "id": "blast",
+      "minimum": 5,
+      "formula": [
+        "pir",
+        "tup",
+        "dun",
+        "por",
+        "muk"
+      ]
+    },
+    {
+      "id": "duplicate",
+      "minimum": 30,
+      "formula": [
+        "sila",
+        "nov",
+        "liv",
+        "per",
+        "ged",
+        "gok",
+        "nos",
+        "mur",
+        "ped",
+        "kor",
+        "mam",
+        "pap",
+        "kin",
+        "dek",
+        "gek",
+        "lek",
+        "mek",
+        "nek",
+        "pek",
+        "rek",
+        "tek",
+        "rut",
+        "sut",
+        "tut",
+        "sav",
+        "pen",
+        "kan",
+        "lok",
+        "tem",
+        "lu"
+      ]
+    },
+    {
+      "id": "ender",
+      "minimum": 10,
+      "formula": [
+        "mina",
+        "kut",
+        "tom",
+        "lok",
+        "rin",
+        "puk",
+        "sav",
+        "kan",
+        "sin",
+        "tem"
+      ]
+    },
+    {
+      "id": "mana_tide",
+      "minimum": 25,
+      "formula": [
+        "tuna",
+        "kor",
+        "liv",
+        "por",
+        "kan",
+        "sav",
+        "pen",
+        "log",
+        "kel",
+        "tem",
+        "bon",
+        "mam",
+        "pap",
+        "kin",
+        "ged",
+        "gek",
+        "lek",
+        "mek",
+        "nek",
+        "pek",
+        "rek",
+        "tek",
+        "rut",
+        "vut",
+        "ten"
+      ]
+    },
+    {
+      "id": "meteor",
+      "minimum": 25,
+      "formula": [
+        "sap",
+        "nok",
+        "gor",
+        "pir",
+        "dun",
+        "tup",
+        "pad",
+        "neb",
+        "mor",
+        "nak",
+        "por",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk",
+        "muk"
+      ]
+    },
+    {
+      "id": "transcend",
+      "minimum": 100,
+      "formula": [
+        "mina",
+        "neb",
+        "sap",
+        "sol",
+        "lun",
+        "tem",
+        "sav",
+        "pen",
+        "kan",
+        "por",
+        "liv",
+        "mor",
+        "sin",
+        "rin",
+        "tin",
+        "log",
+        "kel",
+        "tuk",
+        "bal",
+        "bon",
+        "mina",
+        "neb",
+        "sap",
+        "sol",
+        "lun",
+        "tem",
+        "sav",
+        "pen",
+        "kan",
+        "por",
+        "liv",
+        "mor",
+        "sin",
+        "rin",
+        "tin",
+        "log",
+        "kel",
+        "tuk",
+        "bal",
+        "bon",
+        "mina",
+        "neb",
+        "sap",
+        "sol",
+        "lun",
+        "tem",
+        "sav",
+        "pen",
+        "kan",
+        "por",
+        "liv",
+        "mor",
+        "sin",
+        "rin",
+        "tin",
+        "log",
+        "kel",
+        "tuk",
+        "bal",
+        "bon",
+        "mina",
+        "neb",
+        "sap",
+        "sol",
+        "lun",
+        "tem",
+        "sav",
+        "pen",
+        "kan",
+        "por",
+        "liv",
+        "mor",
+        "sin",
+        "rin",
+        "tin",
+        "log",
+        "kel",
+        "tuk",
+        "bal",
+        "bon",
+        "mina",
+        "neb",
+        "sap",
+        "sol",
+        "lun",
+        "tem",
+        "sav",
+        "pen",
+        "kan",
+        "por",
+        "liv",
+        "mor",
+        "sin",
+        "rin",
+        "tin",
+        "log",
+        "kel",
+        "tuk",
+        "bal",
+        "bon"
+      ]
+    },
+    {
+      "id": "end_gate",
+      "minimum": 20,
+      "formula": [
+        "dor",
+        "rin",
+        "sin",
+        "lok",
+        "neb",
+        "sap",
+        "lun",
+        "tom",
+        "kan",
+        "tem",
+        "sav",
+        "pen",
+        "log",
+        "kel",
+        "tuk",
+        "bal",
+        "per",
+        "liv",
+        "mor",
+        "ten"
+      ]
+    }
+  ]
+}

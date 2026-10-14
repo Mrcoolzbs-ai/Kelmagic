@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/mage_chestplate",
+    "layer1": "kelmagic:item/mage_chestplate_overlay",
+    "layer2": "kelmagic:item/vanilla_trims/chestplate_diamond"
+  }
+}

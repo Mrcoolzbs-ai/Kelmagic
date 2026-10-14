@@ -1,0 +1,113 @@
+{
+  "A": {
+    "bones": 64,
+    "cubes_and_surface_quads": 139,
+    "face_primitives": 73,
+    "clips_unchanged": 29,
+    "unchanged_nonface_bones": 52,
+    "modified_texels": 0,
+    "reserved_uv": [
+      896,
+      896
+    ],
+    "head_volume_bands": [
+      [
+        24,
+        32,
+        4,
+        -4
+      ]
+    ],
+    "eye_aperture": [
+      0.4,
+      3.5,
+      27.3,
+      29.22
+    ],
+    "pipeline": "stock generate_mascot_1_23.py + isolated static geometry adapter; mod_version=1.23.0"
+  },
+  "B": {
+    "bones": 64,
+    "cubes_and_surface_quads": 163,
+    "face_primitives": 97,
+    "clips_unchanged": 29,
+    "unchanged_nonface_bones": 52,
+    "modified_texels": 0,
+    "reserved_uv": [
+      896,
+      896
+    ],
+    "head_volume_bands": [
+      [
+        24,
+        25.1,
+        3.0,
+        -3.62
+      ],
+      [
+        25.1,
+        26.7,
+        3.55,
+        -4.28
+      ],
+      [
+        26.7,
+        27.4,
+        3.7,
+        -4.18
+      ],
+      [
+        27.4,
+        29.2,
+        3.85,
+        -3.98
+      ],
+      [
+        29.2,
+        32,
+        4,
+        -3.82
+      ]
+    ],
+    "eye_aperture": [
+      0.58,
+      3.26,
+      27.45,
+      29.0
+    ],
+    "pipeline": "stock generate_mascot_1_23.py + isolated static geometry adapter; mod_version=1.23.0"
+  },
+  "C": {
+    "bones": 64,
+    "cubes_and_surface_quads": 138,
+    "face_primitives": 72,
+    "clips_unchanged": 29,
+    "unchanged_nonface_bones": 52,
+    "modified_texels": 4608,
+    "reserved_uv": [
+      896,
+      896
+    ],
+    "head_volume_bands": [
+      [
+        24,
+        25.1,
+        3.5,
+        -3.91
+      ],
+      [
+        25.1,
+        32,
+        4,
+        -4
+      ]
+    ],
+    "eye_aperture": [
+      0.42,
+      3.45,
+      27.52,
+      28.94
+    ],
+    "pipeline": "stock generate_mascot_1_23.py + isolated static geometry adapter; mod_version=1.23.0"
+  }
+}

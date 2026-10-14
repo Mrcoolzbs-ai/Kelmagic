@@ -1,0 +1,77 @@
+from pathlib import Path
+exec(Path('/data/patch19.py').read_text().split("p=r/'gradle.properties'")[0])
+put('core/GrandSpells.java','''package dev.kelmagic.core;
+import java.util.*;
+public final class GrandSpells {
+ public record Rite(String id,int minimum,List<String> roots){public List<String> formula(){var out=new ArrayList<>(roots);while(out.size()<minimum)out.add("muk");return List.copyOf(out);}}
+ private static Rite r(String id,int min,String words){return new Rite(id,min,List.of(words.split(" ")));}
+ public static final List<Rite> ALL=List.of(
+ r("wings",10,"mina son pis neb vit rap kin ten liv tem"),
+ r("island",15,"ter gor nuk neb nok rok sel tur del gel lel mel tel lok kan"),
+ r("blast",5,"pir tup dun por"),
+ r("duplicate",30,"sila nov liv per ged gok nos mur ped kor mam pap kin dek gek lek mek nek pek rek tek rut sut tut sav pen kan lok tem lu"),
+ r("ender",10,"mina kut tom lok rin puk sav kan sin tem"),
+ r("mana_tide",25,"tuna kor liv por kan sav pen log kel tem bon mam pap kin ged gek lek mek nek pek rek tek rut vut ten"),
+ r("meteor",25,"sap nok gor pir dun tup pad neb mor nak por muk muk muk muk muk muk muk muk muk muk muk muk muk muk"),
+ r("transcend",100,"mina neb sap sol lun tem sav pen kan por liv mor sin rin tin log kel tuk bal bon"),
+ r("end_gate",20,"dor rin sin lok neb sap lun tom kan tem sav pen log kel tuk bal per liv mor ten"));
+ public static Rite find(Collection<String> words){if(words.size()>100)return null;var stripped=words.stream().filter(w->!w.equals("muk")&&!w.equals("nis")).sorted().toList();for(var r:ALL)if(words.size()>=r.minimum&&(!r.id.equals("transcend")||words.size()==100)&&stripped.equals(r.roots.stream().filter(w->!w.equals("muk")&&!w.equals("nis")).sorted().toList()))return r;return null;}
+ private GrandSpells(){}
+}''')
+sub('core/SpellParser.java','FIRE_PLAYERS, FIRE_MOBS, SELECTION_ONLY','FIRE_PLAYERS, FIRE_MOBS, GRAND, SELECTION_ONLY')
+sub('core/SpellParser.java','        if(words.size()==2)return','        var grand=GrandSpells.find(words);if(grand!=null)return new Plan(Effect.GRAND,List.of(grand.id()),"",false,false,SpellProfiles.scale(words));\n        if(words.size()==2)return')
+sub('server/SpellEffects.java','        if(plan.effect()==Effect.PAIR)','        if(plan.effect()==Effect.GRAND)return GrandEffects.execute(p,plan);\n        if(plan.effect()==Effect.PAIR)')
+sub('MagicContent.java','    public static final DeferredHolder<MobEffect,MobEffect> FLAME_LIFE','    public static final DeferredHolder<MobEffect,MobEffect> WINGS=EFFECTS.register("spectral_wings",()->new FlowEffect());\n    public static final DeferredHolder<MobEffect,MobEffect> FLAME_LIFE')
+put('mixin/SpectralFlightMixin.java','''package dev.kelmagic.mixin;
+import dev.kelmagic.MagicContent;import net.minecraft.world.entity.*;import net.minecraft.world.item.ItemStack;import org.spongepowered.asm.mixin.Mixin;import org.spongepowered.asm.mixin.injection.*;
+@Mixin(LivingEntity.class)
+public abstract class SpectralFlightMixin {
+ @Redirect(method="updateFallFlying",at=@At(value="INVOKE",target="Lnet/minecraft/world/item/ItemStack;canElytraFly(Lnet/minecraft/world/entity/LivingEntity;)Z"))private boolean kelmagic$wings(ItemStack s,LivingEntity e){return e.hasEffect(MagicContent.WINGS)||s.canElytraFly(e);}
+ @Redirect(method="updateFallFlying",at=@At(value="INVOKE",target="Lnet/minecraft/world/item/ItemStack;elytraFlightTick(Lnet/minecraft/world/entity/LivingEntity;I)Z"))private boolean kelmagic$noWear(ItemStack s,LivingEntity e,int ticks){return e.hasEffect(MagicContent.WINGS)||s.elytraFlightTick(e,ticks);}
+}''')
+put('mixin/SpectralPlayerMixin.java','''package dev.kelmagic.mixin;
+import dev.kelmagic.MagicContent;import net.minecraft.world.entity.*;import net.minecraft.world.entity.player.Player;import net.minecraft.world.item.ItemStack;import org.spongepowered.asm.mixin.Mixin;import org.spongepowered.asm.mixin.injection.*;
+@Mixin(Player.class)
+public abstract class SpectralPlayerMixin {
+ @Redirect(method="tryToStartFallFlying",at=@At(value="INVOKE",target="Lnet/minecraft/world/item/ItemStack;canElytraFly(Lnet/minecraft/world/entity/LivingEntity;)Z"))private boolean kelmagic$start(ItemStack s,LivingEntity e){return e.hasEffect(MagicContent.WINGS)||s.canElytraFly(e);}
+}''')
+sub('server/MagicAttachments.java','    private MagicAttachments() {}','    public static final DeferredHolder<AttachmentType<?>,AttachmentType<Integer>> CREATIVE_PREVIOUS=TYPES.register("creative_previous",()->AttachmentType.builder(()->-1).serialize(Codec.intRange(-1,3)).copyOnDeath().build());\n    public static final DeferredHolder<AttachmentType<?>,AttachmentType<Long>> CREATIVE_END=TYPES.register("creative_end",()->AttachmentType.builder(()->0L).serialize(Codec.LONG).copyOnDeath().build());\n    private MagicAttachments() {}')
+# Mana boost fixed bonus; expiry checked on every maximum() so missing tick cannot retain it.
+p=j/'server/MagicServer.java';s=p.read_text();print(s[s.index('public static double maximum'):s.index('public static double maximum')+190]);p.write_text(s.replace('ManaMath.maximum(p.getData(MagicAttachments.MANA).dragonUpgrade(),equipmentBonus(p))','ManaMath.maximum(p.getData(MagicAttachments.MANA).dragonUpgrade(),equipmentBonus(p))+(p.serverLevel().getGameTime()<p.getData(MagicAttachments.MANA_BOOST_END)?50:0)'))
+put('server/GrandEffects.java','''package dev.kelmagic.server;
+import dev.kelmagic.*;import dev.kelmagic.core.*;import java.util.*;import net.minecraft.core.*;import net.minecraft.core.particles.ParticleTypes;import net.minecraft.nbt.*;import net.minecraft.network.chat.Component;import net.minecraft.server.level.*;import net.minecraft.world.*;import net.minecraft.world.effect.*;import net.minecraft.world.entity.*;import net.minecraft.world.entity.player.Player;import net.minecraft.world.inventory.ChestMenu;import net.minecraft.world.level.*;import net.minecraft.world.level.block.*;import net.minecraft.world.level.block.state.*;import net.minecraft.world.phys.*;import net.neoforged.bus.api.SubscribeEvent;import net.neoforged.fml.common.EventBusSubscriber;
+@EventBusSubscriber(modid=KelMagic.MODID)
+public final class GrandEffects {
+ private record Meteor(ServerLevel level,BlockPos at,UUID owner,long impact,double scale){}private static final List<Meteor> METEORS=new ArrayList<>();
+ public static boolean execute(ServerPlayer p,SpellParser.Plan plan){String id=plan.actions().getFirst();var aim=SpellEffects.aim(p);boolean ok=switch(id){
+ case "wings"->{p.addEffect(new MobEffectInstance(MagicContent.WINGS,SpellProfiles.duration(1200,plan.scale()),0));p.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,80));p.setDeltaMovement(p.getDeltaMovement().add(0,.65,0));yield true;}
+ case "island"->aim.type()==HitResult.Type.BLOCK&&raiseIsland(p,aim.block().getBlockPos(),plan.scale());
+ case "blast"->{var v=aim.point();p.serverLevel().explode(p,v.x,v.y,v.z,(float)Math.min(16,2*plan.scale()),false,Level.ExplosionInteraction.TNT);yield true;}
+ case "duplicate"->duplicate(p,aim);
+ case "ender"->{p.openMenu(new SimpleMenuProvider((n,inv,who)->ChestMenu.threeRows(n,inv,who.getEnderChestInventory()),Component.translatable("container.enderchest")));yield true;}
+ case "mana_tide"->{var target=aim.entity() instanceof ServerPlayer other?other:p;if(target!=p&&!p.canHarmPlayer(target))yield false;target.setData(MagicAttachments.MANA_BOOST_END,target.serverLevel().getGameTime()+1200);MagicServer.sync(target);yield true;}
+ case "meteor"->{if(aim.type()!=HitResult.Type.BLOCK)yield false;if(METEORS.size()>=16)yield false;METEORS.add(new Meteor(p.serverLevel(),aim.block().getBlockPos(),p.getUUID(),p.serverLevel().getGameTime()+40,plan.scale()));yield true;}
+ case "transcend"->ascend(p);
+ case "end_gate"->{var base=p.blockPosition().relative(p.getDirection(),2);yield WorldSpells.place(p,base,MagicPortals.END_GATE.get().defaultBlockState(),false);}
+ default->false;};if(ok)MagicProgress.award(p,"rite_"+id);return ok;}
+ public static boolean duplicate(ServerPlayer p,SpellEffects.Aim aim){var eye=p.getEyePosition();var end=eye.add(p.getLookAngle().scale(Config.RANGE.get()));Entity source=null;double best=eye.distanceToSqr(aim.block().getLocation());for(var e:p.serverLevel().getEntities(p,new AABB(eye,end).inflate(1),e->e.isAlive()&&!(e instanceof Player)&&!(e instanceof net.minecraft.world.entity.boss.enderdragon.EnderDragonPart))){var hit=e.getBoundingBox().inflate(.15).clip(eye,end);if(hit.isPresent()&&eye.distanceToSqr(hit.get())<best){best=eye.distanceToSqr(hit.get());source=e;}}if(source==null)return false;var clone=source.getType().create(p.serverLevel());if(clone==null)return false;var n=source.saveWithoutId(new CompoundTag());n.remove("UUID");n.remove("Passengers");n.remove("Leash");clone.load(n);clone.setUUID(UUID.randomUUID());clone.moveTo(source.getX()+source.getBbWidth()+.8,source.getY(),source.getZ(),source.getYRot(),source.getXRot());if(!p.serverLevel().hasChunkAt(clone.blockPosition())||!p.serverLevel().getWorldBorder().isWithinBounds(clone.blockPosition())||!p.serverLevel().noCollision(clone))return false;return p.serverLevel().addFreshEntity(clone);}
+ public static boolean raiseIsland(ServerPlayer p,BlockPos center,double scale){var l=p.serverLevel();int radius=Math.min(5,Math.max(3,(int)Math.round(4*scale)));int lift=12;var moved=new LinkedHashMap<BlockPos,BlockState>();for(int x=-radius;x<=radius;x++)for(int z=-radius;z<=radius;z++)if(x*x+z*z<=radius*radius)for(int y=0;y<3;y++){var at=center.offset(x,-y,z);var s=l.getBlockState(at);if(s.isAir())continue;if(!s.is(net.minecraft.tags.BlockTags.DIRT)&&!s.is(net.minecraft.tags.BlockTags.BASE_STONE_OVERWORLD)&&!s.is(Blocks.SAND)&&!s.is(Blocks.GRAVEL))continue;if(!WorldSpells.allowed(p,at)||!WorldSpells.allowed(p,at.above(lift))||!l.getBlockState(at.above(lift)).canBeReplaced()||!l.getEntities((Entity)null,new AABB(at.above(lift)),e->e instanceof LivingEntity).isEmpty())return false;moved.put(at,s);}if(moved.isEmpty())return false;var snapshots=new ArrayList<net.neoforged.neoforge.common.util.BlockSnapshot>();for(var at:moved.keySet()){if(net.neoforged.neoforge.event.EventHooks.onBlockBreakEvent(l,p.gameMode.getGameModeForPlayer(),p,at)<0)return false;snapshots.add(net.neoforged.neoforge.common.util.BlockSnapshot.create(l.dimension(),l,at));snapshots.add(net.neoforged.neoforge.common.util.BlockSnapshot.create(l.dimension(),l,at.above(lift)));}for(var e:moved.entrySet())if(!WorldSpells.place(p,e.getKey().above(lift),e.getValue(),false)||!WorldSpells.place(p,e.getKey(),Blocks.AIR.defaultBlockState(),true)){for(int i=snapshots.size()-1;i>=0;i--)snapshots.get(i).restore();return false;}l.sendParticles(ParticleTypes.END_ROD,center.getX(),center.getY()+12,center.getZ(),80,radius,2,radius,.03);return true;}
+ public static boolean ascend(ServerPlayer p){if(p.isSpectator()||p.getData(MagicAttachments.CREATIVE_PREVIOUS)>=0)return false;p.setData(MagicAttachments.CREATIVE_PREVIOUS,p.gameMode.getGameModeForPlayer().getId());p.setData(MagicAttachments.CREATIVE_END,p.serverLevel().getGameTime()+60);p.setGameMode(GameType.CREATIVE);p.addEffect(new MobEffectInstance(MobEffects.GLOWING,60));p.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION,60));p.heal(20);return true;}
+ public static void restore(ServerPlayer p,boolean messages){int mode=p.getData(MagicAttachments.CREATIVE_PREVIOUS);if(mode<0)return;p.setData(MagicAttachments.CREATIVE_PREVIOUS,-1);p.setData(MagicAttachments.CREATIVE_END,0L);p.setGameMode(GameType.byId(mode));p.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,100));if(messages){p.sendSystemMessage(Component.translatable("kelmagic.transcend.after1"));p.sendSystemMessage(Component.translatable("kelmagic.transcend.after2"));}}
+ @SubscribeEvent public static void playerTick(net.neoforged.neoforge.event.tick.PlayerTickEvent.Post e){if(!(e.getEntity() instanceof ServerPlayer p))return;if(p.getData(MagicAttachments.CREATIVE_PREVIOUS)>=0){if(!p.isAlive()||p.serverLevel().getGameTime()>=p.getData(MagicAttachments.CREATIVE_END)){restore(p,true);return;}if(p.tickCount%5==0)for(int y=0;y<96;y+=4)if(p.getY()+y<p.level().getMaxBuildHeight())p.serverLevel().sendParticles(ParticleTypes.END_ROD,p.getX(),p.getY()+y,p.getZ(),3,.08,.2,.08,.01);}}
+ @SubscribeEvent public static void login(net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerLoggedInEvent e){if(e.getEntity() instanceof ServerPlayer p)restore(p,false);}
+ @SubscribeEvent public static void logout(net.neoforged.neoforge.event.entity.player.PlayerEvent.PlayerLoggedOutEvent e){if(e.getEntity() instanceof ServerPlayer p)restore(p,false);}
+ @SubscribeEvent public static void serverTick(net.neoforged.neoforge.event.tick.ServerTickEvent.Post e){for(var it=METEORS.iterator();it.hasNext();){var m=it.next();if(m.level.getServer()!=e.getServer()){it.remove();continue;}long remain=m.impact-m.level.getGameTime();if(!m.level.hasChunkAt(m.at)){it.remove();continue;}if(remain<=0){var caster=m.level.getServer().getPlayerList().getPlayer(m.owner);m.level.explode(caster,m.at.getX()+.5,m.at.getY()+1,m.at.getZ()+.5,(float)Math.min(12,6*Math.sqrt(m.scale)),true,Level.ExplosionInteraction.TNT);it.remove();}else m.level.sendParticles(ParticleTypes.FLAME,m.at.getX()+.5,m.at.getY()+remain*.7,m.at.getZ()+.5,18,.8,.8,.8,.06);}}
+ @SubscribeEvent public static void stop(net.neoforged.neoforge.event.server.ServerStoppingEvent e){for(var p:e.getServer().getPlayerList().getPlayers())restore(p,false);METEORS.clear();}
+}''')
+put('MagicPortals.java','''package dev.kelmagic;
+import net.neoforged.neoforge.registries.*;import net.minecraft.world.level.block.*;import net.minecraft.world.level.block.state.*;import net.minecraft.core.*;import net.minecraft.server.level.*;import net.minecraft.world.entity.Entity;import net.minecraft.world.level.Level;import net.minecraft.world.level.portal.DimensionTransition;import net.minecraft.world.phys.*;
+public final class MagicPortals {
+ public static final DeferredBlock<Block> END_GATE=KelMagic.BLOCKS.register("temporary_end_gate",()->new Block(BlockBehaviour.Properties.of().noCollission().strength(-1,3600000).lightLevel(s->12).noLootTable()){
+ protected void onPlace(BlockState s,Level l,BlockPos p,BlockState old,boolean moving){super.onPlace(s,l,p,old,moving);if(!l.isClientSide)l.scheduleTick(p,this,100);}
+ protected void tick(BlockState s,ServerLevel l,BlockPos p,net.minecraft.util.RandomSource r){l.removeBlock(p,false);}
+ protected void entityInside(BlockState s,Level level,BlockPos pos,Entity e){if(!(level instanceof ServerLevel l)||e.isOnPortalCooldown()||e.isPassenger()||e.isVehicle())return;var target=l.getServer().getLevel(l.dimension()==Level.END?Level.OVERWORLD:Level.END);if(target==null)return;BlockPos at;if(target.dimension()==Level.END){at=ServerLevel.END_SPAWN_POINT;net.minecraft.world.level.levelgen.feature.EndPlatformFeature.createEndPlatform(target,at.below(),true);}else at=target.getSharedSpawnPos();e.setPortalCooldown();e.changeDimension(new DimensionTransition(target,Vec3.atBottomCenterOf(at),Vec3.ZERO,e.getYRot(),e.getXRot(),DimensionTransition.PLAY_PORTAL_SOUND));}
+ });public static void init(){}private MagicPortals(){}
+}''')
+sub('KelMagic.java','MagicLamps.init();','MagicLamps.init();MagicPortals.init();')
+p=r/'src/main/resources/kelmagic.mixins.json';import json;v=json.loads(p.read_text());v['mixins']+=['SpectralFlightMixin','SpectralPlayerMixin'];p.write_text(json.dumps(v,indent=2))

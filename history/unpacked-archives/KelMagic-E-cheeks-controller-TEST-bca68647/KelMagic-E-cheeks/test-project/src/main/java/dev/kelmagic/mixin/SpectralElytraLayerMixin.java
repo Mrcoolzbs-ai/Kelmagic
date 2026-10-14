@@ -1,0 +1,8 @@
+package dev.kelmagic.mixin;
+import dev.kelmagic.MagicContent;import net.minecraft.client.renderer.entity.layers.ElytraLayer;import net.minecraft.client.model.ElytraModel;import net.minecraft.client.model.EntityModel;import net.minecraft.world.entity.LivingEntity;import net.minecraft.client.renderer.*;import net.minecraft.client.renderer.texture.OverlayTexture;import net.minecraft.resources.ResourceLocation;import com.mojang.blaze3d.vertex.PoseStack;import org.spongepowered.asm.mixin.*;import org.spongepowered.asm.mixin.injection.*;import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+@Mixin(ElytraLayer.class) public abstract class SpectralElytraLayerMixin {
+ @Unique private static final ResourceLocation KELMAGIC_WINGS=ResourceLocation.fromNamespaceAndPath("kelmagic","textures/entity/spectral_wings.png");
+ @Shadow @Final private ElytraModel<LivingEntity> elytraModel;
+ @Inject(method="render(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/entity/LivingEntity;FFFFFF)V",at=@At("HEAD"),cancellable=true)
+ private void kelmagic$spectral(PoseStack pose,MultiBufferSource buffers,int light,LivingEntity e,float swing,float amount,float partial,float age,float yaw,float pitch,CallbackInfo ci){if(!e.hasEffect(MagicContent.WINGS)||e.isInvisible())return;pose.pushPose();pose.translate(0,0,.16);elytraModel.young=e.isBaby();elytraModel.setupAnim(e,swing,amount,age,yaw,pitch);elytraModel.renderToBuffer(pose,buffers.getBuffer(RenderType.entityTranslucent(KELMAGIC_WINGS)),light,OverlayTexture.NO_OVERLAY,0xCFFFFFFF);pose.popPose();ci.cancel();}
+}

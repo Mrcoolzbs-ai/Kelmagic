@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:rite_wings",
+  "display": {
+    "icon": {
+      "id": "minecraft:firework_rocket"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.spectral_boost.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.spectral_boost.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

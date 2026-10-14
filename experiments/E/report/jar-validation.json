@@ -1,0 +1,9 @@
+{
+  "PNGstatesInJar": [
+    "assets/kelmagic/textures/entity/mouth_e/neutral.png",
+    "assets/kelmagic/textures/entity/mouth_e/smile.png",
+    "assets/kelmagic/textures/entity/mouth_e/speech.png",
+    "assets/kelmagic/textures/entity/mouth_e/surprised.png"
+  ],
+  "QAexcludedFromJar": true
+}

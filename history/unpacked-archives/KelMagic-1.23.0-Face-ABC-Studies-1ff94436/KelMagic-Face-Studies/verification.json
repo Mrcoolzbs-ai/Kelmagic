@@ -1,0 +1,28 @@
+{
+  "working_source_sha256_verified_files": 10805,
+  "working_source_changes": [],
+  "variants": {
+    "A": {
+      "geometry_bb_roundtrip": "PASS",
+      "uv_bounds": "PASS",
+      "embedded_external_texture": "PASS",
+      "runtime_animation_bytes": "unchanged",
+      "bb_animation_objects": "unchanged"
+    },
+    "B": {
+      "geometry_bb_roundtrip": "PASS",
+      "uv_bounds": "PASS",
+      "embedded_external_texture": "PASS",
+      "runtime_animation_bytes": "unchanged",
+      "bb_animation_objects": "unchanged"
+    },
+    "C": {
+      "geometry_bb_roundtrip": "PASS",
+      "uv_bounds": "PASS",
+      "embedded_external_texture": "PASS",
+      "runtime_animation_bytes": "unchanged",
+      "bb_animation_objects": "unchanged"
+    }
+  },
+  "scope": "static test models only; no live integration or animation behavior validation"
+}

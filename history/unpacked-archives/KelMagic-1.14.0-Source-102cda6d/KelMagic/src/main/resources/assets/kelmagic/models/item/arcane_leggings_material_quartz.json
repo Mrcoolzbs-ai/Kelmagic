@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kelmagic:item/arcane_leggings",
+    "layer2": "kelmagic:item/vanilla_trims/leggings_quartz"
+  }
+}

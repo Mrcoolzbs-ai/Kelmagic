@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IAI",
+    "LML",
+    "SBC"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "C": {
+      "item": "minecraft:copper_block"
+    },
+    "B": {
+      "item": "minecraft:ink_sac"
+    },
+    "S": {
+      "item": "minecraft:smooth_stone"
+    },
+    "M": {
+      "item": "kelmagic:mana_block"
+    }
+  },
+  "result": {
+    "id": "kelmagic:resonance_station",
+    "count": 1
+  }
+}

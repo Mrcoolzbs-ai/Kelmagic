@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:exposed_copper"
+  },
+  "result": {
+    "id": "kelmagic:exposed_inscribed_copper_kin",
+    "count": 1
+  }
+}

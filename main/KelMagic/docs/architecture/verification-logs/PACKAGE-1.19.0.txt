@@ -1,0 +1,1 @@
+PASS: JAR CRC, 10028 resources byte match; no Qa; current version and entity classes. ZIP CRC and hashes: release SHA256SUMS.txt.

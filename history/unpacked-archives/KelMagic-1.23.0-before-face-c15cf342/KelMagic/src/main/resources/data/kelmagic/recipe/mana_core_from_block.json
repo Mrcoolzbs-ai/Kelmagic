@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "kelmagic:mana_block"
+    }
+  ],
+  "result": {
+    "id": "kelmagic:mana_core",
+    "count": 9
+  }
+}

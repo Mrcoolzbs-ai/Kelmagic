@@ -1,0 +1,133 @@
+---
+name: artifact-design
+description: Design guidance for visual artifacts other than pptx, sheets, and charts owned by inline-charts.
+metadata:
+  role: artifact
+  visibility: computer
+---
+
+# Artifact Design
+
+## Use
+
+Use to style visual artifacts. Pair it with one format skill for PDF, DOCX, or video. HTML and SVG use this skill alone.
+
+New PowerPoints should use the `pptx` skill. For PPTX, this skill owns visual style. Use `pptx` for PowerPoint mechanics, editable deck style, recipe grid scaffolding, rendering, and package validation.
+
+Spreadsheets use `sheets` alone. Spreadsheet layout, visualization, mechanics, and validation are format-specific and do not inherit this skill.
+
+## Design Principles
+
+- **Less is more.** Do not overload the page. Only show what is important. Communicate clear ideas, ideally one at a time.
+- **Think Apple, Think Notion.** Simple and clean with white space for breathing room. Clear and obvious messaging. Aesthetic is beautiful, visual, industrial, minimal.
+- **Purposeful variation.** Don't make everything in the same file look the same. Vary the visuals and layout of each slide, each fold, each page, etc. so things don't get visually boring.
+- **Prefer image gen for visuals.** If a page, slide, report, poster,
+  dashboard, hero, cover, or major visual region needs visual storytelling and
+  no suitable source image exists, use the image generation tool before building
+  the final artifact. Define a concise art direction first, then reject generated
+  images with pseudo-text, fake logos, clutter, distorted objects, corny motifs,
+  glossy 3D, or a style that does not support the artifact's message. Images
+  should look like intentional professional visuals, not cheap clip art or
+  placeholder illustration.
+- **Use code-native graphics for logos and layout.** SVG/vector, canvas, PIL,
+  matplotlib, and primitive shapes are for logos, icons, charts, arrows,
+  dividers, layout structure, or explicitly requested editable output. Do not
+  use SVG or code-drawn stand-ins when the artifact needs real visuals.
+
+### Color
+
+| Role                | Solid     | Soft      |
+| ------------------- | --------- | --------- |
+| Primary text        | `#2C2C2B` |           |
+| Secondary text      | `#7D7A75` |           |
+| Canvas              | `#FFFFFF` |           |
+| Soft surface        | `#F9F8F7` |           |
+| Secondary surface   | `#F0EFED` |           |
+| Border              | `#E6E5E3` |           |
+| Blue primary accent | `#2783DE` | `#E5F2FC` |
+| Green positive      | `#46A171` | `#E8F1EC` |
+| Orange attention    | `#D5803B` | `#FBEBDE` |
+| Red risk or error   | `#E56458` | `#FCE9E7` |
+
+Use blue as the default accent. Use green, orange, and red only for consistent semantic meaning. Do not rely on color alone to distinguish categories or states.
+
+For charts with more than four series, use this ordered palette:
+`#5E9FE8`, `#EAC26B`, `#72BC8F`, `#BF8EDA`, `#DE9255`, `#DF84A8`,
+`#4FB9C9`, `#E97366`. Add direct labels or a clear legend and pair color with
+shape, pattern, or text where ambiguity is possible.
+
+For web dark mode, respect `prefers-color-scheme` unless the requested artifact has a fixed theme:
+
+| Role              | Dark value                  |
+| ----------------- | --------------------------- |
+| Canvas            | `#191919`                   |
+| Surface           | `#202020`                   |
+| Raised or hover   | `#383836`                   |
+| Primary text      | `#FFFFFF`                   |
+| Secondary text    | `rgba(255, 255, 255, 0.65)` |
+| Border            | `rgba(255, 255, 255, 0.20)` |
+| Blue accent       | `#5E9FE8`                   |
+| Green positive    | `#72BC8F`                   |
+| Orange attention  | `#DE9255`                   |
+| Red risk or error | `#E97366`                   |
+
+Use 8-12% accent tints for dark semantic surfaces. Do not mechanically invert images, shadows, or semantic colors.
+
+### Typography
+
+- Use the system sans stack for web output and Arial for editable Office files. Use Georgia only when a serif voice is intentional, and Menlo or Consolas for code.
+- Use one family by default and no more than two. Use a small set of clearly distinct weights and sizes.
+- Use section headings at `1.4-1.75x` body size and display titles at `2-3x`. Keep long-form text near 45-75 characters per line.
+
+| Output                   | Body              | Small text floor |
+| ------------------------ | ----------------- | ---------------- |
+| Web or mobile            | `16px / 1.5`      | `14px`           |
+| PDF or editable document | `11pt / 1.35-1.5` | `9pt`            |
+| Slide or fixed frame     | `16pt / 1.25-1.4` | `12pt`           |
+
+Shorten, split, or add another frame before going below a readability floor.
+
+### Layout
+
+- Use the spacing scale `4, 8, 12, 16, 24, 32, 48, 64`. Related items usually
+  need `8-16`; major regions need `32-64`.
+- Keep long-form text around `680-760px` wide. Use `900-1120px` as the normal
+  maximum for general web content, with `24-48px` desktop gutters.
+- For HTML artifact embed blocks, prefer a compact first viewport that fits the default HTML artifact height without immediate vertical scrolling.
+- Apply this especially when creating an HTML artifact from an empty embed block or when the user asks to insert HTML; if unsure, ask whether to optimize for an HTML artifact embed block or a taller standalone artifact.
+- Use an `8px` default radius and up to `12px` for large surfaces. Avoid pills
+  unless the shape communicates a tag, status, or compact action.
+- Use borders before shadows. When elevation is necessary, keep it subtle:
+  `0 1px 2px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.04)`.
+
+### Responsive And Accessible Output
+
+- At narrow widths, use `16-24px` gutters, collapse multi-column layouts, and preserve the reading order. Do not hide essential content to make it fit.
+- Avoid horizontal page scrolling. Let wide data tables scroll within their region or provide a compact alternative.
+- Make interactive targets at least `44x44px`. Provide visible keyboard focus, semantic structure, labels, and text alternatives where applicable.
+- Meet WCAG AA contrast: at least `4.5:1` for normal text and `3:1` for large text and meaningful UI boundaries. Verify actual foreground/background pairs.
+- Respect reduced-motion preferences and avoid motion that is required to understand content.
+- Test responsive HTML at the requested desktop width and at approximately `390px`; inspect menus, modals, tabs, expanded states, and error or empty states that exist.
+
+## Required Visual QA
+
+Visual QA is mandatory. Rendering is not inspection. Structural diagnostics, successful file creation, dimensions, hashes, and contact sheets do not replace looking at each rendered image.
+
+For HTML or SVG, use the bundled capture helper directly. It launches the bundled `chromium` binary and uses Pillow to validate each generated PNG:
+
+```bash
+python /skills/artifact-design/scripts/capture_html.py input.html preview.png
+```
+
+Run only the capture helper in that terminal call. Do not add montage or contact-sheet commands.
+
+1. Run any applicable structural audit or inspection supplied by the paired format skill, then render every page, slide, frame, route, and relevant state at delivery dimensions.
+2. In private reasoning, make a short visual checklist tailored to the request and the artifact's likely failure modes. Include whether the result hit the design principles above. ALWAYS add these to the checklist:
+
+- ZERO overlapping or overflowing elements. Nothing should look broken. Everything should be inside it's relevant box or container.
+- Check for elements that are too close together. There should always be enough space between elements.
+- Generated or source imagery, if used, is tasteful, specific, free of fake text/logos, and better than no image.
+
+3. Open generated PNGs one at a time with
+   `computer.readFile({path: "/data/<render>.png"})`. Before opening the next image, privately record `Visual QA <page/slide/frame/state>: pass/fail - <one concrete observation>` against the checklist. A read call alone is not inspection; do not batch image reads. Do not include the checklist in the final answer unless the user asks for QA details.
+4. Fix every failure, render again, and inspect the replacement. Mechanical rendering is not taste QA; if the artifact looks generic, embarrassing, or like placeholder art, improve the imagery or remove it before delivery. Do not deliver with unchecked items or known defects. If image inspection is unavailable, say so and do not claim that visual QA passed.

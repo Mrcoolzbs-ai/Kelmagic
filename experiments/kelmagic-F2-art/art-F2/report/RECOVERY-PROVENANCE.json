@@ -1,0 +1,31 @@
+{
+  "recoveredFrom": "Recorded generator and contact-sheet commands in transcript, events 13139 and 13232",
+  "originalF2DirectoryAvailable": false,
+  "originalF2BinaryHashComparisonPossible": false,
+  "artChangesOrIntegration": false,
+  "PNGcount": 19,
+  "recoverySHA256": {
+    "emotions/neutral.png": "e81eaf359179e7d654049674b1780a63581dbb087094996b87bf5abc345a6ec6",
+    "emotions/smile.png": "01794c4da531dffb14b8813d2ceb38a7c0a264c034497a409d8e516fb9b3d208",
+    "emotions/wide_smile.png": "e6eb3ec9bb48bb8081340c9a89f16c3e56f9fffe4331f5852c964cd140f6ff08",
+    "emotions/smirk.png": "f6373a5d63ad5e5f2e5139ae7c20fced80393c98bdba49883340e9e687d8cb0d",
+    "emotions/displeased.png": "106a1df8ce82c01a063f448eab9d17a85471aeaeb8c3adb7e50f6a1c6936730f",
+    "emotions/surprise.png": "1f1cfea7d47d081ae90d53aa44f3131b13357c24196c0e101c8db5d6a4712ea8",
+    "emotions/fear.png": "dfb4958f7fd7c88c5687bc96608d0352ab362c9860ddc72da216dad2412687d3",
+    "emotions/laugh.png": "eba5abdbf59e8dc8556f5a5c4e419aa1af0aa626b10e4d5fd1de1dc44301d75b",
+    "emotions/sad.png": "6363947f2f4343adfe26684cca169d16c02f30941dd706317f0d8c4194ac1a59",
+    "visemes/closed_mpb.png": "19dd0e9df2f3f71c01b61293cb18d98e61cde8767baa0ed26b0af7e568038d27",
+    "visemes/open_a.png": "266c2099a5adf8b959cb9735be0204cb73cb1990c4f1e90e1c15988db2b6eb21",
+    "visemes/round_o.png": "113ce95b17eefb85a5240f8eb7ab0917506be6d6777a318797f7db93213820fa",
+    "visemes/round_u.png": "6a62269f3dcb6185c885518e3863be759f158344d9d87a32334ac7315779cba6",
+    "visemes/spread_ie.png": "6e68680b500cb82e65f5acfee821753b93f2831f8670772ff71bfafc6f276a60",
+    "visemes/teeth_fv.png": "9442bd0980ac2f925a810081e285432822b45def2ca8b582366d3d99864fe4d6",
+    "visemes/tongue_tdnl.png": "636f0ae1a5f47820a6b4944c7f03aafe4488c2c266dceeefff91c27185023d5e",
+    "visemes/hush_sh.png": "63502b4de65d6bafe6570f639925b3398980c64c39334076b175c3c440319b82",
+    "visemes/rest.png": "9bec19f2d0d7683d1c314fda9c74247286453bdd743d5c52416662f83acd58cb",
+    "preview/smile-before.png": "f58f677d98b834372025d2b3855f1a3727da5c95497a34f6164332a5b6a0d688"
+  },
+  "contactScale": 8,
+  "method": "NEAREST",
+  "note": "No claim that re-encoded PNG bytes/contact-sheet font raster match inaccessible original F2 artifacts."
+}

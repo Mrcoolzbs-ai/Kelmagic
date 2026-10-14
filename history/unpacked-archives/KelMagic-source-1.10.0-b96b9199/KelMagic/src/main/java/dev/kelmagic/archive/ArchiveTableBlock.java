@@ -1,0 +1,10 @@
+package dev.kelmagic.archive;
+import dev.kelmagic.*;import com.mojang.serialization.MapCodec;import net.minecraft.core.BlockPos;import net.minecraft.world.*;import net.minecraft.world.entity.player.Player;import net.minecraft.world.level.*;import net.minecraft.world.level.block.*;import net.minecraft.world.level.block.entity.*;import net.minecraft.world.level.block.state.*;import net.minecraft.world.phys.*;
+public final class ArchiveTableBlock extends BaseEntityBlock {
+ public static final MapCodec<ArchiveTableBlock> CODEC=simpleCodec(ArchiveTableBlock::new);public ArchiveTableBlock(Properties p){super(p);}
+ protected MapCodec<? extends BaseEntityBlock> codec(){return CODEC;}protected RenderShape getRenderShape(BlockState s){return RenderShape.MODEL;}
+ protected net.minecraft.world.phys.shapes.VoxelShape getShape(BlockState s,BlockGetter l,BlockPos p,net.minecraft.world.phys.shapes.CollisionContext c){return net.minecraft.world.phys.shapes.Shapes.or(Block.box(0,10,0,16,12,16),Block.box(1,0,1,3,10,3),Block.box(13,0,1,15,10,3),Block.box(1,0,13,3,10,15),Block.box(13,0,13,15,10,15),Block.box(2,12,4,12,13,12),Block.box(13,12,3,15,16,5));}
+ public BlockEntity newBlockEntity(BlockPos p,BlockState s){return new ArchiveTableEntity(p,s);}
+ protected InteractionResult useWithoutItem(BlockState s,Level l,BlockPos pos,Player p,BlockHitResult h){if(l.getBlockEntity(pos) instanceof ArchiveTableEntity d){if(p instanceof net.minecraft.server.level.ServerPlayer sp)sp.openMenu(d,b->b.writeBlockPos(pos));return InteractionResult.sidedSuccess(l.isClientSide);}return InteractionResult.PASS;}
+ protected void onRemove(BlockState old,Level l,BlockPos pos,BlockState next,boolean moving){if(!old.is(next.getBlock())&&l.getBlockEntity(pos) instanceof ArchiveTableEntity d){var inputs=new SimpleContainer(4);for(int i=0;i<4;i++)inputs.setItem(i,d.inventory.getItem(i));Containers.dropContents(l,pos,inputs);}super.onRemove(old,l,pos,next,moving);}
+}
