@@ -39,3 +39,6 @@ servers.dat
 *.mcc
 *.dat
 *.dat_old
+
+# Explicit user-requested final KelMagic mod artifact (not dependencies).
+!experiments/F3-hair7-final/release/kelmagic-1.24.4-f3-hair7-direct-locks.jar

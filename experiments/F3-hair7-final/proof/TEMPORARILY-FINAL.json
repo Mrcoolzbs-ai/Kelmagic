@@ -1,0 +1,11 @@
+{
+  "status": "temporarily_final_user_approved",
+  "version": "1.24.4",
+  "model": "F3-hair7-direct-locks",
+  "jar": "kelmagic-1.24.4-f3-hair7-direct-locks.jar",
+  "sha256": "b11db2a68070a6e6687a3658f1a6727e1acde9d94cb6c6ed00cdabaa94c4627c",
+  "source_backup": "KelMagic-hair7-direct-locks-source-and-proof.zip",
+  "git_commit": false,
+  "git_push": false,
+  "note": "Пользователь принял текущую модель как временно финальную. Дальнейшие изменения только по запросу."
+}

@@ -1,0 +1,19 @@
+{
+  "changed_mesh_groups": [
+    "hair6_front_left_base",
+    "hair6_front_left_under",
+    "hair6_front_left_over",
+    "hair6_front_right_base",
+    "hair6_front_right_under",
+    "hair6_front_right_over"
+  ],
+  "upper_connection_is_one_straight_segment": true,
+  "parent_head_dependency": false,
+  "head_placement_runtime_unchanged": true,
+  "neck_runtime_unchanged": true,
+  "all_existing_PNGs_unchanged": 2399,
+  "new_bones": 0,
+  "native_states": 6,
+  "native_frames": 12,
+  "jar_sha256": "b11db2a68070a6e6687a3658f1a6727e1acde9d94cb6c6ed00cdabaa94c4627c"
+}

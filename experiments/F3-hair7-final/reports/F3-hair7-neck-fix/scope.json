@@ -1,0 +1,34 @@
+{
+  "changed_chest_groups": {
+    "hair6_front_left_base": [
+      24,
+      23
+    ],
+    "hair6_front_left_under": [
+      4,
+      4
+    ],
+    "hair6_front_left_over": [
+      4,
+      4
+    ],
+    "hair6_front_right_base": [
+      24,
+      23
+    ],
+    "hair6_front_right_under": [
+      4,
+      4
+    ],
+    "hair6_front_right_over": [
+      4,
+      4
+    ]
+  },
+  "chest_cutoff_bind_y": 23.98,
+  "shoulder_y": 24,
+  "new_neck_max_y": 24.017,
+  "new_bones": 0,
+  "neck_bone_binding": null,
+  "neck_extra_volume": false
+}

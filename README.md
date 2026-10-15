@@ -18,3 +18,6 @@ Use Java 21 and the existing Gradle wrapper in the chosen project. Minecraft 1.2
 F2 files in this backup were reconstructed from recorded drawing commands after the earlier working directory became unavailable. They have not been artistically approved. This import does not change that provenance, implement speech articulation or integrate F2.
 
 No build/game tests were rerun for Git publication. Token/credentials are never stored in the repository. Nested .github/workflows files remain at their archived paths; this import does not promote them into active root workflows.
+
+## Current temporarily final model
+See [F3-hair7 1.24.4](experiments/F3-hair7-final/README.md) for the cumulative updated project, tested mod JAR and native-game proofs. Original main/D/E snapshots above are preserved.

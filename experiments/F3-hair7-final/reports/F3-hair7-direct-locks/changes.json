@@ -1,0 +1,48 @@
+{
+  "path_rest_y_x_z_halfwidth": [
+    [
+      24.0,
+      3.75,
+      -3.88,
+      0.72
+    ],
+    [
+      21.407921977982372,
+      3.84,
+      -5.540531381908847,
+      0.92
+    ],
+    [
+      19.4,
+      2.35,
+      -4.99,
+      0.74
+    ],
+    [
+      17.65,
+      1.55,
+      -4.1,
+      0.5
+    ]
+  ],
+  "chin_endpoint": [
+    3.75,
+    24,
+    -3.88
+  ],
+  "breast_corner": [
+    3.84,
+    21.407921977982372,
+    -5.540531381908847
+  ],
+  "upper_connector_segments": 1,
+  "deleted_intermediate_point": [
+    3.72,
+    23.8,
+    -5.02
+  ],
+  "parents": "chest_left/right → body → root, no head",
+  "head_seat_unchanged": true,
+  "side_UV_unchanged": true,
+  "new_bones": 0
+}

@@ -1,0 +1,1625 @@
+{
+  "version": 2,
+  "words": [
+    {
+      "word": "mina",
+      "root": "min",
+      "translation": "я",
+      "category": "self",
+      "source": "gram1.png",
+      "description": "Первое слово звучит из твоей груди. В старых книгах возле него нет имени.",
+      "gameplayDescription": "Цель: заклинатель."
+    },
+    {
+      "word": "tuna",
+      "root": "tun",
+      "translation": "ты",
+      "category": "player",
+      "source": "gram1.png",
+      "description": "Тот, кто услышит обращение, ещё может ответить. Когда-то так звали соседей через улицу.",
+      "gameplayDescription": "Цель: другой человек, включая чародейку."
+    },
+    {
+      "word": "sila",
+      "root": "sil",
+      "translation": "он/она/оно",
+      "category": "mob",
+      "source": "gram1.png",
+      "description": "Назови живое — и мир обернётся к нему. Даже если оно давно забыло своё имя.",
+      "gameplayDescription": "Цель: не-человеческий моб."
+    },
+    {
+      "word": "pir",
+      "root": "pir",
+      "translation": "огонь",
+      "category": "effect",
+      "source": "ez_word1.png",
+      "description": "Это пламя помнит дыхание, которому не нужны были ни кремень, ни очаг. На полях — чёрные следы крыльев.",
+      "gameplayDescription": "Магический огонь."
+    },
+    {
+      "word": "no",
+      "root": "no",
+      "translation": "отрицание",
+      "category": "modifier",
+      "source": "gram2.png",
+      "description": "На последней странице приказ перечёркнут. Чернила высохли раньше, чем исполнилось сказанное.",
+      "gameplayDescription": "Обращение эффекта."
+    },
+    {
+      "word": "lu",
+      "root": "lu",
+      "translation": "множество",
+      "category": "modifier",
+      "source": "gram2.png",
+      "description": "Голос расходится кругами. В пустом зале всё ещё предусмотрено место для многих.",
+      "gameplayDescription": "Несколько целей."
+    },
+    {
+      "word": "per",
+      "root": "per",
+      "translation": "человек",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Ищи тех, кто похож на тебя. Старый список имён занимает больше места, чем живые огни.",
+      "gameplayDescription": "Обнаруживает только игроков свечением."
+    },
+    {
+      "word": "mil",
+      "root": "mil",
+      "translation": "друг",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Клык опускается, но не исчезает. Даже древний договор не прощает первого удара.",
+      "gameplayDescription": "Делает агрессивного моба нейтральным: не нападает первым, но отвечает на удар."
+    },
+    {
+      "word": "nak",
+      "root": "nak",
+      "translation": "враг",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Кроткое существо учится отвечать. На обороте листа след чьей-то дрожащей руки.",
+      "gameplayDescription": "Делает мирного моба нейтральным: теперь он отвечает атакой на удар."
+    },
+    {
+      "word": "mam",
+      "root": "mam",
+      "translation": "мать",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Тёплая ладонь удерживает жизнь. На детской постели давно лежит пыль.",
+      "gameplayDescription": "Материнская забота: регенерация и поглощение."
+    },
+    {
+      "word": "pap",
+      "root": "pap",
+      "translation": "отец",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "За спиной будто встаёт тот, кто обещал защитить дом. Дом не сохранился.",
+      "gameplayDescription": "Отцовская защита: сопротивление и сила."
+    },
+    {
+      "word": "kin",
+      "root": "kin",
+      "translation": "ребёнок",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Земля отпускает ноги, воздух принимает падение. Прежние дети играли на крышах.",
+      "gameplayDescription": "Детская лёгкость: прыжок и мягкое падение."
+    },
+    {
+      "word": "gav",
+      "root": "gav",
+      "translation": "правительство, власть",
+      "category": "people",
+      "source": "ez_word1.png",
+      "description": "Узел ослабевает. В печати исчезнувшего совета власть изображали раскрытой ладонью.",
+      "gameplayDescription": "Отпускает поводок выбранного моба и успокаивает его."
+    },
+    {
+      "word": "ged",
+      "root": "ged",
+      "translation": "голова",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Мысль яснеет даже под тёмной водой. В затопленной библиотеке это слово осталось на потолке.",
+      "gameplayDescription": "Ясная голова: зрение и дыхание под водой."
+    },
+    {
+      "word": "gok",
+      "root": "gok",
+      "translation": "глаз",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Темнота уступает взгляду. Старые смотрители обходились без свечей.",
+      "gameplayDescription": "Ночное зрение."
+    },
+    {
+      "word": "nos",
+      "root": "nos",
+      "translation": "нос",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Потерянные вещи выдают себя лёгким дрожанием воздуха. Владельцев оно не возвращает.",
+      "gameplayDescription": "Отмечает частицы около брошенных предметов в пределах 12 блоков."
+    },
+    {
+      "word": "mur",
+      "root": "mur",
+      "translation": "рот",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Голод отступает на миг. В ведомости последнего обоза это слово записано на каждой строке.",
+      "gameplayDescription": "Утоляет голод цели на 4 единицы."
+    },
+    {
+      "word": "ped",
+      "root": "ped",
+      "translation": "нога",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Нога вспоминает высоту. От лестниц, по которым бежали тогда, остались только пролёты.",
+      "gameplayDescription": "Усиление прыжка."
+    },
+    {
+      "word": "kor",
+      "root": "kor",
+      "translation": "сердце",
+      "category": "body",
+      "source": "ez_word1.png",
+      "description": "Сердце подхватывает пропущенный удар. У края строки кто-то снова поставил точку.",
+      "gameplayDescription": "Мгновенное лечение 4 HP."
+    },
+    {
+      "word": "sol",
+      "root": "sol",
+      "translation": "солнце",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Куда укажешь, там займётся маленькое солнце. Такие огни отмечали дорогу к убежищам.",
+      "gameplayDescription": "Создаёт магический факел на свободной опоре рядом; mina не нужна."
+    },
+    {
+      "word": "lun",
+      "root": "lun",
+      "translation": "луна",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "В камне загорается тихая луна. На дне старых залов её свет всё ещё ровный.",
+      "gameplayDescription": "Создаёт магический фонарь рядом с выбранным блоком."
+    },
+    {
+      "word": "ter",
+      "root": "ter",
+      "translation": "земля",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Под ладонью появляется земля. Беженцы берегли её даже на пустых островах.",
+      "gameplayDescription": "Создаёт блок земли."
+    },
+    {
+      "word": "vak",
+      "root": "vak",
+      "translation": "вода",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Вода находит начало среди камня. За жаркими вратами остаётся лишь пар.",
+      "gameplayDescription": "Создаёт источник воды; в сверхжарком измерении испаряется."
+    },
+    {
+      "word": "tur",
+      "root": "tur",
+      "translation": "дерево",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Дуб вспоминает ствол. На островах без леса это слово писали особенно мелко.",
+      "gameplayDescription": "Создаёт дубовое бревно."
+    },
+    {
+      "word": "gor",
+      "root": "gor",
+      "translation": "гора",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Камень выпрямляется, словно обломок горы. Строители оставляли на вершине место для сигнального огня.",
+      "gameplayDescription": "Строит каменный столб высотой до 4 блоков."
+    },
+    {
+      "word": "mar",
+      "root": "mar",
+      "translation": "море",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "В пустой чаше собирается вода. На карте под ней подписан город, которого теперь не видно.",
+      "gameplayDescription": "Заполняет водой небольшой бассейн из свободных ячеек."
+    },
+    {
+      "word": "riv",
+      "root": "riv",
+      "translation": "река",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Вода прокладывает короткую дорогу. Большие реки больше не слушаются человеческого голоса.",
+      "gameplayDescription": "Создаёт канал из трёх источников воды по направлению взгляда."
+    },
+    {
+      "word": "neb",
+      "root": "neb",
+      "translation": "небо",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Небо на миг вспоминает твою лёгкость. Оно уже держало города, которые никто не нашёл.",
+      "gameplayDescription": "Краткое парение вверх."
+    },
+    {
+      "word": "dum",
+      "root": "dum",
+      "translation": "дым",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Дым скрывает последнюю дверь. В старых приказах это слово стоит перед словом «уходить».",
+      "gameplayDescription": "Дымовая завеса на точке прицела."
+    },
+    {
+      "word": "vit",
+      "root": "vit",
+      "translation": "ветер",
+      "category": "nature",
+      "source": "ez_word1.png",
+      "description": "Воздух становится плечом и отталкивает прочь. У корабельных окон его писали остриём ножа.",
+      "gameplayDescription": "Порыв ветра отталкивает цель."
+    },
+    {
+      "word": "kuk",
+      "root": "kuk",
+      "translation": "кошка",
+      "category": "animals",
+      "source": "ez_word1.png",
+      "description": "Глаза привыкают к ночи, шаг становится тише. Кошки первыми обходили опустевшие дома.",
+      "gameplayDescription": "Кошачьи зрение и проворство."
+    },
+    {
+      "word": "pis",
+      "root": "pis",
+      "translation": "птица",
+      "category": "animals",
+      "source": "ez_word1.png",
+      "description": "Падение замедляется. В полях страницы нарисована птица с крыльями, похожими на паруса.",
+      "gameplayDescription": "Птичье планирование и прыжок."
+    },
+    {
+      "word": "sal",
+      "root": "sal",
+      "translation": "рыба",
+      "category": "animals",
+      "source": "ez_word1.png",
+      "description": "Вода перестаёт быть чужой. Исследователи затонувших улиц возвращались с мокрыми книгами.",
+      "gameplayDescription": "Рыбье дыхание и плавание."
+    },
+    {
+      "word": "vid",
+      "root": "vid",
+      "translation": "видеть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Живые огни проступают сквозь стены. Смотритель давно не ставит возле них имён.",
+      "gameplayDescription": "Подсвечивает живых существ вокруг игрока, независимо от взгляда и препятствий."
+    },
+    {
+      "word": "tik",
+      "root": "tik",
+      "translation": "слышать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Самое близкое дыхание выдаёт направление. В тишине руин его ждут дольше, чем ответ.",
+      "gameplayDescription": "Показывает направление и расстояние до ближайшей живой цели."
+    },
+    {
+      "word": "kel",
+      "root": "kel",
+      "translation": "говорить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Звон указывает место всем, кто ещё слышит. В крепостных библиотеках так созывали переписчиков.",
+      "gameplayDescription": "Звон колокола и частицы отмечают точку прицела для всех рядом."
+    },
+    {
+      "word": "man",
+      "root": "man",
+      "translation": "есть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Пища исчезает из ладони, оставляя сытость. Последнюю трапезу делили без посуды.",
+      "gameplayDescription": "Забирает один съедобный предмет из основной руки цели и насыщает её."
+    },
+    {
+      "word": "pin",
+      "root": "pin",
+      "translation": "пить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Обычный жар стихает, вода принимает дыхание. У драконьего пламени другой договор.",
+      "gameplayDescription": "Снимает жажду огня: тушит обычное горение и даёт подводное дыхание."
+    },
+    {
+      "word": "pak",
+      "root": "pak",
+      "translation": "идти",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Шаг следует за взглядом. Дорога не спрашивает, остался ли кто-нибудь впереди.",
+      "gameplayDescription": "Подталкивает цель вперёд по её направлению взгляда."
+    },
+    {
+      "word": "dak",
+      "root": "dak",
+      "translation": "давать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Вещь переходит из руки в руку. Переписчики считали это знаком доверия, а не богатства.",
+      "gameplayDescription": "Передаёт один предмет из второй руки заклинателя цели, не создавая копий."
+    },
+    {
+      "word": "tak",
+      "root": "tak",
+      "translation": "брать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Оставленное тянется обратно. Хозяева караванов писали слово на застёжках дорожных мешков.",
+      "gameplayDescription": "Притягивает ближайшие брошенные предметы к цели."
+    },
+    {
+      "word": "sit",
+      "root": "sit",
+      "translation": "находиться",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Движение замирает. В разрушенном зале приказ звучал бы почти ласково.",
+      "gameplayDescription": "Останавливает движение цели и накладывает краткую медлительность."
+    },
+    {
+      "word": "liv",
+      "root": "liv",
+      "translation": "жить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Жизнь продолжает тихую работу. Даже в пепле когда-то находили тех, кто ещё дышал.",
+      "gameplayDescription": "Регенерация; mina liv pir — особая жизнь в пламени."
+    },
+    {
+      "word": "mor",
+      "root": "mor",
+      "translation": "умирать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Холод добирается до самой жизни. Эту страницу держали отдельно от детских тетрадей.",
+      "gameplayDescription": "Смертельный холод: 8 HP магического урона."
+    },
+    {
+      "word": "sav",
+      "root": "sav",
+      "translation": "знать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Названное открывает свою меру. В камне проще прочесть правду, чем в последних отчётах людей.",
+      "gameplayDescription": "Сообщает здоровье существа либо твёрдость и название блока."
+    },
+    {
+      "word": "pen",
+      "root": "pen",
+      "translation": "думать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Мысль собирается в точку, руки успевают за ней. Время у переписчиков всегда кончалось раньше чернил.",
+      "gameplayDescription": "Сосредоточенность: спешка и зрение."
+    },
+    {
+      "word": "vol",
+      "root": "vol",
+      "translation": "хотеть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Желанное приближается. Так звали с причалов тех, кого уже уносило течением.",
+      "gameplayDescription": "Сильное притяжение живой цели к заклинателю."
+    },
+    {
+      "word": "kan",
+      "root": "kan",
+      "translation": "мочь",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Тело получает короткую передышку. На полях написано: «Ещё один переход».",
+      "gameplayDescription": "Запас временного здоровья."
+    },
+    {
+      "word": "lab",
+      "root": "lab",
+      "translation": "работать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Камень уступает орудию, а не голому приказу. Старые мастера знали цену честной работе.",
+      "gameplayDescription": "Добывает выбранный блок текущим инструментом, с обычным лутом и защитой."
+    },
+    {
+      "word": "ler",
+      "root": "ler",
+      "translation": "учить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Рука ученика вдруг находит верное движение. Имя учителя выскоблено из заголовка.",
+      "gameplayDescription": "Вдохновение ученика: удача и спешка."
+    },
+    {
+      "word": "lud",
+      "root": "lud",
+      "translation": "играть",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "В воздухе остаётся несколько нот. Праздничный зал давно погребён под землёй.",
+      "gameplayDescription": "Играет мелодию из нот в точке прицела."
+    },
+    {
+      "word": "lov",
+      "root": "lov",
+      "translation": "любить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Рана затягивается медленно, будто кто-то всё ещё рядом. На этой странице нет печати совета.",
+      "gameplayDescription": "Лечит цель на 2 HP и даёт краткую регенерацию."
+    },
+    {
+      "word": "pul",
+      "root": "pul",
+      "translation": "крутить",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Мир делает боковой оборот. Корабельные писцы отмечали так опасный порыв ветра.",
+      "gameplayDescription": "Закручивает цель поперёк линии прицела."
+    },
+    {
+      "word": "lom",
+      "root": "lom",
+      "translation": "ломать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Непрочный камень забывает форму. Рядом предупреждение: обломки не станут добычей.",
+      "gameplayDescription": "Разбивает мягкий блок твёрдостью до 1,5 без выпадения добычи."
+    },
+    {
+      "word": "set",
+      "root": "set",
+      "translation": "стирать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Малые побеги освобождают место. На плане исчезнувшего сада дорожки ещё подписаны.",
+      "gameplayDescription": "Убирает выбранную траву/цветок с обычным лутом."
+    },
+    {
+      "word": "pad",
+      "root": "pad",
+      "translation": "падать",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Земля зовёт вниз. Даже сильное слово не откроет дорогу сквозь сплошной камень.",
+      "gameplayDescription": "Прижимает цель вниз; не телепортирует сквозь блоки."
+    },
+    {
+      "word": "ved",
+      "root": "ved",
+      "translation": "вести",
+      "category": "verbs",
+      "source": "ez_word1.png",
+      "description": "Шаги тянутся к голосу ведущего. Последняя колонна вышла без знамени.",
+      "gameplayDescription": "Ведёт моба к заклинателю; игроку задаёт движение к нему."
+    },
+    {
+      "word": "tom",
+      "root": "tom",
+      "translation": "дом",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Над головой сходятся доски. В старом счёте за дом принимали даже укрытие на одну ночь.",
+      "gameplayDescription": "Создаёт маленький навес из досок над целью."
+    },
+    {
+      "word": "puk",
+      "root": "puk",
+      "translation": "книга",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Запись раскрывает сохранённое эхо. На лентах чужие голоса пережили своих владельцев.",
+      "gameplayDescription": "Показывает содержимое записанного скриптера/кассеты во второй руке."
+    },
+    {
+      "word": "log",
+      "root": "log",
+      "translation": "слово",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Следующая строка отдаёт смысл читателю. В пустых местах книги никто не обещал ответов.",
+      "gameplayDescription": "Показывает описание следующего слова из открытого кодекса во второй руке."
+    },
+    {
+      "word": "tem",
+      "root": "tem",
+      "translation": "время",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Рост делает ещё один шаг. Хранители грядок считали время по листьям, а не по календарю.",
+      "gameplayDescription": "Продвигает рост выбранного растения на одну стадию."
+    },
+    {
+      "word": "lok",
+      "root": "lok",
+      "translation": "место",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Близкая твёрдая земля принимает путника. Дальние врата требуют слов, которых здесь нет.",
+      "gameplayDescription": "Переносит заклинателя на безопасную поверхность у прицела, до 12 блоков."
+    },
+    {
+      "word": "rak",
+      "root": "rak",
+      "translation": "путь",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Почва ложится под шаги. Последняя тропа всё ещё ведёт к дверям, которых больше нет.",
+      "gameplayDescription": "Превращает небольшой участок земли в тропу."
+    },
+    {
+      "word": "mon",
+      "root": "mon",
+      "translation": "деньги",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "В карманах отзываются металл и зелёный камень. Когда торговцы вернулись, покупателей уже не было.",
+      "gameplayDescription": "Считает изумруды, золотые слитки и самородки в рюкзаке."
+    },
+    {
+      "word": "tab",
+      "root": "tab",
+      "translation": "стол",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Доски сходятся в место для работы. Начать заново можно с малого.",
+      "gameplayDescription": "Создаёт верстак."
+    },
+    {
+      "word": "kul",
+      "root": "kul",
+      "translation": "стул",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Появляется сиденье для того, кто устал. За длинным столом осталось слишком много свободных мест.",
+      "gameplayDescription": "Создаёт дубовую ступень-сиденье."
+    },
+    {
+      "word": "bed",
+      "root": "bed",
+      "translation": "кровать",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Тело отпускает слабость и тяжесть. Ночь от этого не становится короче.",
+      "gameplayDescription": "Снимает слабость и даёт медленное падение; время суток не меняет."
+    },
+    {
+      "word": "dor",
+      "root": "dor",
+      "translation": "дверь",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Две половины берегут проход. На косяках старых убежищ зарубки считали не дни, а возвращения.",
+      "gameplayDescription": "Создаёт двухблочную дубовую дверь с проверкой обеих ячеек."
+    },
+    {
+      "word": "sen",
+      "root": "sen",
+      "translation": "окно",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Свет получает тонкую границу. Из окон крепости когда-то смотрели не на звёзды, а на разлом.",
+      "gameplayDescription": "Создаёт стеклянную панель."
+    },
+    {
+      "word": "val",
+      "root": "val",
+      "translation": "стена",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Три камня встают между тобой и опасностью. В летописях это называли временной мерой.",
+      "gameplayDescription": "Создаёт стенку из трёх блоков булыжника."
+    },
+    {
+      "word": "rum",
+      "root": "rum",
+      "translation": "комната",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Уголки сходятся вокруг пустого места. Для входа оставляют щель — даже после всего случившегося.",
+      "gameplayDescription": "Огораживает маленькую площадку, оставляя проход."
+    },
+    {
+      "word": "kas",
+      "root": "kas",
+      "translation": "город",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Под ногами проступает короткая мостовая. Остальную улицу давно забрала вода.",
+      "gameplayDescription": "Мостовая длиной до 5 блоков над выбранной поверхностью."
+    },
+    {
+      "word": "vil",
+      "root": "vil",
+      "translation": "деревня",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "На доброй земле появляется маленький дуб. Жители говорят: деревня начинается не с забора.",
+      "gameplayDescription": "Высаживает дубовый саженец на подходящей почве."
+    },
+    {
+      "word": "lum",
+      "root": "lum",
+      "translation": "улица",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Несколько огней ложатся вдоль пути. Когда-то по ним возвращались домой.",
+      "gameplayDescription": "Расставляет до трёх факелов вдоль поверхности."
+    },
+    {
+      "word": "pal",
+      "root": "pal",
+      "translation": "хлеб",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Зерно становится хлебом. Там, где исчезли печи, берегли каждую горсть пшеницы.",
+      "gameplayDescription": "Превращает три пшеницы во второй руке в хлеб, без дублирования."
+    },
+    {
+      "word": "sin",
+      "root": "sin",
+      "translation": "выход",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Назад остаётся небольшой безопасный шаг. На полях слово подчёркнуто дважды.",
+      "gameplayDescription": "Безопасно отступает назад до 4 блоков."
+    },
+    {
+      "word": "tul",
+      "root": "tul",
+      "translation": "вентиль",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Скрытый рычаг отвечает щелчком. Мёртвые механизмы порой помнят хозяев лучше людей.",
+      "gameplayDescription": "Переключает рычаг или нажимает каменную/деревянную кнопку."
+    },
+    {
+      "word": "kur",
+      "root": "kur",
+      "translation": "круг",
+      "category": "objects",
+      "source": "ez_word1.png",
+      "description": "Камни очерчивают круг, но оставляют выход. Первые чертежи убежищ ещё не знали осады.",
+      "gameplayDescription": "Создаёт круговое ограждение радиусом 2 с проходом."
+    },
+    {
+      "word": "var",
+      "root": "var",
+      "translation": "тёплый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Снег уступает прежнему теплу. В затопленных руинах это слово читают как предупреждение.",
+      "gameplayDescription": "Тает выбранные снег или лёд, не создавая огонь."
+    },
+    {
+      "word": "kol",
+      "root": "kol",
+      "translation": "холодный",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Вода вспоминает неподвижность льда. О старых холодах остались только обломки берега.",
+      "gameplayDescription": "Замораживает выбранный источник воды в лёд."
+    },
+    {
+      "word": "nov",
+      "root": "nov",
+      "translation": "новый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Привычный свет больше не ждёт горения. Вещь остаётся узнаваемой, но её состояние уже не прежнее.",
+      "gameplayDescription": "Очищает одну ступень окисления меди."
+    },
+    {
+      "word": "vel",
+      "root": "vel",
+      "translation": "старый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Медь принимает ещё один год тишины. Зелёный налёт появился раньше, чем исчезли имена.",
+      "gameplayDescription": "Состаривает медный блок на одну ступень."
+    },
+    {
+      "word": "bon",
+      "root": "bon",
+      "translation": "хороший",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Тело отпускает яд и слабость. Лекари оставляли эту строку у самой двери.",
+      "gameplayDescription": "Снимает яд, голод и слабость."
+    },
+    {
+      "word": "mal",
+      "root": "mal",
+      "translation": "плохой",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Голод и яд входят без стука. На странице остался отпечаток закрытой ладони.",
+      "gameplayDescription": "Отравляет и вызывает голод."
+    },
+    {
+      "word": "muk",
+      "root": "muk",
+      "translation": "большой, много",
+      "category": "modifier",
+      "source": "ez_word1.png",
+      "description": "Повтор раздувает сказанное, как дыхание раздувает угли. На последней копии строка обрывается.",
+      "gameplayDescription": "Масштаб ×1,5 за повтор; nis обращает muk."
+    },
+    {
+      "word": "nis",
+      "root": "nis",
+      "translation": "маленький",
+      "category": "modifier",
+      "source": "User-confirmed replacement for zin (2026-10-10)",
+      "description": "Громкое становится тише. Это слово забыли записать на приказе о последнем испытании.",
+      "gameplayDescription": "Масштаб ÷1,5 за повтор; muk обращает nis."
+    },
+    {
+      "word": "rap",
+      "root": "rap",
+      "translation": "быстрый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Путь проходит быстрее под ногами. В списках спасённых не хватало тех, кто замыкал строй.",
+      "gameplayDescription": "Ускорение движения."
+    },
+    {
+      "word": "len",
+      "root": "len",
+      "translation": "медленный",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Каждый шаг наливается тяжестью. Пыль на пороге остаётся нетронутой.",
+      "gameplayDescription": "Замедление движения."
+    },
+    {
+      "word": "por",
+      "root": "por",
+      "translation": "сильный",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Рука вспоминает силу. На корабельных носах победы считали по снятым головам.",
+      "gameplayDescription": "Усиление ближнего боя."
+    },
+    {
+      "word": "nem",
+      "root": "nem",
+      "translation": "слабый",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Сила уходит из удара. Иногда только это отделяло приказ от убийства.",
+      "gameplayDescription": "Ослабление ближнего боя."
+    },
+    {
+      "word": "sek",
+      "root": "sek",
+      "translation": "сухой",
+      "category": "qualities",
+      "source": "ez_word1.png",
+      "description": "Влага покидает вещь. Книги после потопа сушили на камнях, но чернила уже расплылись.",
+      "gameplayDescription": "Высушивает водонасыщенный блок, мокрую губку или грязь."
+    },
+    {
+      "word": "kap",
+      "root": "kap",
+      "translation": "счастье",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Случай на миг становится добрее. Никто не помнит, кому достался последний счастливый жребий.",
+      "gameplayDescription": "Удача."
+    },
+    {
+      "word": "gus",
+      "root": "gus",
+      "translation": "печаль",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Случай отворачивается. Архивариус оставил эту страницу без закладки.",
+      "gameplayDescription": "Неудача."
+    },
+    {
+      "word": "pob",
+      "root": "pob",
+      "translation": "страх",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Зверь отступает от произнесённого. В старых клетках нет костей — только открытые дверцы.",
+      "gameplayDescription": "Выбранный моб убегает от заклинателя."
+    },
+    {
+      "word": "rag",
+      "root": "rag",
+      "translation": "гнев",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Гнев ускоряет руку и опустошает тело. На обороте перечень припасов, которых не хватило.",
+      "gameplayDescription": "Ярость: сила и скорость ценой голода."
+    },
+    {
+      "word": "kal",
+      "root": "kal",
+      "translation": "покой",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Покой делает тело крепче, а шаг медленнее. Так стояли у дверей до последнего.",
+      "gameplayDescription": "Покой: защита ценой скорости."
+    },
+    {
+      "word": "tuk",
+      "root": "tuk",
+      "translation": "истина",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Скрытое проступает светом. В отчётах о потерях больше не удаётся прятать строки.",
+      "gameplayDescription": "Снимает невидимость с цели и подсвечивает её."
+    },
+    {
+      "word": "bal",
+      "root": "bal",
+      "translation": "ложь",
+      "category": "abstract",
+      "source": "ez_word1.png",
+      "description": "Воздух прячет очертания. Не каждый исчезнувший тогда был мёртв.",
+      "gameplayDescription": "Невидимость."
+    },
+    {
+      "word": "rin",
+      "root": "rin",
+      "translation": "открывать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Затвор отпускает проход. Ключи в руинах оказались долговечнее владельцев.",
+      "gameplayDescription": "Открывает дверь, люк или калитку."
+    },
+    {
+      "word": "tin",
+      "root": "tin",
+      "translation": "закрывать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Проход снова запирается. У последней двери нет записи о том, кто остался снаружи.",
+      "gameplayDescription": "Закрывает дверь, люк или калитку."
+    },
+    {
+      "word": "vin",
+      "root": "vin",
+      "translation": "толкать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Тело отступает от резкого напора. Так освобождали палубу, когда места уже не хватало.",
+      "gameplayDescription": "Резко отбрасывает цель горизонтально, без вертикального подброса."
+    },
+    {
+      "word": "jin",
+      "root": "jin",
+      "translation": "тянуть",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Цель подаётся к зовущему сильнее прежнего. У обрыва это могло быть спасением или приговором.",
+      "gameplayDescription": "Подтягивает цель к точке в двух блоках перед заклинателем, сильнее vol."
+    },
+    {
+      "word": "don",
+      "root": "don",
+      "translation": "бросать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Воздух несёт вверх и вперёд. Окна боевых кораблей слишком узки для безопасного прыжка.",
+      "gameplayDescription": "Подбрасывает цель вверх и вперёд."
+    },
+    {
+      "word": "gon",
+      "root": "gon",
+      "translation": "ловить",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Падение теряет скорость. На нижнем поле записаны имена тех, кого успели поймать.",
+      "gameplayDescription": "Гасит движение падающей цели и даёт краткое мягкое падение."
+    },
+    {
+      "word": "kon",
+      "root": "kon",
+      "translation": "стоять",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Тело становится упорнее ветра. Стражи ставили эту строку внутри доспеха.",
+      "gameplayDescription": "Стойкость."
+    },
+    {
+      "word": "lon",
+      "root": "lon",
+      "translation": "лежать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Движение и сила утихают. Даже древний приказ не заставит тебя принять чужую позу.",
+      "gameplayDescription": "Останавливает цель и накладывает слабость, не меняя позу игрока."
+    },
+    {
+      "word": "non",
+      "root": "non",
+      "translation": "прыгать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Земля отдаёт один быстрый толчок. На полях — детский рисунок ступеней без лестницы.",
+      "gameplayDescription": "Мгновенный вертикальный прыжок без длительного эффекта."
+    },
+    {
+      "word": "pon",
+      "root": "pon",
+      "translation": "бежать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Короткий рывок оставляет опасность позади. Длинные дороги всё ещё приходится проходить.",
+      "gameplayDescription": "Рывок вперёд с кратким ускорением."
+    },
+    {
+      "word": "ron",
+      "root": "ron",
+      "translation": "плыть",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Вода пропускает тело быстрее. Когда крыши стали пристанями, этому учили всех.",
+      "gameplayDescription": "Ускоренное плавание."
+    },
+    {
+      "word": "son",
+      "root": "son",
+      "translation": "летать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Воздух поднимает и бережёт падение. Он не обещает держать тебя вечно.",
+      "gameplayDescription": "Подъём и длительное мягкое падение вместо творческого полёта."
+    },
+    {
+      "word": "ton",
+      "root": "ton",
+      "translation": "ползти",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Медленный путь дарит защиту и ясный взгляд. Под завалами спешка стоила дороже золота.",
+      "gameplayDescription": "Ползучая защита: медлительность, сопротивление и зрение."
+    },
+    {
+      "word": "din",
+      "root": "din",
+      "translation": "спать",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Агрессия засыпает, шаги затихают. В караульном журнале впервые появилась пустая строка.",
+      "gameplayDescription": "Усыпляет агрессию моба и кратко замедляет цель."
+    },
+    {
+      "word": "gin",
+      "root": "gin",
+      "translation": "просыпаться",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Тяжёлый сон отступает вместе с темнотой. Не все проснувшиеся узнавали собственный дом.",
+      "gameplayDescription": "Снимает замедление, слабость и темноту."
+    },
+    {
+      "word": "lin",
+      "root": "lin",
+      "translation": "мыть",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Краска уходит с шерсти. Но сажа чужого дыхания не слушается этой воды.",
+      "gameplayDescription": "Смывает краситель с шерсти в белый; не тушит магическое горение."
+    },
+    {
+      "word": "nin",
+      "root": "nin",
+      "translation": "готовить",
+      "category": "actions",
+      "source": "ez_word2.png",
+      "description": "Пища принимает тепло без очага. Беженцы уносили рецепты, а не печи.",
+      "gameplayDescription": "Готовит один сырой пищевой предмет из второй руки заклинателя."
+    },
+    {
+      "word": "nok",
+      "root": "nok",
+      "translation": "камень",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Камень обретает простую форму. Из таких начинали стены до того, как научились бояться.",
+      "gameplayDescription": "Создаёт каменный блок."
+    },
+    {
+      "word": "pok",
+      "root": "pok",
+      "translation": "песок",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Песок ложится на ладонь. На старых берегах под ним всё ещё находятся пороги.",
+      "gameplayDescription": "Создаёт песок."
+    },
+    {
+      "word": "rok",
+      "root": "rok",
+      "translation": "почва",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Земля смешивается с камнем. Заброшенные дороги медленно забывают человеческий шаг.",
+      "gameplayDescription": "Создаёт каменистую землю."
+    },
+    {
+      "word": "sok",
+      "root": "sok",
+      "translation": "грязь",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Почва тяжелеет от воды. На плане поселения это место ещё отмечено как площадь.",
+      "gameplayDescription": "Создаёт грязь."
+    },
+    {
+      "word": "tok",
+      "root": "tok",
+      "translation": "стекло",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Прозрачная грань принимает свет. За ней удобнее смотреть на то, к чему страшно подойти.",
+      "gameplayDescription": "Создаёт стеклянный блок."
+    },
+    {
+      "word": "vok",
+      "root": "vok",
+      "translation": "пар",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Вода уходит белым дыханием. Перед уходом из нижних крепостей так стирали следы.",
+      "gameplayDescription": "Испаряет выбранную воду с облаком пара."
+    },
+    {
+      "word": "buk",
+      "root": "buk",
+      "translation": "туман",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Туман закрывает даль. Корабли возвращались из него не всегда с прежними экипажами.",
+      "gameplayDescription": "Создаёт густую облачную завесу в точке прицела."
+    },
+    {
+      "word": "duk",
+      "root": "duk",
+      "translation": "роса",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Грядка снова напивается. В пустых городах труднее всего сохранить утреннюю привычку.",
+      "gameplayDescription": "Увлажняет грядку до максимума."
+    },
+    {
+      "word": "guk",
+      "root": "guk",
+      "translation": "иней",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Твёрдая поверхность белеет. В воспоминаниях о старом мире холод приходит первым.",
+      "gameplayDescription": "Покрывает выбранную твёрдую поверхность снежным слоем."
+    },
+    {
+      "word": "luk",
+      "root": "luk",
+      "translation": "волна",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Вода переливается в соседнее место. Последняя капля не рождает второго моря.",
+      "gameplayDescription": "Выдавливает воду на свободную соседнюю ячейку без дублирования."
+    },
+    {
+      "word": "nuk",
+      "root": "nuk",
+      "translation": "остров",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Небольшая земля собирается над пустотой. На больших чертежах тот же знак стоит под городами.",
+      "gameplayDescription": "Создаёт небольшую земляную платформу."
+    },
+    {
+      "word": "suk",
+      "root": "suk",
+      "translation": "поле",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Земля готовится принять семена. Плуг пережил тех, кто обещал скорый урожай.",
+      "gameplayDescription": "Вспахивает выбранную землю в грядку."
+    },
+    {
+      "word": "dun",
+      "root": "dun",
+      "translation": "молния",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Небо отвечает настоящим огненным ударом. Хранители деревянных архивов не произносят это у стен.",
+      "gameplayDescription": "Призывает настоящую молнию в точке прицела; опасно для построек."
+    },
+    {
+      "word": "gun",
+      "root": "gun",
+      "translation": "радуга",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Над головой остаётся цветная дуга. Даже после потопа дети пытались запомнить её цвета.",
+      "gameplayDescription": "Радужная дуга частиц над целью."
+    },
+    {
+      "word": "lup",
+      "root": "lup",
+      "translation": "лужа",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Дерево и камень удерживают немного воды. В дороге берегли даже то, что не удавалось выпить.",
+      "gameplayDescription": "Насыщает водой выбранную плиту, ступень или другой водонасыщаемый блок."
+    },
+    {
+      "word": "nup",
+      "root": "nup",
+      "translation": "снежинка",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Снег собирается в плотную белую грань. В старых книгах зима длится дольше, чем в памяти жителей.",
+      "gameplayDescription": "Создаёт снежный блок."
+    },
+    {
+      "word": "bak",
+      "root": "bak",
+      "translation": "пещера",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Орудие открывает короткую дорогу в камне. В найденных шахтах кирки лежат по одну сторону завала.",
+      "gameplayDescription": "Добывает до трёх однотипных блоков вперёд текущим инструментом."
+    },
+    {
+      "word": "gak",
+      "root": "gak",
+      "translation": "долина",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Сыпучая земля уступает узкой полосой. Следующая строка плана ведёт под нынешний берег.",
+      "gameplayDescription": "Вынимает землю, песок или гравий в небольшой полосе."
+    },
+    {
+      "word": "lak",
+      "root": "lak",
+      "translation": "обрыв",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "У края появляется каменная опора. Для бегущего человека даже полшага было обещанием.",
+      "gameplayDescription": "Создаёт площадку из каменных плит у края."
+    },
+    {
+      "word": "mak",
+      "root": "mak",
+      "translation": "пляж",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Песчаник собирается в небольшой берег. На старой карте он был началом людного причала.",
+      "gameplayDescription": "Создаёт небольшую песчаниковую площадку."
+    },
+    {
+      "word": "sak",
+      "root": "sak",
+      "translation": "болото",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Земля становится вязкой. В низинах дома исчезали не сразу.",
+      "gameplayDescription": "Превращает землю в грязь."
+    },
+    {
+      "word": "sap",
+      "root": "sap",
+      "translation": "звезда",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Над целью вспыхивает золотая звезда. Моряки пустых островов рисовали её рядом со словом «дом».",
+      "gameplayDescription": "Поднимает золотую звезду частиц над целью."
+    },
+    {
+      "word": "tup",
+      "root": "tup",
+      "translation": "гром",
+      "category": "nature",
+      "source": "ez_word2.png",
+      "description": "Гром звучит без удара. После той ночи жители всё равно закрывают ставни.",
+      "gameplayDescription": "Раскат грома без молнии и урона."
+    },
+    {
+      "word": "del",
+      "root": "del",
+      "translation": "корень",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Почва вспоминает корни. Лес хранит то, до чего не дошли переписчики.",
+      "gameplayDescription": "Превращает землю в корнистую."
+    },
+    {
+      "word": "gel",
+      "root": "gel",
+      "translation": "стебель",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Из земли поднимается тонкий стебель. В спешке даже бамбук становился строительным лесом.",
+      "gameplayDescription": "Высаживает бамбук."
+    },
+    {
+      "word": "lel",
+      "root": "lel",
+      "translation": "ветвь",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "В воздухе сходится дубовая листва. Под ней можно укрыть имя, но не вернуть дерево целиком.",
+      "gameplayDescription": "Создаёт дубовую листву."
+    },
+    {
+      "word": "mel",
+      "root": "mel",
+      "translation": "цветок",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Растение принимает ещё немного жизни. На полях засушен цветок из сада, которого нет.",
+      "gameplayDescription": "Применяет эффект костной муки к подходящему растению."
+    },
+    {
+      "word": "tel",
+      "root": "tel",
+      "translation": "трава",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Поверхность зеленеет. Первой на брошенные площади возвращается трава.",
+      "gameplayDescription": "Высаживает траву на подходящую поверхность."
+    },
+    {
+      "word": "bel",
+      "root": "bel",
+      "translation": "ягода",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Малый куст обещает пищу. Последние путники перестали ждать богатого урожая.",
+      "gameplayDescription": "Высаживает ягодный куст."
+    },
+    {
+      "word": "nel",
+      "root": "nel",
+      "translation": "плод",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Зрелое отдаёт плод без лишнего дара. Так вели счёт тем, кому ещё хватало еды.",
+      "gameplayDescription": "Собирает зрелую культуру обычным лутом."
+    },
+    {
+      "word": "pel",
+      "root": "pel",
+      "translation": "семя",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Грядка принимает зерно. Иногда целая семья оставляла после себя только этот жест.",
+      "gameplayDescription": "Высаживает пшеницу на грядке."
+    },
+    {
+      "word": "rel",
+      "root": "rel",
+      "translation": "кора",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Бревно освобождается от коры. На очищенной стороне когда-то вырезали дорожные имена.",
+      "gameplayDescription": "Обтёсывает выбранное бревно."
+    },
+    {
+      "word": "sel",
+      "root": "sel",
+      "translation": "мох",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Камень принимает мягкую зелень. Архивариус не трогает её там, где она скрывает дату.",
+      "gameplayDescription": "Покрывает булыжник мхом."
+    },
+    {
+      "word": "jel",
+      "root": "jel",
+      "translation": "гриб",
+      "category": "plants",
+      "source": "ez_word2.png",
+      "description": "Во влажном месте появляется маленький гриб. В чужих измерениях еда не всегда выглядела привычно.",
+      "gameplayDescription": "Высаживает коричневый гриб на подходящей поверхности."
+    },
+    {
+      "word": "bin",
+      "root": "bin",
+      "translation": "копьё",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Острие находит цель и отталкивает её. На старых рисунках охотники стоят под огромными крыльями.",
+      "gameplayDescription": "Удар копьём: 5 HP урона и отбрасывание."
+    },
+    {
+      "word": "den",
+      "root": "den",
+      "translation": "крепость",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Кирпичи складываются в короткую крепостную стену. Настоящим крепостям этого не хватило.",
+      "gameplayDescription": "Создаёт трёхблочную стенку из каменного кирпича."
+    },
+    {
+      "word": "gen",
+      "root": "gen",
+      "translation": "колесо",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Механизм делает четверть оборота. Его прежний мастер не оставил второго приказа.",
+      "gameplayDescription": "Поворачивает горизонтально ориентированный блок на четверть оборота."
+    },
+    {
+      "word": "men",
+      "root": "men",
+      "translation": "лодка",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Доски собираются в малый плот. Большие корабли увозили тех, кого нельзя было взять на него.",
+      "gameplayDescription": "Создаёт маленький деревянный плот из блоков."
+    },
+    {
+      "word": "nen",
+      "root": "nen",
+      "translation": "телега",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "На твёрдой земле ложатся рельсы. Обозы остановились раньше, чем закончился металл.",
+      "gameplayDescription": "Кладёт три рельса на подходящих опорах."
+    },
+    {
+      "word": "ren",
+      "root": "ren",
+      "translation": "меч",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Невидимый клинок оставляет рану и слабость. Победные надписи на кораблях читаются хуже траурных.",
+      "gameplayDescription": "Удар клинка: 4 HP урона и краткая слабость."
+    },
+    {
+      "word": "ten",
+      "root": "ten",
+      "translation": "щит",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Удар встречает защиту прежде тела. На полях написано: «Держать, пока они проходят».",
+      "gameplayDescription": "Щит: сопротивление и временное здоровье."
+    },
+    {
+      "word": "ven",
+      "root": "ven",
+      "translation": "лук",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Взгляд обостряется, движение стихает. Из узких корабельных окон ждали большого силуэта.",
+      "gameplayDescription": "Даёт зрение и уменьшает движение цели для прицеливания."
+    },
+    {
+      "word": "jen",
+      "root": "jen",
+      "translation": "стрела",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Тонкий свет ранит и выдаёт цель. На списке охоты напротив каждого имени — крыло.",
+      "gameplayDescription": "Магическая стрела наносит 3 HP цели и подсвечивает её."
+    },
+    {
+      "word": "bun",
+      "root": "bun",
+      "translation": "верёвка",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Ноги зверя забывают дорогу. Последние поводки в убежищах были разрезаны.",
+      "gameplayDescription": "Удерживает моба остановкой навигации и сильным кратким замедлением."
+    },
+    {
+      "word": "kut",
+      "root": "kut",
+      "translation": "мешок",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Оставленные вещи находят твой мешок. У старых владельцев уже некому спросить разрешения.",
+      "gameplayDescription": "Собирает в рюкзаке брошенные предметы около выбранного блока."
+    },
+    {
+      "word": "mut",
+      "root": "mut",
+      "translation": "молот",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Орудие раскрывает камень крестом. Звук молота ещё долго отзывался в пустых шахтах.",
+      "gameplayDescription": "Добывает крест до пяти однотипных блоков текущим инструментом."
+    },
+    {
+      "word": "nut",
+      "root": "nut",
+      "translation": "топор",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Соседние стволы уступают топору. Листья остаются помнить лес.",
+      "gameplayDescription": "Срубает до восьми соседних однотипных брёвен; листья не трогает."
+    },
+    {
+      "word": "but",
+      "root": "but",
+      "translation": "игла",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Малое остриё умеет причинять боль. На этом листе прокол проходит сквозь имя владельца.",
+      "gameplayDescription": "Укол иглы: 2 HP магического урона, в том числе себе через mina."
+    },
+    {
+      "word": "gut",
+      "root": "gut",
+      "translation": "нить",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Тонкая линия натягивается над землёй. В заброшенных коридорах её замечают последней.",
+      "gameplayDescription": "Создаёт растяжку tripwire на опоре."
+    },
+    {
+      "word": "lut",
+      "root": "lut",
+      "translation": "ткань",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Белые нити сходятся в мягкое полотно. Из него шили не знамёна, а одеяла для дороги.",
+      "gameplayDescription": "Создаёт белую шерсть."
+    },
+    {
+      "word": "rut",
+      "root": "rut",
+      "translation": "одежда",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Потрёпанный доспех снова держит шов. Клеймо кузнеца пережило владельца.",
+      "gameplayDescription": "Чинит надетую повреждённую броню цели на 8 прочности."
+    },
+    {
+      "word": "sut",
+      "root": "sut",
+      "translation": "обувь",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Шаг освобождается от тяжести. На старых сапогах подошва стёрта в сторону врат.",
+      "gameplayDescription": "Снимает замедление и даёт прыжок."
+    },
+    {
+      "word": "tut",
+      "root": "tut",
+      "translation": "шляпа",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Тьма покидает глаза, вода принимает дыхание. На шапках смотрителей не было корон.",
+      "gameplayDescription": "Снимает слепоту и даёт подводное дыхание."
+    },
+    {
+      "word": "vut",
+      "root": "vut",
+      "translation": "кольцо",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Вокруг тела сходится защитный свет. Кольца исчезнувшего совета находили без рук.",
+      "gameplayDescription": "Светящаяся аура: поглощение и обнаружение самой цели."
+    },
+    {
+      "word": "bup",
+      "root": "bup",
+      "translation": "барабан",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "В точке зова звучит ритм. Последний строй уже не шёл в ногу.",
+      "gameplayDescription": "Играет ритм барабана в точке прицела."
+    },
+    {
+      "word": "kup",
+      "root": "kup",
+      "translation": "купол",
+      "category": "tools",
+      "source": "ez_word2.png",
+      "description": "Стекло сходится над укрытием. Даже тогда в чертеже оставляли выход.",
+      "gameplayDescription": "Создаёт небольшой стеклянный купол с выходом."
+    },
+    {
+      "word": "bek",
+      "root": "bek",
+      "translation": "кость",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Жизнь отзывается в нескольких ростках. Под каждым новым садом остаются чьи-то кости.",
+      "gameplayDescription": "Применяет костную муку к нескольким растениям вокруг цели."
+    },
+    {
+      "word": "dek",
+      "root": "dek",
+      "translation": "кожа",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Тело отпускает яд и принимает защиту. Лекари не записали, почему чужая болезнь не слушалась.",
+      "gameplayDescription": "Снимает яд и даёт поглощение."
+    },
+    {
+      "word": "gek",
+      "root": "gek",
+      "translation": "мышца",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Руки вновь успевают за усилием. Строители пустых островов работали, пока знали свои имена.",
+      "gameplayDescription": "Мышечное усилие: сила и спешка."
+    },
+    {
+      "word": "lek",
+      "root": "lek",
+      "translation": "мозг",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Темнота уходит, мысль находит работу. Некоторые записи после перехода стали всё длиннее и нечётче.",
+      "gameplayDescription": "Снимает темноту и слабость; даёт спешку."
+    },
+    {
+      "word": "mek",
+      "root": "mek",
+      "translation": "живот",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Сытость задерживается, но пустой желудок не становится полным. В осадных журналах это различие подчёркнуто.",
+      "gameplayDescription": "Максимально насыщает без изменения основного уровня голода."
+    },
+    {
+      "word": "nek",
+      "root": "nek",
+      "translation": "спина",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Тело отступает за собственную спину. Дорога назад не всегда оказывается дорогой домой.",
+      "gameplayDescription": "Отбрасывает цель назад по её собственному взгляду."
+    },
+    {
+      "word": "pek",
+      "root": "pek",
+      "translation": "плечо",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Плечо принимает невидимую опору. Так помогали подняться тем, кто ещё мог идти.",
+      "gameplayDescription": "Поднимает цель вертикально и даёт краткое сопротивление."
+    },
+    {
+      "word": "rek",
+      "root": "rek",
+      "translation": "колено",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Ноги подкашиваются, движение стихает. На палубе эту строку ставили рядом с приказом держаться.",
+      "gameplayDescription": "Подсекает цель вниз и кратко замедляет."
+    },
+    {
+      "word": "tek",
+      "root": "tek",
+      "translation": "локоть",
+      "category": "body",
+      "source": "ez_word2.png",
+      "description": "Тело смещается вправо от своего взгляда. Малое движение порой решало, кому достанется следующий рассвет.",
+      "gameplayDescription": "Отводит цель вправо по направлению её взгляда."
+    }
+  ]
+}

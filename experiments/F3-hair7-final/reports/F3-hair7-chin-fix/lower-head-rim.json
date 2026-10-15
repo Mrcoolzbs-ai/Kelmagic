@@ -1,0 +1,33 @@
+{
+  "cutoff_y": 25.208000000000002,
+  "affected_mesh_groups": [
+    "hair6_sample_left_base",
+    "hair6_sample_left_base_shoulder",
+    "hair6_sample_left_side_under",
+    "hair6_sample_left_turn_under",
+    "hair6_sample_left_shoulder_under",
+    "hair6_sample_left_side_over",
+    "hair6_sample_left_turn_over",
+    "hair6_sample_left_shoulder_over",
+    "hair6_root_closure_left",
+    "hair6_rear_side_left",
+    "hair6_rear_side_left_under",
+    "hair6_rear_side_left_over",
+    "hair6_sample_right_base",
+    "hair6_sample_right_base_shoulder",
+    "hair6_sample_right_side_under",
+    "hair6_sample_right_turn_under",
+    "hair6_sample_right_shoulder_under",
+    "hair6_sample_right_side_over",
+    "hair6_sample_right_turn_over",
+    "hair6_sample_right_shoulder_over",
+    "hair6_root_closure_right",
+    "hair6_rear_side_right",
+    "hair6_rear_side_right_under",
+    "hair6_rear_side_right_over",
+    "hair6_nape_base",
+    "hair6_nape_under",
+    "hair6_nape_over"
+  ],
+  "scope": "only narrow lower strip of head-owned side/nape hair matching user green mark; upper hair and long back hair unchanged"
+}

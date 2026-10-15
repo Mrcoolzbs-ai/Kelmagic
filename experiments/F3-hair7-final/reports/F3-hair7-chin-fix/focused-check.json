@@ -1,0 +1,28 @@
+{
+  "changed_geo_descriptors": [
+    "head",
+    "hair6_sample_left_base",
+    "hair6_sample_left_base_shoulder",
+    "hair6_root_closure_left",
+    "hair6_rear_side_left",
+    "hair6_sample_right_base",
+    "hair6_sample_right_base_shoulder",
+    "hair6_root_closure_right",
+    "hair6_rear_side_right",
+    "hair6_nape_base",
+    "hair6_front_left_base",
+    "hair6_front_right_base"
+  ],
+  "new_bones": 0,
+  "unchanged_existing_PNGs": 2399,
+  "chin_ratio": 0.2,
+  "new_head_bottom_y": 25.208000000000002,
+  "neck_lift_pixels": 1,
+  "chest_no_head_parent": true,
+  "all_head_hair_meshes_above_new_jaw_line": true,
+  "exact_current_geo_in_JAR": true,
+  "QA_classes_in_JAR": false,
+  "native_states": 7,
+  "native_frames": 14,
+  "jar_sha256": "26d7288a3a4d5f405b9fba057f9f129234377fb378ea25f470916e79af27bf65"
+}

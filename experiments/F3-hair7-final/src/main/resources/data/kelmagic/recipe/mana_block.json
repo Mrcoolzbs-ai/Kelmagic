@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "kelmagic:mana_core"
+    }
+  },
+  "result": {
+    "id": "kelmagic:mana_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "native_states": 7,
+  "native_frames": 14,
+  "head_drop_model_pixels": 1.208,
+  "actual_rest_head_bottom_and_body_top": 24,
+  "all_head_source_geometry_preserved": true,
+  "side_images_fit_by_UV_only": true,
+  "unchanged_existing_PNGs": 2399,
+  "long_back_meshes_unchanged": true,
+  "chin_20_percent_preserved": true,
+  "head_scale_not_used": true,
+  "QA_excluded_from_JAR": true,
+  "jar_sha256": "bff7c347162f7cb7ff7c31948aea23caf1b91edf7c9f68b775427cde771cb5e7"
+}

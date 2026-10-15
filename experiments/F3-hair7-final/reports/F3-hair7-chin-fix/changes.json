@@ -1,0 +1,20 @@
+{
+  "original_chin_bottom": 24.0,
+  "chin_top_mouth_PNG_bottom": 25.51,
+  "original_chin_height": 1.5100000000000016,
+  "new_chin_height": 0.3020000000000003,
+  "new_head_bottom": 25.208000000000002,
+  "head_surfaces_changed": [
+    2,
+    26,
+    30,
+    110,
+    125,
+    126
+  ],
+  "eyes_nose_mouth_scaled": false,
+  "neck_vertical_lift_pixels": 1,
+  "new_chest_root_y": 25.208000000000002,
+  "chest_parent": "chest_left/right → body → root; no head",
+  "new_bones": 0
+}

@@ -1,0 +1,283 @@
+{
+  "head_drop_pixels": 1.208000000000002,
+  "actual_head_bottom_rest": 23.999999999999996,
+  "body_top": 24,
+  "chin_height_preserved": 0.302,
+  "all_face_hat_and_head_hair_children_move_together": true,
+  "head_scale_changed": false,
+  "PNG_changed": false,
+  "side_texture_UV_remaps": [
+    {
+      "bone": "hair6_sample_left_side_under",
+      "old_V_range": [
+        0,
+        0.8936886395511917
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_left_turn_under",
+      "old_V_range": [
+        0,
+        0.9683890577507596
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_left_shoulder_under",
+      "old_V_range": [
+        0,
+        0.5484057971014487
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_left_side_over",
+      "old_V_range": [
+        0,
+        0.8936886395511917
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_left_turn_over",
+      "old_V_range": [
+        0,
+        0.9683890577507596
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_left_shoulder_over",
+      "old_V_range": [
+        0,
+        0.5484057971014487
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_rear_side_left_under",
+      "old_V_range": [
+        0,
+        0.874412171507607
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_rear_side_left_over",
+      "old_V_range": [
+        0,
+        0.874412171507607
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_right_side_under",
+      "old_V_range": [
+        0,
+        0.8936886395511917
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_right_turn_under",
+      "old_V_range": [
+        0,
+        0.9683890577507596
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_right_shoulder_under",
+      "old_V_range": [
+        0,
+        0.5484057971014487
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_right_side_over",
+      "old_V_range": [
+        0,
+        0.8936886395511917
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_right_turn_over",
+      "old_V_range": [
+        0,
+        0.9683890577507596
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_sample_right_shoulder_over",
+      "old_V_range": [
+        0,
+        0.5484057971014487
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_rear_side_right_under",
+      "old_V_range": [
+        0,
+        0.874412171507607
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_rear_side_right_over",
+      "old_V_range": [
+        0,
+        0.874412171507607
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_upper_bevel_1_under",
+      "old_V_range": [
+        0,
+        1
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_upper_bevel_1_over",
+      "old_V_range": [
+        0,
+        1
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_upper_bevel_-1_under",
+      "old_V_range": [
+        0,
+        1
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_upper_bevel_-1_over",
+      "old_V_range": [
+        0,
+        1
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_nape_under",
+      "old_V_range": [
+        0,
+        0.8747826086956518
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "bone": "hair6_nape_over",
+      "old_V_range": [
+        0,
+        0.8747826086956518
+      ],
+      "new_V_range": [
+        0,
+        1
+      ]
+    }
+  ],
+  "changed_mesh_groups": [
+    "hair6_sample_left_side_under",
+    "hair6_sample_left_turn_under",
+    "hair6_sample_left_shoulder_under",
+    "hair6_sample_left_side_over",
+    "hair6_sample_left_turn_over",
+    "hair6_sample_left_shoulder_over",
+    "hair6_rear_side_left_under",
+    "hair6_rear_side_left_over",
+    "hair6_sample_right_side_under",
+    "hair6_sample_right_turn_under",
+    "hair6_sample_right_shoulder_under",
+    "hair6_sample_right_side_over",
+    "hair6_sample_right_turn_over",
+    "hair6_sample_right_shoulder_over",
+    "hair6_rear_side_right_under",
+    "hair6_rear_side_right_over",
+    "hair6_nape_under",
+    "hair6_nape_over",
+    "hair6_front_left_base",
+    "hair6_front_left_under",
+    "hair6_front_left_over",
+    "hair6_front_right_base",
+    "hair6_front_right_under",
+    "hair6_front_right_over"
+  ],
+  "chest_root_y": 24,
+  "chest_parent": "chest_left/right → body → root, no head",
+  "static_neck_lift_preserved_pixels": 1,
+  "new_bones": 0
+}
