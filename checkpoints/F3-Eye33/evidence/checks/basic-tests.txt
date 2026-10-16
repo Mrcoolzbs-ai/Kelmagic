@@ -1,0 +1,2 @@
+PASS 14401 requested angles, nonzero neutral, hard +/-65, repeated saturation and immediate neutral return without hidden accumulation.
+PASS 601 vertical inputs: explicit +/-1.15 bounds, shared iris/pupil XY displacement, bit-identical Z, finite fallback.

@@ -1,0 +1,2 @@
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+PASS production PupilIrisRig: 1260 geometry combinations; dark area positive in all 900 nonclosed apertures, 360 closed-aperture cases allow occlusion. Constant bitwise Z and shared live lid bounds. Minimum positive dark area=3.6875967820648725E-5

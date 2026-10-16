@@ -1,0 +1,381 @@
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=0 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=0 maxErrorPx=0.0 steps=0 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0 widthFreedom=0.0
+HEAD65_SAMPLE frame=1 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=1 maxErrorPx=0.0 steps=9 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0038439035 widthFreedom=8.69751E-4
+HEAD65_SAMPLE frame=2 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=2 maxErrorPx=0.0 steps=17 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005334854 widthFreedom=7.05719E-4
+HEAD65_SAMPLE frame=3 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=3 maxErrorPx=0.0 steps=25 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0055521727 widthFreedom=2.6512146E-4
+HEAD65_SAMPLE frame=4 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=4 maxErrorPx=0.0 steps=34 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0044591427 widthFreedom=3.3187866E-4
+HEAD65_SAMPLE frame=5 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=5 maxErrorPx=0.0 steps=42 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0053983927 widthFreedom=5.722046E-4
+HEAD65_SAMPLE frame=6 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=6 maxErrorPx=0.0 steps=50 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054852962 widthFreedom=5.5122375E-4
+HEAD65_SAMPLE frame=7 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=7 maxErrorPx=0.0 steps=59 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004502535 widthFreedom=1.6975403E-4
+HEAD65_SAMPLE frame=8 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=8 maxErrorPx=0.0 steps=67 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0053983927 widthFreedom=5.7029724E-4
+HEAD65_SAMPLE frame=9 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=9 maxErrorPx=0.0 steps=75 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005468607 widthFreedom=6.23703E-4
+HEAD65_SAMPLE frame=10 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=10 maxErrorPx=0.0 steps=84 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045125484 widthFreedom=1.20162964E-4
+HEAD65_SAMPLE frame=11 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=11 maxErrorPx=0.0 steps=92 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005395055 widthFreedom=5.7792664E-4
+HEAD65_SAMPLE frame=12 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=12 maxErrorPx=0.0 steps=100 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00546515 widthFreedom=6.389618E-4
+HEAD65_SAMPLE frame=13 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=13 maxErrorPx=0.0 steps=109 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045158863 widthFreedom=1.04904175E-4
+HEAD65_SAMPLE frame=14 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=14 maxErrorPx=0.0 steps=117 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005395055 widthFreedom=5.836487E-4
+HEAD65_SAMPLE frame=15 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=15 maxErrorPx=0.0 steps=125 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00546515 widthFreedom=6.4086914E-4
+HEAD65_SAMPLE frame=16 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=16 maxErrorPx=0.0 steps=134 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004519224 widthFreedom=9.918213E-5
+HEAD65_SAMPLE frame=17 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=17 maxErrorPx=0.0 steps=142 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005391717 widthFreedom=5.931854E-4
+HEAD65_SAMPLE frame=18 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=18 maxErrorPx=0.0 steps=150 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005461812 widthFreedom=6.465912E-4
+HEAD65_SAMPLE frame=19 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=19 maxErrorPx=0.0 steps=159 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004519224 widthFreedom=9.727478E-5
+HEAD65_SAMPLE frame=20 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=20 maxErrorPx=0.0 steps=167 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005395055 widthFreedom=5.931854E-4
+HEAD65_SAMPLE frame=21 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=21 maxErrorPx=0.0 steps=175 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005461812 widthFreedom=6.4468384E-4
+HEAD65_SAMPLE frame=22 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=22 maxErrorPx=0.0 steps=184 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004519224 widthFreedom=9.727478E-5
+HEAD65_SAMPLE frame=23 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=23 maxErrorPx=0.0 steps=192 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005395055 widthFreedom=5.931854E-4
+HEAD65_SAMPLE frame=24 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=24 maxErrorPx=0.0 steps=200 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00546515 widthFreedom=6.465912E-4
+HEAD65_SAMPLE frame=25 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=25 maxErrorPx=0.0 steps=209 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004519224 widthFreedom=9.918213E-5
+HEAD65_SAMPLE frame=26 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=26 maxErrorPx=0.0 steps=217 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005391717 widthFreedom=5.912781E-4
+HEAD65_SAMPLE frame=27 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=27 maxErrorPx=0.0 steps=225 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00546515 widthFreedom=6.4468384E-4
+HEAD65_SAMPLE frame=28 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=28 maxErrorPx=0.0 steps=234 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004519224 widthFreedom=9.727478E-5
+HEAD65_SAMPLE frame=29 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=29 maxErrorPx=0.0 steps=242 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005391717 widthFreedom=5.912781E-4
+HEAD65_SAMPLE frame=30 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=30 maxErrorPx=0.0 steps=250 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00546515 widthFreedom=6.4086914E-4
+HEAD65_SAMPLE frame=31 request=0.5733333 actual=0.5733333 matrixYaw=0.5733334
+NAPE_BIND_SAMPLE frame=31 maxErrorPx=0.0 steps=259 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0058612823 widthFreedom=0.008728027
+HEAD65_SAMPLE frame=32 request=2.1866667 actual=2.1866667 matrixYaw=2.1866665
+NAPE_BIND_SAMPLE frame=32 maxErrorPx=0.0 steps=267 bodyContacts=171 armContacts=0 selfContacts=0 maxStrain=0.007898569 widthFreedom=0.012836456
+HEAD65_SAMPLE frame=33 request=4.68 actual=4.68 matrixYaw=4.6800003
+NAPE_BIND_SAMPLE frame=33 maxErrorPx=0.0 steps=275 bodyContacts=325 armContacts=0 selfContacts=0 maxStrain=0.007991314 widthFreedom=0.013191223
+HEAD65_SAMPLE frame=34 request=7.8933334 actual=7.893334 matrixYaw=7.893334
+NAPE_BIND_SAMPLE frame=34 maxErrorPx=0.0 steps=284 bodyContacts=655 armContacts=0 selfContacts=0 maxStrain=0.007978916 widthFreedom=0.010469437
+HEAD65_SAMPLE frame=35 request=11.666667 actual=11.666667 matrixYaw=11.666666
+NAPE_BIND_SAMPLE frame=35 maxErrorPx=0.0 steps=292 bodyContacts=434 armContacts=0 selfContacts=0 maxStrain=0.009252906 widthFreedom=0.010387421
+HEAD65_SAMPLE frame=36 request=15.84 actual=15.840001 matrixYaw=15.840001
+NAPE_BIND_SAMPLE frame=36 maxErrorPx=0.0 steps=300 bodyContacts=472 armContacts=0 selfContacts=0 maxStrain=0.0099618435 widthFreedom=-0.004518509
+HEAD65_SAMPLE frame=37 request=20.253334 actual=20.253334 matrixYaw=20.253334
+NAPE_BIND_SAMPLE frame=37 maxErrorPx=0.0 steps=309 bodyContacts=484 armContacts=1102 selfContacts=0 maxStrain=0.048689127 widthFreedom=-0.04295349
+HEAD65_SAMPLE frame=38 request=24.746666 actual=24.746666 matrixYaw=24.746666
+NAPE_BIND_SAMPLE frame=38 maxErrorPx=0.0 steps=317 bodyContacts=197 armContacts=1539 selfContacts=0 maxStrain=0.20566571 widthFreedom=-0.47591782
+HEAD65_SAMPLE frame=39 request=29.16 actual=29.16 matrixYaw=29.160002
+NAPE_BIND_SAMPLE frame=39 maxErrorPx=0.0 steps=325 bodyContacts=0 armContacts=1539 selfContacts=0 maxStrain=0.12110281 widthFreedom=-1.1193027
+HEAD65_SAMPLE frame=40 request=33.333332 actual=33.333332 matrixYaw=33.33333
+NAPE_BIND_SAMPLE frame=40 maxErrorPx=0.0 steps=334 bodyContacts=0 armContacts=3470 selfContacts=0 maxStrain=0.05214262 widthFreedom=-1.9657574
+HEAD65_SAMPLE frame=41 request=37.106667 actual=37.106667 matrixYaw=37.106663
+NAPE_BIND_SAMPLE frame=41 maxErrorPx=0.0 steps=342 bodyContacts=0 armContacts=4702 selfContacts=0 maxStrain=0.030840635 widthFreedom=-2.5075626
+HEAD65_SAMPLE frame=42 request=40.32 actual=40.32 matrixYaw=40.32
+NAPE_BIND_SAMPLE frame=42 maxErrorPx=0.0 steps=350 bodyContacts=0 armContacts=5606 selfContacts=0 maxStrain=0.033976078 widthFreedom=-2.7991943
+HEAD65_SAMPLE frame=43 request=42.81333 actual=42.81333 matrixYaw=42.813335
+NAPE_BIND_SAMPLE frame=43 maxErrorPx=0.0 steps=359 bodyContacts=0 armContacts=6700 selfContacts=0 maxStrain=0.038891315 widthFreedom=-2.8535175
+HEAD65_SAMPLE frame=44 request=44.426666 actual=44.426666 matrixYaw=44.426666
+NAPE_BIND_SAMPLE frame=44 maxErrorPx=0.0 steps=367 bodyContacts=0 armContacts=8530 selfContacts=0 maxStrain=0.059106708 widthFreedom=-2.732561
+HEAD65_SAMPLE frame=45 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=45 maxErrorPx=0.0 steps=375 bodyContacts=0 armContacts=7842 selfContacts=0 maxStrain=0.06853795 widthFreedom=-2.7590294
+HEAD65_SAMPLE frame=46 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=46 maxErrorPx=0.0 steps=384 bodyContacts=0 armContacts=7882 selfContacts=0 maxStrain=0.05088222 widthFreedom=-2.7669582
+HEAD65_SAMPLE frame=47 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=47 maxErrorPx=0.0 steps=392 bodyContacts=0 armContacts=6141 selfContacts=0 maxStrain=0.051470757 widthFreedom=-2.6819954
+HEAD65_SAMPLE frame=48 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=48 maxErrorPx=0.0 steps=400 bodyContacts=0 armContacts=6984 selfContacts=0 maxStrain=0.06132877 widthFreedom=-2.584774
+HEAD65_SAMPLE frame=49 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=49 maxErrorPx=0.0 steps=409 bodyContacts=0 armContacts=8455 selfContacts=0 maxStrain=0.054433346 widthFreedom=-2.5072918
+HEAD65_SAMPLE frame=50 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=50 maxErrorPx=0.0 steps=417 bodyContacts=0 armContacts=6190 selfContacts=0 maxStrain=0.051944375 widthFreedom=-2.4646034
+HEAD65_SAMPLE frame=51 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=51 maxErrorPx=0.0 steps=425 bodyContacts=0 armContacts=7106 selfContacts=0 maxStrain=0.0582062 widthFreedom=-2.446003
+HEAD65_SAMPLE frame=52 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=52 maxErrorPx=0.0 steps=434 bodyContacts=0 armContacts=8387 selfContacts=0 maxStrain=0.053717375 widthFreedom=-2.4615402
+HEAD65_SAMPLE frame=53 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=53 maxErrorPx=0.0 steps=442 bodyContacts=0 armContacts=6214 selfContacts=0 maxStrain=0.053972602 widthFreedom=-2.4885159
+HEAD65_SAMPLE frame=54 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=54 maxErrorPx=0.0 steps=450 bodyContacts=0 armContacts=7481 selfContacts=0 maxStrain=0.059815764 widthFreedom=-2.5148315
+HEAD65_SAMPLE frame=55 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=55 maxErrorPx=0.0 steps=459 bodyContacts=0 armContacts=8234 selfContacts=0 maxStrain=0.052905202 widthFreedom=-2.553999
+HEAD65_SAMPLE frame=56 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=56 maxErrorPx=0.0 steps=467 bodyContacts=0 armContacts=6149 selfContacts=0 maxStrain=0.052896738 widthFreedom=-2.5638905
+HEAD65_SAMPLE frame=57 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=57 maxErrorPx=0.0 steps=475 bodyContacts=0 armContacts=7203 selfContacts=0 maxStrain=0.06012261 widthFreedom=-2.5566483
+HEAD65_SAMPLE frame=58 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=58 maxErrorPx=0.0 steps=484 bodyContacts=0 armContacts=8273 selfContacts=0 maxStrain=0.053761482 widthFreedom=-2.5626926
+HEAD65_SAMPLE frame=59 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=59 maxErrorPx=0.0 steps=492 bodyContacts=0 armContacts=6144 selfContacts=0 maxStrain=0.0527972 widthFreedom=-2.5569992
+HEAD65_SAMPLE frame=60 request=45.0 actual=45.0 matrixYaw=45.000004
+NAPE_BIND_SAMPLE frame=60 maxErrorPx=0.0 steps=500 bodyContacts=0 armContacts=7068 selfContacts=0 maxStrain=0.05986333 widthFreedom=-2.549883
+HEAD65_SAMPLE frame=61 request=45.254814 actual=45.254814 matrixYaw=45.254818
+NAPE_BIND_SAMPLE frame=61 maxErrorPx=0.0 steps=509 bodyContacts=0 armContacts=8436 selfContacts=0 maxStrain=0.054679513 widthFreedom=-2.5451584
+HEAD65_SAMPLE frame=62 request=45.97185 actual=45.97185 matrixYaw=45.971855
+NAPE_BIND_SAMPLE frame=62 maxErrorPx=0.0 steps=517 bodyContacts=0 armContacts=6372 selfContacts=0 maxStrain=0.054815173 widthFreedom=-2.5159378
+HEAD65_SAMPLE frame=63 request=47.08 actual=47.08 matrixYaw=47.08
+NAPE_BIND_SAMPLE frame=63 maxErrorPx=0.0 steps=525 bodyContacts=124 armContacts=7539 selfContacts=0 maxStrain=0.055810213 widthFreedom=-2.500826
+HEAD65_SAMPLE frame=64 request=48.50815 actual=48.50815 matrixYaw=48.508144
+NAPE_BIND_SAMPLE frame=64 maxErrorPx=0.0 steps=534 bodyContacts=926 armContacts=9221 selfContacts=0 maxStrain=0.033472538 widthFreedom=-2.520956
+HEAD65_SAMPLE frame=65 request=50.185184 actual=50.185184 matrixYaw=50.18518
+NAPE_BIND_SAMPLE frame=65 maxErrorPx=0.0 steps=542 bodyContacts=822 armContacts=11101 selfContacts=0 maxStrain=0.04238367 widthFreedom=-2.4872742
+HEAD65_SAMPLE frame=66 request=52.04 actual=52.04 matrixYaw=52.04
+NAPE_BIND_SAMPLE frame=66 maxErrorPx=0.0 steps=550 bodyContacts=783 armContacts=9488 selfContacts=0 maxStrain=0.067397 widthFreedom=-2.454935
+HEAD65_SAMPLE frame=67 request=54.00148 actual=54.00148 matrixYaw=54.001484
+NAPE_BIND_SAMPLE frame=67 maxErrorPx=0.0 steps=559 bodyContacts=234 armContacts=10599 selfContacts=0 maxStrain=0.036936283 widthFreedom=-2.3909874
+HEAD65_SAMPLE frame=68 request=55.99852 actual=55.99852 matrixYaw=55.99852
+NAPE_BIND_SAMPLE frame=68 maxErrorPx=0.0 steps=567 bodyContacts=16 armContacts=8103 selfContacts=0 maxStrain=0.029778838 widthFreedom=-2.2859936
+HEAD65_SAMPLE frame=69 request=57.96 actual=57.960003 matrixYaw=57.960003
+NAPE_BIND_SAMPLE frame=69 maxErrorPx=0.0 steps=575 bodyContacts=8 armContacts=8671 selfContacts=0 maxStrain=0.041369677 widthFreedom=-2.218542
+HEAD65_SAMPLE frame=70 request=59.814816 actual=59.814816 matrixYaw=59.814816
+NAPE_BIND_SAMPLE frame=70 maxErrorPx=0.0 steps=584 bodyContacts=419 armContacts=12093 selfContacts=0 maxStrain=0.045120955 widthFreedom=-2.2391872
+HEAD65_SAMPLE frame=71 request=61.49185 actual=61.49185 matrixYaw=61.49185
+NAPE_BIND_SAMPLE frame=71 maxErrorPx=0.0 steps=592 bodyContacts=1550 armContacts=11042 selfContacts=0 maxStrain=0.04717493 widthFreedom=-2.2221699
+HEAD65_SAMPLE frame=72 request=62.92 actual=62.92 matrixYaw=62.92
+NAPE_BIND_SAMPLE frame=72 maxErrorPx=0.0 steps=600 bodyContacts=1539 armContacts=8880 selfContacts=0 maxStrain=0.029236674 widthFreedom=-2.079893
+HEAD65_SAMPLE frame=73 request=64.028145 actual=64.028145 matrixYaw=64.028145
+NAPE_BIND_SAMPLE frame=73 maxErrorPx=0.0 steps=609 bodyContacts=1728 armContacts=9953 selfContacts=0 maxStrain=0.01764834 widthFreedom=-1.923069
+HEAD65_SAMPLE frame=74 request=64.745186 actual=64.745186 matrixYaw=64.745186
+NAPE_BIND_SAMPLE frame=74 maxErrorPx=0.0 steps=617 bodyContacts=1123 armContacts=8619 selfContacts=0 maxStrain=0.023361444 widthFreedom=-1.8152237
+HEAD65_SAMPLE frame=75 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=75 maxErrorPx=0.0 steps=625 bodyContacts=1083 armContacts=9111 selfContacts=0 maxStrain=0.03409946 widthFreedom=-1.8156166
+HEAD65_SAMPLE frame=76 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=76 maxErrorPx=0.0 steps=634 bodyContacts=1113 armContacts=9327 selfContacts=0 maxStrain=0.026358485 widthFreedom=-1.8862858
+HEAD65_SAMPLE frame=77 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=77 maxErrorPx=0.0 steps=642 bodyContacts=849 armContacts=7501 selfContacts=0 maxStrain=0.024864078 widthFreedom=-1.9630642
+HEAD65_SAMPLE frame=78 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=78 maxErrorPx=0.0 steps=650 bodyContacts=1009 armContacts=7545 selfContacts=0 maxStrain=0.03126204 widthFreedom=-2.0457554
+HEAD65_SAMPLE frame=79 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=79 maxErrorPx=0.0 steps=659 bodyContacts=1292 armContacts=8336 selfContacts=0 maxStrain=0.028320193 widthFreedom=-2.1333656
+HEAD65_SAMPLE frame=80 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=80 maxErrorPx=0.0 steps=667 bodyContacts=1105 armContacts=7070 selfContacts=0 maxStrain=0.029076457 widthFreedom=-2.204586
+HEAD65_SAMPLE frame=81 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=81 maxErrorPx=0.0 steps=675 bodyContacts=1511 armContacts=7692 selfContacts=0 maxStrain=0.03428328 widthFreedom=-2.276369
+HEAD65_SAMPLE frame=82 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=82 maxErrorPx=0.0 steps=684 bodyContacts=1690 armContacts=8162 selfContacts=0 maxStrain=0.0286839 widthFreedom=-2.3471508
+HEAD65_SAMPLE frame=83 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=83 maxErrorPx=0.0 steps=692 bodyContacts=1229 armContacts=7117 selfContacts=0 maxStrain=0.02808392 widthFreedom=-2.4010468
+HEAD65_SAMPLE frame=84 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=84 maxErrorPx=0.0 steps=700 bodyContacts=1521 armContacts=9006 selfContacts=0 maxStrain=0.033967018 widthFreedom=-2.4409008
+HEAD65_SAMPLE frame=85 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=85 maxErrorPx=0.0 steps=709 bodyContacts=1728 armContacts=8011 selfContacts=0 maxStrain=0.02949953 widthFreedom=-2.4670467
+HEAD65_SAMPLE frame=86 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=86 maxErrorPx=0.0 steps=717 bodyContacts=1504 armContacts=7293 selfContacts=0 maxStrain=0.029230118 widthFreedom=-2.4847946
+HEAD65_SAMPLE frame=87 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=87 maxErrorPx=0.0 steps=725 bodyContacts=1536 armContacts=8085 selfContacts=0 maxStrain=0.03481686 widthFreedom=-2.4933853
+HEAD65_SAMPLE frame=88 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=88 maxErrorPx=0.0 steps=734 bodyContacts=1728 armContacts=7257 selfContacts=0 maxStrain=0.02998066 widthFreedom=-2.4937744
+HEAD65_SAMPLE frame=89 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=89 maxErrorPx=0.0 steps=742 bodyContacts=1432 armContacts=7242 selfContacts=0 maxStrain=0.029292822 widthFreedom=-2.4914207
+HEAD65_SAMPLE frame=90 request=65.0 actual=65.0 matrixYaw=65.00001
+NAPE_BIND_SAMPLE frame=90 maxErrorPx=0.0 steps=750 bodyContacts=1536 armContacts=7700 selfContacts=0 maxStrain=0.03445244 widthFreedom=-2.4809608
+HEAD65_SAMPLE frame=91 request=63.343704 actual=63.343708 matrixYaw=63.343708
+NAPE_BIND_SAMPLE frame=91 maxErrorPx=0.0 steps=759 bodyContacts=1728 armContacts=6880 selfContacts=0 maxStrain=0.02849269 widthFreedom=-2.641348
+HEAD65_SAMPLE frame=92 request=58.682964 actual=58.682964 matrixYaw=58.682964
+NAPE_BIND_SAMPLE frame=92 maxErrorPx=0.0 steps=767 bodyContacts=1023 armContacts=5857 selfContacts=0 maxStrain=0.02330017 widthFreedom=-3.0964355
+HEAD65_SAMPLE frame=93 request=51.48 actual=51.48 matrixYaw=51.48
+NAPE_BIND_SAMPLE frame=93 maxErrorPx=0.0 steps=775 bodyContacts=25 armContacts=6140 selfContacts=0 maxStrain=0.057905316 widthFreedom=-3.6856537
+HEAD65_SAMPLE frame=94 request=42.197037 actual=42.197037 matrixYaw=42.197037
+NAPE_BIND_SAMPLE frame=94 maxErrorPx=0.0 steps=784 bodyContacts=899 armContacts=5795 selfContacts=0 maxStrain=0.07890248 widthFreedom=-3.9111576
+HEAD65_SAMPLE frame=95 request=31.296297 actual=31.296295 matrixYaw=31.296295
+NAPE_BIND_SAMPLE frame=95 maxErrorPx=0.0 steps=792 bodyContacts=649 armContacts=4000 selfContacts=0 maxStrain=0.07011223 widthFreedom=-3.5605526
+HEAD65_SAMPLE frame=96 request=19.24 actual=19.24 matrixYaw=19.24
+NAPE_BIND_SAMPLE frame=96 maxErrorPx=0.0 steps=800 bodyContacts=126 armContacts=721 selfContacts=0 maxStrain=0.04764867 widthFreedom=-3.1775932
+HEAD65_SAMPLE frame=97 request=6.4903703 actual=6.4903703 matrixYaw=6.4903703
+NAPE_BIND_SAMPLE frame=97 maxErrorPx=0.0 steps=809 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.039255857 widthFreedom=-2.6437454
+HEAD65_SAMPLE frame=98 request=-6.4903703 actual=-6.4903703 matrixYaw=-6.4903703
+NAPE_BIND_SAMPLE frame=98 maxErrorPx=0.0 steps=817 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.047974586 widthFreedom=-2.2899818
+HEAD65_SAMPLE frame=99 request=-19.24 actual=-19.24 matrixYaw=-19.24
+NAPE_BIND_SAMPLE frame=99 maxErrorPx=0.0 steps=825 bodyContacts=0 armContacts=97 selfContacts=0 maxStrain=0.041169047 widthFreedom=-1.951067
+HEAD65_SAMPLE frame=100 request=-31.296297 actual=-31.296295 matrixYaw=-31.296295
+NAPE_BIND_SAMPLE frame=100 maxErrorPx=0.0 steps=834 bodyContacts=0 armContacts=5959 selfContacts=0 maxStrain=0.13762105 widthFreedom=-0.433115
+HEAD65_SAMPLE frame=101 request=-42.197037 actual=-42.197037 matrixYaw=-42.197037
+NAPE_BIND_SAMPLE frame=101 maxErrorPx=0.0 steps=842 bodyContacts=0 armContacts=11508 selfContacts=0 maxStrain=0.022989511 widthFreedom=0.18340492
+HEAD65_SAMPLE frame=102 request=-51.48 actual=-51.48 matrixYaw=-51.48
+NAPE_BIND_SAMPLE frame=102 maxErrorPx=0.0 steps=850 bodyContacts=220 armContacts=5616 selfContacts=0 maxStrain=0.016189694 widthFreedom=0.52176857
+HEAD65_SAMPLE frame=103 request=-58.682964 actual=-58.682964 matrixYaw=-58.682964
+NAPE_BIND_SAMPLE frame=103 maxErrorPx=0.0 steps=859 bodyContacts=19 armContacts=4771 selfContacts=0 maxStrain=0.013454318 widthFreedom=0.65737724
+HEAD65_SAMPLE frame=104 request=-63.343704 actual=-63.343708 matrixYaw=-63.343708
+NAPE_BIND_SAMPLE frame=104 maxErrorPx=0.0 steps=867 bodyContacts=847 armContacts=6922 selfContacts=0 maxStrain=0.021797419 widthFreedom=0.4597721
+HEAD65_SAMPLE frame=105 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=105 maxErrorPx=0.0 steps=875 bodyContacts=1536 armContacts=10027 selfContacts=0 maxStrain=0.04069686 widthFreedom=0.64725304
+HEAD65_SAMPLE frame=106 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=106 maxErrorPx=0.0 steps=884 bodyContacts=1728 armContacts=8692 selfContacts=0 maxStrain=0.03637731 widthFreedom=1.2884865
+HEAD65_SAMPLE frame=107 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=107 maxErrorPx=0.0 steps=892 bodyContacts=1536 armContacts=6509 selfContacts=0 maxStrain=0.033616066 widthFreedom=1.9841957
+HEAD65_SAMPLE frame=108 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=108 maxErrorPx=0.0 steps=900 bodyContacts=1536 armContacts=6628 selfContacts=0 maxStrain=0.0394696 widthFreedom=2.6342068
+HEAD65_SAMPLE frame=109 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=109 maxErrorPx=0.0 steps=909 bodyContacts=1728 armContacts=7218 selfContacts=0 maxStrain=0.034859896 widthFreedom=3.157257
+HEAD65_SAMPLE frame=110 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=110 maxErrorPx=0.0 steps=917 bodyContacts=1536 armContacts=6185 selfContacts=0 maxStrain=0.034821272 widthFreedom=3.363453
+HEAD65_SAMPLE frame=111 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=111 maxErrorPx=0.0 steps=925 bodyContacts=1536 armContacts=6248 selfContacts=0 maxStrain=0.040475607 widthFreedom=3.3937683
+HEAD65_SAMPLE frame=112 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=112 maxErrorPx=0.0 steps=934 bodyContacts=1728 armContacts=7219 selfContacts=0 maxStrain=0.035443187 widthFreedom=3.3091393
+HEAD65_SAMPLE frame=113 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=113 maxErrorPx=0.0 steps=942 bodyContacts=1536 armContacts=7109 selfContacts=0 maxStrain=0.032194853 widthFreedom=3.1778297
+HEAD65_SAMPLE frame=114 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=114 maxErrorPx=0.0 steps=950 bodyContacts=1536 armContacts=6509 selfContacts=0 maxStrain=0.035996318 widthFreedom=3.0652027
+HEAD65_SAMPLE frame=115 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=115 maxErrorPx=0.0 steps=959 bodyContacts=1728 armContacts=7131 selfContacts=0 maxStrain=0.03215456 widthFreedom=2.9468422
+HEAD65_SAMPLE frame=116 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=116 maxErrorPx=0.0 steps=967 bodyContacts=1536 armContacts=6381 selfContacts=0 maxStrain=0.031425834 widthFreedom=2.8324661
+HEAD65_SAMPLE frame=117 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=117 maxErrorPx=0.0 steps=975 bodyContacts=1536 armContacts=7170 selfContacts=0 maxStrain=0.034910917 widthFreedom=2.7489033
+HEAD65_SAMPLE frame=118 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=118 maxErrorPx=0.0 steps=984 bodyContacts=1634 armContacts=7378 selfContacts=0 maxStrain=0.029134631 widthFreedom=2.6654282
+HEAD65_SAMPLE frame=119 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=119 maxErrorPx=0.0 steps=992 bodyContacts=1101 armContacts=8735 selfContacts=0 maxStrain=0.028979182 widthFreedom=2.5939808
+HEAD65_SAMPLE frame=120 request=-65.0 actual=-65.0 matrixYaw=-65.00001
+NAPE_BIND_SAMPLE frame=120 maxErrorPx=0.0 steps=1000 bodyContacts=1473 armContacts=8810 selfContacts=0 maxStrain=0.033872724 widthFreedom=2.5377426
+HEAD65_SAMPLE frame=121 request=-64.17185 actual=-64.17185 matrixYaw=-64.17186
+NAPE_BIND_SAMPLE frame=121 maxErrorPx=0.0 steps=1009 bodyContacts=1728 armContacts=8628 selfContacts=0 maxStrain=0.029560566 widthFreedom=2.57024
+HEAD65_SAMPLE frame=122 request=-61.84148 actual=-61.84148 matrixYaw=-61.841476
+NAPE_BIND_SAMPLE frame=122 maxErrorPx=0.0 steps=1017 bodyContacts=1538 armContacts=5960 selfContacts=0 maxStrain=0.021134973 widthFreedom=2.776371
+HEAD65_SAMPLE frame=123 request=-58.24 actual=-58.239998 matrixYaw=-58.239994
+NAPE_BIND_SAMPLE frame=123 maxErrorPx=0.0 steps=1025 bodyContacts=757 armContacts=5150 selfContacts=0 maxStrain=0.021221519 widthFreedom=3.0944862
+HEAD65_SAMPLE frame=124 request=-53.59852 actual=-53.59852 matrixYaw=-53.59852
+NAPE_BIND_SAMPLE frame=124 maxErrorPx=0.0 steps=1034 bodyContacts=14 armContacts=6361 selfContacts=0 maxStrain=0.042305112 widthFreedom=3.4284
+HEAD65_SAMPLE frame=125 request=-48.148148 actual=-48.148148 matrixYaw=-48.14815
+NAPE_BIND_SAMPLE frame=125 maxErrorPx=0.0 steps=1042 bodyContacts=644 armContacts=5382 selfContacts=0 maxStrain=0.06533456 widthFreedom=3.612711
+HEAD65_SAMPLE frame=126 request=-42.12 actual=-42.12 matrixYaw=-42.119995
+NAPE_BIND_SAMPLE frame=126 maxErrorPx=0.0 steps=1050 bodyContacts=50 armContacts=5685 selfContacts=0 maxStrain=0.06593859 widthFreedom=3.383812
+HEAD65_SAMPLE frame=127 request=-35.745186 actual=-35.745186 matrixYaw=-35.745186
+NAPE_BIND_SAMPLE frame=127 maxErrorPx=0.0 steps=1059 bodyContacts=0 armContacts=4315 selfContacts=0 maxStrain=0.04618907 widthFreedom=2.852665
+HEAD65_SAMPLE frame=128 request=-29.254814 actual=-29.254814 matrixYaw=-29.25481
+NAPE_BIND_SAMPLE frame=128 maxErrorPx=0.0 steps=1067 bodyContacts=0 armContacts=2611 selfContacts=0 maxStrain=0.04926002 widthFreedom=2.4783669
+HEAD65_SAMPLE frame=129 request=-22.88 actual=-22.88 matrixYaw=-22.880001
+NAPE_BIND_SAMPLE frame=129 maxErrorPx=0.0 steps=1075 bodyContacts=0 armContacts=1299 selfContacts=0 maxStrain=0.022255301 widthFreedom=2.2120457
+HEAD65_SAMPLE frame=130 request=-16.851852 actual=-16.851852 matrixYaw=-16.851852
+NAPE_BIND_SAMPLE frame=130 maxErrorPx=0.0 steps=1084 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.020576596 widthFreedom=1.7940388
+HEAD65_SAMPLE frame=131 request=-11.401482 actual=-11.401482 matrixYaw=-11.401482
+NAPE_BIND_SAMPLE frame=131 maxErrorPx=0.0 steps=1092 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.015626669 widthFreedom=1.2482319
+HEAD65_SAMPLE frame=132 request=-6.76 actual=-6.76 matrixYaw=-6.76
+NAPE_BIND_SAMPLE frame=132 maxErrorPx=0.0 steps=1100 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.010002375 widthFreedom=0.7248764
+HEAD65_SAMPLE frame=133 request=-3.1585186 actual=-3.1585186 matrixYaw=-3.1585188
+NAPE_BIND_SAMPLE frame=133 maxErrorPx=1.4901161E-8 steps=1109 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.012960553 widthFreedom=0.13886452
+HEAD65_SAMPLE frame=134 request=-0.8281481 actual=-0.8281481 matrixYaw=-0.8281481
+NAPE_BIND_SAMPLE frame=134 maxErrorPx=7.450581E-9 steps=1117 bodyContacts=3 armContacts=0 selfContacts=0 maxStrain=0.0077096224 widthFreedom=0.011859894
+HEAD65_SAMPLE frame=135 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=135 maxErrorPx=0.0 steps=1125 bodyContacts=4 armContacts=0 selfContacts=0 maxStrain=0.00725019 widthFreedom=-0.037139893
+HEAD65_SAMPLE frame=136 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=136 maxErrorPx=0.0 steps=1134 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0076794624 widthFreedom=-0.013462067
+HEAD65_SAMPLE frame=137 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=137 maxErrorPx=0.0 steps=1142 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.007733822 widthFreedom=0.014728546
+HEAD65_SAMPLE frame=138 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=138 maxErrorPx=0.0 steps=1150 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.007820725 widthFreedom=0.030191422
+HEAD65_SAMPLE frame=139 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=139 maxErrorPx=0.0 steps=1159 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0070085526 widthFreedom=0.03353882
+HEAD65_SAMPLE frame=140 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=140 maxErrorPx=0.0 steps=1167 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00680387 widthFreedom=0.036003113
+HEAD65_SAMPLE frame=141 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=141 maxErrorPx=0.0 steps=1175 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0061206818 widthFreedom=0.030361176
+HEAD65_SAMPLE frame=142 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=142 maxErrorPx=0.0 steps=1184 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0052634478 widthFreedom=0.014621735
+HEAD65_SAMPLE frame=143 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=143 maxErrorPx=0.0 steps=1192 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0060545206 widthFreedom=0.007156372
+HEAD65_SAMPLE frame=144 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=144 maxErrorPx=0.0 steps=1200 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.006029129 widthFreedom=0.00248909
+HEAD65_SAMPLE frame=145 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=145 maxErrorPx=0.0 steps=1209 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0053584576 widthFreedom=-9.2697144E-4
+HEAD65_SAMPLE frame=146 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=146 maxErrorPx=0.0 steps=1217 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0058555603 widthFreedom=0.0013542175
+HEAD65_SAMPLE frame=147 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=147 maxErrorPx=0.0 steps=1225 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054172277 widthFreedom=0.0037879944
+HEAD65_SAMPLE frame=148 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=148 maxErrorPx=0.0 steps=1234 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004509449 widthFreedom=0.0025558472
+HEAD65_SAMPLE frame=149 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=149 maxErrorPx=0.0 steps=1242 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005453825 widthFreedom=0.0025196075
+HEAD65_SAMPLE frame=150 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=150 maxErrorPx=0.0 steps=1250 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054752827 widthFreedom=0.0024471283
+HEAD65_SAMPLE frame=151 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=151 maxErrorPx=0.0 steps=1259 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004663706 widthFreedom=8.506775E-4
+HEAD65_SAMPLE frame=152 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=152 maxErrorPx=0.0 steps=1267 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054614544 widthFreedom=8.1443787E-4
+HEAD65_SAMPLE frame=153 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=153 maxErrorPx=0.0 steps=1275 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054814816 widthFreedom=7.648468E-4
+HEAD65_SAMPLE frame=154 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=154 maxErrorPx=0.0 steps=1284 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004583955 widthFreedom=9.1552734E-5
+HEAD65_SAMPLE frame=155 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=155 maxErrorPx=0.0 steps=1292 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054113865 widthFreedom=5.4359436E-4
+HEAD65_SAMPLE frame=156 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=156 maxErrorPx=0.0 steps=1300 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054832697 widthFreedom=5.7792664E-4
+HEAD65_SAMPLE frame=157 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=157 maxErrorPx=0.0 steps=1309 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.00453496 widthFreedom=3.4332275E-5
+HEAD65_SAMPLE frame=158 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=158 maxErrorPx=0.0 steps=1317 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005408287 widthFreedom=5.722046E-4
+HEAD65_SAMPLE frame=159 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=159 maxErrorPx=0.0 steps=1325 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054814816 widthFreedom=6.580353E-4
+HEAD65_SAMPLE frame=160 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=160 maxErrorPx=0.0 steps=1334 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045307875 widthFreedom=1.18255615E-4
+HEAD65_SAMPLE frame=161 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=161 maxErrorPx=0.0 steps=1342 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054057837 widthFreedom=5.79834E-4
+HEAD65_SAMPLE frame=162 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=162 maxErrorPx=0.0 steps=1350 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054836273 widthFreedom=5.893707E-4
+HEAD65_SAMPLE frame=163 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=163 maxErrorPx=0.0 steps=1359 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045336485 widthFreedom=2.861023E-5
+HEAD65_SAMPLE frame=164 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=164 maxErrorPx=0.0 steps=1367 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005411744 widthFreedom=5.283356E-4
+HEAD65_SAMPLE frame=165 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=165 maxErrorPx=0.0 steps=1375 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054888725 widthFreedom=5.7792664E-4
+HEAD65_SAMPLE frame=166 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=166 maxErrorPx=0.0 steps=1384 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045369864 widthFreedom=4.196167E-5
+HEAD65_SAMPLE frame=167 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=167 maxErrorPx=0.0 steps=1392 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054165125 widthFreedom=5.41687E-4
+HEAD65_SAMPLE frame=168 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=168 maxErrorPx=0.0 steps=1400 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005486965 widthFreedom=5.874634E-4
+HEAD65_SAMPLE frame=169 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=169 maxErrorPx=0.0 steps=1409 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004540682 widthFreedom=3.0517578E-5
+HEAD65_SAMPLE frame=170 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=170 maxErrorPx=0.0 steps=1417 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054188967 widthFreedom=5.1498413E-4
+HEAD65_SAMPLE frame=171 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=171 maxErrorPx=0.0 steps=1425 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054955482 widthFreedom=5.5885315E-4
+HEAD65_SAMPLE frame=172 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=172 maxErrorPx=0.0 steps=1434 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.004552722 widthFreedom=1.5258789E-5
+HEAD65_SAMPLE frame=173 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=173 maxErrorPx=0.0 steps=1442 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0054317713 widthFreedom=5.1116943E-4
+HEAD65_SAMPLE frame=174 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=174 maxErrorPx=0.0 steps=1450 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0055086613 widthFreedom=5.5503845E-4
+HEAD65_SAMPLE frame=175 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=175 maxErrorPx=0.0 steps=1459 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045593977 widthFreedom=1.5258789E-5
+HEAD65_SAMPLE frame=176 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=176 maxErrorPx=0.0 steps=1467 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005435109 widthFreedom=5.092621E-4
+HEAD65_SAMPLE frame=177 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=177 maxErrorPx=0.0 steps=1475 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005511999 widthFreedom=5.5885315E-4
+HEAD65_SAMPLE frame=178 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=178 maxErrorPx=0.0 steps=1484 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.0045627356 widthFreedom=1.9073486E-5
+HEAD65_SAMPLE frame=179 request=0.0 actual=0.0 matrixYaw=0.0
+NAPE_BIND_SAMPLE frame=179 maxErrorPx=0.0 steps=1492 bodyContacts=0 armContacts=0 selfContacts=0 maxStrain=0.005435109 widthFreedom=5.130768E-4
+HAIR_MOTION_COMPLETE frames=180

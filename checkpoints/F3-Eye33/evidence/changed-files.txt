@@ -1,0 +1,4 @@
+gradle.properties
+src/main/java/dev/kelmagic/client/face/EyeTravel.java
+src/main/java/dev/kelmagic/client/face/MageGazeStates.java
+src/main/java/dev/kelmagic/client/face/PupilIrisRig.java

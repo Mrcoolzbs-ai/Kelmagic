@@ -1,0 +1,11 @@
+allprojects { afterEvaluate {
+ sourceSets.main.java.srcDir(new File(rootDir, '../qa/qa-src'))
+ neoForge.runs.client {
+  systemProperty 'kelmagic.rearHairQA','true'
+  systemProperty 'kelmagic.hair.testLimit',System.getenv('HAIR_LIMIT') ?: '180'
+  systemProperty 'kelmagic.rearHairQA.label', System.getenv('HAIR_LABEL') ?: 'AFTER'
+  systemProperty 'kelmagic.rearHairQA.output', System.getenv('HAIR_OUTPUT') ?: new File(rootDir, '../captures/after').absolutePath
+  programArgument '--width';programArgument '1200';programArgument '--height';programArgument '800'
+  jvmArgument '-Xmx1400m'
+ }
+}}

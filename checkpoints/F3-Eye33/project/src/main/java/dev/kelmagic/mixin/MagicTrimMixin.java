@@ -1,0 +1,6 @@
+package dev.kelmagic.mixin;
+import dev.kelmagic.client.MagicArmorModels;import com.mojang.blaze3d.vertex.PoseStack;import net.minecraft.client.model.Model;import net.minecraft.client.renderer.*;import net.minecraft.client.renderer.texture.OverlayTexture;import net.minecraft.core.Holder;import net.minecraft.world.item.ArmorMaterial;import net.minecraft.world.item.armortrim.ArmorTrim;import org.spongepowered.asm.mixin.Mixin;import org.spongepowered.asm.mixin.injection.*;import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+@Mixin(net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer.class) public abstract class MagicTrimMixin {
+ @Inject(method="renderTrim(Lnet/minecraft/core/Holder;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;ILnet/minecraft/world/item/armortrim/ArmorTrim;Lnet/minecraft/client/model/Model;Z)V",at=@At("HEAD"),cancellable=true)
+ private void kelmagic$correctUV(Holder<ArmorMaterial> material,PoseStack pose,MultiBufferSource buffers,int light,ArmorTrim trim,Model model,boolean inner,CallbackInfo ci){if(model instanceof MagicArmorModels.GarmentModel garment&&garment.trimTexture!=null){model.renderToBuffer(pose,buffers.getBuffer(RenderType.armorCutoutNoCull(garment.trimTexture)),light,OverlayTexture.NO_OVERLAY);ci.cancel();}}
+}

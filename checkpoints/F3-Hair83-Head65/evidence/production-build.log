@@ -1,0 +1,112 @@
+> Task :clean
+
+> Task :createMinecraftArtifacts
+Loaded 131 artifacts from /data/hair83/work/project/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.04s
+[1m*** Started working on [4mdownloadClientMappings[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.04s
+ [1m[92m✓[23;0m Completed [4mdownloadClientMappings[23;0m in 0.05s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.00s
+[1m*** Started working on [4mmergeMappings[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mmergeMappings[23;0m in 0.00s
+[1m*** Started working on [4mstripClient[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mstripClient[23;0m in 0.00s
+[1m*** Started working on [4mextractServer[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mextractServer[23;0m in 0.00s
+[1m*** Started working on [4mstripServer[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mstripServer[23;0m in 0.00s
+[1m*** Started working on [4mmerge[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mmerge[23;0m in 0.00s
+[1m*** Started working on [4mrename[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mrename[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+[1m*** Started working on [4mbinaryWithNeoForge[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryWithNeoForge[23;0m in 0.00s
+Total runtime: 2.13s
+
+
+> Task :compileJava
+/data/hair83/work/project/src/main/java/dev/kelmagic/ConfigMigration.java:4: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,bus=EventBusSubscriber.Bus.MOD)
+                                         ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/ConfigMigration.java:4: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/MagicCreatures.java:3: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,bus=EventBusSubscriber.Bus.MOD)
+                                         ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/MagicCreatures.java:3: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,bus=EventBusSubscriber.Bus.MOD)
+                                                               ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/AudioScreens.java:15: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+ @EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                            ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/AudioScreens.java:15: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+ @EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                  ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/GlyphReload.java:3: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)public final class GlyphReload {
+                                                           ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/GlyphReload.java:3: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)public final class GlyphReload {
+                                                                                 ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/HeartMote.java:28: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+ @EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                            ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/HeartMote.java:28: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+ @EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                  ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/LampRendering.java:3: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD) public final class LampRendering {
+                                                           ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/LampRendering.java:3: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD) public final class LampRendering {
+                                                                                 ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/MageRendering.java:3: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                           ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/MageRendering.java:3: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                 ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/MagicArmorModels.java:13: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                           ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/MagicArmorModels.java:13: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                 ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/MagicItemColors.java:7: warning: [removal] bus() in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                           ^
+/data/hair83/work/project/src/main/java/dev/kelmagic/client/MagicItemColors.java:7: warning: [removal] Bus in EventBusSubscriber has been deprecated and marked for removal
+@EventBusSubscriber(modid=KelMagic.MODID,value=Dist.CLIENT,bus=EventBusSubscriber.Bus.MOD)
+                                                                                 ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+18 warnings
+
+> Task :generateModMetadata
+> Task :processResources
+> Task :classes
+> Task :jarJar NO-SOURCE
+> Task :jar
+
+[Incubating] Problems report is available at: file:///data/hair83/work/project/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 12s
+6 actionable tasks: 6 executed

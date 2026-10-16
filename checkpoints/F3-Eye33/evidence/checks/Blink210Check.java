@@ -1,0 +1,4 @@
+import dev.kelmagic.client.face.EyeStateController;
+public class Blink210Check {
+ public static void main(String[] args){var p=EyeStateController.NORMAL;if(Math.abs(p.duration()-.210)>1e-9)throw new AssertionError("not 210ms");var c=new EyeStateController(1,0,new EyeStateController.BlinkProfile(.07,.02,.12,100,100));c.setBase(0,1,1,0);c.requestBurst(1,1,p,0);float prev=c.sample(1).leftOpening();double max=0;for(int i=1;i<=300;i++){float v=c.sample(1+i*.001).leftOpening();double d=Math.abs(v-prev);max=Math.max(max,d);if(d>1.875/.070*.001+.00001)throw new AssertionError("jump beyond analytic quintic derivative");if(i>=70&&i<=90&&v>1e-5)throw new AssertionError("closed hold");prev=v;}if(c.sample(1.211).leftOpening()<.99999)throw new AssertionError("210ms return");System.out.println("PASS NORMAL blink=210ms, 20ms closed hold, current baseline returned, analytic quintic derivative bound; max change per 1ms="+max);}
+}

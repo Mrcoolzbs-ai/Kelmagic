@@ -1,0 +1,24 @@
+{
+  "changed_source_files": [
+    "main/java/dev/kelmagic/client/hair/Hair6Meshes.java",
+    "main/java/dev/kelmagic/client/hair/RearHairCloth.java"
+  ],
+  "changed_upper_vertex_entries": 24,
+  "all_48_meshes_checked": true,
+  "UV_X_Z_unchanged": true,
+  "resources_identical": true,
+  "Head65_and_RearHairFollow_identical": true,
+  "solver_contact_code_identical": true,
+  "COLS": 9,
+  "ROWS": 19,
+  "render_subdivision": [
+    6,
+    12
+  ],
+  "max_iterations": 192,
+  "native_frames_per_run": 180,
+  "old_root_body_Y": 26.2,
+  "new_root_body_Y": 24.35,
+  "neutral_skull_bottom_body_Y": 24.0,
+  "upper_overlap_px": 0.35
+}

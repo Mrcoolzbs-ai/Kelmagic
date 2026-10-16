@@ -1,0 +1,11 @@
+{
+  "captured_frames": 180,
+  "seconds": 6,
+  "fps": 30,
+  "min_actual_head_yaw": -65.0,
+  "max_actual_head_yaw": 65.0,
+  "last_head_yaw": 0.0,
+  "max_root_binding_error_px": 1.4901161e-08,
+  "checked_root_points_per_frame": 9,
+  "max_request_tracking_error_deg": 3.999999997006398e-06
+}

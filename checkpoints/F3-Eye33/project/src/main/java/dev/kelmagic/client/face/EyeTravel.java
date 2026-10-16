@@ -1,0 +1,26 @@
+package dev.kelmagic.client.face;
+import org.joml.Vector3f;
+/** One shared iris/pupil translation in the local image plane. No independent dark seating,
+ * depth change, scale change, or input accumulator. Limits are derived from the frozen
+ * 1.24 x 1.42 optical quad and its ORIGINAL dark UV rectangle (.4..6, .2..8). */
+public final class EyeTravel {
+ public static final float MIN_VERTICAL=-1.15f,MAX_VERTICAL=1.15f;
+ public static float vertical(float y){return Float.isFinite(y)?Math.clamp(y,MIN_VERTICAL,MAX_VERTICAL):0;}
+ public record Bounds(float low,float high,boolean aperture){}
+ public static Bounds bounds(float size,float dx,float mask,float lower,boolean left){
+  float centre=Math.abs((left?-1.7f:1.7f)+dx);
+  // Keep a nonzero dark cross-section in the strip containing its centre.
+  // Outer corners remain clipped by the same socket/lid mask as the iris.
+  float[] xs={.55f,.67f,.83f,2.57f,2.73f,2.85f},lo={27.63f,27.55f,27.35f,27.55f,27.63f},hi={28.77f,28.85f,29.05f,28.85f,28.77f};
+  float bottom=27.35f+.22f*Math.clamp(lower,0,1),top=29.3f-1.95f*Math.clamp(mask,0,1);
+  for(int i=0;i<5;i++)if(centre>=xs[i]&&centre<=xs[i+1]){bottom=Math.max(bottom,lo[i]);top=Math.min(top,hi[i]);}
+  float gap=top-bottom;if(gap<=1e-5f)return new Bounds(MIN_VERTICAL,MAX_VERTICAL,false); // genuinely closed opening: lids may cover everything
+  float pupilHalf=.284f*size;float visible=Math.min(.28f,Math.min(1.1f*pupilHalf,.6f*gap));
+  float min=Math.max(MIN_VERTICAL,bottom+visible-(28.2f+pupilHalf));
+  float max=Math.min(MAX_VERTICAL,top-visible-(28.2f-pupilHalf));
+  return new Bounds(min,max,true);
+ }
+ public static float visibleVertical(float size,float dx,float dy,float mask,float lower,boolean left){var b=bounds(size,dx,mask,lower,left);return b.aperture()?Math.clamp(vertical(dy),b.low(),b.high()):vertical(dy);}
+ public static void translate(Vector3f p,float dx,float dy){p.x+=dx/16;p.y+=vertical(dy)/16;}
+ private EyeTravel(){}
+}

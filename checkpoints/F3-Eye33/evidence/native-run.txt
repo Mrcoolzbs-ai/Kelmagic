@@ -1,0 +1,28 @@
+EYE31_STAGE NEUTRAL
+EYE_V3_SAMPLE stage=0 f=0 y=-0.0029848986 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957317708283E-4,8.836956436053534E-4
+EYE31_STAGE MAX UP / OPEN LIDS
+EYE_V3_SAMPLE stage=1 f=0 y=-0.0029848986 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957317708283E-4,8.836956436053534E-4
+EYE_V3_SAMPLE stage=1 f=15 y=0.8539982 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.341048458487151E-4,4.341048458487151E-4
+EYE_V3_SAMPLE stage=1 f=30 y=0.8539982 size=1.0 open=0.9949122,0.9949122 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.341048458487151E-4,4.341048458487151E-4
+EYE_V3_SAMPLE stage=1 f=45 y=0.8539982 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.3410482473804635E-4,4.341048348277532E-4
+EYE31_STAGE MAX DOWN / OPEN LIDS
+EYE_V3_SAMPLE stage=2 f=0 y=-0.0012303742 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957317708283E-4,8.836957317708283E-4
+EYE_V3_SAMPLE stage=2 f=15 y=-0.8540001 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.3410117838815765E-4,4.3410117838815765E-4
+EYE_V3_SAMPLE stage=2 f=30 y=-0.8540001 size=1.0 open=0.9949122,0.9949122 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.3410117838815765E-4,4.3410117838815765E-4
+EYE_V3_SAMPLE stage=2 f=45 y=-0.8540001 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.3410117838815765E-4,4.3410117838815765E-4
+EYE31_STAGE EYE ROLL / OPEN LIDS
+EYE_V3_SAMPLE stage=3 f=0 y=0.0024744892 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957097293485E-4,8.836956436053534E-4
+EYE_V3_SAMPLE stage=3 f=15 y=0.8539982 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3296 escaped=0 darkArea=4.341048458487151E-4,4.3410468146998227E-4
+EYE_V3_SAMPLE stage=3 f=30 y=0.8539982 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.3410482473804635E-4,4.341048026970107E-4
+EYE_V3_SAMPLE stage=3 f=45 y=0.84807587 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=3616 escaped=0 darkArea=4.4557359422148224E-4,4.455736484274553E-4
+EYE31_STAGE UP + SQUINT + 210ms BLINK
+EYE_V3_SAMPLE stage=4 f=0 y=1.2539505E-4 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957317708283E-4,8.836956876874247E-4
+EYE_V3_SAMPLE stage=4 f=15 y=0.38717842 size=1.0 open=0.68,0.68 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.341048458487151E-4,4.341048458487151E-4
+EYE_V3_SAMPLE stage=4 f=30 y=0.38090324 size=1.0 open=0.6765403,0.6765403 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.341048458487151E-4,4.341048458487151E-4
+EYE_V3_SAMPLE stage=4 f=45 y=0.38717842 size=1.0 open=0.68,0.68 target=REST id=-1 label=rest clippedVertices=3200 escaped=0 darkArea=4.341048458487151E-4,4.341048458487151E-4
+EYE31_STAGE RETURN TO CURRENT NORMAL GAZE
+EYE_V3_SAMPLE stage=5 f=0 y=0.0024886457 size=1.0 open=0.68,0.68 target=REST id=-1 label=rest clippedVertices=5440 escaped=0 darkArea=8.836957317708283E-4,8.836957097293485E-4
+EYE_V3_SAMPLE stage=5 f=15 y=0.0024886457 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957317708283E-4,8.836957097293485E-4
+EYE_V3_SAMPLE stage=5 f=30 y=-0.0018197608 size=1.0 open=1.0,1.0 target=REST id=-1 label=rest clippedVertices=6400 escaped=0 darkArea=8.836957097293485E-4,8.836956876874247E-4
+EYE_V3_COMPLETE variant=v3.3 VISIBLE PUPIL LIMIT frames=300
+BUILD SUCCESSFUL in 1m 38s

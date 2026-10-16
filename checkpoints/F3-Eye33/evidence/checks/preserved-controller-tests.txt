@@ -1,0 +1,3 @@
+PASS 27 non-placeholder procedural presets (RETURN_CALM intentionally zero), endpoints, channel bounds, cancel/replacement continuity, stale handles and zero intensity. This is NOT a Minecraft check of all presets.
+PASS production EyeExpressions.compose: closed blink dominance, background squint retained, live-state restoration, unilateral wink, untouched muscle channels.
+PASS NORMAL blink=210ms, 20ms closed hold, current baseline returned, analytic quintic derivative bound; max change per 1ms=0.026771128177642822
