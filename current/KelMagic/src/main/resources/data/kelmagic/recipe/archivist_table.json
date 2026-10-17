@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BLB",
+    "CLC",
+    "PPP"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "item": "minecraft:lantern"
+    },
+    "C": {
+      "item": "kelmagic:mana_core"
+    },
+    "P": {
+      "item": "minecraft:lectern"
+    }
+  },
+  "result": {
+    "id": "kelmagic:archivist_table",
+    "count": 1
+  }
+}

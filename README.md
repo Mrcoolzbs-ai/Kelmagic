@@ -2,6 +2,12 @@
 
 This repository contains the extracted source tree of `KelMagic_FULL_BACKUP.zip`, not only the main working project. Start with `HANDOFF.md` and `RECOVERY.md`. These are historical backup documents; the statements that Git did not exist refer to the backup creation time, before this import.
 
+## Current selected version — 1.27 / Hair v8.4 / 180 Hz
+
+The current user-selected cumulative project is [current/KelMagic](current/KelMagic), with [publication notes](current/README.md). It includes RearHairCloth at180 Hz with a64-iteration limit, the existing character/model updates and Eye Controller v3.3, and the1.27 table/codex interaction fixes. It is a complete source snapshot, not a patch requiring the earlier F3 checkpoint.
+
+The older `main/KelMagic`, approved D, E and F3-hair7 snapshots remain unchanged. The180 Hz selection does not claim that every visual/performance limitation has been resolved; see the publication notes. No new build or gameplay audit was run for this Git publication.
+
 ## Layout
 - `main/KelMagic/`: main project, preserved separately.
 - `approved/D-final-lashes/`: approved frozen design, do not overwrite.
@@ -19,5 +25,5 @@ F2 files in this backup were reconstructed from recorded drawing commands after 
 
 No build/game tests were rerun for Git publication. Token/credentials are never stored in the repository. Nested .github/workflows files remain at their archived paths; this import does not promote them into active root workflows.
 
-## Current temporarily final model
-See [F3-hair7 1.24.4](experiments/F3-hair7-final/README.md) for the cumulative updated project, tested mod JAR and native-game proofs. Original main/D/E snapshots above are preserved.
+## Previous temporarily final model (preserved)
+The previous checkpoint is [F3-hair7 1.24.4](experiments/F3-hair7-final/README.md) for the cumulative updated project, tested mod JAR and native-game proofs. Original main/D/E snapshots above are preserved.

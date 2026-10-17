@@ -1,0 +1,7 @@
+{
+  "type": "kelmagic:archive",
+  "biomes": "#kelmagic:has_archive",
+  "step": "surface_structures",
+  "terrain_adaptation": "none",
+  "spawn_overrides": {}
+}

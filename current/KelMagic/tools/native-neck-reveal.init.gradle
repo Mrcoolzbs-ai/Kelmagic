@@ -1,0 +1,1 @@
+allprojects {afterEvaluate {neoForge.runs.client {systemProperty 'kelmagic.hair7QA','true';systemProperty 'kelmagic.neckRevealOnly','true';systemProperty 'kelmagic.hair7QA.output','/data/reports/kelmagic-f3-hair7-neck-fix/reveal';programArgument '--width';programArgument '1280';programArgument '--height';programArgument '900'}}}
