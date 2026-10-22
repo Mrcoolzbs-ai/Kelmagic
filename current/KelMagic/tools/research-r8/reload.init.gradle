@@ -1,0 +1,7 @@
+allprojects {afterEvaluate {neoForge.runs.client {
+ systemProperty 'kelmagic.r8QA','true'
+ systemProperty 'kelmagic.r8Reload','true'
+ systemProperty 'kelmagic.qaOutput',new File(rootDir.parentFile,'previews/native-r8').absolutePath
+ jvmArgument '-Xmx1500m'
+ programArgument '--width';programArgument '960';programArgument '--height';programArgument '720'
+}}}

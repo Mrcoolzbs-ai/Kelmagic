@@ -1,0 +1,324 @@
+{
+  "variants": {
+    "facing=north,join_left=false,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_0",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_0",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_0",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_0",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_1",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_1",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_1",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=false,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_1",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_2",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_2",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_2",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_2",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_3",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_3",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_3",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=true,join_up=false,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_3",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_4",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_4",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_4",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_4",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_5",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_5",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_5",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=false,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_5",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_6",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_6",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_6",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_6",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_7",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_7",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_7",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=true,join_up=true,join_down=false": {
+      "model": "kelmagic:block/manuscript_cabinet_7",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_8",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_8",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_8",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_8",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_9",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_9",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_9",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=false,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_9",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_10",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_10",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_10",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_10",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_11",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_11",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_11",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=true,join_up=false,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_11",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_12",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_12",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_12",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_12",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_13",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_13",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_13",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=false,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_13",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=false,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_14",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=false,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_14",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=false,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_14",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=false,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_14",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,join_left=true,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_15",
+      "y": 0,
+      "uvlock": true
+    },
+    "facing=east,join_left=true,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_15",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,join_left=true,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_15",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,join_left=true,join_right=true,join_up=true,join_down=true": {
+      "model": "kelmagic:block/manuscript_cabinet_15",
+      "y": 270,
+      "uvlock": true
+    }
+  }
+}

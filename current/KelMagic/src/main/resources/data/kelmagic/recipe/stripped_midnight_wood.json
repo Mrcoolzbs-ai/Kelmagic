@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "key": {
+    "L": {
+      "item": "kelmagic:stripped_midnight_log"
+    }
+  },
+  "result": {
+    "id": "kelmagic:stripped_midnight_wood",
+    "count": 3
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "kelmagic:block/musical_resonator"
+      }
+    }
+  ]
+}

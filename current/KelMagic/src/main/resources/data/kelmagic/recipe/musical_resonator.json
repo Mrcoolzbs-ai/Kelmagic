@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "NMN",
+    " P "
+  ],
+  "key": {
+    "G": {
+      "item": "kelmagic:resonance_glass"
+    },
+    "N": {
+      "item": "minecraft:note_block"
+    },
+    "M": {
+      "item": "kelmagic:mana_core"
+    },
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    }
+  },
+  "result": {
+    "id": "kelmagic:musical_resonator"
+  }
+}

@@ -8,7 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import org.joml.Vector3f;
 
 /** Shallow faceted infill BELOW the frozen Hair7 neck sheets. No bones, skinning or animation.
- * The five existing under-sheet footprints are read only; x/z never expand beyond them.
+ * The five current under-sheet footprints are read only; x/z never expand beyond them.
  * Uses the existing opaque sample base; original sample2 under/over PNGs are not changed.
  */
 public final class Hair7NeckVolume {
@@ -38,10 +38,15 @@ public final class Hair7NeckVolume {
   for(float sign:new float[]{-1,1}){
    var chest=model.getBone(sign>0?"chest_left":"chest_right").orElse(null);if(chest==null)continue;
    var toBody=HairRig.belowBody(chest);float[][][] rings=new float[5][4][3];
-   // Fixed neck end: this new core overlaps the unchanged horizontal under-sheet infill.
-   rings[0]=new float[][]{{sign*3.27f,24.92f,-3.86f},{sign*4.15f,24.92f,-3.86f},{sign*4.06f,24.80f,-3.60f},{sign*3.36f,24.80f,-3.60f}};
-   for(int j=0;j<4;j++){float t=j/3f;float y=24.7812869f+(23-24.7812869f)*t;float z=-3.3393726f+(-5.85f+3.3393726f)*t;float lo=3.2316f+(3.1776f-3.2316f)*t+.025f;float hi=4.2684f+(4.5024f-4.2684f)*t-.025f;
-    float rear=.25f+.55f*(1-t*t*(3-2*t));float front=.205f;
+   // Neck end overlaps the lowered R3 front-sheet lip, avoiding a tall exposed fin.
+   rings[0]=new float[][]{{sign*3.27f,24.29f,-3.86f},{sign*4.15f,24.29f,-3.86f},{sign*4.06f,24.17f,-3.60f},{sign*3.36f,24.17f,-3.60f}};
+   // Follow the actual new upper chest lock, not the obsolete straight root/apex chord.
+   // Root and fixed neck end remain unchanged; no extra volume or animation writer.
+   var faces=Hair6Meshes.DATA.get(sign>0?"hair6_front_left_base":"hair6_front_right_base").faces();
+   for(int j=0;j<4;j++){float t=j/3f;
+    var edge=faces[Math.min(j,2)*4];var a=edge[j==3?3:0];var b=edge[j==3?2:1];
+    float y=a[1],z=a[2],lo=Math.min(Math.abs(a[0]),Math.abs(b[0]))+.025f,hi=Math.max(Math.abs(a[0]),Math.abs(b[0]))-.025f;
+    float rear=.245f+.055f*(1-t*t*(3-2*t));float front=.205f;
     rings[j+1]=new float[][]{{sign*lo,y,z+front},{sign*hi,y,z+front},{sign*(hi-.09f),y,z+rear},{sign*(lo+.09f),y,z+rear}};
    }
    // Read the actual pre-existing chest placement (including its 22-degree rest rotation).

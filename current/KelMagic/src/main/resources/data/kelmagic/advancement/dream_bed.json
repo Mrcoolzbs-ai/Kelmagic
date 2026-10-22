@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:root",
+  "display": {
+    "icon": {
+      "id": "kelmagic:otherworld_dream_bed"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.dream_bed.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.dream_bed.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

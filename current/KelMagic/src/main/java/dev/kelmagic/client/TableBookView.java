@@ -25,7 +25,7 @@ import java.util.List;
 /** One local player's private navigation and render target, never a shared block state. */
 public final class TableBookView implements AutoCloseable {
  public static final int WIDTH=416,HEIGHT=224,SCALE=3;
- public static final double PIXEL=.0025,BOOK_Y=.79,BOOK_Z=.56;
+ public static final double PIXEL=.0021,BOOK_Y=dev.kelmagic.archive.TableOrientation.BOOK_Y,BOOK_Z=dev.kelmagic.archive.TableOrientation.BOOK_Z;
  public final BlockPos pos;
  public final String token;
  public float open,previousOpen;
@@ -46,7 +46,7 @@ public final class TableBookView implements AutoCloseable {
  public TableBookView(ArchiveTableEntity table){
   pos=table.getBlockPos().immutable();ItemStack book=table.mountedCodex();
   token=book.getOrDefault(MagicComponents.CODEX_TOKEN.get(),"");
-  codex=new CodexScreen(new CodexOpen(CodexItem.knownWords(book),book.getOrDefault(MagicComponents.CODEX_NOTES.get(),List.of()),false,1,0,"",token,0,false),this);
+  codex=new CodexScreen(new CodexOpen(CodexItem.knownWords(book),book.getOrDefault(MagicComponents.CODEX_NOTES.get(),List.of()),false,1,0,"",token,0,true,book.is(dev.kelmagic.MagicArchive.CREATIVE_CODEX)),this);
   active=codex;active.init(Minecraft.getInstance(),WIDTH,HEIGHT);lastResearch=ResearchClient.state;
  }
  public void syncBook(ItemStack book){codex.updateTableBook(book);}

@@ -1,0 +1,18 @@
+{
+  "unchanged_java_files": 268,
+  "changed_java_files": [
+    "src/main/java/dev/kelmagic/archive/ArchiveTableBlock.java",
+    "src/main/java/dev/kelmagic/client/CodexScreen.java",
+    "src/main/java/dev/kelmagic/client/ResearchContentClient.java",
+    "src/main/java/dev/kelmagic/client/TableBookView.java",
+    "src/main/java/dev/kelmagic/client/ResearchOpeningGuide.java",
+    "src/main/java/dev/kelmagic/content/ConnectedGlassBlock.java",
+    "src/main/java/dev/kelmagic/content/MagicGrove.java",
+    "src/main/java/dev/kelmagic/content/InkDrawings.java",
+    "src/main/java/dev/kelmagic/item/CodexItem.java",
+    "src/main/java/dev/kelmagic/network/CodexOpen.java",
+    "src/main/java/dev/kelmagic/research/Research.java",
+    "src/main/java/dev/kelmagic/server/MagicTransformation.java"
+  ],
+  "baseline_gametest_failures_identical": null
+}

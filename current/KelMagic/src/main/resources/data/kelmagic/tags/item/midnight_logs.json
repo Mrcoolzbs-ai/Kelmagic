@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "kelmagic:midnight_log",
+    "kelmagic:midnight_wood",
+    "kelmagic:stripped_midnight_log",
+    "kelmagic:stripped_midnight_wood"
+  ]
+}

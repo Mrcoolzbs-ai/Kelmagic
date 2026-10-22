@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WWW",
+    "PMP"
+  ],
+  "key": {
+    "W": {
+      "item": "kelmagic:golden_wool"
+    },
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    },
+    "M": {
+      "item": "kelmagic:mana_block"
+    }
+  },
+  "result": {
+    "id": "kelmagic:otherworld_dream_bed",
+    "count": 1
+  }
+}

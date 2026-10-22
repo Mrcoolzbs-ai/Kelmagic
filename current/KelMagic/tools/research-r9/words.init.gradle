@@ -1,0 +1,8 @@
+allprojects {afterEvaluate {neoForge.runs.client {
+ systemProperty 'kelmagic.r9QA','true'
+ systemProperty 'kelmagic.r9StartFrame','1680'
+ systemProperty 'kelmagic.r9EndStage','23'
+ systemProperty 'kelmagic.qaOutput',new File(rootDir.parentFile,'previews/words-r9').absolutePath
+ jvmArgument '-Xmx1500m'
+ programArgument '--width';programArgument '1200';programArgument '--height';programArgument '800'
+}}}

@@ -1,0 +1,192 @@
+{
+  "unchanged_java_count": 275,
+  "changed_java": [
+    "src/main/java/dev/kelmagic/client/CodexScreen.java",
+    "src/main/java/dev/kelmagic/client/MagicGrassRenderer.java",
+    "src/main/java/dev/kelmagic/client/ResearchContentClient.java",
+    "src/main/java/dev/kelmagic/content/MagicDreams.java",
+    "src/main/java/dev/kelmagic/content/MagicGrassBlock.java",
+    "src/main/java/dev/kelmagic/content/MagicGrove.java",
+    "src/main/java/dev/kelmagic/content/MidnightTreeFeature.java",
+    "src/main/java/dev/kelmagic/core/GrandSpells.java",
+    "src/main/java/dev/kelmagic/gametest/KelGameTests.java",
+    "src/main/java/dev/kelmagic/server/GrandEffects.java",
+    "src/main/java/dev/kelmagic/server/MagicCommands.java",
+    "src/main/java/dev/kelmagic/server/MagicProgress.java",
+    "src/main/java/dev/kelmagic/server/SpellEffects.java"
+  ],
+  "added_java": [
+    "src/main/java/dev/kelmagic/client/ThresholdPortalRenderer.java",
+    "src/main/java/dev/kelmagic/client/QaR11Grove.java",
+    "src/main/java/dev/kelmagic/content/ThresholdContent.java",
+    "src/main/java/dev/kelmagic/core/GrassWaves.java",
+    "src/main/java/dev/kelmagic/entity/ThresholdPortal.java",
+    "src/main/java/dev/kelmagic/server/ThresholdLinks.java",
+    "src/main/java/dev/kelmagic/server/GroveAwakening.java"
+  ],
+  "protected": [
+    {
+      "file": "src/main/java/dev/kelmagic/speech/MouthTimeline.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/speech/TextVisemeSource.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/BreathingPresentation.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/BrowOverHairLayer.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/CheekBlushController.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/CheekBlushLayer.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/CheekDeformation.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/CheekRig.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/EyeExpressionController.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/EyeExpressions.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/EyeStateController.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/GazeController.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/LightExposureMath.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/LightExposureSensor.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/MageBlushStates.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/MageEyeStates.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/MageGazeStates.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/MouthStates.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/PupilIrisRig.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/PupilSizeController.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/face/PupilVisibility.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/Hair4Materials.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/Hair5Bridge.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/Hair6Meshes.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/Hair7Neck.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/Hair7NeckVolume.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/HairBridgeMath.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/HairRig.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/HeadSeat.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/HeadYaw65.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/RearHairCloth.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/RearHairDrape.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/RearHairFollow.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/RearHairMotion.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/RedesignedHairEngine.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/ReferenceHairEngine.java",
+      "unchanged": true
+    },
+    {
+      "file": "src/main/java/dev/kelmagic/client/hair/SideSampleMesh.java",
+      "unchanged": true
+    }
+  ],
+  "added_advancements": [
+    "archive_storage",
+    "dream_bed",
+    "grove_leaves",
+    "living_fiber",
+    "magic_turf",
+    "midnight_wood",
+    "rite_grove_awakening",
+    "rite_threshold_link",
+    "threshold_break",
+    "threshold_dimensions",
+    "threshold_pair",
+    "threshold_travel"
+  ],
+  "advancement_count": 48
+}

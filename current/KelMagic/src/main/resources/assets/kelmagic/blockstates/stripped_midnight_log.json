@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "kelmagic:block/stripped_midnight_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kelmagic:block/stripped_midnight_log"
+    },
+    "axis=z": {
+      "model": "kelmagic:block/stripped_midnight_log_horizontal",
+      "x": 90
+    }
+  }
+}

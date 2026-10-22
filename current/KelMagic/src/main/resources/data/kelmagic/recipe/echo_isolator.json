@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GWG",
+    "WMW",
+    "GWG"
+  ],
+  "key": {
+    "G": {
+      "item": "kelmagic:resonance_glass"
+    },
+    "W": {
+      "item": "minecraft:white_wool"
+    },
+    "M": {
+      "item": "kelmagic:magic_cloth"
+    }
+  },
+  "result": {
+    "id": "kelmagic:echo_isolator",
+    "count": 4
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "variants": {
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_0"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_0"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_1"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_1"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_2"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_2"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_3"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_3"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_4"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_4"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_5"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_5"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_6"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_6"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_7"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_7"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_8"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_8"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_9"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_9"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_10"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_10"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_11"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_11"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_12"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_12"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_13"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_13"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_14"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_14"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=false,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_15"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=false,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_15"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_16"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_16"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_17"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_17"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_18"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_18"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_19"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_19"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_20"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_20"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_21"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_21"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_22"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_22"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_23"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_23"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_24"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_24"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_25"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_25"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_26"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_26"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_27"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_27"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_28"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_28"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_29"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_29"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_30"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_30"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=true,join_east=false,violet=false": {
+      "model": "kelmagic:block/resonance_glass_31"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=true,join_east=false,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_31"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_32"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_32"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_33"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_33"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_34"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_34"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_35"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_35"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_36"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_36"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_37"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_37"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_38"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_38"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_39"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_39"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_40"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_40"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_41"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_41"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_42"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_42"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_43"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_43"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_44"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_44"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_45"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_45"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_46"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_46"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=false,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_47"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=false,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_47"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_48"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_48"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_49"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_49"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_50"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_50"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_51"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_51"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_52"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_52"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_53"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_53"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_54"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_54"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_55"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=false,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_55"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_56"
+    },
+    "join_down=false,join_up=false,join_north=false,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_56"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_57"
+    },
+    "join_down=true,join_up=false,join_north=false,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_57"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_58"
+    },
+    "join_down=false,join_up=true,join_north=false,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_58"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_59"
+    },
+    "join_down=true,join_up=true,join_north=false,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_59"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_60"
+    },
+    "join_down=false,join_up=false,join_north=true,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_60"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_61"
+    },
+    "join_down=true,join_up=false,join_north=true,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_61"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_62"
+    },
+    "join_down=false,join_up=true,join_north=true,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_62"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=true,join_east=true,violet=false": {
+      "model": "kelmagic:block/resonance_glass_63"
+    },
+    "join_down=true,join_up=true,join_north=true,join_south=true,join_west=true,join_east=true,violet=true": {
+      "model": "kelmagic:block/violet_resonance_glass_63"
+    }
+  }
+}

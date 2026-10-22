@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "minecraft:saplings"
+    },
+    "C": {
+      "item": "kelmagic:mana_core"
+    }
+  },
+  "result": {
+    "id": "kelmagic:magic_sapling",
+    "count": 1
+  }
+}

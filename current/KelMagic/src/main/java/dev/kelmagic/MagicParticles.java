@@ -5,5 +5,8 @@ import net.neoforged.neoforge.registries.*;
 public final class MagicParticles {
  public static final DeferredRegister<net.minecraft.core.particles.ParticleType<?>> TYPES=DeferredRegister.create(Registries.PARTICLE_TYPE,KelMagic.MODID);
  public static final DeferredHolder<net.minecraft.core.particles.ParticleType<?>,SimpleParticleType> HEART=TYPES.register("heart_mote",()->new SimpleParticleType(true));
+ public static final DeferredHolder<net.minecraft.core.particles.ParticleType<?>,SimpleParticleType> PHRASE_SPARK=TYPES.register("phrase_spark",()->new SimpleParticleType(false));
+ public static final DeferredHolder<net.minecraft.core.particles.ParticleType<?>,SimpleParticleType> PHRASE_SIGIL=TYPES.register("phrase_sigil",()->new SimpleParticleType(false));
+ public static final DeferredHolder<net.minecraft.core.particles.ParticleType<?>,SimpleParticleType> PHRASE_THREAD=TYPES.register("phrase_thread",()->new SimpleParticleType(false));
  private MagicParticles(){}
 }

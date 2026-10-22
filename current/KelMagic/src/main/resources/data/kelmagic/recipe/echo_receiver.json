@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GRG",
+    "SMS",
+    "GRG"
+  ],
+  "key": {
+    "G": {
+      "item": "kelmagic:resonance_glass"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "kelmagic:scripter"
+    },
+    "M": {
+      "item": "kelmagic:mana_core"
+    }
+  },
+  "result": {
+    "id": "kelmagic:echo_receiver"
+  }
+}

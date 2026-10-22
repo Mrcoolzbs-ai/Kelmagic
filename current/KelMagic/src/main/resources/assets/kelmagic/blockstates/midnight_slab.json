@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kelmagic:block/midnight_slab"
+    },
+    "type=double": {
+      "model": "kelmagic:block/midnight_planks"
+    },
+    "type=top": {
+      "model": "kelmagic:block/midnight_slab_top"
+    }
+  }
+}

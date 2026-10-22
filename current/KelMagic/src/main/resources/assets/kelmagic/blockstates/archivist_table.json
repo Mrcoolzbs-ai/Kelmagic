@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=north": {
+    "facing=north,violet=false": {
       "model": "kelmagic:block/archivist_table"
     },
-    "facing=east": {
+    "facing=north,violet=true": {
+      "model": "kelmagic:block/archivist_table_violet"
+    },
+    "facing=east,violet=false": {
       "model": "kelmagic:block/archivist_table",
       "y": 90
     },
-    "facing=south": {
+    "facing=east,violet=true": {
+      "model": "kelmagic:block/archivist_table_violet",
+      "y": 90
+    },
+    "facing=south,violet=false": {
       "model": "kelmagic:block/archivist_table",
       "y": 180
     },
-    "facing=west": {
+    "facing=south,violet=true": {
+      "model": "kelmagic:block/archivist_table_violet",
+      "y": 180
+    },
+    "facing=west,violet=false": {
       "model": "kelmagic:block/archivist_table",
+      "y": 270
+    },
+    "facing=west,violet=true": {
+      "model": "kelmagic:block/archivist_table_violet",
       "y": 270
     }
   }

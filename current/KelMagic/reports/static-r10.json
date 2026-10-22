@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "static_checks": 9733,
+  "unchanged_java": 276,
+  "changed_java": [
+    "src/main/java/dev/kelmagic/KelMagic.java",
+    "src/main/java/dev/kelmagic/client/CodexScreen.java",
+    "src/main/java/dev/kelmagic/client/ResearchContentClient.java",
+    "src/main/java/dev/kelmagic/client/ResearchEntryScreen.java",
+    "src/main/java/dev/kelmagic/content/MagicGrove.java"
+  ],
+  "new_java": [
+    "src/main/java/dev/kelmagic/client/MagicGrassRenderer.java",
+    "src/main/java/dev/kelmagic/client/QaR10Dreams.java",
+    "src/main/java/dev/kelmagic/content/MidnightTreeFeature.java",
+    "src/main/java/dev/kelmagic/content/MagicDreams.java",
+    "src/main/java/dev/kelmagic/content/DreamBedBlock.java",
+    "src/main/java/dev/kelmagic/content/DreamSleepEvents.java",
+    "src/main/java/dev/kelmagic/content/MagicGrassBlock.java"
+  ],
+  "protected_unchanged": 37
+}

@@ -1,0 +1,79 @@
+package dev.kelmagic.server;
+import dev.kelmagic.content.*;
+import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import net.minecraft.core.*;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.*;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.*;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.*;
+import net.minecraft.tags.*;
+import net.minecraft.world.level.*;
+import net.minecraft.world.level.biome.*;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.chunk.*;
+import net.minecraft.world.level.chunk.status.ChunkStatus;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraft.world.level.saveddata.SavedData;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+/** Centre-first, resumable terrain queue. Clean the entire canopy before growing replacements. */
+@EventBusSubscriber(modid="kelmagic")
+public final class GroveAwakening extends SavedData {
+ public static final ResourceKey<Biome> BIOME=ResourceKey.create(Registries.BIOME,ResourceLocation.fromNamespaceAndPath("kelmagic","magical_grove"));
+ private static final int CLEANUP_PAD=8;
+ private static final TicketType<ChunkPos> TICKET=TicketType.create("kelmagic_grove",Comparator.comparingLong(ChunkPos::toLong));
+ public static final class Job {
+  public final UUID owner;public BlockPos center;public int west,east,north,south,phase,cursor,column,saplings;public long grass,trees,chunks,logs,leaves,sumX,sumY,sumZ;
+  public final List<BlockPos> roots=new ArrayList<>();private final List<BlockPos> grown=new ArrayList<>();
+  private final List<ChunkPos> tickets=new ArrayList<>();private final List<CompletableFuture<ChunkResult<ChunkAccess>>> futures=new ArrayList<>();private List<ChunkPos> order;
+  public Job(UUID owner,BlockPos center,int west,int east,int north,int south){this.owner=owner;this.center=center;this.west=west;this.east=east;this.north=north;this.south=south;}
+  public boolean contains(int x,int z){double dx=x-center.getX(),dz=z-center.getZ();double rx=dx<0?west:east,rz=dz<0?north:south;return dx*dx/(rx*rx)+dz*dz/(rz*rz)<=1;}
+  public boolean containsCleanup(int x,int z){double dx=x-center.getX(),dz=z-center.getZ();double rx=(dx<0?west:east)+CLEANUP_PAD,rz=(dz<0?north:south)+CLEANUP_PAD;return dx*dx/(rx*rx)+dz*dz/(rz*rz)<=1;}
+  private List<ChunkPos> order(){if(order==null){order=new ArrayList<>();int pad=phase==1?CLEANUP_PAD:0,w=phase==0?100:west+pad,e=phase==0?100:east+pad,n=phase==0?100:north+pad,s=phase==0?100:south+pad;
+   for(int x=(center.getX()-w)>>4;x<=(center.getX()+e)>>4;x++)for(int z=(center.getZ()-n)>>4;z<=(center.getZ()+s)>>4;z++){var p=new ChunkPos(x,z);if(phase==0||(phase==1?containsCleanup(Math.clamp(center.getX(),p.getMinBlockX(),p.getMaxBlockX()),Math.clamp(center.getZ(),p.getMinBlockZ(),p.getMaxBlockZ())):contains(Math.clamp(center.getX(),p.getMinBlockX(),p.getMaxBlockX()),Math.clamp(center.getZ(),p.getMinBlockZ(),p.getMaxBlockZ()))))order.add(p);}
+   order.sort(Comparator.<ChunkPos>comparingDouble(p->{double x=p.getMiddleBlockX()-center.getX(),z=p.getMiddleBlockZ()-center.getZ();return x*x+z*z;}).thenComparingInt(p->p.x).thenComparingInt(p->p.z));}return order;}
+  private ChunkPos chunk(){return phase==2?new ChunkPos(roots.get(cursor)):order().get(cursor);}
+ }
+ private final List<Job> jobs=new ArrayList<>();
+ public static GroveAwakening get(MinecraftServer s){return s.overworld().getDataStorage().computeIfAbsent(new SavedData.Factory<>(GroveAwakening::new,GroveAwakening::load),"kelmagic_grove_jobs");}
+ public static boolean start(ServerPlayer p){if(p.level().dimension()!=Level.OVERWORLD){p.sendSystemMessage(Component.literal("Роща пробуждается только на равнинах и в лесах верхнего мира."));return false;}var data=get(p.getServer());if(data.jobs.stream().anyMatch(j->j.owner.equals(p.getUUID()))){p.sendSystemMessage(Component.literal("Моя роща ещё пробуждается. /kelmagic admin grove status"));return false;}var r=p.getRandom();data.jobs.add(new Job(p.getUUID(),p.blockPosition(),150+r.nextInt(151),150+r.nextInt(151),150+r.nextInt(151),150+r.nextInt(151)));data.setDirty();p.sendSystemMessage(Component.literal("Ищу ближайшие образцы былых лет…"));return true;}
+ public static boolean eligible(Holder<Biome> b){return b.is(BIOME)||b.is(Biomes.PLAINS)||b.is(Biomes.SUNFLOWER_PLAINS)||b.is(Biomes.SNOWY_PLAINS)||b.is(BiomeTags.IS_FOREST)||b.is(BiomeTags.IS_TAIGA)||b.is(BiomeTags.IS_JUNGLE);}
+ public static boolean ground(net.minecraft.world.level.block.state.BlockState s){return s.is(Blocks.GRASS_BLOCK)||s.is(Blocks.MYCELIUM)||s.is(Blocks.PODZOL)||s.is(Blocks.COARSE_DIRT)||s.is(Blocks.ROOTED_DIRT)||s.is(Blocks.MOSS_BLOCK);}
+ private static void release(ServerLevel l,Job j){for(var c:j.tickets)l.getChunkSource().removeRegionTicket(TICKET,c,2,c);j.tickets.clear();j.futures.clear();}
+ private static boolean ready(ServerLevel l,Job j){if(j.futures.isEmpty()){var pos=j.chunk();int radius=j.phase==2?1:0;for(int x=-radius;x<=radius;x++)for(int z=-radius;z<=radius;z++){var c=new ChunkPos(pos.x+x,pos.z+z);j.tickets.add(c);l.getChunkSource().addRegionTicket(TICKET,c,2,c);j.futures.add(l.getChunkSource().getChunkFuture(c.x,c.z,ChunkStatus.FULL,true));}}return j.futures.stream().allMatch(CompletableFuture::isDone);}
+ private static void sample(ServerLevel l,Job j,LevelChunk c){var found=new ArrayList<BlockPos>();for(int section=0;section<c.getSections().length;section++){var s=c.getSections()[section];if(!s.getStates().maybeHas(b->b.is(MagicGrove.SAPLING.get())))continue;int sy=l.getMinBuildHeight()+section*16;for(int x=0;x<16;x++)for(int y=0;y<16;y++)for(int z=0;z<16;z++)if(s.getBlockState(x,y,z).is(MagicGrove.SAPLING.get())){var p=new BlockPos(c.getPos().getMinBlockX()+x,sy+y,c.getPos().getMinBlockZ()+z);if(p.distSqr(j.center)<=10000)found.add(p);}}
+  found.sort(Comparator.comparingDouble(p->p.distSqr(j.center)));for(var p:found){j.sumX+=p.getX();j.sumY+=p.getY();j.sumZ+=p.getZ();if(++j.saplings>=10)return;}}
+ private static boolean treePart(net.minecraft.world.level.block.state.BlockState s){return s.is(BlockTags.LOGS)||s.is(BlockTags.LEAVES)||s.is(Blocks.MANGROVE_ROOTS)||s.is(Blocks.MUDDY_MANGROVE_ROOTS);}
+ /** Clean a padded crown boundary, then convert only the true grove ellipse. */
+ private static void column(ServerLevel l,Job j,LevelChunk chunk,int index){int x=chunk.getPos().getMinBlockX()+(index&15),z=chunk.getPos().getMinBlockZ()+(index>>4);boolean inside=j.contains(x,z);if(!inside&&!j.containsCleanup(x,z))return;int top=l.getHeight(Heightmap.Types.WORLD_SURFACE,x,z)-1;var p=new BlockPos.MutableBlockPos(x,top,z);if(!eligible(l.getBiome(p)))return;
+  var remove=new ArrayList<BlockPos>();BlockPos soil=null;int lowestLog=Integer.MAX_VALUE;
+  for(;p.getY()>l.getMinBuildHeight();p.move(Direction.DOWN)){var s=l.getBlockState(p);if(treePart(s)){if(l.getBlockEntity(p)==null)remove.add(p.immutable());if(s.is(BlockTags.LOGS))lowestLog=Math.min(lowestLog,p.getY());continue;}if(s.isAir()||s.canBeReplaced()||s.getBlock() instanceof BushBlock||s.is(Blocks.VINE))continue;soil=p.immutable();break;}
+  for(var q:remove){var old=l.getBlockState(q);if(old.is(BlockTags.LOGS))j.logs++;else j.leaves++;l.setBlock(q,Blocks.AIR.defaultBlockState(),2);}
+  if(inside&&soil!=null){var s=l.getBlockState(soil);if(ground(s)){l.setBlock(soil,MagicDreams.GRASS.get().defaultBlockState(),2);j.grass++;}var root=soil.above();if(lowestLog<=soil.getY()+3&&(ground(s)||s.is(MagicDreams.GRASS.get()))&&j.roots.stream().noneMatch(q->q.distSqr(root)<100))j.roots.add(root);}
+ }
+ private static void fallbackRoots(Job j){if(j.roots.size()>=16)return;for(int ring=0;ring<4&&j.roots.size()<24;ring++){int r=ring==0?0:32*ring,points=ring==0?1:8*ring;for(int i=0;i<points&&j.roots.size()<24;i++){double a=Math.PI*2*i/points;int x=j.center.getX()+(int)Math.round(Math.cos(a)*r),z=j.center.getZ()+(int)Math.round(Math.sin(a)*r);if(j.contains(x,z))j.roots.add(new BlockPos(x,j.center.getY(),z));}}}
+ private static BlockPos prepareTreeSite(ServerLevel l,Job j,BlockPos hint){int[][] offsets={{0,0},{8,0},{-8,0},{0,8},{0,-8},{8,8},{8,-8},{-8,8},{-8,-8}};for(var o:offsets){int x=hint.getX()+o[0],z=hint.getZ()+o[1];if(!j.contains(x,z))continue;int base=l.getHeight(Heightmap.Types.WORLD_SURFACE,x,z)-1;boolean okay=true;for(int dx=-2;dx<=2&&okay;dx++)for(int dz=-2;dz<=2;dz++){int sy=l.getHeight(Heightmap.Types.WORLD_SURFACE,x+dx,z+dz)-1;var s=l.getBlockState(new BlockPos(x+dx,sy,z+dz));if(Math.abs(sy-base)>1||(!ground(s)&&!s.is(MagicDreams.GRASS.get()))||l.getBlockEntity(new BlockPos(x+dx,sy,z+dz))!=null){okay=false;break;}}if(!okay)continue;
+   for(int dx=-2;dx<=2;dx++)for(int dz=-2;dz<=2;dz++){var q=new BlockPos(x+dx,base,z+dz);for(int y=base+2;y>base;y--){var clear=new BlockPos(x+dx,y,z+dz);var old=l.getBlockState(clear);if(old.isAir())continue;if(old.canBeReplaced()||treePart(old)||ground(old)||old.is(MagicDreams.GRASS.get()))l.setBlock(clear,Blocks.AIR.defaultBlockState(),2);}l.setBlock(q,MagicDreams.GRASS.get().defaultBlockState(),2);}return new BlockPos(x,base+1,z);
+  }return null;}
+ /** Compatibility helper for developer tools; production uses chunk-wide cleanup. */
+ public static boolean replaceTree(ServerLevel l,BlockPos root){if(!l.getBlockState(root).is(BlockTags.LOGS))return false;var j=new Job(UUID.randomUUID(),root,24,24,24,24);var c=l.getChunkAt(root);for(int i=0;i<256;i++)column(l,j,c,i);return MagicDreams.NATURAL_TREE.get().place(new net.minecraft.world.level.levelgen.feature.FeaturePlaceContext<>(Optional.empty(),l,l.getChunkSource().getGenerator(),l.random,root,NoneFeatureConfiguration.INSTANCE));}
+ private static void biomes(ServerLevel l,Job j,LevelChunk c){var grove=l.registryAccess().registryOrThrow(Registries.BIOME).getHolderOrThrow(BIOME);c.fillBiomesFromNoise((x,y,z,climate)->{var old=c.getNoiseBiome(x,y,z);return j.contains((x<<2)+2,(z<<2)+2)&&eligible(old)?grove:old;},l.getChunkSource().randomState().sampler());c.setUnsaved(true);l.getChunkSource().chunkMap.resendBiomesForChunks(List.of(c));j.chunks++;}
+ private static void finish(MinecraftServer server,GroveAwakening data,Job j){var p=server.getPlayerList().getPlayer(j.owner);if(p!=null){MagicProgress.award(p,"rite_grove_awakening");MagicProgress.inventory(p);p.sendSystemMessage(Component.literal("Роща пробудилась у образцов. Дёрн: "+j.grass+", деревья: "+j.trees+", убрано брёвен: "+j.logs+", листвы: "+j.leaves+"."));}data.jobs.remove(j);data.setDirty();}
+ @SubscribeEvent public static void tick(net.neoforged.neoforge.event.tick.ServerTickEvent.Post event){step(event.getServer());}
+ public static void step(MinecraftServer server){var data=get(server);if(data.jobs.isEmpty())return;var j=data.jobs.getFirst();var l=server.overworld();long deadline=System.nanoTime()+8_000_000;int operations=0;
+  try{while(operations++<16&&System.nanoTime()<deadline){
+   if(j.phase==2&&j.cursor>=j.roots.size()){finish(server,data,j);return;}if(!ready(l,j))return;var pos=j.chunk();var c=l.getChunkSource().getChunkNow(pos.x,pos.z);if(c==null)throw new IllegalStateException("Chunk unavailable");
+   if(j.phase==0){sample(l,j,c);release(l,j);j.cursor++;if(j.saplings>=10){j.center=new BlockPos(Math.round(j.sumX/(float)j.saplings),Math.round(j.sumY/(float)j.saplings),Math.round(j.sumZ/(float)j.saplings));j.phase=1;j.cursor=j.column=0;j.order=null;var p=server.getPlayerList().getPlayer(j.owner);if(p!=null)p.sendSystemMessage(Component.literal("Роща пробуждается у саженцев: "+j.center.toShortString()+". Размах: "+j.west+" / "+j.east+" / "+j.north+" / "+j.south+" блоков."));}
+    else if(j.cursor>=j.order().size()){var p=server.getPlayerList().getPlayer(j.owner);if(p!=null)p.sendSystemMessage(Component.literal("кажется рядом со мной мало образцов былых лет…"));data.jobs.remove(j);data.setDirty();return;}data.setDirty();continue;}
+   if(j.phase==1){do{column(l,j,c,j.column++);}while(j.column<256&&System.nanoTime()<deadline);if(j.column>=256){biomes(l,j,c);j.column=0;j.cursor++;release(l,j);if(j.cursor>=j.order().size()){fallbackRoots(j);j.phase=2;j.cursor=0;j.order=null;}}data.setDirty();continue;}
+   var hint=j.roots.get(j.cursor++);var root=prepareTreeSite(l,j,hint);if(root!=null&&j.grown.stream().noneMatch(p->p.distSqr(root)<256)&&MagicDreams.NATURAL_TREE.get().place(new net.minecraft.world.level.levelgen.feature.FeaturePlaceContext<>(Optional.empty(),l,l.getChunkSource().getGenerator(),l.random,root,NoneFeatureConfiguration.INSTANCE))){j.trees++;j.grown.add(root);}release(l,j);data.setDirty();
+  }}catch(Exception ex){release(l,j);data.jobs.remove(j);data.setDirty();dev.kelmagic.KelMagic.LOGGER.error("Grove job stopped safely at chunk "+j.cursor,ex);var p=server.getPlayerList().getPlayer(j.owner);if(p!=null)p.sendSystemMessage(Component.literal("Пробуждение остановлено из-за ошибки. Уже изменённая местность сохранена; см. журнал сервера."));}}
+ public static int status(net.minecraft.commands.CommandSourceStack source){var d=get(source.getServer());if(d.jobs.isEmpty())source.sendSuccess(()->Component.literal("Активных пробуждений нет."),false);for(var j:d.jobs)source.sendSuccess(()->Component.literal(j.owner+": "+(j.phase==0?"поиск саженцев "+j.saplings:j.phase==1?"почва и очистка":"новые деревья")+", центр "+j.center.toShortString()+", шаг "+j.cursor+", дёрн "+j.grass+", убрано брёвен "+j.logs+", листвы "+j.leaves),false);return d.jobs.size();}
+ public static int cancel(net.minecraft.commands.CommandSourceStack source){var d=get(source.getServer());int n=d.jobs.size();for(var j:d.jobs)release(source.getServer().overworld(),j);d.jobs.clear();d.setDirty();source.sendSuccess(()->Component.literal("Заданий остановлено: "+n+". Уже изменённые блоки не откатываются."),true);return n;}
+ public static GroveAwakening load(CompoundTag tag,HolderLookup.Provider provider){var d=new GroveAwakening();for(var t:tag.getList("Jobs",Tag.TAG_COMPOUND)){var n=(CompoundTag)t;try{var j=new Job(n.getUUID("Owner"),BlockPos.of(n.getLong("Center")),n.getInt("West"),n.getInt("East"),n.getInt("North"),n.getInt("South"));j.phase=n.getInt("Phase");j.cursor=n.getInt("Cursor");j.column=n.getInt("Column");j.saplings=n.getInt("Saplings");j.sumX=n.getLong("SumX");j.sumY=n.getLong("SumY");j.sumZ=n.getLong("SumZ");j.grass=n.getLong("Grass");j.trees=n.getLong("Trees");j.chunks=n.getLong("Chunks");j.logs=n.getLong("Logs");j.leaves=n.getLong("Leaves");for(long v:n.getLongArray("Roots"))j.roots.add(BlockPos.of(v));for(long v:n.getLongArray("Grown"))j.grown.add(BlockPos.of(v));if(!n.getBoolean("CentreFirst")){j.cursor=j.column=j.saplings=0;j.phase=0;j.west=Math.min(300,j.west);j.east=Math.min(300,j.east);j.north=Math.min(300,j.north);j.south=Math.min(300,j.south);}if(j.west>0&&j.east>0&&j.north>0&&j.south>0)d.jobs.add(j);}catch(RuntimeException e){dev.kelmagic.KelMagic.LOGGER.warn("Invalid saved grove job",e);}}return d;}
+ @Override public CompoundTag save(CompoundTag tag,HolderLookup.Provider provider){var list=new ListTag();for(var j:jobs){var n=new CompoundTag();n.putUUID("Owner",j.owner);n.putLong("Center",j.center.asLong());n.putInt("West",j.west);n.putInt("East",j.east);n.putInt("North",j.north);n.putInt("South",j.south);n.putInt("Phase",j.phase);n.putInt("Cursor",j.cursor);n.putInt("Column",j.column);n.putInt("Saplings",j.saplings);n.putLong("SumX",j.sumX);n.putLong("SumY",j.sumY);n.putLong("SumZ",j.sumZ);n.putLong("Grass",j.grass);n.putLong("Trees",j.trees);n.putLong("Chunks",j.chunks);n.putLong("Logs",j.logs);n.putLong("Leaves",j.leaves);n.putLongArray("Roots",j.roots.stream().mapToLong(BlockPos::asLong).toArray());n.putLongArray("Grown",j.grown.stream().mapToLong(BlockPos::asLong).toArray());n.putBoolean("CentreFirst",true);list.add(n);}tag.put("Jobs",list);return tag;}
+}

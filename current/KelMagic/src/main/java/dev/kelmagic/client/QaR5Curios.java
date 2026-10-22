@@ -1,0 +1,29 @@
+package dev.kelmagic.client;
+import dev.kelmagic.*;import dev.kelmagic.compat.*;import dev.kelmagic.archive.*;
+import net.minecraft.client.*;import net.minecraft.client.gui.screens.*;import net.minecraft.core.*;import net.minecraft.world.phys.*;import net.minecraft.world.item.*;import net.minecraft.world.entity.EquipmentSlot;import net.minecraft.world.level.block.Blocks;import java.nio.file.*;
+@net.neoforged.fml.common.EventBusSubscriber(modid="kelmagic",value=net.neoforged.api.distmarker.Dist.CLIENT)
+public final class QaR5Curios {
+ static boolean opened,requested,configured;static volatile boolean ready;static int wait,frame=Integer.getInteger("kelmagic.r5Start",0),stage=-1;static int checks;static final BlockPos AT=new BlockPos(44,-60,-8);static final boolean HAS=net.neoforged.fml.ModList.get().isLoaded("curios");
+ static final String[] NAMES={"empty","inventory-only","accessory","look-away","closed-book","obstruction","removed","main-hand","off-hand","helmet","curios-equipped-ui","inactive","accessory-restored","curios-empty-ui"};
+ static final Path OUT=Path.of(System.getProperty("kelmagic.qaOutput","qa-r5"));
+ static void ok(boolean b,String n){checks++;if(!b)throw new AssertionError("R5 "+n);}
+ static void server(java.util.function.Consumer<net.minecraft.server.level.ServerPlayer> a){var m=Minecraft.getInstance();m.getSingleplayerServer().execute(()->{try{a.accept(m.getSingleplayerServer().getPlayerList().getPlayers().getFirst());}catch(Throwable e){e.printStackTrace();System.out.println("R5_SERVER_FAILURE "+e);m.execute(()->{throw new RuntimeException(e);});}});}
+ @net.neoforged.bus.api.SubscribeEvent public static void tick(net.neoforged.neoforge.client.event.ClientTickEvent.Post event){
+  if(!Boolean.getBoolean("kelmagic.r5QA"))return;var m=Minecraft.getInstance();if(m.getOverlay()!=null)return;
+  if(m.level==null){if(!opened&&m.screen instanceof TitleScreen&&++wait>30){opened=true;m.createWorldOpenFlows().openWorld("KelMagicCuriosQA",()->{});}return;}
+  if(m.player==null||m.getSingleplayerServer()==null)return;
+  if(!requested){requested=true;server(p->{p.closeContainer();p.getInventory().clearContent();p.gameMode.changeGameModeForPlayer(net.minecraft.world.level.GameType.CREATIVE);p.getAbilities().flying=true;p.onUpdateAbilities();QaR3Checks.server(p);if(HAS)QaR5CuriosSupport.serverChecks(p);else ok(!MonocleAccessories.loaded()&&!MonocleAccessories.equipped(p),"safe API bridge without Curios");var l=p.serverLevel();l.setDayTime(6000);l.setWeatherParameters(0,12000,false,false);for(BlockPos b:BlockPos.betweenClosed(40,-60,-12,48,-56,-4)){if(l.getBlockEntity(b) instanceof ArchiveTableEntity t)t.unmount();l.setBlockAndUpdate(b,Blocks.AIR.defaultBlockState());}for(BlockPos b:BlockPos.betweenClosed(40,-61,-12,48,-61,-4))l.setBlockAndUpdate(b,Blocks.STONE.defaultBlockState());l.setBlockAndUpdate(AT,MagicStudy.TABLE.get().defaultBlockState());((ArchiveTableEntity)l.getBlockEntity(AT)).mount(MagicArchive.CREATIVE_CODEX.toStack());p.connection.teleport(44.5,-60,-5.9,180,40);ready=true;});return;}
+  if(!ready)return;
+  if(!configured){configured=true;try{Files.createDirectories(OUT);}catch(Exception e){throw new RuntimeException(e);}m.options.enableVsync().set(false);m.options.framerateLimit().set(90);m.options.renderDistance().set(3);m.options.simulationDistance().set(5);m.options.guiScale().set(2);m.resizeDisplay();m.options.fov().set(70);m.options.tutorialStep=net.minecraft.client.tutorial.TutorialSteps.NONE;m.options.hideGui=true;m.getToasts().clear();m.options.setCameraType(CameraType.FIRST_PERSON);}
+  int s=frame/120,t=frame%120;if(s>=NAMES.length){System.out.println("R5_QA_COMPLETE curios="+HAS+" checks="+checks+" IN_WORLD clientServer softwareGL");m.stop();return;}
+  if(s!=stage){stage=s;System.out.println("R5_STAGE "+s+" "+NAMES[s]);m.setScreen(null);server(p->{p.closeContainer();p.getInventory().clearContent();p.setItemSlot(EquipmentSlot.HEAD,ItemStack.EMPTY);p.setItemSlot(EquipmentSlot.OFFHAND,ItemStack.EMPTY);if(HAS)QaR5CuriosSupport.equip(p,s);if(s==1)p.getInventory().setItem(9,MagicStudy.MONOCLE.toStack());if(s==7)p.setItemSlot(EquipmentSlot.MAINHAND,MagicStudy.MONOCLE.toStack());if(s==8)p.setItemSlot(EquipmentSlot.OFFHAND,MagicStudy.MONOCLE.toStack());if(s==9){var helmet=new ItemStack(Items.DIAMOND_HELMET);helmet.set(MagicComponents.MONOCLE.get(),true);p.setItemSlot(EquipmentSlot.HEAD,helmet);}p.serverLevel().setBlockAndUpdate(AT.south().above(),s==5?Blocks.STONE.defaultBlockState():Blocks.AIR.defaultBlockState());});}
+  m.setCameraEntity(m.player);var target=TableOrientation.bookCenter(AT,MagicStudy.TABLE.get().defaultBlockState());QaRevisionR3.aim(m.player,target.x,target.y-.35,target.z+1.6,s==3?target.add(3,0,0):target);
+  if(s==4&&m.level.getBlockEntity(AT) instanceof ArchiveTableEntity table){var v=TableBookClient.view(table);v.open=v.previousOpen=0;}
+  if((s==10||s==13)&&t==30){m.options.hideGui=false;if(HAS)QaR5CuriosSupport.open();else m.setScreen(new net.minecraft.client.gui.screens.inventory.InventoryScreen(m.player));}
+  if(s!=10&&s!=13)m.options.hideGui=true;
+
+  if(t==105){var e=new net.neoforged.neoforge.client.event.ViewportEvent.ComputeFov(m.gameRenderer,m.gameRenderer.getMainCamera(),1,70,true);MonocleZoom.fov(e);boolean zoom=s>=7&&s<=9||HAS&&(s==2||s==12);ok(Math.abs(e.getFOV()-(zoom?30:70))<.1,NAMES[s]+" FOV="+e.getFOV()+" equipped="+MonocleZoom.equipped(m.player)+" hit="+(TableBookClient.hit()!=null));if(s==2&&HAS)ok(m.player.getMainHandItem().isEmpty()&&m.player.getOffhandItem().isEmpty()&&m.player.getItemBySlot(EquipmentSlot.HEAD).isEmpty(),"accessory alone, hands/head free");System.out.println("R5_ZOOM "+NAMES[s]+" fov="+e.getFOV()+" equipped="+MonocleZoom.equipped(m.player)+" hit="+(TableBookClient.hit()!=null));}
+  if(t==112&&(s==0||s==2||s==10||s==13))Screenshot.grab(OUT.toFile(),NAMES[s]+".png",m.getMainRenderTarget(),c->{});
+  frame++;
+ }
+}

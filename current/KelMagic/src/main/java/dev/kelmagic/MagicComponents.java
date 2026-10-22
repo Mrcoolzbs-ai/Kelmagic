@@ -21,7 +21,8 @@ public final class MagicComponents {
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> ACTIVE_TAPE=TYPES.register("active_tape",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,7)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> TAPE_PATTERN=TYPES.register("tape_pattern",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> CODEX_PAGE=TYPES.register("codex_page",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,179)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
-    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> CODEX_SECTION=TYPES.register("codex_section",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,6)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
+    // Welcome (7) and infusion (8) are persisted pages too. The old 0..6 codec crashed while saving either page.
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> CODEX_SECTION=TYPES.register("codex_section",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,8)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> CODEX_QUERY=TYPES.register("codex_query",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> CODEX_TOKEN=TYPES.register("codex_token",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> RESEARCH_ID=TYPES.register("research_id",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
@@ -29,5 +30,7 @@ public final class MagicComponents {
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<Boolean>> CODEX_WELCOMED=TYPES.register("codex_welcomed",()->DataComponentType.<Boolean>builder().persistent(Codec.BOOL).networkSynchronized(ByteBufCodecs.BOOL).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<Integer>> CODEX_SORT=TYPES.register("codex_sort",()->DataComponentType.<Integer>builder().persistent(Codec.intRange(0,1)).networkSynchronized(ByteBufCodecs.VAR_INT).build());
     public static final DeferredHolder<DataComponentType<?>,DataComponentType<Boolean>> CODEX_KNOWN=TYPES.register("codex_known_only",()->DataComponentType.<Boolean>builder().persistent(Codec.BOOL).networkSynchronized(ByteBufCodecs.BOOL).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<Boolean>> MONOCLE=TYPES.register("monocle",()->DataComponentType.<Boolean>builder().persistent(Codec.BOOL).networkSynchronized(ByteBufCodecs.BOOL).build());
+    public static final DeferredHolder<DataComponentType<?>,DataComponentType<String>> INK_PATTERN=TYPES.register("ink_pattern",()->DataComponentType.<String>builder().persistent(Codec.STRING).networkSynchronized(ByteBufCodecs.STRING_UTF8).build());
     private MagicComponents() {}
 }

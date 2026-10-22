@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kelmagic:block/magic_grass_side",
+    "up": "kelmagic:block/magic_grass_top",
+    "down": "minecraft:block/dirt",
+    "north": "kelmagic:block/magic_grass_side",
+    "south": "kelmagic:block/magic_grass_side",
+    "east": "kelmagic:block/magic_grass_side",
+    "west": "kelmagic:block/magic_grass_side"
+  }
+}

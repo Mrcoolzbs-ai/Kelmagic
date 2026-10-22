@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    }
+  },
+  "result": {
+    "id": "kelmagic:midnight_pressure_plate",
+    "count": 1
+  }
+}

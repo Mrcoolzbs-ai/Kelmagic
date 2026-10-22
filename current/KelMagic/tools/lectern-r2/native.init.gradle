@@ -1,0 +1,6 @@
+allprojects {afterEvaluate {neoForge.runs.client {
+ systemProperty 'kelmagic.lecternQA','true'
+ systemProperty 'kelmagic.qaOutput',System.getProperty('qa.output',new File(rootDir.parentFile,'previews/native-before-hair').absolutePath)
+ jvmArgument '-Xmx1500m'
+ programArgument '--width';programArgument '960';programArgument '--height';programArgument '720'
+}}}

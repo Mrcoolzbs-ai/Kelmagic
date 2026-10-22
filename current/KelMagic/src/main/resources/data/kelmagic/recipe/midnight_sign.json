@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PPP",
+    " F "
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    },
+    "F": {
+      "item": "kelmagic:living_fiber"
+    }
+  },
+  "result": {
+    "id": "kelmagic:midnight_sign",
+    "count": 3
+  }
+}

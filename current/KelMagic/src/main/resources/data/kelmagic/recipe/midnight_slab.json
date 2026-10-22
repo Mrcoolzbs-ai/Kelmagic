@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    }
+  },
+  "result": {
+    "id": "kelmagic:midnight_slab",
+    "count": 6
+  }
+}

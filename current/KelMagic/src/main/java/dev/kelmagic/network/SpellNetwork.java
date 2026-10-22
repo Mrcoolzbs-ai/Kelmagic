@@ -12,9 +12,12 @@ public final class SpellNetwork {
     public static Consumer<ResearchSnapshot> RESEARCH_SINK=packet->{};
     public static Consumer<CodexOpen> CODEX_SINK = packet -> {};
     public static Consumer<BurnSnapshot> BURN_SINK = packet -> {};
+    public static Consumer<PhraseVisual> PHRASE_SINK = packet -> {};
     public static Consumer<HeartActivation> HEART_SINK = packet -> {};
     public static void register(RegisterPayloadHandlersEvent event) {
-        var registrar = event.registrar("16-table-horizontal");
+        var registrar = event.registrar("19-ink-drawings");
+        registrar.playToServer(InkSelect.TYPE,InkSelect.CODEC,(packet,context)->context.enqueueWork(()->{if(context.player() instanceof ServerPlayer p)dev.kelmagic.content.InkDrawings.select(p,packet.offhand(),packet.pattern());}));
+        registrar.playToClient(PhraseVisual.TYPE,PhraseVisual.CODEC,(packet,context)->context.enqueueWork(()->PHRASE_SINK.accept(packet)));
         registrar.playToClient(ResearchNotice.TYPE,ResearchNotice.CODEC,(packet,context)->context.enqueueWork(()->RESEARCH_NOTICE.accept(packet)));
         registrar.playToClient(ResearchSnapshot.TYPE,ResearchSnapshot.CODEC,(packet,context)->context.enqueueWork(()->RESEARCH_SINK.accept(packet)));
         registrar.playToServer(TableResearchAction.TYPE,TableResearchAction.CODEC,(packet,context)->context.enqueueWork(()->{if(context.player() instanceof ServerPlayer p)dev.kelmagic.research.Research.beginAtTable(p,packet.pos(),packet.token(),packet.node());}));

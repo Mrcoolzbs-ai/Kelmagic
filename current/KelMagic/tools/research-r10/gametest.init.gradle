@@ -1,0 +1,4 @@
+allprojects {afterEvaluate {neoForge.runs.gameTestServer {
+ gameDirectory = project.file('run-gametest-r10')
+ jvmArgument '-Xmx850m'
+}}}

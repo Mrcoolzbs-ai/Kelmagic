@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " G ",
+    "LML",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "kelmagic:resonance_glass"
+    },
+    "L": {
+      "item": "minecraft:lantern"
+    },
+    "M": {
+      "item": "kelmagic:monocle"
+    }
+  },
+  "result": {
+    "id": "kelmagic:seeker_lantern"
+  }
+}

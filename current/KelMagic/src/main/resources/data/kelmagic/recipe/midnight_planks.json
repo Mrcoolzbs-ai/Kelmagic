@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "kelmagic:midnight_logs"
+    }
+  ],
+  "result": {
+    "id": "kelmagic:midnight_planks",
+    "count": 4
+  }
+}

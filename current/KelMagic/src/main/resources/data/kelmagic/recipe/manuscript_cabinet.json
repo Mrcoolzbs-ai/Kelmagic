@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "GBG",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    },
+    "G": {
+      "item": "kelmagic:golden_thread"
+    },
+    "B": {
+      "item": "minecraft:bookshelf"
+    }
+  },
+  "result": {
+    "id": "kelmagic:manuscript_cabinet",
+    "count": 1
+  }
+}

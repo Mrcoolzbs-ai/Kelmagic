@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "kelmagic:block/midnight_planks"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "kelmagic:block/midnight_planks",
+    "up": "kelmagic:block/midnight_planks",
+    "down": "kelmagic:block/midnight_planks",
+    "north": "kelmagic:block/manuscript_cabinet_3",
+    "south": "kelmagic:block/midnight_planks",
+    "east": "kelmagic:block/midnight_planks",
+    "west": "kelmagic:block/midnight_planks"
+  }
+}

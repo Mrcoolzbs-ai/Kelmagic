@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "II ",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "item": "kelmagic:magic_ingot"
+    },
+    "S": {
+      "item": "kelmagic:living_fiber"
+    }
+  },
+  "result": {
+    "id": "kelmagic:large_field_hoe"
+  }
+}

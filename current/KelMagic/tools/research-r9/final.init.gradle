@@ -1,0 +1,7 @@
+allprojects {afterEvaluate {neoForge.runs.client {
+ systemProperty 'kelmagic.r9QA','true'
+ systemProperty 'kelmagic.r9Reload','true'
+ systemProperty 'kelmagic.qaOutput',new File(rootDir.parentFile,'previews/final-r9').absolutePath
+ jvmArgument '-Xmx1500m'
+ programArgument '--width';programArgument '1200';programArgument '--height';programArgument '800'
+}}}

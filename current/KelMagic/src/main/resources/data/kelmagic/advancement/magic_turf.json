@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:rite_grove_awakening",
+  "display": {
+    "icon": {
+      "id": "kelmagic:magic_grass_block"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.magic_turf.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.magic_turf.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

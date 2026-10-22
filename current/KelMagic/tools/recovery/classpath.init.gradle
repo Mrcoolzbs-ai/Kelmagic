@@ -1,0 +1,6 @@
+allprojects {
+ tasks.register('writeRecoveryClasspath') {
+  dependsOn 'classes'
+  doLast { file('build/recovery-runtime-classpath.txt').text = sourceSets.main.runtimeClasspath.asPath }
+ }
+}

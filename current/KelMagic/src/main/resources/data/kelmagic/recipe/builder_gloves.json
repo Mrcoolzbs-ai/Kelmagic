@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C C",
+    " M "
+  ],
+  "key": {
+    "C": {
+      "item": "kelmagic:magic_cloth"
+    },
+    "M": {
+      "item": "kelmagic:magic_ingot"
+    }
+  },
+  "result": {
+    "id": "kelmagic:builder_gloves"
+  }
+}

@@ -74,6 +74,7 @@ public final class MagicServer {
         var words=java.util.List.copyOf(s.words());
         var plan=SpellParser.plan(words);var effect=plan.effect();
         if(fromChat && !action.cancel()) dev.kelmagic.item.ScripterItem.capture(p,words);
+        if(!action.cancel()&&!words.isEmpty()) dev.kelmagic.MagicApprovedContent.heard(p.serverLevel(),p.position().add(0,p.getBbHeight()*.6,0));
         clear(p); // Invalidate before effects. A duplicate packet cannot execute again.
         if(action.cancel()) { p.displayClientMessage(Component.translatable("kelmagic.cancelled"),true); return; }
         if(effect==SpellParser.Effect.UNDEFINED || effect==SpellParser.Effect.SELECTION_ONLY) {

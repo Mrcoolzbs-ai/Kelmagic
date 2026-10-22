@@ -8,5 +8,5 @@ import net.neoforged.fml.common.Mod;
 /** Physical-client-only entry point. Dedicated servers never link client classes. */
 @Mod(value=KelMagic.MODID,dist=Dist.CLIENT)
 public final class KelMagicClient {
-    public KelMagicClient() { SpellNetwork.BURN_SINK=ArcaneFireVisuals::accept; SpellNetwork.CLIENT_SINK=ClientSpellState::accept; SpellNetwork.HEART_SINK=HeartEffects::activate; SpellNetwork.CODEX_SINK=CodexScreen::open;SpellNetwork.RESEARCH_SINK=ResearchClient::accept;SpellNetwork.RESEARCH_NOTICE=ResearchClient::notice; }
+    public KelMagicClient() { SpellNetwork.PHRASE_SINK=PhraseEffects::accept; SpellNetwork.BURN_SINK=ArcaneFireVisuals::accept; SpellNetwork.CLIENT_SINK=ClientSpellState::accept; SpellNetwork.HEART_SINK=HeartEffects::activate; SpellNetwork.CODEX_SINK=CodexScreen::open;SpellNetwork.RESEARCH_SINK=ResearchClient::accept;SpellNetwork.RESEARCH_NOTICE=ResearchClient::notice; }
 }

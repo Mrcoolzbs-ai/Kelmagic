@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "EME",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "M": {
+      "item": "kelmagic:mana_core"
+    }
+  },
+  "result": {
+    "id": "kelmagic:return_stone",
+    "count": 2
+  }
+}

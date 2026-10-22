@@ -29,8 +29,12 @@ public final class MagicContent {
     public static final DeferredHolder<ArmorMaterial,ArmorMaterial> ROBE=MATERIALS.register("mage_robes",()->new ArmorMaterial(
         Map.of(ArmorItem.Type.HELMET,1,ArmorItem.Type.CHESTPLATE,3,ArmorItem.Type.LEGGINGS,2,ArmorItem.Type.BOOTS,1),15,SoundEvents.ARMOR_EQUIP_LEATHER,
         ()->Ingredient.of(MAGIC_CLOTH.get()),List.of(new ArmorMaterial.Layer(id("mage_robes"),"",true),new ArmorMaterial.Layer(id("mage_robes"),"_overlay",false)),0,0));
+    public static final DeferredHolder<ArmorMaterial,ArmorMaterial> ARCHIVIST_ROBE=MATERIALS.register("archivist_robes",()->new ArmorMaterial(
+        Map.of(ArmorItem.Type.HELMET,1,ArmorItem.Type.CHESTPLATE,3,ArmorItem.Type.LEGGINGS,2,ArmorItem.Type.BOOTS,1),16,SoundEvents.ARMOR_EQUIP_LEATHER,
+        ()->Ingredient.of(MAGIC_CLOTH.get()),List.of(new ArmorMaterial.Layer(id("archivist_robes"),"",true),new ArmorMaterial.Layer(id("archivist_robes"),"_overlay",false)),0,0));
     public static final List<DeferredItem<ManaArmorItem>> PLATE_ITEMS=armor("arcane",PLATE,1,false,15);
     public static final List<DeferredItem<ManaArmorItem>> ROBE_ITEMS=armor("mage",ROBE,2.5,true,5);
+    public static final List<DeferredItem<ManaArmorItem>> ARCHIVIST_ROBE_ITEMS=armor("archivist",ARCHIVIST_ROBE,2,true,5);
     private static List<DeferredItem<ManaArmorItem>> armor(String prefix,net.minecraft.core.Holder<ArmorMaterial> material,double bonus,boolean robe,int durability) {
         List<DeferredItem<ManaArmorItem>> items=new ArrayList<>();
         for(var type:List.of(ArmorItem.Type.HELMET,ArmorItem.Type.CHESTPLATE,ArmorItem.Type.LEGGINGS,ArmorItem.Type.BOOTS)) {
@@ -48,9 +52,9 @@ public final class MagicContent {
     public static final DeferredHolder<CreativeModeTab,CreativeModeTab> TAB=TABS.register("magic",()->CreativeModeTab.builder()
         .title(net.minecraft.network.chat.Component.translatable("itemGroup.kelmagic"))
         .icon(()->MANA_CORE.toStack()).displayItems((params,out)->{
-            out.accept(dev.kelmagic.research.Research.HYPOTHESIS);out.accept(dev.kelmagic.research.Research.DISCOVERY);out.accept(MagicArchive.CODEX);out.accept(MagicArchive.CREATIVE_CODEX);out.accept(MagicArchive.ANCIENT);MagicArchive.PAGES.values().forEach(out::accept);
-            out.accept(MagicLamps.TORCH_ITEM);out.accept(MagicLamps.DURABLE_TORCH_ITEM);out.accept(MagicLamps.DURABLE_LANTERN_ITEM);out.accept(MagicLamps.LANTERN_ITEM);out.accept(MagicStudy.TABLE_ITEM);out.accept(MagicMaterials.GOLDEN_THREAD);out.accept(MagicMaterials.WOOL_ITEM);out.accept(MANA_CORE);out.accept(MagicResonance.MANA_ITEM);out.accept(MagicResonance.STATION_ITEM);out.accept(MagicCreatures.MAGE_EGG);out.accept(MagicMascot.THRONE_ITEM);out.accept(MAGIC_INGOT);out.accept(MAGIC_CLOTH);
-            MagicCopper.ITEMS.values().forEach(out::accept);PLATE_ITEMS.forEach(out::accept);ROBE_ITEMS.forEach(out::accept);out.accept(DRAGON_HEART);out.accept(SCRIPTER);out.accept(MagicAudio.CASSETTE);out.accept(MagicAudio.DECK_ITEM);out.accept(MagicAudio.PLAYER);
+            out.accept(MagicArchive.CODEX);out.accept(MagicArchive.CREATIVE_CODEX);out.accept(MagicArchive.ANCIENT);
+            out.accept(MagicLamps.TORCH_ITEM);out.accept(MagicLamps.DURABLE_TORCH_ITEM);out.accept(MagicLamps.DURABLE_LANTERN_ITEM);out.accept(MagicLamps.LANTERN_ITEM);out.accept(MagicStudy.TABLE_ITEM);out.accept(MagicStudy.MONOCLE);out.accept(MagicMaterials.GOLDEN_THREAD);out.accept(MagicMaterials.WOOL_ITEM);out.accept(MANA_CORE);out.accept(MagicResonance.MANA_ITEM);out.accept(MagicResonance.STATION_ITEM);out.accept(MagicCreatures.MAGE_EGG);out.accept(MagicMascot.THRONE_ITEM);out.accept(MAGIC_INGOT);out.accept(MAGIC_CLOTH);
+            dev.kelmagic.content.MagicGrove.ITEMS.values().forEach(out::accept);dev.kelmagic.content.ArchiveStorage.ITEMS.forEach(out::accept);PLATE_ITEMS.forEach(out::accept);ROBE_ITEMS.forEach(out::accept);ARCHIVIST_ROBE_ITEMS.forEach(out::accept);out.accept(MagicApprovedContent.AUTO_SMELTING_PICKAXE);out.accept(MagicApprovedContent.VEIN_PICKAXE);out.accept(MagicApprovedContent.LARGE_FIELD_HOE);out.accept(MagicApprovedContent.SURVEYOR_SHOVEL);out.accept(MagicApprovedContent.GARDENER_SICKLE);out.accept(MagicApprovedContent.RETURN_STONE);out.accept(MagicApprovedContent.SEEKER_LANTERN);out.accept(MagicApprovedContent.GARDENER_BOOTS);out.accept(MagicApprovedContent.BUILDER_GLOVES);out.accept(MagicApprovedContent.COLLECTOR_RING);out.accept(MagicApprovedContent.LAST_BREATH_PENDANT);out.accept(MagicApprovedContent.FADING_HEAT_CLOAK);out.accept(MagicApprovedContent.GUARDIAN_BROOCH);out.accept(MagicApprovedContent.ECHO_RECEIVER_ITEM);out.accept(MagicApprovedContent.ECHO_ISOLATOR_ITEM);out.accept(MagicApprovedContent.MUSICAL_RESONATOR_ITEM);out.accept(DRAGON_HEART);out.accept(SCRIPTER);out.accept(MagicAudio.CASSETTE);out.accept(MagicAudio.DECK_ITEM);out.accept(MagicAudio.PLAYER);
             out.accept(PotionContents.createItemStack(Items.POTION,MANA));out.accept(PotionContents.createItemStack(Items.POTION,LONG_MANA));
         }).build());
     private static ResourceLocation id(String n){return ResourceLocation.fromNamespaceAndPath(KelMagic.MODID,n);}

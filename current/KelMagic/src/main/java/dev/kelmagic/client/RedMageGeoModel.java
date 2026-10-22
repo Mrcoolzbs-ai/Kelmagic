@@ -9,7 +9,7 @@ public final class RedMageGeoModel extends GeoModel<RedMage> {
  @Override public void setCustomAnimations(RedMage e,long id,AnimationState<RedMage> state){super.setCustomAnimations(e,id,state);float p=state.getPartialTick(),t=e.tickCount+p;boolean cat=e.kitten(),seat=e.throne().isPresent();
  bone("cat",b->{b.setHidden(!cat);b.setChildrenHidden(!cat);});bone("body",b->{b.setHidden(cat);b.setChildrenHidden(cat);});for(String n:new String[]{"left_leg","right_leg"})bone(n,b->{b.setHidden(cat);b.setChildrenHidden(cat);});
  boolean book=e.scene()==2||e.scene()==25;bone("book",b->{b.setHidden(!book);b.setChildrenHidden(!book);b.setScaleX(1);b.setScaleY(1);b.setScaleZ(1);});
- if(e.scene()==0&&!e.speech()&&!seat)bone("head",b->{b.setRotY(b.getInitialSnapshot().getRotY()+(float)Math.toRadians(Math.clamp(net.minecraft.util.Mth.wrapDegrees(e.yHeadRot-e.yBodyRot),-55,55))*.65f);b.setRotX(b.getInitialSnapshot().getRotX()+(float)Math.toRadians(Math.clamp(e.getXRot(),-25,35))*.65f);});
+ dev.kelmagic.client.motion.MageMotion.apply(this,e,p);
  float breath=dev.kelmagic.client.face.MouthStates.breathingEnabled(e)?RedMage.breathing(t)*.025f:0;
  for(String side:new String[]{"left","right"}){
   bone("chest_"+side,b->{b.setScaleY(1+breath*.45f);b.setScaleZ(1+breath);var dyn=side.equals("left")?e.chestLeft:e.chestRight;b.setPosY(b.getInitialSnapshot().getOffsetY()+(MageClientConfig.PHYSICS.get()?Math.clamp(-dyn.lift(p),-.18f,.18f):0));b.setRotX(b.getInitialSnapshot().getRotX()+(MageClientConfig.PHYSICS.get()?Math.clamp(dyn.pitch(p),-.06f,.06f):0));});

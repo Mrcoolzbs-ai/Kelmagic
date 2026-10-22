@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "kelmagic:block/musical_resonator_side",
+    "top": "kelmagic:block/musical_resonator_top",
+    "bottom": "kelmagic:block/midnight_planks"
+  }
+}

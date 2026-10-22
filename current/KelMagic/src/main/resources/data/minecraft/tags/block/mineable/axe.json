@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "kelmagic:midnight_log",
+    "kelmagic:midnight_wood",
+    "kelmagic:stripped_midnight_log",
+    "kelmagic:stripped_midnight_wood",
+    "kelmagic:midnight_planks",
+    "kelmagic:midnight_stairs",
+    "kelmagic:midnight_slab",
+    "kelmagic:midnight_fence",
+    "kelmagic:midnight_fence_gate",
+    "kelmagic:midnight_door",
+    "kelmagic:midnight_trapdoor",
+    "kelmagic:midnight_pressure_plate",
+    "kelmagic:midnight_button",
+    "kelmagic:archivist_cabinet",
+    "kelmagic:manuscript_cabinet",
+    "kelmagic:sample_stand",
+    "kelmagic:midnight_sign",
+    "kelmagic:midnight_wall_sign",
+    "kelmagic:midnight_hanging_sign",
+    "kelmagic:midnight_wall_hanging_sign"
+  ]
+}

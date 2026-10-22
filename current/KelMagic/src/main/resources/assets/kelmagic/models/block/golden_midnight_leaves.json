@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "kelmagic:block/golden_midnight_leaves"
+  }
+}

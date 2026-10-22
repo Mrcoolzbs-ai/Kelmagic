@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_pearl"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.threshold_dimensions.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.threshold_dimensions.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

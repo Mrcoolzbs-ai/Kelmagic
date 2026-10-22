@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "kelmagic:block/midnight_log",
+    "side": "kelmagic:block/midnight_log"
+  }
+}

@@ -11,12 +11,17 @@ import net.neoforged.bus.api.SubscribeEvent;
 @EventBusSubscriber(modid=KelMagic.MODID)
 public final class MagicProgress {
  public static void award(ServerPlayer p,String name){if(!name.equals("root"))award(p,"root");var a=p.getServer().getAdvancements().get(ResourceLocation.fromNamespaceAndPath(KelMagic.MODID,name));if(a==null)return;var progress=p.getAdvancements().getOrStartProgress(a);if(!progress.isDone())for(String c:progress.getRemainingCriteria())p.getAdvancements().award(a,c);}
+ public static boolean completed(net.minecraft.server.level.ServerPlayer p,String id){var a=p.getServer().getAdvancements().get(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("kelmagic",id));return a!=null&&p.getAdvancements().getOrStartProgress(a).isDone();}
  public static void inventory(ServerPlayer p){var en=p.getServer().getAdvancements().get(ResourceLocation.fromNamespaceAndPath("minecraft","story/enchant_item"));if(en!=null&&p.getAdvancements().getOrStartProgress(en).isDone())dev.kelmagic.research.Research.tab(p,"infusion");
   for(var s:p.getInventory().items)check(p,s);for(var s:p.getInventory().armor)check(p,s);check(p,p.getOffhandItem());
   if(p.getData(MagicAttachments.MANA).dragonUpgrade())award(p,"dragon_heart");
  }
  private static void check(ServerPlayer p,net.minecraft.world.item.ItemStack s){if(s.isEmpty())return;
   if(s.is(MagicStudy.TABLE_ITEM))award(p,"archive_table");if(s.getItem() instanceof dev.kelmagic.item.ManaArmorItem armor){if(armor.robe&&s.has(net.minecraft.core.component.DataComponents.DYED_COLOR))award(p,"dye_robes");if(s.has(net.minecraft.core.component.DataComponents.TRIM))award(p,"trim_magic");}
+  if(s.is(dev.kelmagic.content.MagicGrove.LOG.get().asItem()))award(p,"midnight_wood");
+  if(s.is(dev.kelmagic.content.MagicDreams.GRASS_ITEM)&&completed(p,"rite_grove_awakening"))award(p,"magic_turf");
+  if(s.is(dev.kelmagic.content.MagicDreams.BED_ITEM))award(p,"dream_bed");
+  if(net.minecraft.core.registries.BuiltInRegistries.ITEM.getKey(s.getItem()).toString().equals("kelmagic:archivist_cabinet"))award(p,"archive_storage");
   if(s.is(MagicContent.MANA_CORE))award(p,"root");
   if(s.is(MagicMaterials.GOLDEN_THREAD))award(p,"golden_thread");if(s.is(MagicMaterials.WOOL_ITEM))award(p,"golden_wool");
   if(s.is(MagicContent.MAGIC_CLOTH))award(p,"magic_cloth");

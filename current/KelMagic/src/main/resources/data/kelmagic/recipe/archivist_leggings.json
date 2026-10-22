@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "C C",
+    "C C"
+  ],
+  "key": {
+    "C": {
+      "item": "kelmagic:magic_cloth"
+    }
+  },
+  "result": {
+    "id": "kelmagic:archivist_leggings"
+  }
+}

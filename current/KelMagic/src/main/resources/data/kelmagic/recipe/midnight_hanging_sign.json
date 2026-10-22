@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "C C",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "id": "kelmagic:midnight_hanging_sign",
+    "count": 6
+  }
+}

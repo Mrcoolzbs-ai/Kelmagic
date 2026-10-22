@@ -117,6 +117,11 @@ configurations {
 
 dependencies {
     implementation files("libs/geckolib-neoforge-1.21.1-4.9.3.jar")
+    // Optional API: never bundled, never required at runtime.
+    compileOnly files("libs/curios-neoforge-9.5.1-1.21.1.jar")
+    if (providers.gradleProperty("withCurios").map { it.toBoolean() }.getOrElse(false)) {
+        localRuntime files("libs/curios-neoforge-9.5.1-1.21.1.jar")
+    }
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -254,3 +259,7 @@ tasks.register('mouthTimingReport',JavaExec) {
 
 tasks.register('hairBridgeTest',JavaExec){dependsOn testClasses;classpath=sourceSets.test.runtimeClasspath;mainClass='dev.kelmagic.client.hair.HairBridgeTests'}
 tasks.named('check'){dependsOn 'hairBridgeTest'}
+
+// Original R6 phrase motif bounds and existing grammar regressions.
+tasks.register('phraseGeometryTest',JavaExec){dependsOn testClasses;classpath=sourceSets.test.runtimeClasspath+sourceSets.main.compileClasspath;mainClass='dev.kelmagic.core.PhraseGeometryTests'}
+tasks.named('check'){dependsOn 'phraseGeometryTest'}

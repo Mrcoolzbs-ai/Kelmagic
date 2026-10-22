@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    }
+  },
+  "result": {
+    "id": "kelmagic:midnight_button",
+    "count": 1
+  }
+}

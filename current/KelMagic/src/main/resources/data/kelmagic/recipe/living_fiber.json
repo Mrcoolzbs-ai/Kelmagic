@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "P",
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    }
+  },
+  "result": {
+    "id": "kelmagic:living_fiber",
+    "count": 4
+  }
+}

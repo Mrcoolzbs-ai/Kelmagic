@@ -1,0 +1,52 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "kelmagic:block/violet_resonance_glass_0",
+    "north": "kelmagic:block/violet_resonance_glass_7",
+    "south": "kelmagic:block/violet_resonance_glass_13",
+    "east": "kelmagic:block/violet_resonance_glass_5",
+    "west": "kelmagic:block/violet_resonance_glass_5",
+    "up": "kelmagic:block/violet_resonance_glass_8",
+    "down": "kelmagic:block/violet_resonance_glass_8"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "texture": "#north",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#south",
+          "cullface": "south"
+        },
+        "east": {
+          "texture": "#east",
+          "cullface": "east"
+        },
+        "west": {
+          "texture": "#west",
+          "cullface": "west"
+        },
+        "up": {
+          "texture": "#up",
+          "cullface": "up"
+        },
+        "down": {
+          "texture": "#down",
+          "cullface": "down"
+        }
+      }
+    }
+  ]
+}

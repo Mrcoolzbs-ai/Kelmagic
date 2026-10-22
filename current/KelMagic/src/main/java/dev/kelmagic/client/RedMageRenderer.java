@@ -3,9 +3,20 @@ import dev.kelmagic.*;import dev.kelmagic.entity.RedMage;import dev.kelmagic.cor
 public final class RedMageRenderer extends GeoEntityRenderer<RedMage>{
  private final dev.kelmagic.client.face.BrowOverHairLayer brows=new dev.kelmagic.client.face.BrowOverHairLayer();
  public RedMageRenderer(EntityRendererProvider.Context c){super(c,new RedMageGeoModel());shadowRadius=.38f;}
+ // Replace world yaw once, before model/head/gaze/cloth matrices are captured.
+ @Override protected void applyRotations(RedMage e,PoseStack pose,float age,float yaw,float partial,float nativeScale){
+  var motion=dev.kelmagic.client.motion.MageMotion.prepare(e,partial);
+  super.applyRotations(e,pose,age,e.isAlive()&&e.throne().isEmpty()&&!e.isPassenger()?yaw+dev.kelmagic.client.motion.MotionState.wrap(motion.bodyYaw-yaw)*motion.weight:yaw,partial,nativeScale);
+ }
+ @Override public boolean shouldRender(RedMage e, net.minecraft.client.renderer.culling.Frustum f, double x, double y, double z){return !dev.kelmagic.client.diag.FpsDiagnostics.hidden() && super.shouldRender(e,f,x,y,z);}
+ @Override public void renderCubesOfBone(PoseStack pose, software.bernie.geckolib.cache.object.GeoBone bone, com.mojang.blaze3d.vertex.VertexConsumer vertices,int light,int overlay,int color){
+  super.renderCubesOfBone(pose,bone,vertices,light,overlay,color);
+  if(dev.kelmagic.client.diag.FpsDiagnostics.measuring() && !bone.isHidden() && dev.kelmagic.client.hair.RearHairFollow.owns(bone.getName())){int quads=0;for(var cube:bone.getCubes())quads+=cube.quads().length;if(quads>0)dev.kelmagic.client.diag.FpsDiagnostics.hairEmitted(quads);}
+ }
  // Apply per draw, not only per animation evaluation: GeckoLib caches animation evaluations
  // and shares baked geometry across entities. Always start each head draw from frozen rest quads.
  @Override public void renderRecursively(PoseStack pose,RedMage e,software.bernie.geckolib.cache.object.GeoBone bone,RenderType type,MultiBufferSource buffers,com.mojang.blaze3d.vertex.VertexConsumer vertices,boolean reRender,float partial,int light,int overlay,int color){
+  dev.kelmagic.client.motion.LimbJointRig.apply(bone);
   if(bone.getName().equals("head")){dev.kelmagic.client.hair.RearHairFollow.captureBody(e,pose,this.entityRenderTranslations);bone.setRotY(dev.kelmagic.client.hair.HeadYaw65.limit(bone.getRotY(),bone.getInitialSnapshot().getRotY()));dev.kelmagic.client.hair.HeadSeat.apply(bone);dev.kelmagic.client.face.MageGazeStates.apply(getGeoModel(),e,bone,pose,this.entityRenderTranslations,this.modelRenderTranslations,partial);dev.kelmagic.client.face.CheekRig.apply(getGeoModel(),dev.kelmagic.client.face.MageEyeStates.sample(e,partial));dev.kelmagic.client.face.MouthStates.apply(getGeoModel(),e,partial);if(!reRender&&!e.kitten()&&!e.isInvisible()&&!bone.isHidden())brows.mark(pose,bone,getGeoModel(),light,overlay);}
   if(bone.getName().equals("mouth_png")){var pngType=RenderType.entityCutoutNoCull(dev.kelmagic.client.face.MouthStates.texture(e,partial));super.renderRecursively(pose,e,bone,pngType,buffers,buffers.getBuffer(pngType),reRender,partial,light,overlay,color);return;}
   if(bone.getName().startsWith("hair6_")){
@@ -31,5 +42,5 @@ public final class RedMageRenderer extends GeoEntityRenderer<RedMage>{
   if(bone.getName().equals("body")&&!bone.isHidden()&&!e.kitten()&&!e.isInvisible())
    dev.kelmagic.client.hair.Hair7Neck.render(pose,buffers,light,overlay,getGeoModel());
  }
- @Override public void render(RedMage e,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){brows.begin(buffers);super.render(e,yaw,partial,pose,buffers,light);brows.finish(buffers,light,getPackedOverlay(e,0,partial));var words=e.visibleWords();if(words.isEmpty())return;var mc=Minecraft.getInstance();var text=Component.literal(String.join(" ",words.stream().map(GlyphWriting::write).toList())).withStyle(Style.EMPTY.withFont(ResourceLocation.fromNamespaceAndPath(KelMagic.MODID,"kel")));pose.pushPose();pose.translate(0,e.getBbHeight()+.35,0);pose.mulPose(mc.getEntityRenderDispatcher().cameraOrientation());pose.scale(.022f,-.022f,.022f);mc.font.drawInBatch(text,-mc.font.width(text)/2f,0,0xFFF3E2AF,false,pose.last().pose(),buffers,Font.DisplayMode.NORMAL,0,0xF000F0);pose.popPose();}
+ @Override public void render(RedMage e,float yaw,float partial,PoseStack pose,MultiBufferSource buffers,int light){dev.kelmagic.client.diag.FpsDiagnostics.rendered(e);long diagStart=dev.kelmagic.client.diag.FpsDiagnostics.begin(5);try{brows.begin(buffers);super.render(e,yaw,partial,pose,buffers,light);brows.finish(buffers,light,getPackedOverlay(e,0,partial));var words=e.visibleWords();if(words.isEmpty())return;var mc=Minecraft.getInstance();var text=Component.literal(String.join(" ",words.stream().map(GlyphWriting::write).toList())).withStyle(Style.EMPTY.withFont(ResourceLocation.fromNamespaceAndPath(KelMagic.MODID,"kel")));pose.pushPose();pose.translate(0,e.getBbHeight()+.35,0);pose.mulPose(mc.getEntityRenderDispatcher().cameraOrientation());pose.scale(.022f,-.022f,.022f);mc.font.drawInBatch(text,-mc.font.width(text)/2f,0,0xFFF3E2AF,false,pose.last().pose(),buffers,Font.DisplayMode.NORMAL,0,0xF000F0);pose.popPose();}finally{dev.kelmagic.client.diag.FpsDiagnostics.end(5,diagStart);}}
 }

@@ -1,0 +1,8 @@
+allprojects {afterEvaluate {neoForge.runs.client {
+ systemProperty 'kelmagic.r3QA','true'
+ systemProperty 'kelmagic.r3Start',System.getProperty('qa.start','0')
+ systemProperty 'kelmagic.r3End',System.getProperty('qa.end','2900')
+ systemProperty 'kelmagic.qaOutput',System.getProperty('qa.output',new File(rootDir.parentFile,'previews/native-r3').absolutePath)
+ jvmArgument '-Xmx1500m'
+ programArgument '--width';programArgument '960';programArgument '--height';programArgument '720'
+}}}

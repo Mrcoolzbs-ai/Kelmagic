@@ -1,0 +1,10 @@
+{
+  "size": 1,
+  "order": 41,
+  "icon": "kelmagic:slot/empty_monocle_slot",
+  "validators": [
+    "curios:tag"
+  ],
+  "add_cosmetic": false,
+  "render_toggle": false
+}

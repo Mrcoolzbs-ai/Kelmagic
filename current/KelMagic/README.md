@@ -1,17 +1,19 @@
-# F3-hair7 — temporarily final model (1.24.4)
+# KelMagic R12 TEST — 1.33.0-r12-roots-TEST
+Complete cumulative project, not a patch. Current Russian instructions: README-R12-RU.md. Formulas: FORMULAS-R12.txt. Results and limitations: reports/QA-R12.md. Design canon and invariants: KELMAGIC_HANDOFF.md. Historical R9–R11 docs do not override R12.
 
-Current user-approved checkpoint. Complete cumulative project source, not a patch requiring older experimental copies.
+Minecraft 1.21.1 / NeoForge 21.1.256 / Java 21 / Gradle 9.2.1 / GeckoLib 4.9.3. Curios optional. Libraries in libs are development dependencies, not embedded in the mod JAR.
 
-Includes the hair4/sample2 combined volume + alpha-plane construction, hair6 integration, body-owned chest locks, static neck surfaces, shortened chin (20%), seated head (-1.208 model pixels), fitted side UVs, and final direct breast-corner-to-chin connectors. Existing face/mouth/eye animation logic and palette are preserved.
+Standard build on a clean machine (Java 21; dependencies need internet):
+```sh
+bash gradlew build
+```
+The full check retains an inherited eyeStateTest failure (`continuous pulse`). Remaining checks and jar:
+```sh
+bash gradlew check -x eyeStateTest jar
+bash gradlew -I tools/research-r12/gametest.init.gradle runGameTestServer
+```
+The server suite currently has five inherited failures: see QA-R12, do not hide them. The sandbox used `-I tools/recovery/binary-build.init.gradle` with already prepared Minecraft artifacts; it is not a mod runtime dependency. JAR excludes developer Qa* render harnesses.
 
-- `src/`: current Java and all resources.
-- `release/`: tested final mod JAR.
-- `proof/`: six native game states and before/after images; 90 degrees is QA stress only.
-- `reports/`: focused manifests and checks.
-- `tools/`: historical modifiers and QA helpers. Do not rerun old stage generators on the final model. Some helpers retain original sandbox paths.
+Source of truth is src/. Historical generators contain old sandbox paths and must not be rerun over final source. No game world, caches or user data are shipped. Native QA is destructive and requires an expendable superflat world called KelMagicR12QA. `tools/research-r12/prepare-scene.py /path/to/flat/level.dat` resets that dedicated scene (grass at y=-61). Run native.init.gradle only on this test world, with a local display/Xvfb and OpenGL. QA generators and static baseline comparisons are evidence tools, not required for normal compilation; their archived inputs are not bundled again.
 
-Build with Java 21: restore official GeckoLib 4.9.3 NeoForge 1.21.1 JAR to `libs/geckolib-neoforge-1.21.1-4.9.3.jar`, then run `bash gradlew -I tools/binary-build.init.gradle jar`. Minecraft 1.21.1 / NeoForge 21.1.256. Third-party dependency JARs are not republished.
-
-The final JAR excludes QA classes. Short targeted game checks were completed before publication; they do not prove absence of clipping in all poses. No new game tests are claimed for Git publication.
-
-Published on repository branch main; original `main/KelMagic`, approved D and original E are preserved. No caches, worlds, credentials, or reference LovsPlayer JAR included.
+Back up worlds before installing and especially before grove awakening. Terrain cleanup intentionally includes player-placed tagged logs/leaves inside the eligible area. Third-party region protection mods, shaders and large multiplayer modpacks are unverified.

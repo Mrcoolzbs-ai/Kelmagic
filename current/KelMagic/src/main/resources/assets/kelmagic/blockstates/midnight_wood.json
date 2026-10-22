@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "kelmagic:block/midnight_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "kelmagic:block/midnight_wood"
+    },
+    "axis=z": {
+      "model": "kelmagic:block/midnight_wood",
+      "x": 90
+    }
+  }
+}

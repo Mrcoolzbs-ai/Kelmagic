@@ -33,5 +33,41 @@
         "volume": 0.8
       }
     ]
+  },
+  "threshold_open": {
+    "subtitle": "subtitles.kelmagic.threshold_open",
+    "sounds": [
+      {
+        "name": "kelmagic:threshold/open",
+        "stream": false
+      }
+    ]
+  },
+  "threshold_close": {
+    "subtitle": "subtitles.kelmagic.threshold_close",
+    "sounds": [
+      {
+        "name": "kelmagic:threshold/close",
+        "stream": false
+      }
+    ]
+  },
+  "threshold_travel": {
+    "subtitle": "subtitles.kelmagic.threshold_travel",
+    "sounds": [
+      {
+        "name": "kelmagic:threshold/travel",
+        "stream": false
+      }
+    ]
+  },
+  "threshold_hum": {
+    "subtitle": "subtitles.kelmagic.threshold_hum",
+    "sounds": [
+      {
+        "name": "kelmagic:threshold/hum",
+        "stream": false
+      }
+    ]
   }
 }

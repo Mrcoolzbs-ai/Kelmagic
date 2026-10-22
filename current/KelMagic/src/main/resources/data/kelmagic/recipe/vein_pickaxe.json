@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "IGI",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "item": "kelmagic:magic_ingot"
+    },
+    "G": {
+      "item": "kelmagic:resonance_glass"
+    },
+    "S": {
+      "item": "kelmagic:living_fiber"
+    }
+  },
+  "result": {
+    "id": "kelmagic:vein_pickaxe"
+  }
+}

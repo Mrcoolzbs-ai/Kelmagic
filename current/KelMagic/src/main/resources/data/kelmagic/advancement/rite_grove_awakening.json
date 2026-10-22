@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:combination",
+  "display": {
+    "icon": {
+      "id": "kelmagic:magic_sapling"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.rite_grove_awakening.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.rite_grove_awakening.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

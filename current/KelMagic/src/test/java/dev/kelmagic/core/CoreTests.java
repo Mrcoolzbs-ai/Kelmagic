@@ -86,6 +86,18 @@ public final class CoreTests {
         }
         check(pairs==16290,"total pair coverage");
         for(var rite:GrandSpells.ALL){var formula=rite.formula();check(formula.size()==rite.minimum(),"rite minimum "+rite.id());check(formula.stream().allMatch(KelLexicon.WORDS::containsKey),"canonical rite roots");check(SpellParser.plan(formula).effect()==SpellParser.Effect.GRAND,"grand rule");var below=new ArrayList<>(formula);below.removeLast();check(GrandSpells.find(below)==null,"below minimum cannot qualify");}
+        // Opposite radial phases partially extinguish one another; ordinary tide remains independent.
+        var waveA=java.util.List.of(new GrassWaves.Source(9,0,0));var waveB=java.util.List.of(new GrassWaves.Source(27,0,0));
+        double wa=GrassWaves.interference(0,0,0,0,waveA),wb=GrassWaves.interference(0,0,0,0,waveB);
+        check(wa*wb<0,"source waves opposite phase");
+        check(Math.abs(GrassWaves.interference(0,0,0,0,java.util.List.of(waveA.getFirst(),waveB.getFirst())))<Math.min(Math.abs(wa),Math.abs(wb)),"destructive interference");
+        check(GrassWaves.color(0,0,0,0,java.util.List.of())!=GrassWaves.color(0,0,0,125,java.util.List.of()),"ordinary grass tide retained");
+        for(int tick=0;tick<1000;tick++){int color=GrassWaves.color(12,0,16,tick,java.util.List.of(waveA.getFirst(),waveB.getFirst()));check((color>>>24)==255,"wave colour opaque and bounded");}
+        check(GrassWaves.color(10,0,5,0,java.util.List.of())==GrassWaves.color(371,0,-244,0,java.util.List.of()),"base tide synchronized across the server");
+        int violet=GrassWaves.color(0,0,0,1500,java.util.List.of());check(((violet>>16)&255)<=164&&(violet&255)<=224,"extreme violet remains subdued");
+        check(GrassWaves.color(10,0,5,0,java.util.List.of())==GrassWaves.color(10,0,5,2000,java.util.List.of()),"base wave temporal period2000");
+        check(Math.abs(GrassWaves.interference(0,0,0,0,waveA)-GrassWaves.interference(0,0,0,480,waveA))<1e-9,"source wave temporal period480");
+        check(GrassWaves.interference(200,0,0,0,waveA)==0,"source influence limited to96");
         var spring=new MageDynamics();spring.step(.18f,.1f);check(spring.lift(1)>0,"mage spring responds");for(int i=0;i<300;i++)spring.step(0,0);check(Math.abs(spring.lift(1))<.00001,"spring settles");for(int i=0;i<1000;i++){spring.step((float)Math.sin(i*.3)*100,(float)Math.sin(i*.5)*100);check(Math.abs(spring.lift(.5f))<=.85f&&Math.abs(spring.pitch(.5f))<=.24f,"bounded cosmetic inertia");}spring.step(Float.NaN,Float.POSITIVE_INFINITY);check(spring.lift(1)==0,"invalid input resets spring");
         System.out.println("CORE TESTS PASSED: " + checks + " checks");
     }

@@ -102,3 +102,11 @@ type="required"
 versionRange="[4.9.3,5)"
 ordering="AFTER"
 side="BOTH"
+
+# Curios remains optional; both logical sides need it for accessory use.
+[[dependencies.${mod_id}]]
+modId="curios"
+type="optional"
+versionRange="[9.5.1,10)"
+ordering="AFTER"
+side="BOTH"

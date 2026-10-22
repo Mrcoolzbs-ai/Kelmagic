@@ -89,6 +89,11 @@ public final class WorldSpells {
  static void particles(ServerPlayer p,Vec3 v,String kind){var l=p.serverLevel();switch(kind){case "note":case "drum":case "thunder":l.playSound(null,BlockPos.containing(v),kind.equals("thunder")?net.minecraft.sounds.SoundEvents.LIGHTNING_BOLT_THUNDER:kind.equals("drum")?net.minecraft.sounds.SoundEvents.NOTE_BLOCK_BASEDRUM.value():net.minecraft.sounds.SoundEvents.NOTE_BLOCK_HARP.value(),net.minecraft.sounds.SoundSource.PLAYERS,1,1);break;case "rainbow":for(int i=0;i<7;i++)l.sendParticles(new DustParticleOptions(new org.joml.Vector3f((float)Math.sin(i+1)*.5f+.5f,(float)Math.sin(i+3)*.5f+.5f,(float)Math.sin(i+5)*.5f+.5f),1),v.x-1.5+i*.5,v.y+1+Math.sin(i*Math.PI/6),v.z,5,.1,.1,.1,0);break;default:l.sendParticles(kind.equals("smoke")?ParticleTypes.LARGE_SMOKE:kind.equals("star")?ParticleTypes.END_ROD:ParticleTypes.CLOUD,v.x,v.y+1,v.z,kind.equals("star")?16:64,.7,1,.7,.01);}}
  public static int scaled(int base,double scale,int cap){return Math.max(1,Math.min(cap,(int)Math.round(base*scale)));}
  public static boolean synergy(ServerPlayer p,SpellParser.Plan plan,SpellEffects.Aim aim){
+  boolean applied=applySynergy(p,plan,aim);
+  if(applied)PhraseVisuals.applied(p,plan,aim);
+  return applied;
+ }
+ private static boolean applySynergy(ServerPlayer p,SpellParser.Plan plan,SpellEffects.Aim aim){
   String id=plan.actions().getFirst();double scale=plan.scale();var l=p.serverLevel();
   if(id.equals("guardian")){p.heal((float)Math.min(32,6*scale));p.addEffect(new net.minecraft.world.effect.MobEffectInstance(net.minecraft.world.effect.MobEffects.DAMAGE_RESISTANCE,SpellProfiles.duration(400,scale),Math.min(4,Math.max(0,(int)scale-1))));EntitySpells.buff(p,"absorption",SpellProfiles.duration(400,scale));return true;}
   if(id.equals("spring")){EntitySpells.motion(p,p.getLookAngle().normalize().scale(Math.min(4,scale)).add(0,Math.min(1.8,.9*scale),0));EntitySpells.buff(p,"slow_falling",SpellProfiles.duration(200,scale));return true;}

@@ -30,7 +30,7 @@ public final class SpellEffects {
     }
     public static boolean execute(ServerPlayer p,dev.kelmagic.core.SpellParser.Plan plan){return execute(p,plan,false);}
     public static boolean execute(ServerPlayer p,dev.kelmagic.core.SpellParser.Plan plan,boolean admin){
-        if(plan.effect()==Effect.GRAND){var rite=dev.kelmagic.core.GrandSpells.ALL.stream().filter(r->!plan.actions().isEmpty()&&r.id().equals(plan.actions().getFirst())).findFirst().orElse(null);if(!admin&&(rite==null||!dev.kelmagic.research.ResearchCatalog.learned(dev.kelmagic.research.Research.state(p),"rite:"+rite.id()))){p.displayClientMessage(Component.literal("Это высказывание ещё не стало знанием."),true);return false;}return GrandEffects.execute(p,plan);}
+        if(plan.effect()==Effect.GRAND){var rite=dev.kelmagic.core.GrandSpells.ALL.stream().filter(r->!plan.actions().isEmpty()&&r.id().equals(plan.actions().getFirst())).findFirst().orElse(null);if(!admin&&((rite!=null&&(rite.id().equals("threshold_link")||rite.id().equals("grove_awakening")))?!p.isCreative():(rite==null||!dev.kelmagic.research.ResearchCatalog.learned(dev.kelmagic.research.Research.state(p),"rite:"+rite.id())))){p.displayClientMessage(Component.literal("Это высказывание ещё не стало знанием."),true);return false;}return GrandEffects.execute(p,plan);}
         boolean researching=dev.kelmagic.research.Research.state(p).started().stream().anyMatch(id->!dev.kelmagic.research.ResearchCatalog.learned(dev.kelmagic.research.Research.state(p),id));
         var before=researching?dev.kelmagic.research.ResearchExperiments.before(p):null;boolean ok=executeOrdinary(p,plan);if(ok&&before!=null)dev.kelmagic.research.ResearchExperiments.after(p,before);return ok;
     }

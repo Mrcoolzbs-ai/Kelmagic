@@ -1,7 +1,8 @@
 package dev.kelmagic;
 import dev.kelmagic.archive.*;import net.minecraft.core.registries.Registries;import net.minecraft.world.entity.npc.VillagerProfession;import net.minecraft.world.entity.ai.village.poi.PoiType;import net.minecraft.world.item.*;import net.minecraft.world.inventory.*;import net.minecraft.world.level.block.entity.*;import net.neoforged.neoforge.registries.*;import net.neoforged.bus.api.IEventBus;
 public final class MagicStudy {
- public static final DeferredBlock<ArchiveTableBlock> TABLE=KelMagic.BLOCKS.register("archivist_table",()->new ArchiveTableBlock(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of().strength(3).noOcclusion().sound(net.minecraft.world.level.block.SoundType.WOOD)));
+ public static final DeferredBlock<ArchiveTableBlock> TABLE=KelMagic.BLOCKS.register("archivist_table",()->new ArchiveTableBlock(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of().strength(3).lightLevel(s->12).noOcclusion().sound(net.minecraft.world.level.block.SoundType.WOOD)));
+ public static final DeferredItem<Item> MONOCLE=KelMagic.ITEMS.register("monocle",()->new Item(new Item.Properties().stacksTo(1)));
  public static final DeferredItem<BlockItem> TABLE_ITEM=KelMagic.ITEMS.registerSimpleBlockItem(TABLE);
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<ArchiveTableEntity>> TABLE_ENTITY=MagicAudio.ENTITIES.register("archivist_table",()->BlockEntityType.Builder.of(ArchiveTableEntity::new,TABLE.get()).build(null));
  public static final DeferredHolder<MenuType<?>,MenuType<ArchiveTableMenu>> TABLE_MENU=MagicAudio.MENUS.register("archivist_table",()->net.neoforged.neoforge.common.extensions.IMenuTypeExtension.create((id,inv,b)->new ArchiveTableMenu(id,inv,b.readBlockPos())));

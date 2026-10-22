@@ -1,0 +1,74 @@
+{
+  "ambientocclusion": false,
+  "textures": {
+    "particle": "#bottom",
+    "bottom": "kelmagic:block/midnight_door_bottom",
+    "top": "kelmagic:block/midnight_door_top",
+    "edge": "kelmagic:block/midnight_edge_vertical"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        3,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": "#edge",
+          "cullface": "down"
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": "#edge",
+          "cullface": "north"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3,
+            16
+          ],
+          "texture": "#edge",
+          "cullface": "south"
+        },
+        "west": {
+          "uv": [
+            16,
+            0,
+            0,
+            16
+          ],
+          "texture": "#bottom",
+          "cullface": "west"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#bottom"
+        }
+      }
+    }
+  ]
+}

@@ -18,7 +18,7 @@ public class KelMagic {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     public KelMagic(IEventBus modEventBus, ModContainer modContainer) {
-        dev.kelmagic.worldgen.ArchiveWorldgen.TYPES.register(modEventBus);MagicStudy.register(modEventBus);MagicLamps.init();MagicCopper.init();dev.kelmagic.research.Research.init();MagicPortals.init();MagicMaterials.init();MagicResonance.init();MagicMascot.init();MagicContent.register(modEventBus);
+        dev.kelmagic.worldgen.ArchiveWorldgen.TYPES.register(modEventBus);MagicStudy.register(modEventBus);MagicLamps.init();MagicCopper.init();dev.kelmagic.research.Research.init();MagicPortals.init();MagicMaterials.init();dev.kelmagic.content.MagicGrove.init();dev.kelmagic.content.MagicDreams.init(modEventBus);dev.kelmagic.content.ArchiveStorage.init();dev.kelmagic.content.InkDrawings.init();MagicResonance.init();MagicMascot.init();MagicApprovedContent.init();MagicContent.register(modEventBus);
         MagicCreatures.TYPES.register(modEventBus);
         MagicAudio.register(modEventBus);
         MagicArchive.RECIPES.register(modEventBus);MagicParticles.TYPES.register(modEventBus);
@@ -27,6 +27,7 @@ public class KelMagic {
         MagicSounds.SOUNDS.register(modEventBus);
         modEventBus.addListener(SpellNetwork::register);
         modContainer.registerConfig(ModConfig.Type.SERVER,Config.SPEC);modContainer.registerConfig(ModConfig.Type.CLIENT,MageClientConfig.SPEC);
+        dev.kelmagic.compat.MonocleAccessories.init(modEventBus);
         LOGGER.info("Kel Magic: {} verified magical words",KelLexicon.WORDS.size());
     }
 }

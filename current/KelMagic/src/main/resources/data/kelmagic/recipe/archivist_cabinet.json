@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "GCG",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    },
+    "G": {
+      "item": "kelmagic:golden_thread"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "id": "kelmagic:archivist_cabinet",
+    "count": 1
+  }
+}

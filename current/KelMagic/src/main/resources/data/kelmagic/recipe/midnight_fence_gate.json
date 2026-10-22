@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "FPF",
+    "FPF"
+  ],
+  "key": {
+    "P": {
+      "item": "kelmagic:midnight_planks"
+    },
+    "F": {
+      "item": "kelmagic:living_fiber"
+    }
+  },
+  "result": {
+    "id": "kelmagic:midnight_fence_gate",
+    "count": 1
+  }
+}

@@ -82,7 +82,8 @@ public final class MageGazeStates {
   Entry v=entry(e);if(v.lastTick==e.tickCount)return;v.lastTick=e.tickCount;double t=now(e);boolean book=e.scene()==2||e.scene()==25;
   if(book&&v.bookStart<0)v.bookStart=t;if(!book)v.bookStart=-1;
   Vec3 wanted;
-  if(book){choose(v,null,Kind.BOOK,t);v.label="book lines";wanted=v.bookPoint!=null?v.bookPoint:e.position().add(forward(e,v).scale(.55)).add(0,1,0);}
+  if(e.visualCombatTarget()!=null){var a=e.visualCombatTarget();choose(v,a,kind(a),t);wanted=a.getEyePosition();}
+  else if(book){choose(v,null,Kind.BOOK,t);v.label="book lines";wanted=v.bookPoint!=null?v.bookPoint:e.position().add(forward(e,v).scale(.55)).add(0,1,0);}
   else if(t<v.selectedUntil){
    if(v.selectedEntity!=null){Entity a=v.selectedEntity;boolean ok=eligible(e,v,a)&&visible(e,origin(e,v),a.getEyePosition());if(ok)v.lastVisible=t;
     if(!ok&&t-v.lastVisible>.6){v.selectedUntil=-1;v.nextScan=0;tickFallback(e,v,t);wanted=fallback(e,v);}else{choose(v,a,kind(a),t);wanted=a.getEyePosition();}}

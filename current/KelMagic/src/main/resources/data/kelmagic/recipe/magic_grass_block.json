@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:grass_block"
+    },
+    {
+      "item": "kelmagic:living_fiber"
+    }
+  ],
+  "result": {
+    "id": "kelmagic:magic_grass_block",
+    "count": 1
+  }
+}

@@ -12,7 +12,9 @@ public final class GrandSpells {
  r("mana_tide",25,"tuna kor liv por kan sav pen log kel tem bon mam pap kin ged gek lek mek nek pek rek tek rut vut ten"),
  r("meteor",25,"sap nok gor pir dun tup pad neb mor nak por muk muk muk muk muk muk muk muk muk muk muk muk muk muk"),
  r("transcend",100,String.join(" ",Collections.nCopies(5,"mina neb sap sol lun tem sav pen kan por liv mor sin rin tin log kel tuk bal bon"))),
- r("end_gate",20,"dor rin sin lok neb sap lun tom kan tem sav pen log kel tuk bal per liv mor ten"));
+ r("end_gate",20,"dor rin sin lok neb sap lun tom kan tem sav pen log kel tuk bal per liv mor ten"),
+ r("threshold_link",40,String.join(" ",Collections.nCopies(2,"dor rin sin lok neb sap lun tom kan tem sav pen log kel tuk bal per liv mor ten"))),
+ r("grove_awakening",70,String.join(" ",Collections.nCopies(3,"ter gor nuk neb nok rok sel tur del gel lel mel tel lok kan liv tem sav"))+" ter gor nuk neb nok rok sel tur del gel lel mel tel lok kan liv"));
  public static Rite find(Collection<String> words){if(words.size()>100)return null;var stripped=words.stream().filter(w->!w.equals("muk")&&!w.equals("nis")).sorted().toList();for(var r:ALL)if(words.size()>=r.minimum&&(!r.id.equals("transcend")||words.size()==100)&&stripped.equals(r.roots.stream().filter(w->!w.equals("muk")&&!w.equals("nis")).sorted().toList()))return r;return null;}
  public static double destructiveScale(Collection<String> words){return (1+.5*Collections.frequency(new ArrayList<>(words),"muk"))/(1+.5*Collections.frequency(new ArrayList<>(words),"nis"));}
  private GrandSpells(){}

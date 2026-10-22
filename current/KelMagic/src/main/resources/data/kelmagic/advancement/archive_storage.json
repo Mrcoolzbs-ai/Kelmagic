@@ -1,0 +1,28 @@
+{
+  "parent": "kelmagic:midnight_wood",
+  "display": {
+    "icon": {
+      "id": "kelmagic:archivist_cabinet"
+    },
+    "title": {
+      "translate": "advancements.kelmagic.archive_storage.title"
+    },
+    "description": {
+      "translate": "advancements.kelmagic.archive_storage.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "done"
+    ]
+  ]
+}

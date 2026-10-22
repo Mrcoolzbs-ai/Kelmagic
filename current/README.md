@@ -1,31 +1,29 @@
-# Selected KelMagic source — 1.27 / Hair180
+# KelMagic 1.34.1 R13.1 — НЕСТАБИЛЬНАЯ ВЕРСИЯ
 
-The user explicitly selected180Hz after the final visual demonstration and requested publication of this variant together with the current model and table interaction changes.
+**Unstable / pre-release.** Тестовая версия, не стабильный релиз. Перед установкой сделайте резервную копию мира.
 
-## Project
+## Текущий проект
 
-`KelMagic/` is the complete cumulative production-source copy:
-- Hair v8.4 and Head65, RearHairCloth9×19,180substeps/second target, iteration limit64.
-- Existing accepted temporary-vector reuse, topology-only pair list and early no-advance preparation gate. No rejected coefficient-cache or48-iteration experiment.
-- Current character geometry, source artwork, textures, animations and existing Eye Controller v3.3.
-- The1.27 table orientation/collision/page-ray and table/codex interaction fixes, as present in the saved1.27 source.
-- All other source/resources from the preserved baseline, unchanged. The existing `mod_version=1.27.0-f3-table-fix-diagnostic` string is retained; no fabricated release version or newly tested binary is implied.
+`KelMagic/` — полный накопительный снимок R13.1 из ранее выданного transfer-архива. Исправлены сохранение творческого кодекса (раздел 8), документация 17 новых записей, стиль текстур предметов и звуковых блоков, ограниченная помощь кулона последнего вздоха.
 
-Relative to the immutable240Hz/64 baseline, the selected source changes exactly one expression in `RearHairCloth.java`: `Math.ceil(dt*240)` to `Math.ceil(dt*180)`. No solver, mesh, collision, gravity or compliance changes were made for publication. The240Hz baseline and all historical repository snapshots are preserved; no old branch or history is overwritten.
+- Изменения: [README-R13.1-RU.md](KelMagic/README-R13.1-RU.md).
+- Проверки и известные сбои: [QA-R13.1.md](KelMagic/QA-R13.1.md).
+- Покрытие R13: [APPROVED-COVERAGE-R13.md](KelMagic/APPROVED-COVERAGE-R13.md).
+- Исторические снимки сохранены; прежняя выбранная 1.27 доступна в истории Git на коммите `5ddcc48`.
 
-## Build
+## Сборка и установка
 
-Java21, Minecraft1.21.1, NeoForge21.1.256, GeckoLib4.9.3. Before building, restore the official GeckoLib NeoForge1.21.1 dependency to `KelMagic/libs/geckolib-neoforge-1.21.1-4.9.3.jar`; repository rules exclude third-party dependency JARs. The Gradle wrapper bootstrap JAR is included.
+Java 21, Minecraft 1.21.1, NeoForge 21.1.256; GeckoLib 4.9.3 обязателен, Curios 9.5.1 необязателен. Сторонние JAR не хранятся в Git; восстановите зависимости в `KelMagic/libs` из официальных дистрибутивов либо transfer-архива.
 
 ```sh
 cd current/KelMagic
-bash gradlew -I tools/binary-build.init.gradle jar
+bash gradlew -I tools/recovery/binary-build.init.gradle check -x eyeStateTest coreTest jar --no-daemon --no-configuration-cache --console=plain
 ```
 
-Old project documentation and generator/QA helpers are preserved as source history, not instructions to regenerate the selected assets. Existing build exclusions for historical QA classes are retained. The new frequency-measurement rigs, FinalProbe, final-gameplay driver, videos, logs, saves, caches, credentials and build products are not part of this publication.
+Готовый JAR приложен к GitHub pre-release; он не пересобирался при публикации. SHA-256: `6345580834facce24113f2f725568aa952d4b9d18ce1f658c8317838dc5ad2f4`.
 
-## Evidence limits retained
+## Ограничения проверки
 
-The prior240/180 experiment showed a median speed improvement and better four-second reversal recovery for180 in that controlled sequence, but one timing repeat was slower and peak structural strain increased. The final continuous ordinary-movement take showed transient bends/lifts. Its software-rendered client produced about5actualFPS, and some rendered frames lacked integration records; it was not an unconditional full visual pass. These limitations are not waived or hidden by the user's selection.
+Ранее: CoreTests — 68 143 проверки; статический QA — 8 274 проверки; GameTest — 196/201, пять унаследованных сбоев. Известный `eyeStateTest: continuous pulse` исключён. Нативный клиентский прогон R13.1 после перерисовки не повторялся из-за отсутствия Xvfb. Для публикации новые игровые тесты не запускались.
 
-No new full audit, build, performance run or game test was performed for Git publication. The source snapshot and one-expression180Hz difference were checked against the saved SHA-256 manifest. See `PUBLICATION_SHA256.json` for the actual published source files and the explicit dependency exclusion. No token is stored in this repository.
+QA-журналы и зависимости доступны в полном transfer-архиве релиза; Git исключает логи, сборочные и runtime-файлы. Токен в проект и коммиты не добавлялся.
