@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "kelmagic:mana_debt",
-    "kelmagic:overload"
+    "kelmagic:overload",
+    "kelmagic:oath_debt"
   ]
 }

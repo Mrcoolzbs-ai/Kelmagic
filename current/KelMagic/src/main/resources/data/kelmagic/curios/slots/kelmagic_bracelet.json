@@ -1,0 +1,10 @@
+{
+  "size": 1,
+  "order": 52,
+  "icon": "kelmagic:slot/empty_kelmagic_bracelet",
+  "validators": [
+    "curios:tag"
+  ],
+  "add_cosmetic": false,
+  "render_toggle": false
+}

@@ -263,3 +263,10 @@ tasks.named('check'){dependsOn 'hairBridgeTest'}
 // Original R6 phrase motif bounds and existing grammar regressions.
 tasks.register('phraseGeometryTest',JavaExec){dependsOn testClasses;classpath=sourceSets.test.runtimeClasspath+sourceSets.main.compileClasspath;mainClass='dev.kelmagic.core.PhraseGeometryTests'}
 tasks.named('check'){dependsOn 'phraseGeometryTest'}
+
+// R14 pure conservation, bounds and parry-window regressions.
+tasks.register('artifactRulesTest',JavaExec){dependsOn testClasses;classpath=sourceSets.test.runtimeClasspath;mainClass='dev.kelmagic.artifact.ArtifactRulesTests'}
+tasks.named('check'){dependsOn 'artifactRulesTest'}
+tasks.register('artifactArmorProof',JavaExec){dependsOn testClasses;classpath=sourceSets.test.runtimeClasspath+sourceSets.main.compileClasspath;mainClass='dev.kelmagic.client.ArtifactArmorExport';args(project.file('art/artifact-r14/baked-armor.json').absolutePath);jvmArgs('-Djava.awt.headless=true')}
+// Headless geometry proof compiles against the same Minecraft API as the mod.
+sourceSets.test.compileClasspath += sourceSets.main.compileClasspath

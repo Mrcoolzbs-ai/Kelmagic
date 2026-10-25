@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "kelmagic:block/crystal_striker"
+    },
+    "powered=true": {
+      "model": "kelmagic:block/crystal_striker_on"
+    }
+  }
+}

@@ -69,5 +69,86 @@
         "stream": false
       }
     ]
+  },
+  "artifact_chime": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/artifact_chime",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.artifact_chime"
+  },
+  "mana_transfer": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/mana_transfer",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.mana_transfer"
+  },
+  "crystal_strike": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/crystal_strike",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.crystal_strike"
+  },
+  "spell_absorb": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/spell_absorb",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.spell_absorb"
+  },
+  "root_bind": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/root_bind",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.root_bind"
+  },
+  "silence_fall": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/silence_fall",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.silence_fall"
+  },
+  "threshold_lock": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/threshold_lock",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.threshold_lock"
+  },
+  "dream_guard": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/dream_guard",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.dream_guard"
+  },
+  "path_weave": {
+    "sounds": [
+      {
+        "name": "kelmagic:artifact/path_weave",
+        "stream": false
+      }
+    ],
+    "subtitle": "subtitles.kelmagic.path_weave"
   }
 }

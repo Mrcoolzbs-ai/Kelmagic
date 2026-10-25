@@ -1,0 +1,5 @@
+allprojects {afterEvaluate {neoForge.runs.gameTestServer {
+ gameDirectory = project.file('run-gametest-artifact-r14')
+ systemProperty 'neoforge.enabledGameTestNamespaces','kelmagic_artifact'
+ jvmArgument '-Xmx1400m'
+}}}

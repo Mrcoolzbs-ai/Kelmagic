@@ -1,0 +1,38 @@
+package dev.kelmagic.artifact;
+import java.util.*;
+import dev.kelmagic.*;
+import dev.kelmagic.core.KelLexicon;
+import net.minecraft.core.*;
+import net.minecraft.server.level.*;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.level.*;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.phys.*;
+import net.neoforged.neoforge.event.ServerChatEvent;
+public final class ArtifactWorld {
+    private static final Map<ServerLevel,Map<BlockPos,ArtifactBlockEntity>> DEVICES=new WeakHashMap<>();
+    private record Sample(ServerLevel level,UUID item,boolean gravity,long until){}
+    private record Echo(Vec3 position,long time,String formula){}
+    private static final Map<UUID,Sample> SAMPLES=new HashMap<>();
+    private static final Map<ServerLevel,Deque<Echo>> ECHOES=new WeakHashMap<>();
+    public static void register(ServerLevel l,ArtifactBlockEntity be){DEVICES.computeIfAbsent(l,k->new HashMap<>()).put(be.getBlockPos().immutable(),be);}
+    public static void unregister(ServerLevel l,BlockPos p){var map=DEVICES.get(l);if(map!=null)map.remove(p);}
+    public static List<ArtifactBlockEntity> devices(ServerLevel l){var map=DEVICES.get(l);if(map==null)return List.of();map.values().removeIf(be->be.isRemoved()||!l.hasChunkAt(be.getBlockPos()));return List.copyOf(map.values());}
+    public static boolean muted(ServerLevel l,Vec3 at){for(var be:devices(l))if(be.block().kind==ArtifactBlock.Kind.MUTE&&be.active&&be.getBlockPos().distToCenterSqr(at)<=144)return true;return false;}
+    public static boolean allowed(ServerPlayer p,BlockPos at){return allowed(p.getUUID(),p.serverLevel(),at);}
+    public static boolean allowed(UUID id,ServerLevel l,BlockPos at){for(var be:devices(l))if(be.block().kind==ArtifactBlock.Kind.ACCESS&&be.getBlockPos().distSqr(at)<=64&&!be.accepts(id))return false;return true;}
+    public static boolean portalBlocked(ServerLevel l,Vec3 at){var pos=BlockPos.containing(at).below();return l.hasChunkAt(pos)&&l.getBlockState(pos).is(ArtifactContent.WARD.get());}
+    public static boolean nightGuard(ServerPlayer p){if(!p.isSleeping())return false;for(var be:devices(p.serverLevel()))if(be.block().kind==ArtifactBlock.Kind.NIGHT&&be.mana>=.25&&be.getBlockPos().distToCenterSqr(p.position())<=144)return true;return false;}
+    public static boolean capture(ServerChatEvent e){var tokens=Arrays.stream(e.getRawText().strip().split("\\s+")).toList();if(tokens.stream().noneMatch(KelLexicon.WORDS::containsKey))return false;var list=new ArrayList<>(devices(e.getPlayer().serverLevel()));list.sort(Comparator.comparingDouble(be->be.getBlockPos().distToCenterSqr(e.getPlayer().position())));for(var be:list)if(be.capture(e.getPlayer(),tokens))return true;return false;}
+    public static void remember(ServerPlayer p,List<String> words){var q=ECHOES.computeIfAbsent(p.serverLevel(),k->new ArrayDeque<>());q.addFirst(new Echo(p.position(),p.serverLevel().getGameTime(),String.join(" ",words)));while(q.size()>32)q.removeLast();for(var other:p.serverLevel().players())if(other!=p&&other.distanceToSqr(p)<1024&&other.hasLineOfSight(p)){var stack=ArtifactAccessories.stack(other,ArtifactContent.WITNESS.get());if(!stack.isEmpty()){ArtifactData.edit(stack,t->{t.putString("KelWitness",String.join(" ",words));t.putString("KelWitnessFrom",p.getGameProfile().getName());});other.displayClientMessage(net.minecraft.network.chat.Component.translatable("kelmagic.artifact.witnessed"),true);}}}
+    public static boolean echo(ServerPlayer p){var list=ECHOES.getOrDefault(p.serverLevel(),new ArrayDeque<>());for(var echo:list)if(p.serverLevel().getGameTime()-echo.time<1200&&p.position().distanceToSqr(echo.position)<=4096){ArtifactVisuals.line(p.serverLevel(),p.getEyePosition(),p.getEyePosition().add(echo.position.subtract(p.position()).normalize().scale(4)),0xd3a6ed);p.displayClientMessage(net.minecraft.network.chat.Component.translatable("kelmagic.artifact.echo_distance",(int)p.position().distanceTo(echo.position)),true);return true;}p.displayClientMessage(net.minecraft.network.chat.Component.translatable("kelmagic.artifact.no_echo"),true);return false;}
+    public static void sample(ServerPlayer p){if(SAMPLES.containsKey(p.getUUID())){releaseSample(p);return;}if(!ArtifactRuntime.has(p,ArtifactContent.SAMPLE.get()))return;var eye=p.getEyePosition();ItemEntity chosen=null;double dist=25;for(var item:p.serverLevel().getEntitiesOfClass(ItemEntity.class,p.getBoundingBox().inflate(5),x->x.isAlive()&&(x.getTarget()==null||x.getTarget().equals(p.getUUID())))){var delta=item.position().subtract(eye);if(delta.lengthSqr()<dist&&p.getLookAngle().dot(delta.normalize())>.85&&p.hasLineOfSight(item)){chosen=item;dist=delta.lengthSqr();}}if(chosen!=null){SAMPLES.put(p.getUUID(),new Sample(p.serverLevel(),chosen.getUUID(),chosen.isNoGravity(),p.serverLevel().getGameTime()+600));chosen.getPersistentData().putUUID("KelSampleOwner",p.getUUID());chosen.getPersistentData().putBoolean("KelSampleOldGravity",chosen.isNoGravity());chosen.setNoGravity(true);}}
+    public static void tickSample(ServerPlayer p){var sample=SAMPLES.get(p.getUUID());if(sample==null)return;if(sample.level!=p.serverLevel()||p.serverLevel().getGameTime()>sample.until||!ArtifactRuntime.has(p,ArtifactContent.SAMPLE.get())){releaseSample(p);return;}var entity=sample.level.getEntity(sample.item);if(!(entity instanceof ItemEntity item)||!item.isAlive()){SAMPLES.remove(p.getUUID());return;}Vec3 at=p.getEyePosition().add(p.getLookAngle().scale(1.8)).add(0,-.25,0);var hit=p.serverLevel().clip(new ClipContext(p.getEyePosition(),at,ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,p));if(hit.getType()!=HitResult.Type.MISS)at=hit.getLocation().subtract(p.getLookAngle().scale(.25));item.setDeltaMovement(at.subtract(item.position()).scale(.45));item.setPickUpDelay(10);if(p.tickCount%8==0)ArtifactVisuals.ring(p.serverLevel(),item.position(),.25,0x69e2da,6);}
+    public static void releaseSample(ServerPlayer p){var sample=SAMPLES.remove(p.getUUID());if(sample!=null&&sample.level.getEntity(sample.item) instanceof ItemEntity item){item.setNoGravity(sample.gravity);item.getPersistentData().remove("KelSampleOwner");item.getPersistentData().remove("KelSampleOldGravity");item.setDefaultPickUpDelay();}}
+    public static void rootSense(ServerPlayer p){var root=p.blockPosition().below();var connected=new HashSet<BlockPos>();var queue=new ArrayDeque<BlockPos>();connected.add(root);queue.add(root);while(!queue.isEmpty()&&connected.size()<256){var at=queue.removeFirst();for(var d:Direction.Plane.HORIZONTAL)for(int dy=-1;dy<=1;dy++){var pos=at.relative(d).offset(0,dy,0);if(pos.distSqr(root)>100||connected.contains(pos)||!p.serverLevel().hasChunkAt(pos)||!p.serverLevel().getBlockState(pos).is(dev.kelmagic.content.MagicDreams.GRASS.get()))continue;connected.add(pos.immutable());queue.add(pos.immutable());}}
+        for(var e:p.serverLevel().getEntitiesOfClass(LivingEntity.class,p.getBoundingBox().inflate(10),e->e!=p&&e.isAlive()&&e.getDeltaMovement().horizontalDistanceSqr()>.002))if(connected.contains(e.blockPosition().below())){p.serverLevel().sendParticles(p,net.minecraft.core.particles.ParticleTypes.END_ROD,true,e.getX(),e.getY()+.1,e.getZ(),4,.25,.05,.25,0);}}
+    public static void recoverSample(ItemEntity item){var tag=item.getPersistentData();if(tag.hasUUID("KelSampleOwner")&&!SAMPLES.containsKey(tag.getUUID("KelSampleOwner"))){item.setNoGravity(tag.getBoolean("KelSampleOldGravity"));tag.remove("KelSampleOwner");tag.remove("KelSampleOldGravity");item.setDefaultPickUpDelay();}}
+    public static void clear(){DEVICES.clear();ECHOES.clear();SAMPLES.clear();}
+    private ArtifactWorld(){}
+}

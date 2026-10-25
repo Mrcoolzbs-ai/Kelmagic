@@ -28,6 +28,9 @@
     "ResearchMenuMixin",
     "ResearchStonecutterMixin",
     "ResearchCrafterMixin",
-    "ResearchBrewingMixin"
+    "ResearchBrewingMixin",
+    "StoppedSeasonMixin",
+    "ArtifactEffectAccess",
+    "NegationEffectMixin"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "size": 1,
+  "order": 56,
+  "icon": "kelmagic:slot/empty_kelmagic_belt",
+  "validators": [
+    "curios:tag"
+  ],
+  "add_cosmetic": false,
+  "render_toggle": false
+}

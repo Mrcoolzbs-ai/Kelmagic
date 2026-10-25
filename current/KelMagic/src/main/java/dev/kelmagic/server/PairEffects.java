@@ -14,7 +14,7 @@ public final class PairEffects {
   int duration=SpellProfiles.duration(240,scale);var targets=new ArrayList<LivingEntity>();targets.add(p);
   if(PairRules.actors(a)||PairRules.actors(b)){var aim=SpellEffects.aim(p);if(aim.entity()!=null&&((w.contains("tuna")&&SpellEffects.human(aim.entity()))||(w.contains("sila")&&aim.entity() instanceof Mob&&!SpellEffects.human(aim.entity()))))targets.add(aim.entity());}
   if(w.contains("lu")){var center=p.position();for(var e:p.serverLevel().getEntitiesOfClass(LivingEntity.class,p.getBoundingBox().inflate(Math.min(12,Config.AREA_RADIUS.get()*scale)),e->e.isAlive()&&!e.isSpectator()&&p.hasLineOfSight(e))){if(targets.size()>=Config.MAX_TARGETS.get())break;if(w.contains("tuna")&&!SpellEffects.human(e)||w.contains("sila")&&(!(e instanceof Mob)||SpellEffects.human(e)))continue;if(!targets.contains(e))targets.add(e);}}
-  for(var target:targets){if(w.contains("no")){target.removeEffect(MobEffects.POISON);target.removeEffect(MobEffects.WEAKNESS);}target.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,duration,Math.min(4,Math.max(0,(int)scale-1))),p);}
+  for(var target:targets){if(dev.kelmagic.artifact.ArtifactRuntime.immune(target))continue;if(w.contains("no")){target.removeEffect(MobEffects.POISON);target.removeEffect(MobEffects.WEAKNESS);}target.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,duration,Math.min(4,Math.max(0,(int)scale-1))),p);}
   p.serverLevel().sendParticles(net.minecraft.core.particles.ParticleTypes.ENCHANT,p.getX(),p.getY()+1,p.getZ(),8,.3,.5,.3,.1);return true;
  }
  private PairEffects(){}

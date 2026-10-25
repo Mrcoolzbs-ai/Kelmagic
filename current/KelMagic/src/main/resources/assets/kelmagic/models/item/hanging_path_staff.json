@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kelmagic:item/hanging_path_staff"
+  }
+}

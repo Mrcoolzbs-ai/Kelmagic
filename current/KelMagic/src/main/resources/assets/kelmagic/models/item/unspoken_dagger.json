@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kelmagic:item/unspoken_dagger"
+  }
+}

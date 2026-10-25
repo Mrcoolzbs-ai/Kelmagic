@@ -19,7 +19,7 @@ public final class ArcaneFire {
  public static void extinguish(LivingEntity e){if(e.hasData(MagicAttachments.ARCANE_BURN)&&e.getData(MagicAttachments.ARCANE_BURN)>0){e.setData(MagicAttachments.ARCANE_BURN,0);sync(e);}}
  public static boolean ignite(LivingEntity e){return ignite(e,Config.FIRE_SECONDS.get()*60,1f);}
  public static boolean ignite(LivingEntity e,int duration,float power){
-  if(!e.isAlive() || e.isSpectator() || e instanceof Player p && p.getAbilities().invulnerable)return false;
+  if(dev.kelmagic.artifact.ArtifactRuntime.immune(e)||!e.isAlive() || e.isSpectator() || e instanceof Player p && p.getAbilities().invulnerable)return false;
   int old=e.getData(MagicAttachments.ARCANE_BURN);float oldPower=e.getData(MagicAttachments.ARCANE_POWER);
   int next=Math.max(old,Math.max(1,Math.min(3600,duration)));float nextPower=old==0?Math.max(.01f,Math.min(16,power)):Math.max(oldPower,Math.max(.01f,Math.min(16,power)));
   e.setData(MagicAttachments.ARCANE_BURN,next);e.setData(MagicAttachments.ARCANE_POWER,nextPower);

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kelmagic:item/heavy_thought_mace"
+  }
+}

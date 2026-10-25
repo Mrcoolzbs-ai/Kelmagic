@@ -1,0 +1,10 @@
+{
+  "size": 1,
+  "order": 55,
+  "icon": "kelmagic:slot/empty_kelmagic_charm",
+  "validators": [
+    "curios:tag"
+  ],
+  "add_cosmetic": false,
+  "render_toggle": false
+}

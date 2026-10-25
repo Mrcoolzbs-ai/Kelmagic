@@ -19,7 +19,7 @@ public final class ScripterItem extends Item {
     @Override public InteractionResultHolder<ItemStack> use(Level level,Player player,InteractionHand hand) {
         ItemStack stack=player.getItemInHand(hand);
         if(player instanceof ServerPlayer p) {
-            if(p.isSpectator() || p.getCooldowns().isOnCooldown(this)) return InteractionResultHolder.fail(stack);
+            if(p.isSpectator() || !dev.kelmagic.artifact.ArtifactRuntime.canCast(p) || p.getCooldowns().isOnCooldown(this)) return InteractionResultHolder.fail(stack);
             var s=p.getData(MagicAttachments.SESSION);
             if(!p.isShiftKeyDown()) {
                 if(!stack.getOrDefault(MagicComponents.RECORDING.get(),false)) {
@@ -39,7 +39,7 @@ public final class ScripterItem extends Item {
                 var words=stack.getOrDefault(MagicComponents.SPELL.get(),List.<String>of());
                 if(stack.getOrDefault(MagicComponents.RECORDING.get(),false) || s.active() || !valid(words)) {p.displayClientMessage(Component.translatable("kelmagic.scripter_blocked"),true);return InteractionResultHolder.fail(stack);}
                 // No arbitrary client spell payload: read the authoritative item component and revalidate it.
-                var mana=p.getData(MagicAttachments.MANA);var spend=ManaMath.spend(Math.min(MagicServer.maximum(p),mana.current()),cost(words));
+                var mana=p.getData(MagicAttachments.MANA);if(dev.kelmagic.artifact.ArtifactRuntime.has(p,dev.kelmagic.artifact.ArtifactContent.CAUTIOUS.get())&&mana.current()<cost(words))return InteractionResultHolder.fail(stack);dev.kelmagic.artifact.ArtifactRuntime.state(p).paid=cost(words);var spend=ManaMath.spend(Math.min(MagicServer.maximum(p),mana.current()),cost(words));
                 p.setData(MagicAttachments.MANA,mana.withCurrent(spend.remaining()));Playback.run(p,"scripter",()->{MagicServer.hurtMana(p,spend.healthDamage());
                 if(p.isAlive()) {
                     words.forEach(s::append);MagicServer.sync(p);

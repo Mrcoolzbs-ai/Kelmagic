@@ -3,6 +3,7 @@
   "values": [
     "kelmagic:mana_debt",
     "kelmagic:overload",
-    "kelmagic:arcane_fire"
+    "kelmagic:arcane_fire",
+    "kelmagic:oath_debt"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kelmagic:block/forbidden_threshold_base"
+    }
+  }
+}

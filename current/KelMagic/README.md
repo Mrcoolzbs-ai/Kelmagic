@@ -1,3 +1,5 @@
+> **R14 Artifacts TEST:** актуальные инструкции для этой локальной сборки — `README-R14-RU.md`, результаты — `QA-R14.md`, каталог — `ARTIFACT-CATALOG-R14.md`. Новых рецептов нет.
+
 # KelMagic R12 TEST — 1.33.0-r12-roots-TEST
 Complete cumulative project, not a patch. Current Russian instructions: README-R12-RU.md. Formulas: FORMULAS-R12.txt. Results and limitations: reports/QA-R12.md. Design canon and invariants: KELMAGIC_HANDOFF.md. Historical R9–R11 docs do not override R12.
 

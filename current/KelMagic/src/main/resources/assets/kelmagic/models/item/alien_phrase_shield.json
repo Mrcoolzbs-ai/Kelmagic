@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "kelmagic:item/alien_phrase_shield"
+  }
+}

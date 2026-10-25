@@ -1,0 +1,35 @@
+from pathlib import Path
+R=Path(__file__).resolve().parents[2]/'src/main/java/dev/kelmagic'
+def edit(f,a,b):
+ p=R/f;s=p.read_text();assert a in s,(f,a[:50]);p.write_text(s.replace(a,b))
+edit('artifact/ArtifactRuntime.java','Map<UUID,State> STATES=new HashMap<>();','Map<ServerPlayer,State> STATES=new WeakHashMap<>();')
+edit('artifact/ArtifactRuntime.java','STATES.computeIfAbsent(p.getUUID(),u->new State())','STATES.computeIfAbsent(p,u->new State())')
+edit('artifact/ArtifactRuntime.java','STATES.remove(p.getUUID())','STATES.remove(p)')
+edit('artifact/ArtifactRuntime.java','public long combatUntil,arrivalUntil,rootAt,dewAt,lastAction;','public long combatUntil,arrivalUntil,rootAt,dewAt,lastAction,movedUntil;')
+edit('artifact/ArtifactRuntime.java','public static boolean canSpeak(ServerPlayer p){return !silent(p)&&p.serverLevel().getGameTime()>=p.getPersistentData().getLong("KelMuteUntil")&&!ArtifactWorld.muted(p.serverLevel(),p.position());}','public static boolean canCast(ServerPlayer p){return p.serverLevel().getGameTime()>=p.getPersistentData().getLong("KelMuteUntil")&&!ArtifactWorld.muted(p.serverLevel(),p.position());}\n    public static boolean canSpeak(ServerPlayer p){return !silent(p)&&canCast(p);}')
+edit('artifact/ArtifactRuntime.java','p.serverLevel().getGameTime()>=s.combatUntil&&p.position().distanceToSqr(s.last)<.0001','p.serverLevel().getGameTime()>=s.combatUntil&&p.serverLevel().getGameTime()>=s.movedUntil&&p.position().distanceToSqr(s.last)<.0001')
+edit('artifact/ArtifactRuntime.java','ArtifactWorld.tickSample(p);s.last=p.position();','ArtifactWorld.tickSample(p);if(p.position().distanceToSqr(s.last)>.0001)s.movedUntil=now+2;s.last=p.position();')
+for f in ['artifact/ArtifactMagic.java','artifact/ArtifactCombat.java','artifact/ArtifactItem.java','item/ScripterItem.java','audio/TapePlayerItem.java']:
+ p=R/f;p.write_text(p.read_text().replace('ArtifactRuntime.canSpeak(p)','ArtifactRuntime.canCast(p)'))
+edit('server/SpellEffects.java','!dev.kelmagic.artifact.ArtifactRuntime.canSpeak(p)','!dev.kelmagic.artifact.ArtifactRuntime.canCast(p)')
+edit('server/MagicServer.java','(!action.cancel()&&!dev.kelmagic.artifact.ArtifactRuntime.canSpeak(p))','(!action.cancel()&&!dev.kelmagic.artifact.ArtifactRuntime.canCast(p))')
+edit('artifact/ArtifactNetworking.java','ArcaneFire.extinguish(p);p.getPersistentData()','ArcaneFire.extinguish(p);p.clearFire();p.getPersistentData()')
+edit('artifact/ArtifactNetworking.java','else if(ArtifactRuntime.pieces(p,"steady_anchor")==4)','else if(ArtifactRuntime.pieces(p,"steady_anchor")==4&&p.onGround()&&!p.isPassenger())')
+edit('artifact/ArtifactWorld.java','chosen.setNoGravity(true);','chosen.getPersistentData().putUUID("KelSampleOwner",p.getUUID());chosen.getPersistentData().putBoolean("KelSampleOldGravity",chosen.isNoGravity());chosen.setNoGravity(true);')
+edit('artifact/ArtifactWorld.java','item.setNoGravity(sample.gravity);item.setDefaultPickUpDelay();','item.setNoGravity(sample.gravity);item.getPersistentData().remove("KelSampleOwner");item.getPersistentData().remove("KelSampleOldGravity");item.setDefaultPickUpDelay();')
+edit('artifact/ArtifactWorld.java','public static void clear(){','public static void recoverSample(ItemEntity item){var tag=item.getPersistentData();if(tag.hasUUID("KelSampleOwner")&&!SAMPLES.containsKey(tag.getUUID("KelSampleOwner"))){item.setNoGravity(tag.getBoolean("KelSampleOldGravity"));tag.remove("KelSampleOwner");tag.remove("KelSampleOldGravity");item.setDefaultPickUpDelay();}}\n    public static void clear(){')
+edit('artifact/ArtifactCombat.java','if(!magical(bolt)||','if(bolt.isRemoved()||!magical(bolt)||')
+edit('artifact/ArtifactCombat.java','e.setDeltaMovement(l.getDeltaMovement()','e.setDeltaMovement(l.getDeltaMovement()') if False else None
+edit('artifact/ArtifactCombat.java','l.setDeltaMovement(l.getDeltaMovement().multiply(1,0,1));','{l.setDeltaMovement(l.getDeltaMovement().multiply(1,0,1));l.hurtMarked=true;}')
+edit('artifact/ArtifactCombat.java','@SubscribeEvent public static void entityTick(EntityTickEvent.Post event){','@SubscribeEvent public static void entityTick(EntityTickEvent.Post event){if(event.getEntity() instanceof net.minecraft.world.entity.item.ItemEntity item&&!item.level().isClientSide)ArtifactWorld.recoverSample(item);')
+edit('artifact/ArtifactWeapon.java','if(p.getCooldowns().isOnCooldown(this)||p.isSpectator())','if(p.getCooldowns().isOnCooldown(this)||p.isSpectator()||!ArtifactRuntime.canCast(p))')
+edit('artifact/ArtifactWeapon.java','attacker instanceof ServerPlayer p&&ArtifactRuntime.canHarm(p,target)','attacker instanceof ServerPlayer p&&ArtifactRuntime.canHarm(p,target)&&ArtifactRuntime.canCast(p)')
+edit('artifact/ArtifactWeapon.java','if(!session.active()||','if(ArtifactData.charge(stack,100)>0||!session.active()||')
+edit('artifact/ArtifactBlockEntity.java','mana+=amount;}changed();','mana+=amount*.95;}changed();')
+edit('artifact/ArtifactBlockEntity.java','fake.setPos(worldPosition.getX()+.5,worldPosition.getY()+.15-fake.getEyeHeight(),worldPosition.getZ()+.5);','fake.setPos(worldPosition.getX()+.5,worldPosition.getY()+.5,worldPosition.getZ()+.5);fake.removeAllEffects();fake.setHealth(fake.getMaxHealth());')
+edit('artifact/ArtifactBlockEntity.java','var aim=randomAim(l,fake);','var aim=plan.area()?new SpellEffects.Aim(Vec3.atCenterOf(worldPosition),HitResult.Type.BLOCK,new BlockHitResult(Vec3.atCenterOf(worldPosition),Direction.UP,worldPosition.below(),false),null):randomAim(l,fake);')
+edit('artifact/ArtifactItem.java','case "living_water_can"->{if(','case "living_water_can"->{if(!ArtifactRuntime.canCast(p)||')
+edit('artifact/ArtifactItem.java','case "hanging_path_staff"->{if(','case "hanging_path_staff"->{if(!ArtifactRuntime.canCast(p)||')
+# Reject immunity before world synergies which directly mutate the caster.
+p=R/'server/WorldSpells.java';s=p.read_text().replace('if(id.equals("spring")){','if(id.equals("spring")){if(dev.kelmagic.artifact.ArtifactRuntime.immune(p))return false;');p.write_text(s)
+print('Refined permissions, silent-item semantics, conservation and reload recovery')

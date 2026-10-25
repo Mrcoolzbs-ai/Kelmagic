@@ -1,0 +1,1387 @@
+[
+  {
+    "path": "ARTIFACT-CATALOG-R14.md",
+    "change": "added",
+    "sha256": "ea8e97f6112a784b22ebfa2c467ef1f65e0a633943e8171cd50b907405085f2d"
+  },
+  {
+    "path": "QA-R14.md",
+    "change": "added",
+    "sha256": "285d08c3b04a09329b5b873214136c31169e8ba32d2ca16c223429761e99cc12"
+  },
+  {
+    "path": "README-R14-RU.md",
+    "change": "added",
+    "sha256": "ed603009734032cddbb51c7b506ccc08e37c91e9595d4630a982b24db313d138"
+  },
+  {
+    "path": "README.md",
+    "change": "modified",
+    "sha256": "4a39c9faa031dd6f84808a1c7dcf96f1382f868ac6b7717d67cfced7bf191d79"
+  },
+  {
+    "path": "art/artifact-r14/armor-deep_source.png",
+    "change": "added",
+    "sha256": "c2b9395c281bbef9d578bb272a58fedf0041b75cad7dcbaecce2a8c335a5c185"
+  },
+  {
+    "path": "art/artifact-r14/armor-grove_keeper.png",
+    "change": "added",
+    "sha256": "5cbc4050e9ecc590d533950baab5cbb9ba019993c0cbea3da3ee75bb0247655d"
+  },
+  {
+    "path": "art/artifact-r14/armor-steady_anchor.png",
+    "change": "added",
+    "sha256": "b1d7f16356c48cc28467a0a0aac59231fbd0cf95547704a3f6129ba362021a79"
+  },
+  {
+    "path": "art/artifact-r14/armor-strict_negation.png",
+    "change": "added",
+    "sha256": "583851b730c498e18ea7314ec6889f830a660059292c5ca220cb7e3510e5cc76"
+  },
+  {
+    "path": "art/artifact-r14/baked-armor.json",
+    "change": "added",
+    "sha256": "3e12c38ddee3ae23de0a72f742b1960b3e2eee070fdb8d08d71995fbbf9cb136"
+  },
+  {
+    "path": "art/artifact-r14/blocks-proof.png",
+    "change": "added",
+    "sha256": "5d7855a94f140cb43a31c9876ed4b4d5867b83179cfef5de3b1c8c362f3ee497"
+  },
+  {
+    "path": "art/artifact-r14/inventory-proof.png",
+    "change": "added",
+    "sha256": "cfb7a230f4c4d2eeb14684dd39a22813e0deef4a65fd5b152c7ec420a917966a"
+  },
+  {
+    "path": "build.gradle",
+    "change": "modified",
+    "sha256": "953da6e90a5ca677177e823c0b8bf750bc385a7182fdb9fc0627ed72a663aac6"
+  },
+  {
+    "path": "gradle.properties",
+    "change": "modified",
+    "sha256": "638a465065ebe659966dee486fef75cee95423bc6053fd5d6969422c28bc5a6f"
+  },
+  {
+    "path": "libs/README.md",
+    "change": "added",
+    "sha256": "fea85839d7fcfcf3ee76bc15332676f564475d2f15de29bf7a2abe5d0e537130"
+  },
+  {
+    "path": "qa/r14/results.json",
+    "change": "added",
+    "sha256": "882cd55186af20d9a843c6d6c932daa5dd8818d68d3b6e5a87960d14aa80500f"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/KelMagic.java",
+    "change": "modified",
+    "sha256": "2a73048efa7f08d3fd4b4da53f8d7742b477273391f7d25520cc275884a92f27"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/MagicContent.java",
+    "change": "modified",
+    "sha256": "99c83b9d54fbbb56603f591ca3a0230228f42ef63727335c5d112477de922245"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactAccessories.java",
+    "change": "added",
+    "sha256": "e413ed1d6518c80c197aecc109ce86aaaab84081b93bcf84100c51d1a811fe2e"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactArmorItem.java",
+    "change": "added",
+    "sha256": "c4db8851fac4cafc185208f3800f47d028a473469cf07fe9f498f73bab1422ff"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactBlock.java",
+    "change": "added",
+    "sha256": "279a6e3fd399390294c86ecde40cae00877aaf3f785fc7d4117af0af700b3903"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactBlockEntity.java",
+    "change": "added",
+    "sha256": "89a0ce63a4e2b0096584acecfb337fca068a97009619d976afbb5645b726c67b"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactCombat.java",
+    "change": "added",
+    "sha256": "d360ce925f41ced4cf9c0729cb93f27dd6ebcc7242a8614d91c7e61cc2fec4d4"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactContent.java",
+    "change": "added",
+    "sha256": "92078e6fb775f2f7cde6118114b6cb8f3cac366e802dc4f7b230ea795ddcf1e1"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactCurios.java",
+    "change": "added",
+    "sha256": "96e261d382f6956d3f25fe1c1481fe1303068414d744f27fcfa3d69e206cbe0f"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactData.java",
+    "change": "added",
+    "sha256": "99209c7e67aaa5e595f9bcec3465320d9ec2ae74ff1e3defc9f67d6eea827cae"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactItem.java",
+    "change": "added",
+    "sha256": "7fb078c32718956f735a70f3f03be26bb28f144a84841d2d07195e80c82dfc1e"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactMagic.java",
+    "change": "added",
+    "sha256": "873a989d9df4fac6bc583a403ad196b7f3415e3925eacf9189d0d598f7039ddc"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactNetworking.java",
+    "change": "added",
+    "sha256": "e7fcfcfa3d7d8bdea1fe3a8a00a9f83042a4e8fe8c2c0192085471bd3f817385"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactPlantEvents.java",
+    "change": "added",
+    "sha256": "b65badcfba5ac7e5eb00b7b529bcc4d0fcb0b184e6e99a42ca5bb1225eed1129"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactRules.java",
+    "change": "added",
+    "sha256": "80525c7633913e40f843e7be3ef13db1452f092000a7a45777bca4ed5d0babf6"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactRuntime.java",
+    "change": "added",
+    "sha256": "29b4ce42606b9a8c4ccebafb552a19e9a6c3f57e3355bdba6df335659ce8ff05"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactSeasons.java",
+    "change": "added",
+    "sha256": "4fb3d4a05bd1f47bfc308dbfb0f452363a7f03e00c5cf4cee3d0af95cc5f8292"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactSpellBolt.java",
+    "change": "added",
+    "sha256": "fa4f6942bfb48688e332c44ea1c6915abd199588837bbf848c043b93e987bd77"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactVisuals.java",
+    "change": "added",
+    "sha256": "75d64b11ae7b9c0031ab4e22622257f3a4bd9a1379807c51bb1a4d6380c11462"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactWeapon.java",
+    "change": "added",
+    "sha256": "ab2a3ca41a5e9eaf202f27b9f396b2afa591e3946f9937c0b3f1137400b417b2"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/artifact/ArtifactWorld.java",
+    "change": "added",
+    "sha256": "0d5fcb279de8ce51be158cc5337b4e8ff92c8c08da412d9eff5dcc15fa2b30f9"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/audio/TapePlayerItem.java",
+    "change": "modified",
+    "sha256": "a9cdd5be08c52f2fb78c0027b1dd5338e58f4077d9dc11664f250ad5fd0778c5"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/ArtifactArmorModel.java",
+    "change": "added",
+    "sha256": "9691b399583f4ce4e58c145444529fb3de1183c1619f83dcfa4cfdac5664e22e"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/client/ArtifactClient.java",
+    "change": "added",
+    "sha256": "aac2b5a2ceceacf90e9540d27f69327631a6ea3f8b6fe26168ab2870f6007ce4"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/entity/MageCombat.java",
+    "change": "modified",
+    "sha256": "7ded453b341862013d8f18542e56ffee6bc457b4c38c442a7e7a6813416f5c84"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/gametest/ArtifactGameTests.java",
+    "change": "added",
+    "sha256": "b569cb7ad8f324655c1d307bca04587a02633ebef88169bbfa8686123937b5f0"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/gametest/KelGameTests.java",
+    "change": "modified",
+    "sha256": "5b5a4bda8e1b29e7e101b55b3e5c4a46ee674b6b73906af6edc66eda19d8983b"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/item/ManaArmorItem.java",
+    "change": "modified",
+    "sha256": "cc78f021fe02f776df8652627b080c74819e2d977b01d6b3c4503e19340b40ad"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/item/ScripterItem.java",
+    "change": "modified",
+    "sha256": "626cf7eff09e858dcf146c112c01e0951fbd894cecda2f3d5219582198c34fc4"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/mixin/ArtifactEffectAccess.java",
+    "change": "added",
+    "sha256": "2311021a5ab41a050f8b68782dea3dad67041e79b67329a58512954b4b191f45"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/mixin/NegationEffectMixin.java",
+    "change": "added",
+    "sha256": "b74b458dc45f62054619238f47342fc4cd111108e3a99673708ae0938939e1e8"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/mixin/StoppedSeasonMixin.java",
+    "change": "added",
+    "sha256": "060cb8d1fe66c0a24d28ea35b3ffaea2bfd7f13c67cc82fe2c9b9bc182195ba2"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/ArcaneFire.java",
+    "change": "modified",
+    "sha256": "6dad48fa9b8a8a772f6b40cb0a3af169365996cc93d2e194f2794afd253903bc"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/EntitySpells.java",
+    "change": "modified",
+    "sha256": "afd8dc675e043794441e0556089942576dceb01f1de79aded89c187cba64123e"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/ExpandedSpellEffects.java",
+    "change": "modified",
+    "sha256": "11c1742b790fada6af2a7bd4d45299b955f1f969b197335e3708ea2f1c451a3e"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/GrandEffects.java",
+    "change": "modified",
+    "sha256": "f8945dd5f144df7e537e87f9985e3524efd42f5c1950f41bd938e065c82e2d7b"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/MagicServer.java",
+    "change": "modified",
+    "sha256": "b174672241e4a7d39800d71f7b473073b7985b76cb5705edd1ae480bb421e441"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/MagicTransformation.java",
+    "change": "modified",
+    "sha256": "73f62a3a13f56c8803a11f408a558f8548bf649eb9aece8fe4ac632bb6db9e73"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/PairEffects.java",
+    "change": "modified",
+    "sha256": "0ae1e54b0fa211e78deeef7c3de568fdf76b98f779dfd14b16595d0185b72fbd"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/SpellEffects.java",
+    "change": "modified",
+    "sha256": "ce7008100fbb36f62d4e6bc7ee88aceca6a093c8e5774884e34bd2d134a76ed4"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/ThresholdLinks.java",
+    "change": "modified",
+    "sha256": "b9c12f8764b1e91185b01974e1c61ff8e05a7d1ac6d641a5dda3ba1f26e8ce3a"
+  },
+  {
+    "path": "src/main/java/dev/kelmagic/server/WorldSpells.java",
+    "change": "modified",
+    "sha256": "fcde82f30ae7011d53861f64bbc02d1067240c6d0004d1ce5fe5a1af8a528835"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/admission_obelisk.json",
+    "change": "added",
+    "sha256": "8102b00f4608e086890685afbb4c96ebca0079f6d5e033a47171c5ea89c85564"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/crystal_striker.json",
+    "change": "added",
+    "sha256": "a5658e36f2a051d25ba5fdd556398dafe54ce32c44119f522a67d9a623db3b8d"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/delayed_sound_crystal.json",
+    "change": "added",
+    "sha256": "e4c03ec6794e59d093ebdb6858f4d2a10abb91bf4fc0b1b365ce25024dde2c69"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/fleeting_path.json",
+    "change": "added",
+    "sha256": "5c15d1bfb67b2a9b9ed0de6e9edf88c41cdd0d1f7f5708af67536a1e13196cdd"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/fleeting_root_wall.json",
+    "change": "added",
+    "sha256": "6834fd1278aee4f1e8ccdfb881d1b6989eec721f5e0d350a172b9fee9e794718"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/forbidden_threshold_base.json",
+    "change": "added",
+    "sha256": "308710dbeb967a3e90f6022f9ffb9b1967a8488ec32f1dbddca036f1776d52a7"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/grove_mana_bowl.json",
+    "change": "added",
+    "sha256": "d2a141c33e4d317a39d88ac3cae61ecbff286296e56ec550a144e031096e1173"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/mana_basin.json",
+    "change": "added",
+    "sha256": "04d78dfb88f790e394545150db2f437e7d5757a2f6bb3c2a72cbdac172296a77"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/mana_bowl.json",
+    "change": "added",
+    "sha256": "4fe94bad5c582c11ed319b8c5efd49de039122a35b11eebb0dec48d1985e79ba"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/mana_cup.json",
+    "change": "added",
+    "sha256": "53a8236a4a808e6f42b55fe725c6a977c8f1c05ec3f7c326e6cf54bdda05ca40"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/mute_sky_obelisk.json",
+    "change": "added",
+    "sha256": "364cd3b927c2c630c22d86572fe9910260c96861e36ba3e4b030d97e2b8a5eac"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/blockstates/night_shadow_catcher.json",
+    "change": "added",
+    "sha256": "da2b6ec531014a929cdf85baa4ee96d6b8fbeb47ad01f8f9bfa1b0e73c319e4a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/lang/en_us.json",
+    "change": "modified",
+    "sha256": "4271a770451a993559216eb6984ea21fea3c9e34e7869649e38b9b73ba9f7bbb"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/lang/ru_ru.json",
+    "change": "modified",
+    "sha256": "5802ed8d43f5f15f48971ce5ceba9f406c6d9036b8da3386ba7e2ea0a89a11a2"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/admission_obelisk.json",
+    "change": "added",
+    "sha256": "c3fb257a85fc9525009a24446a72b1b591ad375b18b42da2f5a53759a4c943d4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/crystal_striker.json",
+    "change": "added",
+    "sha256": "de8dde4ff850f9c08f01cfed836117557d47a83badb7219dcf14d14bda2f4c49"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/crystal_striker_on.json",
+    "change": "added",
+    "sha256": "89f10e85fa8252ea40439cddf4cc15cf47600ecec3d86d91bb3c2ac5bfda0dcc"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/delayed_sound_crystal.json",
+    "change": "added",
+    "sha256": "9921b85c8866bf3bab3b1197be7d1463e798960873765a91177d1c9769c175a1"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/fleeting_path.json",
+    "change": "added",
+    "sha256": "f070fa7641244ad06f9bc72cb6fa4e6aac3789a21315f68e99ea6157cd312945"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/fleeting_root_wall.json",
+    "change": "added",
+    "sha256": "b4227b9585e350ce740f1e595e2f910fffda6b892e5b018dc2e77444d1342bbb"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/forbidden_threshold_base.json",
+    "change": "added",
+    "sha256": "6d339d3f5567a6799c94766230f69f544fc2abfb87177aa8354040256df72a5a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/grove_mana_bowl.json",
+    "change": "added",
+    "sha256": "afab3fd68f690ff1890eb7030b673854e7b1310501977d5db356e4e856c4ee77"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_basin_0.json",
+    "change": "added",
+    "sha256": "1470ff837c6208808b360f7cdb8cdfe734b03cf095de6fe99351ef233cbea3f1"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_basin_1.json",
+    "change": "added",
+    "sha256": "fdcbf8392a9c76a94fe3a7ac5893a59e6368b03b9ede43dbb7bdf512e98b3b73"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_basin_2.json",
+    "change": "added",
+    "sha256": "e11f940b7f1538f2e6f58b851150bba0f5a1329bde03adf94e15f5ca31eff84e"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_basin_3.json",
+    "change": "added",
+    "sha256": "f888b68699eee9d28609e5390aa447e142608c579b494f439f51200d6b0d4b70"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_basin_4.json",
+    "change": "added",
+    "sha256": "97ebd83dec4c905db7a179c5a85f7f73ed447bca5e3d9fc5327cd2a6d1d0a608"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_bowl_0.json",
+    "change": "added",
+    "sha256": "eeb19171815aab627a98a3ec8463b098b11a8accd0ca264b7260a9474744bfb6"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_bowl_1.json",
+    "change": "added",
+    "sha256": "0f1cc20782e0f321efd4b4265927eef3a6863d7cb531445bf0f99273d9d2d1a4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_bowl_2.json",
+    "change": "added",
+    "sha256": "ebb8298c9d1b2daff7dfeffbe3542ee6cb77beca9d087781b1be0a021902b31d"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_bowl_3.json",
+    "change": "added",
+    "sha256": "3facb05bc7ef51f82b29ae0dd9ba8e0466e1249bb07c384a20a06f433e8c58db"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_bowl_4.json",
+    "change": "added",
+    "sha256": "aaf1c91129483eb32d2359708a7ae6ca7f69a379f596fd93124fde01ef5e65be"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_cup_0.json",
+    "change": "added",
+    "sha256": "4a704b0362ddb6bb862e793cd6d28b63277cdd2cf554058c7d5cb96c5ef4a1d4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_cup_1.json",
+    "change": "added",
+    "sha256": "34f96165e497e50c840a4ae68c6666c78c6a9e2007c752346f429a53e93d9187"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_cup_2.json",
+    "change": "added",
+    "sha256": "eff1f288ae10d677482da557b42ce5b8c451179b6b10e6018b98f6759753053b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_cup_3.json",
+    "change": "added",
+    "sha256": "5704a541756b61845a3a3d1efde7ac35a5260a33e6ff3e5ea6c152efc361e5cd"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mana_cup_4.json",
+    "change": "added",
+    "sha256": "46d2f069ae41486afe44524110c6de2bb83c9b35867321238eeb82821d6b9c7c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/mute_sky_obelisk.json",
+    "change": "added",
+    "sha256": "8ff9ea918bddc8dbd7737f4ef9d5589cbfc6c45cfc88d0298581fc36489e3376"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/block/night_shadow_catcher.json",
+    "change": "added",
+    "sha256": "daca4820cbaedb5921e1de1ab1ce855a6c82d64121d59f4504548882cf3877c8"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/admission_obelisk.json",
+    "change": "added",
+    "sha256": "b70b3b0a3aed85c8e907820f09a9298a469149b1d402a1c434b2f6ed7a09cf6b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/alien_phrase_shield.json",
+    "change": "added",
+    "sha256": "b3307d6f5d7cf98e84decb4946237974b613e02cf75d1393ebafe3d1b9b50dc1"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/calm_pulse_bracelet.json",
+    "change": "added",
+    "sha256": "24179182411cf7b39f2430cbc21508779dac7da3870152b192eca0266ee3dbc4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/cautious_word_ring.json",
+    "change": "added",
+    "sha256": "c5109071912c5c4cf78745532ae196365c2d45512516695817d933e8df8a57a1"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/crystal_striker.json",
+    "change": "added",
+    "sha256": "e822f488f053296682ef2c64ad8f27ed1188408096605f77fbc629385c493a09"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/deep_source_boots.json",
+    "change": "added",
+    "sha256": "9182b87f096ae200875f9453de52921ed7f19daa3d22a13613b9e6abd3d65dc7"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/deep_source_chestplate.json",
+    "change": "added",
+    "sha256": "289d0116a8da545d4c06be43f501cf3867a89a3e9fcffdf95d47c2b7da7a7be0"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/deep_source_helmet.json",
+    "change": "added",
+    "sha256": "c286d26e0220b8d6d2c68edff7835e73cea77c3c4bc134199694eaabb7e1e01c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/deep_source_leggings.json",
+    "change": "added",
+    "sha256": "b6e3a4ba5631356527dd6f6f73d9dbfd33933c18e97b2c668578bfeccb8ab294"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/deep_well_ring.json",
+    "change": "added",
+    "sha256": "cc2609e78bc55c357617ae9ddb4b52232800fa25a3ecffafb0f22317352cc5dd"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/delayed_sound_crystal.json",
+    "change": "added",
+    "sha256": "b237826b2d04844504e464a6ed603c582cfbc10dda39c0aa74bafeb07676c388"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/dusk_dew_ring.json",
+    "change": "added",
+    "sha256": "295cfa3833c4c9467a20be75758ea62d15dfeb44617bbfafc28de4d5c7ea777d"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/even_flow_amulet.json",
+    "change": "added",
+    "sha256": "3493d54344d49883a3858f5dd6eb72b5294e167a891542fdf1f3c49bd7cbd1fe"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/far_address_pendant.json",
+    "change": "added",
+    "sha256": "376dc00d889c954aef2a21510ee6943f85716dc62e88cbe4bc665f247163257b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/forbidden_threshold_base.json",
+    "change": "added",
+    "sha256": "2e4bad4e58c21701404ecd497386dd88b223bcec09b0fc1e72c2611a962a3382"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/grove_keeper_boots.json",
+    "change": "added",
+    "sha256": "8a396564eeb05ec14cfbdccdb2fd8123600d027518d477fabc82eb6bfb24bece"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/grove_keeper_chestplate.json",
+    "change": "added",
+    "sha256": "3b64f2f46a3efaab3bd38a6558dc69f89e80eb10dba974bce68de0ac0afe70ba"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/grove_keeper_helmet.json",
+    "change": "added",
+    "sha256": "6b8acccb5ed9aa48b3c5de1620c22868dece39e6f445eb4ea789c4c510a3c480"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/grove_keeper_leggings.json",
+    "change": "added",
+    "sha256": "768935d7642ab8cfacf4ef420d348d1375fcf3448570771724f54e7a435a461f"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/grove_mana_bowl.json",
+    "change": "added",
+    "sha256": "b9739f8dd22ae44ed43721ce2465edd33965ade098af2becbd4dc987d8e5aa5a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/hanging_path_staff.json",
+    "change": "added",
+    "sha256": "eb7c3cfc673bf6f6c3838c62ab551e0117b78becb46a5ef9c0d75c3434535b05"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/heavy_thought_mace.json",
+    "change": "added",
+    "sha256": "98469b63a2cb0139c428086f7f9af27a75005b2b107a326be4903b5d5d326ea8"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/living_fiber_whip.json",
+    "change": "added",
+    "sha256": "3adb2de84d0a98e7a457b189424f100fb1a73c53c9337c7832e4bbe88c4abc7b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/living_water_can.json",
+    "change": "added",
+    "sha256": "6874f9e0dd2027a259cd63b777e31964999cea4ddcec4171b471ae0f24c6d609"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/mana_basin.json",
+    "change": "added",
+    "sha256": "b9e7811eb463eeca6228574ad261d88b018121446b0432a2cf142d256d0b1a8f"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/mana_bowl.json",
+    "change": "added",
+    "sha256": "9b548ce423f565ae14f68c1fe374c7c30777dc136b24b8a67414dc367270d12a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/mana_cup.json",
+    "change": "added",
+    "sha256": "8422e36e08c2ddbfc699533fbcc37506961b30797e6eeed680851d0c853d8203"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/mute_sky_obelisk.json",
+    "change": "added",
+    "sha256": "333500cc08fe4287b14f727b73c2fe0984d909efc4b604a9be8af1c0c646356a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/mute_verdict_hammer.json",
+    "change": "added",
+    "sha256": "1434374ee26f8203a16b88774659931b71fcfab90660c6d9c5d0e2d86c8f917a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/night_shadow_catcher.json",
+    "change": "added",
+    "sha256": "718d7b9ee3d16f830d611ca60f7c10b805a386cb7cfccf0c450208d46d535c94"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/obedient_sample_gloves.json",
+    "change": "added",
+    "sha256": "b91af9dbf57d698f3f1f707409744f47f83d282a2f767b9ff5428bcf43671c34"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/precise_name_rapier.json",
+    "change": "added",
+    "sha256": "befabe7ac3537a04f3fd52375ff8207bb80eb937579b755b7a8d5b97942c1db8"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/quiet_flame_bottle.json",
+    "change": "added",
+    "sha256": "e87e68d9efafabe60477e73f7105243eccf251fd308dca107d00c8fa12095d88"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/reflected_path_fan.json",
+    "change": "added",
+    "sha256": "2e69bc5fc8fcaa198b576f8f7f69636961ebb300521ba0509f51599f056beda7"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/reverse_echo_bracelet.json",
+    "change": "added",
+    "sha256": "c621f418460978096d030ad683bde59e6a6e0adbdd1dcbd8e853b1e1587d08e8"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/root_hearing_brooch.json",
+    "change": "added",
+    "sha256": "38c25ae1abc80e51249439dcbaebc91611b7eacb2a0a51b0ddb5889558badcf5"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/shared_oath_sword.json",
+    "change": "added",
+    "sha256": "f81886b6a503c2d01302ab32b79bc7589b4e81f43d39c248c16dfbafa59336c6"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/short_threshold_spear.json",
+    "change": "added",
+    "sha256": "5ee1d3187d977033c303b427643d6070533b60a3dbbf80d2c783081d444d6245"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/silent_step_clasp.json",
+    "change": "added",
+    "sha256": "7cfa4ad96bc12355b23ac6d42a215ce5cbb8cdff402c8b777ccd4d370c13b6f4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/spare_heart_medallion.json",
+    "change": "added",
+    "sha256": "630ec3b7a7aadd294ff7eb139df68221ddf176aedc7422eacba7feb0ce295618"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/steady_anchor_boots.json",
+    "change": "added",
+    "sha256": "2857232ec69ed0ec8846372c2fb250770787e9014e381eccd6224d1c418ec339"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/steady_anchor_chestplate.json",
+    "change": "added",
+    "sha256": "26493d6104f87c71389fa6aca495170476e4efb8a1307e23348734f40350766c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/steady_anchor_helmet.json",
+    "change": "added",
+    "sha256": "4d12b252ef4fee5b97a4abe91c2f5bca15b699a499e527c9460dda416cb59aa2"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/steady_anchor_leggings.json",
+    "change": "added",
+    "sha256": "7f5312e498e5c8aa0c217ab68acae71ad32b767e42cb1d1c3a1864c7c2b6832b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/still_volley_orb.json",
+    "change": "added",
+    "sha256": "626e0368e7e72a33c3a15780ccbfcd83e83b59243e132cd9b1f4275f3f6b4366"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/stopped_season_secateurs.json",
+    "change": "added",
+    "sha256": "d676a2929b7a7aff56fc7c698ea164c4c914e832a2a9d8b5f53b5e652fe571d7"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/strict_negation_boots.json",
+    "change": "added",
+    "sha256": "3f326b21912c31aa3ceda4b4cb13155e18dc5426c115abf0400d5dc927ab4a32"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/strict_negation_chestplate.json",
+    "change": "added",
+    "sha256": "b271e72f9e52ec8164a5d71719bba35f84798d9bd06a800ed36a58e468c72914"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/strict_negation_helmet.json",
+    "change": "added",
+    "sha256": "63f92fa565c7c1091656a495cf54be835e4e51d69489f20ec19ed38419f6fcd3"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/strict_negation_leggings.json",
+    "change": "added",
+    "sha256": "be658dda311e5d195b2940dd83fe0d877211fb543066efa0248a4cff7592e6e4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/unbroken_forest_belt.json",
+    "change": "added",
+    "sha256": "3a14ee17f8516d9e145a27690b983062343272027ef1522d7d9973aa20dbbc28"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/unnoticed_arrival_cloak.json",
+    "change": "added",
+    "sha256": "63419eee5965279228c2448cfbb4a56332f66e94c3bee59c0813acdc67e32289"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/unspoken_dagger.json",
+    "change": "added",
+    "sha256": "8f6138a456403b0bd182b4340bd78c8512c2a6c39680e47babf8121650999524"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/wayback_chalk.json",
+    "change": "added",
+    "sha256": "b430533965ddc4edb5a3aae429b9b1735c843eaad1b5b75cd379715524f7c294"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/models/item/witness_earring.json",
+    "change": "added",
+    "sha256": "e51786f7fdc9621bbbbeb21b3b5e3d64437061e7c7024a1a036077e462bfae63"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/artifact_chime.ogg",
+    "change": "added",
+    "sha256": "1297ec2faac2b820f31d1e7e1df89b18676804ed901de8572908076b1447e684"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/crystal_strike.ogg",
+    "change": "added",
+    "sha256": "fb1259254ce0e92cf6afeb4709853cb1078f9085042a1b0c9eb4479c80ba6074"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/dream_guard.ogg",
+    "change": "added",
+    "sha256": "0305eb010921696ba5559c1aa59c8e76f486857cdd2d49fdee73af3626f61f3d"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/mana_transfer.ogg",
+    "change": "added",
+    "sha256": "749dc8c58da7cfcfa158abdc6c8e24c451824fb46d4c6050daeb26845139e1a4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/path_weave.ogg",
+    "change": "added",
+    "sha256": "f1ee7754ebfb31f914899731c604485e55973ccc72c1b3839d1adbb316713d09"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/root_bind.ogg",
+    "change": "added",
+    "sha256": "7fa1c71775e29845662aa96f40a726acdd54f40279578743310be922f709743a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/silence_fall.ogg",
+    "change": "added",
+    "sha256": "05b6463e443ece36d2c8f82644d50b170bbd2cd56b2cb165547d46123499b45b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/spell_absorb.ogg",
+    "change": "added",
+    "sha256": "7446fc7b6fb2c7cde4b968a86cbfeed582d82ea44266c1f724c75a9d695c8e35"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds/artifact/threshold_lock.ogg",
+    "change": "added",
+    "sha256": "3d7b0b79e92538fba4dad6b8ccae5605c91c0e1807fce362dd1e74b797d144c4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/sounds.json",
+    "change": "modified",
+    "sha256": "ba6ae5c94f43250150fd7cb176ade2948a1a2c50b394f3d0570cf9368fa62a6a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_crystal.png",
+    "change": "added",
+    "sha256": "f8683acb5cb8258940390417b39b8e41f6b16283be03ac29ee15a28c480a39b0"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_mana.png",
+    "change": "added",
+    "sha256": "675f96d0f47e18bf26b95247be518b59bae3dc59da9e31465b253840640c29b2"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_mana.png.mcmeta",
+    "change": "added",
+    "sha256": "6685b4a9360c39f2fb19396196607a1f5cab2c2cbe6b74b85775c7a3d8921742"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_rim.png",
+    "change": "added",
+    "sha256": "fd5729af37cf5dfe79bc2a32c6d99376933da5eec8b3f16ac2f4c8e147c9f3d9"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_root.png",
+    "change": "added",
+    "sha256": "63606c5abf77aa07bf9510eafbdb0a6ecbdb84ec89d816e3402d335a9dad6bff"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_seal.png",
+    "change": "added",
+    "sha256": "ca233801e1f8a198a189fda66ce937224ab7ba5f9609b1a0ccc7cc227659f55f"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_stone.png",
+    "change": "added",
+    "sha256": "45701442a6017f3356e014077aad32b79a867f50f9d013a9e2ce28e399024d1a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/block/artifact_void.png",
+    "change": "added",
+    "sha256": "e767069b2629064a0a4a55d45ae3cd69647284b880bc683c88bf5067528b460f"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/alien_phrase_shield.png",
+    "change": "added",
+    "sha256": "f6c32296de5da1abfc75a9fa47951b6299ed14f92555f0166e0e63327a543ddd"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/calm_pulse_bracelet.png",
+    "change": "added",
+    "sha256": "34e38667bd62449e9c783d4a96d34cf987d2bf50ac9025808579b1cac9c5c569"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/cautious_word_ring.png",
+    "change": "added",
+    "sha256": "f7d2e37679f96eb952abd4720b3cdd7dee77324a92e670c0d3edf059e2d25857"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/deep_source_boots.png",
+    "change": "added",
+    "sha256": "b9e323e1cd0c846fb71574c7eb40b8f511e1fe9fdf59a3b8a9cb64e2986eb3b2"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/deep_source_chestplate.png",
+    "change": "added",
+    "sha256": "39eb5399207f9355c4a949a5c9deb218b48a36063b62e69bfbf46608bf04ac7f"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/deep_source_helmet.png",
+    "change": "added",
+    "sha256": "f326a5c595c847b8b55e35a973d0fd7e2c2d166dad4b785b5737776205db4376"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/deep_source_leggings.png",
+    "change": "added",
+    "sha256": "11e86dc9053259229b37bc3e286b5489cc207be2b673344256a01b79c45a2c3e"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/deep_well_ring.png",
+    "change": "added",
+    "sha256": "42fecea5b28fcb3b6e811d805ab73663a94173f1cb19a72eaa2b0cdf9c96cfd3"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/dusk_dew_ring.png",
+    "change": "added",
+    "sha256": "4506b0deb87d0932f327ab6ef69ee045b0eee1a1ffdbc35e2f195861f1192431"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/even_flow_amulet.png",
+    "change": "added",
+    "sha256": "15bb928ebbf66d5174b3d7751d364bc431dc261266dda3a04bd1d9e53f9923f7"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/far_address_pendant.png",
+    "change": "added",
+    "sha256": "43bc9138014aeb8d0c36b723d5c6fdd0294033c2b374b0f40bc8ff9b83b4ce27"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/grove_keeper_boots.png",
+    "change": "added",
+    "sha256": "fe51e46772ea940c355e682327a8d78c243d330c2715553d5c97d641fe978490"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/grove_keeper_chestplate.png",
+    "change": "added",
+    "sha256": "c3de405bde5dd7c1cff440ce7047c7c3c0a5ef895d66709c48847d2c0d25cfe1"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/grove_keeper_helmet.png",
+    "change": "added",
+    "sha256": "7f1764da6e7f7188c9faf8d74e44e88ce6e968bed3d1cbef76179f93c3e62e98"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/grove_keeper_leggings.png",
+    "change": "added",
+    "sha256": "7dd07ba3cd5dbcbeedab368092a28fc47b860160a9988b6b35d54f9b9136db6c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/hanging_path_staff.png",
+    "change": "added",
+    "sha256": "a981517191dac1b1a1fc9730470318986de3a739c35c5d6a06aff1b99e5a8d24"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/heavy_thought_mace.png",
+    "change": "added",
+    "sha256": "2adf66f86282245e9c8827cbed41be731acf150e0ec8593ebc53449840828427"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/living_fiber_whip.png",
+    "change": "added",
+    "sha256": "d6249345fc3b8efea8abe2374f099239173efbd9f8916394a2a4b72d5093b0ac"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/living_water_can.png",
+    "change": "added",
+    "sha256": "e66ae5578e0f97dea8514a0ae6e7e870a123cf2f56781d20f444931aca9e1720"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/mute_verdict_hammer.png",
+    "change": "added",
+    "sha256": "f4756440489a8815bfc988e8f81d91ccd4d9e5afe79999e8cd7a3d89067b9437"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/obedient_sample_gloves.png",
+    "change": "added",
+    "sha256": "3d0c864e612da0cc2612d73dad9bb09ab9f56b30ab273534dc19a651cf6814fa"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/precise_name_rapier.png",
+    "change": "added",
+    "sha256": "ed99cc2ae1db9be8722565dc5d01c58370a09748639a23e1364c27ec153bfe1c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/quiet_flame_bottle.png",
+    "change": "added",
+    "sha256": "81a60e900cf9ef39b8683acfbc9820f8d4b872496f64ecf3fe53192850a87233"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/reflected_path_fan.png",
+    "change": "added",
+    "sha256": "c5eaafaf3bdb5028ebb4a72f4f8cad1bb54192b68bf30d676c1f65339dbf4cef"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/reverse_echo_bracelet.png",
+    "change": "added",
+    "sha256": "c237744bcad7b9caddf667ed356dcca70d2e53838ea1913b73edac63b1290b3e"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/root_hearing_brooch.png",
+    "change": "added",
+    "sha256": "668133275fdb7f493502f92364efe82b686ca37ec58eef2ee44e492e03b01b43"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/shared_oath_sword.png",
+    "change": "added",
+    "sha256": "684d4b9d9b1b45e06bda59bcdc03b74b50a0fe5691b6bb51b63b146027c65195"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/short_threshold_spear.png",
+    "change": "added",
+    "sha256": "934c4ff5dbc14dda824c33df532581e29ceb5cdd1a0dedd4f77865a3c774d7cc"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/silent_step_clasp.png",
+    "change": "added",
+    "sha256": "3cb9832d5940f686018141f593736c9d2780129c002c0a8e715f735426e58203"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/spare_heart_medallion.png",
+    "change": "added",
+    "sha256": "4efc3d90621187b82351d7c91d8694a3cf25d8f88fbf6fb2931ebcb4dd0f6ac6"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/steady_anchor_boots.png",
+    "change": "added",
+    "sha256": "1b785fa6fdbfcfa7d1ce27920a9b2c24f77cbdc320bde6acd2892b4ae27f3635"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/steady_anchor_chestplate.png",
+    "change": "added",
+    "sha256": "a100de9fa0a823c17893164e289488cd4b2c8ebd5cf6df92f680fdfcade17607"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/steady_anchor_helmet.png",
+    "change": "added",
+    "sha256": "b3efd0a76f53cf0c01481cef6a8b6cfa3a09fa846f3e42a71237b1061231e7e4"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/steady_anchor_leggings.png",
+    "change": "added",
+    "sha256": "3e3b1479681794ea4f403e4d93f89d04d11ad937239b830ea9fa3c3c911c2908"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/still_volley_orb.png",
+    "change": "added",
+    "sha256": "faecf53c7826fd3886abff6f865d7b8d9250e563010c71ba7566bac5e7004d64"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/stopped_season_secateurs.png",
+    "change": "added",
+    "sha256": "4e00738a297c717d8f3afb495cca5e36f7b26759addc26ccb671feffa02858b3"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/strict_negation_boots.png",
+    "change": "added",
+    "sha256": "092c29e05a041eab1ea31dcf621ed0dd2a252ab8045c43e98a42fffe11f25c41"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/strict_negation_chestplate.png",
+    "change": "added",
+    "sha256": "8161fe03eff55b0888c534e6a81a6f3db043849b8b4eb6a552d2c4848a9017b8"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/strict_negation_helmet.png",
+    "change": "added",
+    "sha256": "9b64f7dd1e72b2eea968e112776ea94f7c91de8d43113fe89273c8fd7368939b"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/strict_negation_leggings.png",
+    "change": "added",
+    "sha256": "cdbe2cd21d6f6e97af0b09639803682df5815ec6957b482f2ca2df6a6790ed20"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/unbroken_forest_belt.png",
+    "change": "added",
+    "sha256": "def30a76506f67702f883c5025b9f8f07604a9a78f31bd8fc69a6740bc804cc1"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/unnoticed_arrival_cloak.png",
+    "change": "added",
+    "sha256": "7a69ede811bff6c9e1fa124cb9b7becbc73013af6a7d2075078eb8fdd044bd10"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/unspoken_dagger.png",
+    "change": "added",
+    "sha256": "2843db420166a7049da7ec6add7b10d5a33575326d3f1e0e64e22e501331ec9d"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/wayback_chalk.png",
+    "change": "added",
+    "sha256": "45c73f5609c3f3c13b2bda96ffb4154d09791c43f0b7e47271be9ee19ff22394"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/item/witness_earring.png",
+    "change": "added",
+    "sha256": "0abda1579d135c78607ab14a205bf8a4414f20ea362cb02b29898ba6b55aa08d"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/deep_source_layer_1.png",
+    "change": "added",
+    "sha256": "d471c8a79d60c4b1d8925740ac66345a4d3089bab1ba1c3c5f500dbac8f4a25e"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/deep_source_layer_2.png",
+    "change": "added",
+    "sha256": "d471c8a79d60c4b1d8925740ac66345a4d3089bab1ba1c3c5f500dbac8f4a25e"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/grove_keeper_layer_1.png",
+    "change": "added",
+    "sha256": "93a2fa34f7e4d98909f7dd0b0f47141d40f9eb38610cc1f5037c66f77ad1fc51"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/grove_keeper_layer_2.png",
+    "change": "added",
+    "sha256": "93a2fa34f7e4d98909f7dd0b0f47141d40f9eb38610cc1f5037c66f77ad1fc51"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/steady_anchor_layer_1.png",
+    "change": "added",
+    "sha256": "52158a64a6337311da44a1f637f440bc37183b56fbd34101f7fad9947cd08aed"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/steady_anchor_layer_2.png",
+    "change": "added",
+    "sha256": "52158a64a6337311da44a1f637f440bc37183b56fbd34101f7fad9947cd08aed"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/strict_negation_layer_1.png",
+    "change": "added",
+    "sha256": "8fe871716baf69f248bed1628c934fe6e6042916c35925f79adf02cdd8672f8c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/models/armor/strict_negation_layer_2.png",
+    "change": "added",
+    "sha256": "8fe871716baf69f248bed1628c934fe6e6042916c35925f79adf02cdd8672f8c"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_back.png",
+    "change": "added",
+    "sha256": "13aabe693ac61129540421ef8866c0c05c4ed793cd5133ec349328f4414b8026"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_belt.png",
+    "change": "added",
+    "sha256": "382ba0b0d3a16c8ce44c30e811d4bd335b343711bd84585f346cf1da39bc2a7f"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_bracelet.png",
+    "change": "added",
+    "sha256": "8d16f5a768a9c3c95e2fef3c05df76a71653944393df8abde4a78cdde76a6d2a"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_charm.png",
+    "change": "added",
+    "sha256": "a9983c335ab668868e13f1aff7fbf22d741e061830cee5531eb81c186e2351c0"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_earring.png",
+    "change": "added",
+    "sha256": "c8b26eaae1cf56affdc0f27d613c23f5f4624526afdf5a848378dcd47917cb39"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_hands.png",
+    "change": "added",
+    "sha256": "f414e980853dbe7da36153be02d21cba5af9174b5eb8a3a40d711e1ccef9e732"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_necklace.png",
+    "change": "added",
+    "sha256": "d440d50797c68de7a6636dae1e6d13f9b4a38f9eb31e9450630730d825e42534"
+  },
+  {
+    "path": "src/main/resources/assets/kelmagic/textures/slot/empty_kelmagic_ring.png",
+    "change": "added",
+    "sha256": "aa53b19c5b6be1641bd1512f5740e960b29510310180cfbb799cad0d0175d5dc"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_back.json",
+    "change": "added",
+    "sha256": "0fb13e085296980fcc6ef9ddc55f3dca8f0adb5f31f1247012851686b7cfb051"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_belt.json",
+    "change": "added",
+    "sha256": "67d4604e1e48f7d7424d16cf489d89ab12b119ac61858a849d388541cc3711f2"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_bracelet.json",
+    "change": "added",
+    "sha256": "7af67a780c102cba26bd4fd4295110015a3a92d46d93210c37287a39a3c8242d"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_charm.json",
+    "change": "added",
+    "sha256": "d71df707aef33ea82b083e697a3a41372e008d00485a7538085df1145f88fd33"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_earring.json",
+    "change": "added",
+    "sha256": "7683b639394f2db327dd0dc739a8fee891411a7c914286a8a05326f9d9be3f77"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_hands.json",
+    "change": "added",
+    "sha256": "791524ffaf1006619d9c5275542efdf605f0bd472222d25f8f1b269c918de8d0"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_necklace.json",
+    "change": "added",
+    "sha256": "6d99e11a50497eeba5ad81bd0f8e7b85400927a57a1313d448f0ac62f9badbbe"
+  },
+  {
+    "path": "src/main/resources/data/curios/tags/item/kelmagic_ring.json",
+    "change": "added",
+    "sha256": "997d8f1e14fc740882d2aece028979d38513f4e87e2fb68ef3c9faf81ea05dfe"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/entities/artifact_player.json",
+    "change": "added",
+    "sha256": "e05887c9bf5fc12afc9bd5837a79ba9af63b8657d784e22c5ac8bae31c52f2c5"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_back.json",
+    "change": "added",
+    "sha256": "4d5cac2724f8b2d444b2b3dddd7ab6acf6b79a73bfedef629a13c68c98569718"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_belt.json",
+    "change": "added",
+    "sha256": "8c281e512df52e550eefa0ef5a2693a71c2cde4a1b363382e4ef923cea7f09a5"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_bracelet.json",
+    "change": "added",
+    "sha256": "7ad5f3ba775492af961260854aa68bd9ee909c464d23df13c968cc387c36c056"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_charm.json",
+    "change": "added",
+    "sha256": "1f09775e0ad83f70dc9d2d887191bd464baf4085771b66b6644d59394974edd1"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_earring.json",
+    "change": "added",
+    "sha256": "44985de981429e6af2dc43371724fd528153336d818910694c31b8c34d6771af"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_hands.json",
+    "change": "added",
+    "sha256": "001c948d182e02f6a03bdd18f222d1d7e0513c59ae4aad81bc3ea632e50651a6"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_necklace.json",
+    "change": "added",
+    "sha256": "66a51195b9a32480f1bae9412319c938c5c61808093a73679bf1d1c93677e538"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/curios/slots/kelmagic_ring.json",
+    "change": "added",
+    "sha256": "7857faef491603d52ac33385975f646916eb648e56fe3783c517d5d2b5f1e629"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/damage_type/oath_debt.json",
+    "change": "added",
+    "sha256": "cee69d5e9ecd8633d60b57c82c7802bc1063d2133cc9353ab5b7f828a680d8a4"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/admission_obelisk.json",
+    "change": "added",
+    "sha256": "aeea3efeafe51da8b121c3f9eabb84901ac030482ce2238d49fe97d58cdb04a3"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/crystal_striker.json",
+    "change": "added",
+    "sha256": "468750191828925f6911f56c138f15a8af225ec276fcd287dee35473b0f0b2dd"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/delayed_sound_crystal.json",
+    "change": "added",
+    "sha256": "0b89de455b2e685a3fa25877459696875c43fe8fa181bca7212202d9924192bf"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/fleeting_path.json",
+    "change": "added",
+    "sha256": "f2ef2d7bc8fa2d343b0a7dd834f0eb550f84937bc0ce41f37b2cbae81c945496"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/fleeting_root_wall.json",
+    "change": "added",
+    "sha256": "84bb7e1abcfb73587ec38f36bb1bd9049782a5999992dba84c3d924597a2c8ca"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/forbidden_threshold_base.json",
+    "change": "added",
+    "sha256": "72d796d20a5a61de223b82b3fb668be2735d35613400ea73dc209e5f0c9cf7ed"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/grove_mana_bowl.json",
+    "change": "added",
+    "sha256": "2b8cfc6602c792914634c79623929038731bd2dbe552fd4c6b842224010fb2a6"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/mana_basin.json",
+    "change": "added",
+    "sha256": "d66daff729b16ac9ef16e7f86c358dfcef62023d15a325c870d166bf02b94610"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/mana_bowl.json",
+    "change": "added",
+    "sha256": "777ba2bf323427a58a42dbbc2424edcffb61cfaeea352aebbf251a68598ef7b4"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/mana_cup.json",
+    "change": "added",
+    "sha256": "a20aef55a080d7c0d1acbdcea67c227ca14eea4cd15bcc84b38094ef683f0aad"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/mute_sky_obelisk.json",
+    "change": "added",
+    "sha256": "a42ca30ce6393f6fa6ffb140eaec959dd8df7ed8df3710ac8eec6c9861598f48"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/loot_table/blocks/night_shadow_catcher.json",
+    "change": "added",
+    "sha256": "d25495005df8921068fb1605f2742264e13379caae05df96aa69df0d796b8c4d"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic/tags/entity_type/magical_projectiles.json",
+    "change": "added",
+    "sha256": "ee8a3e5d424f919cbe6e1b91b587ffaf58cdfbd821dab4363a4400daeb94b42c"
+  },
+  {
+    "path": "src/main/resources/data/kelmagic_artifact/structure/empty.nbt",
+    "change": "added",
+    "sha256": "a639ab88517e002e3931e242af05bc7d1ae90a134d84f39e8ddc375182e61f5f"
+  },
+  {
+    "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_armor.json",
+    "change": "modified",
+    "sha256": "e265d4dd81907e14cd6adbd28b7b541cd7861f823a7a57c0702bf7ea02bc6803"
+  },
+  {
+    "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_effects.json",
+    "change": "modified",
+    "sha256": "e265d4dd81907e14cd6adbd28b7b541cd7861f823a7a57c0702bf7ea02bc6803"
+  },
+  {
+    "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_enchantments.json",
+    "change": "modified",
+    "sha256": "e265d4dd81907e14cd6adbd28b7b541cd7861f823a7a57c0702bf7ea02bc6803"
+  },
+  {
+    "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_resistance.json",
+    "change": "modified",
+    "sha256": "50651534fdc4d4fad715a3001b1a771c9b96d1e78ccaa94017f1659a1fbc8e35"
+  },
+  {
+    "path": "src/main/resources/kelmagic.mixins.json",
+    "change": "modified",
+    "sha256": "81088c17ca79ad419680ce078fd75b486d7745468efe1495eed1d429d82f3fdd"
+  },
+  {
+    "path": "src/test/java/dev/kelmagic/artifact/ArtifactRulesTests.java",
+    "change": "added",
+    "sha256": "c70c55489e60b909e23183fb1bca3eb5dfa6c0911bd1c63d72f0422549a221b5"
+  },
+  {
+    "path": "src/test/java/dev/kelmagic/client/ArtifactArmorExport.java",
+    "change": "added",
+    "sha256": "9fd185f4feb1b308d1ae0272c3b35d0e4f33f70dad062e7ffb01cfbf895210e1"
+  },
+  {
+    "path": "tools/artifact-r14/armor_atlases.py",
+    "change": "added",
+    "sha256": "bf295af65c89db8394d5be74b4fecc303512fe111d92f7ee92072ae416b5348e"
+  },
+  {
+    "path": "tools/artifact-r14/assets.py",
+    "change": "added",
+    "sha256": "f75eb6c94ae51955528a3cbae7b0c23034bb514b41f48177647504080dc9933d"
+  },
+  {
+    "path": "tools/artifact-r14/catalog.json",
+    "change": "added",
+    "sha256": "496e6195db22a379edd8600361e36c6a0f1e487f9454c7d4edc9a4da75b4b6ae"
+  },
+  {
+    "path": "tools/artifact-r14/gametest.init.gradle",
+    "change": "added",
+    "sha256": "183bd5310b3cd10a494a3fda6cf62669679801c65d80f47aef23fa7b1a2ace01"
+  },
+  {
+    "path": "tools/artifact-r14/integrate.py",
+    "change": "added",
+    "sha256": "2de787cf49892fe03e87d919426b98e3770c7a52cf2422d0610c0d652e86025a"
+  },
+  {
+    "path": "tools/artifact-r14/refine.py",
+    "change": "added",
+    "sha256": "0ae941ff8e91ae73bbbc0ebe85fd4153487e829a2a2e568ac82e11c02156ecd7"
+  },
+  {
+    "path": "tools/artifact-r14/render_proofs.py",
+    "change": "added",
+    "sha256": "b6d5f7aaec7fb1d9cbec50415892df2b79566a8ffc58574762af07ea631cdc41"
+  },
+  {
+    "path": "tools/artifact-r14/validate.py",
+    "change": "added",
+    "sha256": "23bbeb4cd1254c3d534175d0ecb8744610d438ffe815b8bac4dc71c59e5f7153"
+  }
+]

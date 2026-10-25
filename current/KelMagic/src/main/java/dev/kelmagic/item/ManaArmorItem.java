@@ -3,7 +3,7 @@ import java.util.List;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
-public final class ManaArmorItem extends ArmorItem {
+public class ManaArmorItem extends ArmorItem {
     public final double manaBonus;public final boolean robe;
     public ManaArmorItem(Holder<ArmorMaterial> material,Type type,Properties props,double bonus,boolean robe) {
         super(material,type,props);this.manaBonus=bonus;this.robe=robe;

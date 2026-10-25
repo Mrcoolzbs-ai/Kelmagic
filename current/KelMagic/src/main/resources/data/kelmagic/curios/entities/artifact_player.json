@@ -1,0 +1,15 @@
+{
+  "entities": [
+    "minecraft:player"
+  ],
+  "slots": [
+    "kelmagic_ring",
+    "kelmagic_necklace",
+    "kelmagic_bracelet",
+    "kelmagic_earring",
+    "kelmagic_hands",
+    "kelmagic_charm",
+    "kelmagic_belt",
+    "kelmagic_back"
+  ]
+}

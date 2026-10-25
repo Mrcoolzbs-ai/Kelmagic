@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "kelmagic:word_bolt",
+    "minecraft:small_fireball",
+    "minecraft:fireball",
+    "minecraft:dragon_fireball",
+    "minecraft:wither_skull",
+    "minecraft:shulker_bullet"
+  ]
+}

@@ -20,7 +20,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 @EventBusSubscriber(modid=KelMagic.MODID)
 public final class MagicServer {
     private static final ResourceKey<DamageType> MANA_DEBT = ResourceKey.create(Registries.DAMAGE_TYPE,ResourceLocation.fromNamespaceAndPath(KelMagic.MODID,"mana_debt"));
-    public static double maximum(ServerPlayer p) { return (p.getData(MagicAttachments.BASE_MANA_MAX)>=0?p.getData(MagicAttachments.BASE_MANA_MAX):ManaMath.maximum(p.getData(MagicAttachments.MANA).dragonUpgrade(),equipmentBonus(p)))+(p.serverLevel().getGameTime()<p.getData(MagicAttachments.MANA_BOOST_END)?50:0); }
+    public static double maximum(ServerPlayer p) { return (p.getData(MagicAttachments.BASE_MANA_MAX)>=0?p.getData(MagicAttachments.BASE_MANA_MAX):ManaMath.maximum(p.getData(MagicAttachments.MANA).dragonUpgrade(),equipmentBonus(p)))+(p.serverLevel().getGameTime()<p.getData(MagicAttachments.MANA_BOOST_END)?50:0)+dev.kelmagic.artifact.ArtifactRuntime.maximum(p); }
     private static final net.minecraft.world.entity.EquipmentSlot[] ARMOR_SLOTS={net.minecraft.world.entity.EquipmentSlot.HEAD,net.minecraft.world.entity.EquipmentSlot.CHEST,net.minecraft.world.entity.EquipmentSlot.LEGS,net.minecraft.world.entity.EquipmentSlot.FEET};
     public static double equipmentBonus(ServerPlayer p) {
         double bonus=0;
@@ -41,6 +41,7 @@ public final class MagicServer {
         ServerPlayer p=event.getPlayer();
         var word=KelLexicon.recognize(event.getRawText());
         if(word.isEmpty()) return; // Do not cancel/replace vanilla public chat.
+        if(!dev.kelmagic.artifact.ArtifactRuntime.canSpeak(p)||!dev.kelmagic.artifact.ArtifactRuntime.canPayWord(p,word.get().word())){p.displayClientMessage(Component.translatable("kelmagic.artifact.word_blocked"),true);return;}
         if(!p.isAlive() || p.isSpectator()) { PacketDistributor.sendToPlayer(p,snapshot(p,SpellSnapshot.END)); return; }
         p.serverLevel().playSound(null,p.blockPosition(),dev.kelmagic.MagicSounds.WORD.value(),net.minecraft.sounds.SoundSource.PLAYERS,0.65f,0.92f+p.getRandom().nextFloat()*0.16f);
         if(dev.kelmagic.resonance.ResonanceEntity.spoken(p,word.get().word()))return;
@@ -52,6 +53,7 @@ public final class MagicServer {
         var mana=p.getData(MagicAttachments.MANA);
         var spend=ManaMath.spend(Math.min(mana.current(),maximum(p)),word.get().word().length());
         p.setData(MagicAttachments.MANA,mana.withCurrent(spend.remaining()));
+        dev.kelmagic.artifact.ArtifactRuntime.state(p).paid+=word.get().word().length();
         hurtMana(p,spend.healthDamage());
         if(p.isAlive()){MagicProgress.award(p,"first_word");publish(p,SpellSnapshot.ACCEPT);}
     }
@@ -66,7 +68,7 @@ public final class MagicServer {
     public static void actionFromScripter(ServerPlayer p,SpellAction action) { finish(p,action,false); }
     private static void finish(ServerPlayer p,SpellAction action,boolean fromChat) {
         SpellSession s=p.getData(MagicAttachments.SESSION);
-        if(!p.isAlive() || p.isSpectator()) return;
+        if(!p.isAlive() || p.isSpectator()||(!action.cancel()&&!dev.kelmagic.artifact.ArtifactRuntime.canCast(p))) return;
         if(!s.authorize(action.generation(),action.revision())) {
             if(s.allowResync(p.serverLevel().getGameTime())) PacketDistributor.sendToPlayer(p,snapshot(p,SpellSnapshot.SYNC));
             return;
@@ -75,24 +77,23 @@ public final class MagicServer {
         var plan=SpellParser.plan(words);var effect=plan.effect();
         if(fromChat && !action.cancel()) dev.kelmagic.item.ScripterItem.capture(p,words);
         if(!action.cancel()&&!words.isEmpty()) dev.kelmagic.MagicApprovedContent.heard(p.serverLevel(),p.position().add(0,p.getBbHeight()*.6,0));
+        double artifactCost=dev.kelmagic.artifact.ArtifactRuntime.state(p).paid;
         clear(p); // Invalidate before effects. A duplicate packet cannot execute again.
         if(action.cancel()) { p.displayClientMessage(Component.translatable("kelmagic.cancelled"),true); return; }
         if(effect==SpellParser.Effect.UNDEFINED || effect==SpellParser.Effect.SELECTION_ONLY) {
             SpellEffects.fizzle(p,effect==SpellParser.Effect.SELECTION_ONLY?"kelmagic.incomplete":"kelmagic.undefined");return;
         }
-        if(!SpellEffects.execute(p,plan)) SpellEffects.fizzle(p,"kelmagic.no_target");else{MagicProgress.award(p,"first_spell");if(words.size()>=2)MagicProgress.award(p,"combination");if(plan.effect()==SpellParser.Effect.FLAME_LIFE)MagicProgress.award(p,"flame_life");}
+        if(!dev.kelmagic.artifact.ArtifactMagic.execute(p,plan,words,artifactCost,null)) SpellEffects.fizzle(p,"kelmagic.no_target");else{MagicProgress.award(p,"first_spell");if(words.size()>=2)MagicProgress.award(p,"combination");if(plan.effect()==SpellParser.Effect.FLAME_LIFE)MagicProgress.award(p,"flame_life");}
     }
     private static void clear(ServerPlayer p) {
-        p.getData(MagicAttachments.SESSION).clear(); publish(p,SpellSnapshot.END);
+        p.getData(MagicAttachments.SESSION).clear();dev.kelmagic.artifact.ArtifactRuntime.state(p).paid=0; publish(p,SpellSnapshot.END);
     }
     @SubscribeEvent public static void tick(PlayerTickEvent.Post event) {
         if(!(event.getEntity() instanceof ServerPlayer p) || !p.isAlive()) return;
         if(p.isSpectator()) { if(p.getData(MagicAttachments.SESSION).active()) clear(p); return; }
         var mana=p.getData(MagicAttachments.MANA);double max=maximum(p);
         if(mana.current()>max) { mana=mana.withCurrent(max);p.setData(MagicAttachments.MANA,mana); }
-        if(p.getVehicle() instanceof dev.kelmagic.entity.ThroneSeat seat&&seat.valid()){seat.regenerate(p);}else if(p.getData(MagicAttachments.SESSION).regenDue(ManaMath.interval(mana.dragonUpgrade(),p.hasEffect(dev.kelmagic.MagicContent.FLOW))) && mana.current()<max) {
-            p.setData(MagicAttachments.MANA,mana.withCurrent(ManaMath.regenerate(mana.current(),max)));
-        }
+        if(p.getVehicle() instanceof dev.kelmagic.entity.ThroneSeat seat&&seat.valid()){seat.regenerate(p);}else { dev.kelmagic.artifact.ArtifactRuntime.regenerate(p,mana,max); }
         if(p.getData(MagicAttachments.SESSION).needsManaSync(p.getData(MagicAttachments.MANA).current(),max)) sync(p);
     }
     @SubscribeEvent public static void login(PlayerEvent.PlayerLoggedInEvent e) {

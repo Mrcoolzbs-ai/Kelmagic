@@ -66,7 +66,7 @@ public final class ExpandedSpellEffects {
   }return applied;
  }
  private static boolean canAffect(ServerPlayer caster,LivingEntity e,boolean harmful){
-  if(!e.isAlive()||e.isSpectator())return false;
+  if(!e.isAlive()||e.isSpectator()||dev.kelmagic.artifact.ArtifactRuntime.immune(e))return false;
   if(!harmful)return true;
   if(e instanceof Player p && p.getAbilities().invulnerable)return false;
   return !(e instanceof Player p) || p==caster || caster.server.isPvpAllowed() && caster.canHarmPlayer(p);
@@ -89,6 +89,7 @@ public final class ExpandedSpellEffects {
  }
  static Holder<MobEffect> status(String id){return BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.withDefaultNamespace(id)).orElseThrow();}
  private static boolean apply(ServerPlayer caster,LivingEntity target,SpellProfiles.Profile profile,Operation op,double scale,boolean reverse){
+  if(dev.kelmagic.artifact.ArtifactRuntime.immune(target))return false;
   int duration=SpellProfiles.duration(profile.duration(),scale);float power=(float)Math.max(.1,Math.min(32,profile.power()*scale));
   switch(op.action()){
    case "BUFF":{int amp=Math.max(0,Math.min(4,(int)Math.floor(scale)-1));for(String id:op.status().split(","))target.addEffect(new MobEffectInstance(status(id),duration,amp),caster);return true;}

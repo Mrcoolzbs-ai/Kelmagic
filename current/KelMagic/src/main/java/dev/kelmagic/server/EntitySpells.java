@@ -18,7 +18,7 @@ public final class EntitySpells {
  static void buff(LivingEntity e,String id,int time){e.addEffect(new MobEffectInstance(ExpandedSpellEffects.status(id),Math.max(1,time),0));}
  static void motion(LivingEntity e,Vec3 v){e.setDeltaMovement(v);e.hasImpulse=true;e.hurtMarked=true;}
  static boolean harm(ServerPlayer p,LivingEntity e,float n){return e.hurt(e==p?MagicDamage.source(p,"spell"):MagicDamage.spell(p,e),n);}
- public static boolean apply(ServerPlayer p,LivingEntity e,String a,int time,float power,double scale){
+ public static boolean apply(ServerPlayer p,LivingEntity e,String a,int time,float power,double scale){if(dev.kelmagic.artifact.ArtifactRuntime.immune(e))return false;
  switch(a){
  case "SCAN_PLAYERS":buff(e,"glowing",time);return true;
  case "PACIFY":return e instanceof Mob m&&NeutralMagic.neutralize(m,true);
@@ -54,7 +54,7 @@ public final class EntitySpells {
  case "DECAY":{boolean hit=harm(p,e,power);if(hit)buff(e,"wither",Math.min(time,80));return hit;}
  case "SLASH":{boolean hit=harm(p,e,power);if(hit)buff(e,"weakness",time);return hit;}
  case "ARCHER":buff(e,"night_vision",time);buff(e,"slowness",Math.min(time,100));return true;
- case "BOLT":{boolean hit=harm(p,e,power);if(hit)buff(e,"glowing",time);return hit;}
+ case "BOLT":return dev.kelmagic.artifact.ArtifactSpellBolt.fire(p,e,power,time);
  case "TETHER":if(e instanceof Mob m)m.getNavigation().stop();motion(e,Vec3.ZERO);e.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,Math.min(time,100),4));return true;
  case "MEND":{boolean any=false;for(var s:e.getArmorSlots())if(s.isDamaged()){s.setDamageValue(Math.max(0,s.getDamageValue()-(int)(8*scale)));any=true;}return any;}
  case "BOOTS":e.removeEffect(MobEffects.MOVEMENT_SLOWDOWN);buff(e,"jump_boost",time);return true;

@@ -1,0 +1,24 @@
+{
+  "version": "1.35.0-r14-artifacts-TEST",
+  "base_commit": "ce1198f",
+  "artifact_gametests_with_curios": {
+    "passed": 23,
+    "total": 23
+  },
+  "artifact_gametests_without_curios": {
+    "passed": 23,
+    "total": 23
+  },
+  "artifact_rules_checks": 9435,
+  "core_checks": 68143,
+  "static_checks": 579,
+  "legacy_gametests": {
+    "passed": 196,
+    "total": 201,
+    "same_five_baseline_failures": true
+  },
+  "eyeStateTest": "excluded: inherited continuous pulse failure",
+  "native_client_tested": false,
+  "new_recipes": false,
+  "jar_sha256": "07b2f6de53fe01adcc926905bf8c9fb5e7eb7b9bb1af22484377dc845ef20cf1"
+}

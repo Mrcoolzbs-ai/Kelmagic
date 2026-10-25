@@ -18,7 +18,8 @@ public final class SpellEffects {
     public record Aim(Vec3 point, HitResult.Type type, BlockHitResult block, LivingEntity entity) {}
     public static boolean human(LivingEntity e){return e instanceof Player||e instanceof dev.kelmagic.entity.RedMage;}
  static Aim aim(ServerPlayer p) {
-        Vec3 eye=p.getEyePosition(), end=eye.add(p.getLookAngle().scale(Config.RANGE.get()));
+        var artifactAim=dev.kelmagic.artifact.ArtifactMagic.aim(p);if(artifactAim!=null)return artifactAim;var marked=dev.kelmagic.artifact.ArtifactCombat.markedAim(p);if(marked!=null)return marked;
+        Vec3 eye=p.getEyePosition(), end=eye.add(p.getLookAngle().scale(dev.kelmagic.artifact.ArtifactRuntime.range(p)));
         BlockHitResult block=p.serverLevel().clip(new ClipContext(eye,end,ClipContext.Block.COLLIDER,ClipContext.Fluid.NONE,p));
         Vec3 stop=block.getLocation(); LivingEntity target=null; double distance=eye.distanceToSqr(stop);
         AABB box=new AABB(eye,stop).inflate(1);
@@ -30,6 +31,7 @@ public final class SpellEffects {
     }
     public static boolean execute(ServerPlayer p,dev.kelmagic.core.SpellParser.Plan plan){return execute(p,plan,false);}
     public static boolean execute(ServerPlayer p,dev.kelmagic.core.SpellParser.Plan plan,boolean admin){
+        if(!dev.kelmagic.artifact.ArtifactRuntime.canCast(p))return false;
         if(plan.effect()==Effect.GRAND){var rite=dev.kelmagic.core.GrandSpells.ALL.stream().filter(r->!plan.actions().isEmpty()&&r.id().equals(plan.actions().getFirst())).findFirst().orElse(null);if(!admin&&((rite!=null&&(rite.id().equals("threshold_link")||rite.id().equals("grove_awakening")))?!p.isCreative():(rite==null||!dev.kelmagic.research.ResearchCatalog.learned(dev.kelmagic.research.Research.state(p),"rite:"+rite.id())))){p.displayClientMessage(Component.literal("Это высказывание ещё не стало знанием."),true);return false;}return GrandEffects.execute(p,plan);}
         boolean researching=dev.kelmagic.research.Research.state(p).started().stream().anyMatch(id->!dev.kelmagic.research.ResearchCatalog.learned(dev.kelmagic.research.Research.state(p),id));
         var before=researching?dev.kelmagic.research.ResearchExperiments.before(p):null;boolean ok=executeOrdinary(p,plan);if(ok&&before!=null)dev.kelmagic.research.ResearchExperiments.after(p,before);return ok;
@@ -89,6 +91,8 @@ public final class SpellEffects {
         if(!level.hasChunkAt(pos) || !level.getWorldBorder().isWithinBounds(pos) || !level.isInWorldBounds(pos)
                 || !level.mayInteract(p,pos) || !p.mayUseItemAt(pos,net.minecraft.core.Direction.UP,p.getMainHandItem()) ) return false;
         var old=level.getBlockState(pos);
+        if(!dev.kelmagic.artifact.ArtifactWorld.allowed(p,pos))return false;
+        for(var direction:net.minecraft.core.Direction.values())if(dev.kelmagic.artifact.ArtifactMagic.protectForest(p,level.getBlockState(pos.relative(direction))))return false;
         boolean campfire=net.minecraft.world.level.block.CampfireBlock.canLight(old);
         if(!campfire && !level.isEmptyBlock(pos))return false;
         var state=campfire?old.setValue(net.minecraft.world.level.block.CampfireBlock.LIT,true):dev.kelmagic.MagicContent.MAGIC_FIRE.get().stateAt(level,pos);
